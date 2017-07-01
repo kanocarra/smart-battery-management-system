@@ -36,7 +36,6 @@
   ******************************************************************************
   */
 /* Includes ------------------------------------------------------------------*/
-#include <stdint.h>
 #include "main.h"
 #include "stm32f3xx_hal.h"
 #include "adc.h"
@@ -72,6 +71,11 @@ void main(void)
 
  State currentState = idle;
 
+ 	set_UV_OV_threshold();
+
+	globalTick=0; //for counting 1 second in the main loop
+	uint8_t loggingCounter = 0; //for adjusting data logging frequency.
+
   while (1)
   {
     currentState = (State)currentState();
@@ -82,14 +86,12 @@ void main(void)
 State idle(void){
   HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 1); 
   HAL_Delay(1000);
-  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 0);
   return (State)start;
 }
 
 State start(void){
   HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
   HAL_Delay(1000);
-  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 0); 
   return (State)measure;
 }
 

@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 1
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 1
   29:Src/system_stm32f3xx.c ****   *                         Supported STM32F3xx device
   30:Src/system_stm32f3xx.c ****   *-----------------------------------------------------------------------------
   31:Src/system_stm32f3xx.c ****   *        System Clock source                    | HSI
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 2
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s 			page 2
 
 
   32:Src/system_stm32f3xx.c ****   *-----------------------------------------------------------------------------
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 1
   86:Src/system_stm32f3xx.c ****   */
   87:Src/system_stm32f3xx.c **** 
   88:Src/system_stm32f3xx.c **** #include "stm32f3xx.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 3
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s 			page 3
 
 
   89:Src/system_stm32f3xx.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 1
  143:Src/system_stm32f3xx.c **** uint32_t SystemCoreClock = 8000000;
  144:Src/system_stm32f3xx.c **** 
  145:Src/system_stm32f3xx.c **** const uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 4
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s 			page 4
 
 
  146:Src/system_stm32f3xx.c **** const uint8_t APBPrescTable[8]  = {0, 0, 0, 0, 1, 2, 3, 4};
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 1
   45 001a 114A     		ldr	r2, .L2+8
   46 001c 0240     		ands	r2, r2, r0
   47 001e 5A60     		str	r2, [r3, #4]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 5
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s 			page 5
 
 
  183:Src/system_stm32f3xx.c **** 
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 1
   79              	.L2:
   80 0058 00ED00E0 		.word	-536810240
   81 005c 00100240 		.word	1073876992
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 6
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s 			page 6
 
 
   82 0060 0CC07FF8 		.word	-125845492
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 1
   97              		.loc 1 246 0
   98              		.cfi_startproc
   99              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 7
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s 			page 7
 
 
  100              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 1
  287:Src/system_stm32f3xx.c ****         /* HSE oscillator clock selected as PREDIV1 clock entry */
  288:Src/system_stm32f3xx.c ****         SystemCoreClock = (HSE_VALUE / predivfactor) * pllmull;
  289:Src/system_stm32f3xx.c ****       }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 8
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s 			page 8
 
 
  290:Src/system_stm32f3xx.c **** #endif /* STM32F302xE || STM32F303xE || STM32F398xx */
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 1
  262:Src/system_stm32f3xx.c ****       pllsource = RCC->CFGR & RCC_CFGR_PLLSRC;
  154              		.loc 1 262 0
  155 003e 0E4A     		ldr	r2, .L13
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 9
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s 			page 9
 
 
  156 0040 5368     		ldr	r3, [r2, #4]
@@ -538,73 +538,76 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 1
  205              		.global	APBPrescTable
  206              		.global	AHBPrescTable
  207              		.global	SystemCoreClock
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 10
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s 			page 10
 
 
- 208              		.section	.data.SystemCoreClock,"aw",%progbits
- 209              		.align	2
- 210              		.set	.LANCHOR0,. + 0
- 213              	SystemCoreClock:
- 214 0000 00127A00 		.word	8000000
- 215              		.section	.rodata.AHBPrescTable,"a",%progbits
- 216              		.align	2
- 217              		.set	.LANCHOR1,. + 0
- 220              	AHBPrescTable:
- 221 0000 00       		.byte	0
- 222 0001 00       		.byte	0
- 223 0002 00       		.byte	0
- 224 0003 00       		.byte	0
- 225 0004 00       		.byte	0
- 226 0005 00       		.byte	0
- 227 0006 00       		.byte	0
- 228 0007 00       		.byte	0
- 229 0008 01       		.byte	1
- 230 0009 02       		.byte	2
- 231 000a 03       		.byte	3
- 232 000b 04       		.byte	4
- 233 000c 06       		.byte	6
- 234 000d 07       		.byte	7
- 235 000e 08       		.byte	8
- 236 000f 09       		.byte	9
- 237              		.section	.rodata.APBPrescTable,"a",%progbits
- 238              		.align	2
- 241              	APBPrescTable:
- 242 0000 00       		.byte	0
- 243 0001 00       		.byte	0
- 244 0002 00       		.byte	0
- 245 0003 00       		.byte	0
- 246 0004 01       		.byte	1
- 247 0005 02       		.byte	2
- 248 0006 03       		.byte	3
- 249 0007 04       		.byte	4
- 250              		.text
- 251              	.Letext0:
- 252              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 253              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 254              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
- 255              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
- 256              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
- 257              		.file 7 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 258              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 259              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 260              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s 			page 11
+ 208              		.comm	globalTick,4,4
+ 209              		.section	.data.SystemCoreClock,"aw",%progbits
+ 210              		.align	2
+ 211              		.set	.LANCHOR0,. + 0
+ 214              	SystemCoreClock:
+ 215 0000 00127A00 		.word	8000000
+ 216              		.section	.rodata.AHBPrescTable,"a",%progbits
+ 217              		.align	2
+ 218              		.set	.LANCHOR1,. + 0
+ 221              	AHBPrescTable:
+ 222 0000 00       		.byte	0
+ 223 0001 00       		.byte	0
+ 224 0002 00       		.byte	0
+ 225 0003 00       		.byte	0
+ 226 0004 00       		.byte	0
+ 227 0005 00       		.byte	0
+ 228 0006 00       		.byte	0
+ 229 0007 00       		.byte	0
+ 230 0008 01       		.byte	1
+ 231 0009 02       		.byte	2
+ 232 000a 03       		.byte	3
+ 233 000b 04       		.byte	4
+ 234 000c 06       		.byte	6
+ 235 000d 07       		.byte	7
+ 236 000e 08       		.byte	8
+ 237 000f 09       		.byte	9
+ 238              		.section	.rodata.APBPrescTable,"a",%progbits
+ 239              		.align	2
+ 242              	APBPrescTable:
+ 243 0000 00       		.byte	0
+ 244 0001 00       		.byte	0
+ 245 0002 00       		.byte	0
+ 246 0003 00       		.byte	0
+ 247 0004 01       		.byte	1
+ 248 0005 02       		.byte	2
+ 249 0006 03       		.byte	3
+ 250 0007 04       		.byte	4
+ 251              		.text
+ 252              	.Letext0:
+ 253              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 254              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 255              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
+ 256              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 257              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
+ 258              		.file 7 "Inc/main.h"
+ 259              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 260              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 261              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 262              		.file 11 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 system_stm32f3xx.c
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s:18     .text.SystemInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s:25     .text.SystemInit:0000000000000000 SystemInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s:80     .text.SystemInit:0000000000000058 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s:88     .text.SystemCoreClockUpdate:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s:95     .text.SystemCoreClockUpdate:0000000000000000 SystemCoreClockUpdate
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s:197    .text.SystemCoreClockUpdate:0000000000000078 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s:241    .rodata.APBPrescTable:0000000000000000 APBPrescTable
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s:220    .rodata.AHBPrescTable:0000000000000000 AHBPrescTable
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s:213    .data.SystemCoreClock:0000000000000000 SystemCoreClock
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s:209    .data.SystemCoreClock:0000000000000000 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s:216    .rodata.AHBPrescTable:0000000000000000 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc0xZl1l.s:238    .rodata.APBPrescTable:0000000000000000 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s:18     .text.SystemInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s:25     .text.SystemInit:0000000000000000 SystemInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s:80     .text.SystemInit:0000000000000058 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s:88     .text.SystemCoreClockUpdate:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s:95     .text.SystemCoreClockUpdate:0000000000000000 SystemCoreClockUpdate
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s:197    .text.SystemCoreClockUpdate:0000000000000078 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s:242    .rodata.APBPrescTable:0000000000000000 APBPrescTable
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s:221    .rodata.AHBPrescTable:0000000000000000 AHBPrescTable
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s:214    .data.SystemCoreClock:0000000000000000 SystemCoreClock
+                            *COM*:0000000000000004 globalTick
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s:210    .data.SystemCoreClock:0000000000000000 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s:217    .rodata.AHBPrescTable:0000000000000000 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc6s08Mh.s:239    .rodata.APBPrescTable:0000000000000000 $d
                      .debug_frame:0000000000000010 $d
 
 NO UNDEFINED SYMBOLS

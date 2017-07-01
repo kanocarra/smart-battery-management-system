@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
   38              		.cfi_def_cfa_offset 72
   19:Src/rtc.c     ****   RTC_TimeTypeDef sTime;
   20:Src/rtc.c     ****   RTC_DateTypeDef sDate;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 2
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 2
 
 
   21:Src/rtc.c     ****   RTC_AlarmTypeDef sAlarm;
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
   73 0034 0023     		movs	r3, #0
   74 0036 8DF82C30 		strb	r3, [sp, #44]
   41:Src/rtc.c     ****   sTime.Minutes = 0x0;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 3
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 3
 
 
   75              		.loc 1 41 0
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
  110 0072 43F2F222 		movw	r2, #13042
  111 0076 0021     		movs	r1, #0
  112 0078 1848     		ldr	r0, .L12
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 4
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 4
 
 
  113 007a FFF7FEFF 		bl	HAL_RTCEx_BKUPWrite
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
   80:Src/rtc.c     **** }
  148              		.loc 1 80 0
  149 00ae 11B0     		add	sp, sp, #68
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 5
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 5
 
 
  150              	.LCFI2:
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
  201              		.fpu fpv4-sp-d16
  203              	HAL_RTC_MspInit:
  204              	.LFB125:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 6
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 6
 
 
   81:Src/rtc.c     **** 
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
   32:Drivers/CMSIS/Include/cmsis_gcc.h ****    ---------------------------------------------------------------------------*/
   33:Drivers/CMSIS/Include/cmsis_gcc.h **** 
   34:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 7
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 7
 
 
   35:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __CMSIS_GCC_H
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
   89:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
   90:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Control Register
   91:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Writes the given value to the Control Register.
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 8
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 8
 
 
   92:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    control  Control Register value to set
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
  146:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               PSP Register value
  147:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  148:Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_PSP(void)
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 9
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 9
 
 
  149:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
  203:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, primask" : "=r" (result) );
  204:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  205:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 10
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 10
 
 
  206:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
  260:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    basePri  Base Priority value to set
  261:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  262:Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_BASEPRI(uint32_t value)
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 11
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 11
 
 
  263:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
  317:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  318:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  319:Drivers/CMSIS/Include/cmsis_gcc.h ****   /* Empty asm statement works as a scheduling barrier */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 12
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 12
 
 
  320:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("");
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
  374:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  375:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("nop");
  376:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 13
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 13
 
 
  377:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
  431:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  432:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  433:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 14
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 14
 
 
  434:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Data Memory Barrier
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
  488:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
  489:Drivers/CMSIS/Include/cmsis_gcc.h ****   int32_t result;
  490:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 15
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 15
 
 
  491:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("revsh %0, %1" : __CMSIS_GCC_OUT_REG (result) : __CMSIS_GCC_USE_REG (value) );
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
   88:Src/rtc.c     **** 
   89:Src/rtc.c     ****   /* USER CODE END RTC_MspInit 0 */
   90:Src/rtc.c     ****     /* Peripheral clock enable */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 16
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 16
 
 
   91:Src/rtc.c     ****     __HAL_RCC_RTC_ENABLE();
@@ -958,7 +958,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
  279 000a 4FF40042 		mov	r2, #32768
  280              		.syntax unified
  281              	@ 531 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 17
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 17
 
 
  282 000e 92FAA2F2 		rbit r2, r2
@@ -998,49 +998,52 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 1
  306              		.comm	hrtc,32,4
  307              		.comm	RTCdate,4,4
  308              		.comm	RTCtime,20,4
- 309              		.section	.rodata.MX_RTC_Init.str1.4,"aMS",%progbits,1
- 310              		.align	2
- 311              	.LC0:
- 312 0000 5372632F 		.ascii	"Src/rtc.c\000"
- 312      7274632E 
- 312      6300
- 313              		.text
- 314              	.Letext0:
- 315              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 316              		.file 4 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 317              		.file 5 "Drivers/CMSIS/Include/core_cm4.h"
- 318              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
- 319              		.file 7 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
- 320              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 321              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 322              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
- 323              		.file 11 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
- 324              		.file 12 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h"
- 325              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
- 326              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rtc.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 18
+ 309              		.comm	globalTick,4,4
+ 310              		.section	.rodata.MX_RTC_Init.str1.4,"aMS",%progbits,1
+ 311              		.align	2
+ 312              	.LC0:
+ 313 0000 5372632F 		.ascii	"Src/rtc.c\000"
+ 313      7274632E 
+ 313      6300
+ 314              		.text
+ 315              	.Letext0:
+ 316              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 317              		.file 4 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 318              		.file 5 "Inc/main.h"
+ 319              		.file 6 "Drivers/CMSIS/Include/core_cm4.h"
+ 320              		.file 7 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 321              		.file 8 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
+ 322              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 323              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 324              		.file 11 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 325              		.file 12 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 326              		.file 13 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h"
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 18
 
 
- 327              		.file 15 "Inc/rtc.h"
- 328              		.file 16 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rtc_ex.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s 			page 19
+ 327              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 328              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rtc.h"
+ 329              		.file 16 "Inc/rtc.h"
+ 330              		.file 17 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rtc_ex.h"
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s 			page 19
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 rtc.c
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s:18     .text.MX_RTC_Init:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s:25     .text.MX_RTC_Init:0000000000000000 MX_RTC_Init
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s:189    .text.MX_RTC_Init:00000000000000dc $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s:18     .text.MX_RTC_Init:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s:25     .text.MX_RTC_Init:0000000000000000 MX_RTC_Init
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s:189    .text.MX_RTC_Init:00000000000000dc $d
                             *COM*:0000000000000020 hrtc
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s:196    .text.HAL_RTC_MspInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s:203    .text.HAL_RTC_MspInit:0000000000000000 HAL_RTC_MspInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s:246    .text.HAL_RTC_MspInit:0000000000000024 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s:252    .text.HAL_RTC_MspDeInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s:259    .text.HAL_RTC_MspDeInit:0000000000000000 HAL_RTC_MspDeInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s:301    .text.HAL_RTC_MspDeInit:0000000000000024 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s:196    .text.HAL_RTC_MspInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s:203    .text.HAL_RTC_MspInit:0000000000000000 HAL_RTC_MspInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s:246    .text.HAL_RTC_MspInit:0000000000000024 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s:252    .text.HAL_RTC_MspDeInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s:259    .text.HAL_RTC_MspDeInit:0000000000000000 HAL_RTC_MspDeInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s:301    .text.HAL_RTC_MspDeInit:0000000000000024 $d
                             *COM*:0000000000000004 RTCdate
                             *COM*:0000000000000014 RTCtime
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccZIQqyl.s:310    .rodata.MX_RTC_Init.str1.4:0000000000000000 $d
+                            *COM*:0000000000000004 globalTick
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckz6i2z.s:311    .rodata.MX_RTC_Init.str1.4:0000000000000000 $d
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

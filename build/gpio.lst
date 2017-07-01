@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccgiSzsk.s 			page 1
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccQnBvAQ.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccgiSzsk.s 			page 1
   32 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
   33              	.LCFI0:
   34              		.cfi_def_cfa_offset 24
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccgiSzsk.s 			page 2
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccQnBvAQ.s 			page 2
 
 
   35              		.cfi_offset 4, -24
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccgiSzsk.s 			page 1
   81 0048 02F48022 		and	r2, r2, #262144
   82 004c 0392     		str	r2, [sp, #12]
   83 004e 039A     		ldr	r2, [sp, #12]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccgiSzsk.s 			page 3
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccQnBvAQ.s 			page 3
 
 
   84              	.LBE5:
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccgiSzsk.s 			page 1
   49:Src/gpio.c    ****   /*Configure GPIO pins : PCPin PCPin PCPin PCPin 
   50:Src/gpio.c    ****                            PCPin PCPin PCPin */
   51:Src/gpio.c    ****   GPIO_InitStruct.Pin = LED3_Pin|GLED1_Pin|GLED2_Pin|RLED1_Pin 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccgiSzsk.s 			page 4
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccQnBvAQ.s 			page 4
 
 
  122              		.loc 1 51 0
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccgiSzsk.s 			page 1
  159 00d0 0794     		str	r4, [sp, #28]
   69:Src/gpio.c    ****   HAL_GPIO_Init(PA2_GPIO_Port, &GPIO_InitStruct);
  160              		.loc 1 69 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccgiSzsk.s 			page 5
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccQnBvAQ.s 			page 5
 
 
  161 00d2 05A9     		add	r1, sp, #20
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccgiSzsk.s 			page 1
  197 0102 BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}
  198              	.L4:
  199 0106 00BF     		.align	2
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccgiSzsk.s 			page 6
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccQnBvAQ.s 			page 6
 
 
  200              	.L3:
@@ -308,26 +308,29 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccgiSzsk.s 			page 1
  204 0114 00040048 		.word	1207960576
  205              		.cfi_endproc
  206              	.LFE124:
- 208              		.text
- 209              	.Letext0:
- 210              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 211              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 212              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
- 213              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
- 214              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
- 215              		.file 7 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 216              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 217              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 218              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
- 219              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccgiSzsk.s 			page 7
+ 208              		.comm	globalTick,4,4
+ 209              		.text
+ 210              	.Letext0:
+ 211              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 212              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 213              		.file 4 "Inc/main.h"
+ 214              		.file 5 "Drivers/CMSIS/Include/core_cm4.h"
+ 215              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 216              		.file 7 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
+ 217              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 218              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 219              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 220              		.file 11 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 221              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccQnBvAQ.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gpio.c
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccgiSzsk.s:18     .text.MX_GPIO_Init:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccgiSzsk.s:25     .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccgiSzsk.s:201    .text.MX_GPIO_Init:0000000000000108 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccQnBvAQ.s:18     .text.MX_GPIO_Init:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccQnBvAQ.s:25     .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccQnBvAQ.s:201    .text.MX_GPIO_Init:0000000000000108 $d
+                            *COM*:0000000000000004 globalTick
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

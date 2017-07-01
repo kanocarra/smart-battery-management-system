@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckhfmi4.s 			page 1
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccjAoOiD.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckhfmi4.s 			page 1
   29:Src/stm32f3xx_hal_msp.c ****   * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
   30:Src/stm32f3xx_hal_msp.c ****   * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
   31:Src/stm32f3xx_hal_msp.c ****   * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckhfmi4.s 			page 2
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccjAoOiD.s 			page 2
 
 
   32:Src/stm32f3xx_hal_msp.c ****   * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckhfmi4.s 			page 1
   60:Src/stm32f3xx_hal_msp.c ****   /* MemoryManagement_IRQn interrupt configuration */
   61:Src/stm32f3xx_hal_msp.c ****   HAL_NVIC_SetPriority(MemoryManagement_IRQn, 0, 0);
   54              		.loc 1 61 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckhfmi4.s 			page 3
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccjAoOiD.s 			page 3
 
 
   55 001e 0022     		movs	r2, #0
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckhfmi4.s 			page 1
   75:Src/stm32f3xx_hal_msp.c ****   /* USER CODE BEGIN MspInit 1 */
   76:Src/stm32f3xx_hal_msp.c **** 
   77:Src/stm32f3xx_hal_msp.c ****   /* USER CODE END MspInit 1 */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckhfmi4.s 			page 4
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccjAoOiD.s 			page 4
 
 
   78:Src/stm32f3xx_hal_msp.c **** }
@@ -194,26 +194,29 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckhfmi4.s 			page 1
  105 0078 00100240 		.word	1073876992
  106              		.cfi_endproc
  107              	.LFE124:
- 109              		.text
- 110              	.Letext0:
- 111              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 112              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 113              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
- 114              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
- 115              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
- 116              		.file 7 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 117              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 118              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 119              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
- 120              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckhfmi4.s 			page 5
+ 109              		.comm	globalTick,4,4
+ 110              		.text
+ 111              	.Letext0:
+ 112              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 113              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 114              		.file 4 "Inc/main.h"
+ 115              		.file 5 "Drivers/CMSIS/Include/core_cm4.h"
+ 116              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 117              		.file 7 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
+ 118              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 119              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 120              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 121              		.file 11 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 122              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h"
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccjAoOiD.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f3xx_hal_msp.c
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckhfmi4.s:18     .text.HAL_MspInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckhfmi4.s:25     .text.HAL_MspInit:0000000000000000 HAL_MspInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cckhfmi4.s:105    .text.HAL_MspInit:0000000000000078 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccjAoOiD.s:18     .text.HAL_MspInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccjAoOiD.s:25     .text.HAL_MspInit:0000000000000000 HAL_MspInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccjAoOiD.s:105    .text.HAL_MspInit:0000000000000078 $d
+                            *COM*:0000000000000004 globalTick
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

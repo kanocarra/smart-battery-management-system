@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
   29:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   [..] 
   30:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   (+) 12-bit, 10-bit, 8-bit or 6-bit configurable resolution (available only on 
   31:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****       STM32F30xxC devices).
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 2
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 2
 
 
   32:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
   86:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****       (++) As prerequisite, ADC clock must be configured at RCC top level.
   87:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****       
   88:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****         (++) For STM32F30x/STM32F33x devices:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 3
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 3
 
 
   89:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****              Two possible clock sources: synchronous clock derived from AHB clock 
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  143:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****     (#) Optionally, in case of usage of DMA:
  144:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****          (++) Configure the DMA (DMA channel, mode normal or circular, ...)
  145:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****               using function HAL_DMA_Init().
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 4
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 4
 
 
  146:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****          (++) Configure the NVIC for DMA
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  200:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c **** 
  201:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****         (++) ADC conversion by interruption: 
  202:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****           (+++) Activate the ADC peripheral and start conversions
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 5
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 5
 
 
  203:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****                 using function HAL_ADC_Start_IT()
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  257:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****       (++) ADC clock can be hard reset and disabled at RCC top level.
  258:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****         (++) Hard reset of ADC peripherals
  259:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****              using macro __ADCx_FORCE_RESET(), __ADCx_RELEASE_RESET().
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 6
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 6
 
 
  260:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****         (++) ADC clock disable
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  314:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****          (++) Deinitialize the DMA
  315:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****               using function HAL_DMA_Init().
  316:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****          (++) Disable the NVIC for DMA
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 7
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 7
 
 
  317:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****               using function HAL_NVIC_EnableIRQ(DMAx_Channelx_IRQn)
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  371:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c **** /* Exported functions --------------------------------------------------------*/
  372:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c **** 
  373:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c **** /** @defgroup ADC_Exported_Functions ADC Exported Functions
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 8
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 8
 
 
  374:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   * @{
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
   32              		@ link register save eliminated.
   33              	.LVL0:
  424:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   /* Prevent unused argument(s) compilation warning */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 9
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 9
 
 
  425:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   UNUSED(hadc);
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  458:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   /* Note : This function is defined into this file for library reference. */
  459:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   /*        Function content is located into file stm32f3xx_hal_adc_ex.c   */
  460:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 10
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 10
 
 
  461:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   /* Return function status */
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  482:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   * @param  hadc: ADC handle
  483:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   * @retval None
  484:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 11
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 11
 
 
  485:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c **** __weak void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  521:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c **** /**
  522:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   * @brief  Enables ADC, starts conversion of regular group.
  523:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   *         Interruptions enabled in this function: None.
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 12
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 12
 
 
  524:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   * @note:  Case of multimode enabled (for devices with several ADCs): This 
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  138              		.cfi_startproc
  139              		@ args = 0, pretend = 0, frame = 0
  140              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 13
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 13
 
 
  141              		@ link register save eliminated.
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  169 0002 7047     		bx	lr
  170              		.cfi_endproc
  171              	.LFE130:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 14
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 14
 
 
  173              		.section	.text.HAL_ADC_PollForEvent,"ax",%progbits
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  202              		.fpu fpv4-sp-d16
  204              	HAL_ADC_Start_IT:
  205              	.LFB132:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 15
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 15
 
 
  611:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c **** 
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  644:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   *         conversion on injected group. If injected group is under use, it
  645:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   *         should be preliminarily stopped using HAL_ADCEx_InjectedStop function.
  646:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   * @note:  Case of multimode enabled (for devices with several ADCs): This 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 16
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 16
 
 
  647:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   *         function must be called for ADC master first, then ADC slave.
@@ -958,7 +958,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  680:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   * @retval None
  681:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   */
  682:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c **** __weak HAL_StatusTypeDef HAL_ADC_Start_DMA(ADC_HandleTypeDef* hadc, uint32_t* pData, uint32_t Lengt
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 17
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 17
 
 
  683:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c **** {
@@ -1018,7 +1018,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  280              	.LVL20:
  711:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   /* Prevent unused argument(s) compilation warning */
  712:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   UNUSED(hadc);
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 18
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 18
 
 
  713:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  313              		.section	.text.HAL_ADC_IRQHandler,"ax",%progbits
  314              		.align	1
  315              		.weak	HAL_ADC_IRQHandler
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 19
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 19
 
 
  316              		.syntax unified
@@ -1138,7 +1138,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  351              	.LFE138:
  353              		.section	.text.HAL_ADC_ConvHalfCpltCallback,"ax",%progbits
  354              		.align	1
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 20
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 20
 
 
  355              		.weak	HAL_ADC_ConvHalfCpltCallback
@@ -1198,7 +1198,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  789:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c **** {
  383              		.loc 1 789 0
  384              		.cfi_startproc
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 21
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 21
 
 
  385              		@ args = 0, pretend = 0, frame = 0
@@ -1258,7 +1258,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  810:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****             function HAL_ADC_ErrorCallback must be implemented in the user file.
  811:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   */
  812:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c **** }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 22
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 22
 
 
  813:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c **** 
@@ -1318,7 +1318,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  861:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c **** 
  862:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   /* Note : This function is defined into this file for library reference. */
  863:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   /*        Function content is located into file stm32f3xx_hal_adc_ex.c   */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 23
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 23
 
 
  864:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   
@@ -1378,7 +1378,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  454              	.LVL32:
  455 0002 7047     		bx	lr
  456              		.cfi_endproc
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 24
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 24
 
 
  457              	.LFE143:
@@ -1438,7 +1438,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  933:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c ****   return hadc->State;
  475              		.loc 1 933 0
  476 0000 406C     		ldr	r0, [r0, #68]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 25
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 25
 
 
  477              	.LVL34:
@@ -1479,70 +1479,73 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 1
  503 0002 7047     		bx	lr
  504              		.cfi_endproc
  505              	.LFE145:
- 507              		.text
- 508              	.Letext0:
- 509              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 510              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 511              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
- 512              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
- 513              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
- 514              		.file 7 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 515              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 516              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 517              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
- 518              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
- 519              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
- 520              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc_ex.h"
- 521              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s 			page 26
+ 507              		.comm	globalTick,4,4
+ 508              		.text
+ 509              	.Letext0:
+ 510              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 511              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 512              		.file 4 "Inc/main.h"
+ 513              		.file 5 "Drivers/CMSIS/Include/core_cm4.h"
+ 514              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 515              		.file 7 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
+ 516              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 517              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 518              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 519              		.file 11 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 520              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 521              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
+ 522              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc_ex.h"
+ 523              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc.h"
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s 			page 26
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f3xx_hal_adc.c
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:18     .text.HAL_ADC_Init:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:25     .text.HAL_ADC_Init:0000000000000000 HAL_ADC_Init
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:42     .text.HAL_ADC_DeInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:49     .text.HAL_ADC_DeInit:0000000000000000 HAL_ADC_DeInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:65     .text.HAL_ADC_MspInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:72     .text.HAL_ADC_MspInit:0000000000000000 HAL_ADC_MspInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:85     .text.HAL_ADC_MspDeInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:92     .text.HAL_ADC_MspDeInit:0000000000000000 HAL_ADC_MspDeInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:105    .text.HAL_ADC_Start:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:112    .text.HAL_ADC_Start:0000000000000000 HAL_ADC_Start
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:128    .text.HAL_ADC_Stop:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:135    .text.HAL_ADC_Stop:0000000000000000 HAL_ADC_Stop
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:151    .text.HAL_ADC_PollForConversion:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:158    .text.HAL_ADC_PollForConversion:0000000000000000 HAL_ADC_PollForConversion
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:174    .text.HAL_ADC_PollForEvent:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:181    .text.HAL_ADC_PollForEvent:0000000000000000 HAL_ADC_PollForEvent
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:197    .text.HAL_ADC_Start_IT:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:204    .text.HAL_ADC_Start_IT:0000000000000000 HAL_ADC_Start_IT
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:220    .text.HAL_ADC_Stop_IT:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:227    .text.HAL_ADC_Stop_IT:0000000000000000 HAL_ADC_Stop_IT
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:243    .text.HAL_ADC_Start_DMA:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:250    .text.HAL_ADC_Start_DMA:0000000000000000 HAL_ADC_Start_DMA
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:266    .text.HAL_ADC_Stop_DMA:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:273    .text.HAL_ADC_Stop_DMA:0000000000000000 HAL_ADC_Stop_DMA
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:289    .text.HAL_ADC_GetValue:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:296    .text.HAL_ADC_GetValue:0000000000000000 HAL_ADC_GetValue
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:314    .text.HAL_ADC_IRQHandler:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:321    .text.HAL_ADC_IRQHandler:0000000000000000 HAL_ADC_IRQHandler
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:334    .text.HAL_ADC_ConvCpltCallback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:341    .text.HAL_ADC_ConvCpltCallback:0000000000000000 HAL_ADC_ConvCpltCallback
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:354    .text.HAL_ADC_ConvHalfCpltCallback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:361    .text.HAL_ADC_ConvHalfCpltCallback:0000000000000000 HAL_ADC_ConvHalfCpltCallback
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:374    .text.HAL_ADC_LevelOutOfWindowCallback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:381    .text.HAL_ADC_LevelOutOfWindowCallback:0000000000000000 HAL_ADC_LevelOutOfWindowCallback
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:394    .text.HAL_ADC_ErrorCallback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:401    .text.HAL_ADC_ErrorCallback:0000000000000000 HAL_ADC_ErrorCallback
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:414    .text.HAL_ADC_ConfigChannel:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:421    .text.HAL_ADC_ConfigChannel:0000000000000000 HAL_ADC_ConfigChannel
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:437    .text.HAL_ADC_AnalogWDGConfig:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:444    .text.HAL_ADC_AnalogWDGConfig:0000000000000000 HAL_ADC_AnalogWDGConfig
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:460    .text.HAL_ADC_GetState:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:467    .text.HAL_ADC_GetState:0000000000000000 HAL_ADC_GetState
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:484    .text.HAL_ADC_GetError:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc1CeDlw.s:491    .text.HAL_ADC_GetError:0000000000000000 HAL_ADC_GetError
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:18     .text.HAL_ADC_Init:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:25     .text.HAL_ADC_Init:0000000000000000 HAL_ADC_Init
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:42     .text.HAL_ADC_DeInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:49     .text.HAL_ADC_DeInit:0000000000000000 HAL_ADC_DeInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:65     .text.HAL_ADC_MspInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:72     .text.HAL_ADC_MspInit:0000000000000000 HAL_ADC_MspInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:85     .text.HAL_ADC_MspDeInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:92     .text.HAL_ADC_MspDeInit:0000000000000000 HAL_ADC_MspDeInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:105    .text.HAL_ADC_Start:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:112    .text.HAL_ADC_Start:0000000000000000 HAL_ADC_Start
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:128    .text.HAL_ADC_Stop:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:135    .text.HAL_ADC_Stop:0000000000000000 HAL_ADC_Stop
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:151    .text.HAL_ADC_PollForConversion:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:158    .text.HAL_ADC_PollForConversion:0000000000000000 HAL_ADC_PollForConversion
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:174    .text.HAL_ADC_PollForEvent:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:181    .text.HAL_ADC_PollForEvent:0000000000000000 HAL_ADC_PollForEvent
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:197    .text.HAL_ADC_Start_IT:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:204    .text.HAL_ADC_Start_IT:0000000000000000 HAL_ADC_Start_IT
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:220    .text.HAL_ADC_Stop_IT:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:227    .text.HAL_ADC_Stop_IT:0000000000000000 HAL_ADC_Stop_IT
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:243    .text.HAL_ADC_Start_DMA:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:250    .text.HAL_ADC_Start_DMA:0000000000000000 HAL_ADC_Start_DMA
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:266    .text.HAL_ADC_Stop_DMA:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:273    .text.HAL_ADC_Stop_DMA:0000000000000000 HAL_ADC_Stop_DMA
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:289    .text.HAL_ADC_GetValue:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:296    .text.HAL_ADC_GetValue:0000000000000000 HAL_ADC_GetValue
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:314    .text.HAL_ADC_IRQHandler:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:321    .text.HAL_ADC_IRQHandler:0000000000000000 HAL_ADC_IRQHandler
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:334    .text.HAL_ADC_ConvCpltCallback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:341    .text.HAL_ADC_ConvCpltCallback:0000000000000000 HAL_ADC_ConvCpltCallback
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:354    .text.HAL_ADC_ConvHalfCpltCallback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:361    .text.HAL_ADC_ConvHalfCpltCallback:0000000000000000 HAL_ADC_ConvHalfCpltCallback
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:374    .text.HAL_ADC_LevelOutOfWindowCallback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:381    .text.HAL_ADC_LevelOutOfWindowCallback:0000000000000000 HAL_ADC_LevelOutOfWindowCallback
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:394    .text.HAL_ADC_ErrorCallback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:401    .text.HAL_ADC_ErrorCallback:0000000000000000 HAL_ADC_ErrorCallback
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:414    .text.HAL_ADC_ConfigChannel:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:421    .text.HAL_ADC_ConfigChannel:0000000000000000 HAL_ADC_ConfigChannel
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:437    .text.HAL_ADC_AnalogWDGConfig:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:444    .text.HAL_ADC_AnalogWDGConfig:0000000000000000 HAL_ADC_AnalogWDGConfig
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:460    .text.HAL_ADC_GetState:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:467    .text.HAL_ADC_GetState:0000000000000000 HAL_ADC_GetState
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:484    .text.HAL_ADC_GetError:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccl5FG7U.s:491    .text.HAL_ADC_GetError:0000000000000000 HAL_ADC_GetError
+                            *COM*:0000000000000004 globalTick
                      .debug_frame:0000000000000010 $d
 
 NO UNDEFINED SYMBOLS

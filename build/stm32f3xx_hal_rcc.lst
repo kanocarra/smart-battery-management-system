@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
   29:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****       (+) Configure the System clock frequency and Flash settings  
   30:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****       (+) Configure the AHB and APB buses prescalers
   31:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****       (+) Enable the clock for the peripheral(s) to be used
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 2
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 2
 
 
   32:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****       (+) Configure the clock source(s) for peripherals whose clocks are not
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
   86:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c **** 
   87:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c **** /** @defgroup RCC RCC
   88:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c **** * @brief RCC HAL module driver
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 3
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 3
 
 
   89:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   * @{
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  143:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****            ##### Initialization and de-initialization functions #####
  144:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   ===============================================================================
  145:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****     [..]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 4
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 4
 
 
  146:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****       This section provides functions allowing to configure the internal/external oscillators
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  200:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****              Depending on the SYSCLK frequency, the flash latency should be adapted accordingly.
  201:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c **** 
  202:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****          (#) After reset, the System clock source is the HSI (8 MHz) with 0 WS and
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 5
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 5
 
 
  203:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****              prefetch is disabled.
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  242:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   /* Reset HSEON, CSSON, PLLON bits */
  243:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   CLEAR_BIT(RCC->CR, RCC_CR_PLLON | RCC_CR_CSSON | RCC_CR_HSEON);
   43              		.loc 1 243 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 6
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 6
 
 
   44 0012 1A68     		ldr	r2, [r3]
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
   81              		.thumb_func
   82              		.fpu fpv4-sp-d16
   84              	HAL_RCC_OscConfig:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 7
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 7
 
 
   85              	.LFB125:
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  107              		.loc 1 293 0
  108 000e B54B     		ldr	r3, .L111
  109 0010 5B68     		ldr	r3, [r3, #4]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 8
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 8
 
 
  110 0012 03F00C03 		and	r3, r3, #12
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  145 005c 6368     		ldr	r3, [r4, #4]
  146 005e 002B     		cmp	r3, #0
  147 0060 00F09480 		beq	.L15
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 9
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 9
 
 
  313:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****       {
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
   43:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wunused-parameter"
   44:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   45:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 10
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 10
 
 
   46:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  100:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  101:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get IPSR Register
  102:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the content of the IPSR Register.
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 11
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 11
 
 
  103:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               IPSR Register value
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  157:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  158:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Process Stack Pointer
  159:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the Process Stack Pointer (PSP).
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 12
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 12
 
 
  160:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    topOfProcStack  Process Stack Pointer value to set
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  214:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  215:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR primask, %0" : : "r" (priMask) : "memory");
  216:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 13
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 13
 
 
  217:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  271:Drivers/CMSIS/Include/cmsis_gcc.h ****            or the new value increases the BASEPRI priority level.
  272:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    basePri  Base Priority value to set
  273:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 14
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 14
 
 
  274:Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_BASEPRI_MAX(uint32_t value)
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  328:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  329:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  330:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 15
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 15
 
 
  331:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set FPSCR
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  385:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("wfi");
  386:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  387:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 16
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 16
 
 
  388:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -958,7 +958,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  442:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  443:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  444:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 17
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 17
 
 
  445:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Reverse byte order (32 bit)
@@ -1018,7 +1018,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  499:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Rotate Right (immediate) provides the value of the contents of a register rotated by a v
  500:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    value  Value to rotate
  501:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    value  Number of Bits to rotate
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 18
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 18
 
 
  502:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Rotated value
@@ -1078,7 +1078,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  178 007a 93FAA3F3 		rbit r3, r3
  179              	@ 0 "" 2
  180              	.LVL6:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 19
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 19
 
 
  181              		.thumb
@@ -1138,7 +1138,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  229              		.loc 2 531 0
  230 00b4 4FF40033 		mov	r3, #131072
  231              		.syntax unified
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 20
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 20
 
 
  232              	@ 531 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
@@ -1198,7 +1198,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  350:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****     if((__HAL_RCC_GET_SYSCLK_SOURCE() == RCC_SYSCLKSOURCE_STATUS_HSI) 
  257              		.loc 1 350 0
  258 00e0 804B     		ldr	r3, .L111
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 21
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 21
 
 
  259 00e2 5B68     		ldr	r3, [r3, #4]
@@ -1258,7 +1258,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  292 0112 1A60     		str	r2, [r3]
  372:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****         
  373:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****         /* Get Start Tick */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 22
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 22
 
 
  374:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****         tickstart = HAL_GetTick();
@@ -1318,7 +1318,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  341 0146 E8D9     		bls	.L31
  380:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****           {
  381:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****             return HAL_TIMEOUT;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 23
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 23
 
 
  342              		.loc 1 381 0
@@ -1378,7 +1378,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  391              	@ 0 "" 2
  392              	.LVL25:
  393              		.thumb
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 24
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 24
 
 
  394              		.syntax unified
@@ -1438,7 +1438,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  443              		.syntax unified
  444              	@ 531 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  445 01d2 93FAA3F3 		rbit r3, r3
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 25
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 25
 
 
  446              	@ 0 "" 2
@@ -1498,7 +1498,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  495              	@ 531 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  496 0208 92FAA2F2 		rbit r2, r2
  497              	@ 0 "" 2
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 26
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 26
 
 
  498              	.LVL35:
@@ -1558,7 +1558,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  518              	.LBB190:
  519              	.LBB191:
  520              		.loc 2 531 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 27
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 27
 
 
  521 0228 0121     		movs	r1, #1
@@ -1618,7 +1618,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  569              		.syntax unified
  570              	@ 531 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  571 024a 93FAA3F2 		rbit r2, r3
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 28
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 28
 
 
  572              	@ 0 "" 2
@@ -1678,7 +1678,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  618              	.LBB201:
  619              		.loc 2 531 0
  620 0280 F822     		movs	r2, #248
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 29
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 29
 
 
  621              		.syntax unified
@@ -1738,7 +1738,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  672              	.LVL52:
  673              		.thumb
  674              		.syntax unified
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 30
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 30
 
 
  675              	.LBE205:
@@ -1798,7 +1798,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  725              	.LVL57:
  726              		.thumb
  727              		.syntax unified
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 31
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 31
 
 
  728              	.LBE209:
@@ -1858,7 +1858,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  772              	@ 0 "" 2
  773              	.LVL62:
  774              		.thumb
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 32
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 32
 
 
  775              		.syntax unified
@@ -1918,7 +1918,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  816              	.LVL67:
  817              	.LBB218:
  451:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 33
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 33
 
 
  452:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****     FlagStatus       pwrclkchanged = RESET;
@@ -1978,7 +1978,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  479:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****       }
  480:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****     }
  481:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 34
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 34
 
 
  482:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****     /* Set the new LSE configuration -----------------------------------------*/
@@ -2038,7 +2038,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  886              	.LVL74:
  887 03b0 0646     		mov	r6, r0
  888              	.LVL75:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 35
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 35
 
 
  889              	.L48:
@@ -2098,7 +2098,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  936              	.L104:
  937              		.loc 1 491 0 is_stmt 1 discriminator 4
  938 0402 7F4B     		ldr	r3, .L113+4
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 36
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 36
 
 
  939 0404 196A     		ldr	r1, [r3, #32]
@@ -2158,7 +2158,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  991              		.thumb
  992              		.syntax unified
  993              	.LBE225:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 37
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 37
 
 
  994              	.LBE224:
@@ -2218,7 +2218,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1034              	.LVL91:
  1035              	.LBB228:
  1036              	.LBB229:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 38
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 38
 
 
  1037              		.loc 2 531 0 is_stmt 1 discriminator 11
@@ -2278,7 +2278,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1088              		.loc 1 505 0
  1089 0490 B3FA83F3 		clz	r3, r3
  1090 0494 5B09     		lsrs	r3, r3, #5
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 39
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 39
 
 
  1091 0496 43F00203 		orr	r3, r3, #2
@@ -2338,7 +2338,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1124 04b6 5268     		ldr	r2, [r2, #4]
  1125 04b8 02F00C02 		and	r2, r2, #12
  1126 04bc 082A     		cmp	r2, #8
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 40
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 40
 
 
  1127 04be 00F0A380 		beq	.L90
@@ -2398,7 +2398,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  564:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****         __HAL_RCC_PLL_ENABLE();
  565:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****         
  566:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****         /* Get Start Tick */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 41
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 41
 
 
  567:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****         tickstart = HAL_GetTick();
@@ -2458,7 +2458,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1178 04f2 4FF00073 		mov	r3, #33554432
  1179              		.syntax unified
  1180              	@ 531 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 42
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 42
 
 
  1181 04f6 93FAA3F3 		rbit r3, r3
@@ -2518,7 +2518,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1229              		.loc 1 539 0
  1230 052e B3FA83F3 		clz	r3, r3
  1231 0532 03F18453 		add	r3, r3, #276824064
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 43
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 43
 
 
  1232 0536 03F58413 		add	r3, r3, #1081344
@@ -2578,7 +2578,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1282 0570 401B     		subs	r0, r0, r5
  1283 0572 0228     		cmp	r0, #2
  1284 0574 E7D9     		bls	.L65
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 44
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 44
 
 
  549:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****           }
@@ -2638,7 +2638,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1335              		.syntax unified
  1336              	.LBE252:
  1337              	.LBE251:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 45
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 45
 
 
  570:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****         {
@@ -2698,7 +2698,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1377 05e6 06E0     		b	.L10
  1378              	.LVL125:
  1379              	.L97:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 46
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 46
 
 
  298:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****       }
@@ -2758,7 +2758,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1430              		.fpu fpv4-sp-d16
  1432              	HAL_RCC_MCOConfig:
  1433              	.LFB127:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 47
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 47
 
 
  604:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c **** 
@@ -2818,7 +2818,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  658:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****     assert_param(IS_RCC_HCLK(RCC_ClkInitStruct->AHBCLKDivider));
  659:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****     MODIFY_REG(RCC->CFGR, RCC_CFGR_HPRE, RCC_ClkInitStruct->AHBCLKDivider);
  660:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 48
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 48
 
 
  661:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c **** 
@@ -2878,7 +2878,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  715:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****           return HAL_TIMEOUT;
  716:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****         }
  717:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****       }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 49
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 49
 
 
  718:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****     }
@@ -2938,7 +2938,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  772:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   *  @brief   RCC clocks control functions
  773:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   *
  774:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   @verbatim   
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 50
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 50
 
 
  775:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   ===============================================================================
@@ -2998,7 +2998,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  829:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   *            @arg @ref RCC_MCO1SOURCE_LSE         LSE selected as MCO clock
  830:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   *            @arg @ref RCC_MCO1SOURCE_PLLCLK_DIV2 PLLCLK Divided by 2 selected as MCO clock
  831:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   * @param  RCC_MCODiv specifies the MCO DIV.
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 51
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 51
 
 
  832:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   *          This parameter can be one of the following values:
@@ -3058,7 +3058,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1465              		.loc 1 854 0
  1466 001c 0B4C     		ldr	r4, .L117
  1467 001e 6369     		ldr	r3, [r4, #20]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 52
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 52
 
 
  1468 0020 43F40033 		orr	r3, r3, #131072
@@ -3118,7 +3118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  866:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   *         software about the failure (Clock Security System Interrupt, CSSI),
  867:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   *         allowing the MCU to perform rescue operations. The CSSI is linked to 
  868:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   *         the Cortex-M4 NMI (Non-Maskable Interrupt) exception vector.  
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 53
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 53
 
 
  869:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   * @retval None
@@ -3178,7 +3178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1556              		@ frame_needed = 0, uses_anonymous_args = 0
  1557              		@ link register save eliminated.
  1558              	.LVL139:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 54
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 54
 
 
  1559              	.LBB259:
@@ -3238,7 +3238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  904:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   *         value for HSE crystal.
  905:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   *           
  906:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   * @note   This function can be used by the user application to compute the 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 55
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 55
 
 
  907:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   *         baud-rate for the communication peripherals or configure other parameters.
@@ -3298,7 +3298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1622              	.LBE261:
  1623              		.loc 1 931 0
  1624 0018 B2FA82F2 		clz	r2, r2
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 56
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 56
 
 
  1625 001c 21FA02F2 		lsr	r2, r1, r2
@@ -3358,7 +3358,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1667 004c B3FBF2F3 		udiv	r3, r3, r2
  1668 0050 03FB00F0 		mul	r0, r3, r0
  1669              	.LVL153:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 57
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 57
 
 
  1670 0054 7047     		bx	lr
@@ -3418,7 +3418,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1699              		.loc 1 629 0
  1700              		.cfi_startproc
  1701              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 58
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 58
 
 
  1702              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -3478,7 +3478,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  663:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   {    
  1749              		.loc 1 663 0
  1750 0042 0368     		ldr	r3, [r0]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 59
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 59
 
 
  1751 0044 13F0010F 		tst	r3, #1
@@ -3538,7 +3538,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1800              		.loc 1 694 0
  1801 0078 5349     		ldr	r1, .L168+4
  1802 007a 4A68     		ldr	r2, [r1, #4]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 60
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 60
 
 
  1803 007c 22F00302 		bic	r2, r2, #3
@@ -3598,7 +3598,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1850              		.loc 1 671 0
  1851 00b8 434A     		ldr	r2, .L168+4
  1852 00ba 1068     		ldr	r0, [r2]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 61
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 61
 
 
  1853              	.LVL170:
@@ -3658,7 +3658,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  1904              	@ 0 "" 2
  1905              	.LVL176:
  1906              		.thumb
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 62
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 62
 
 
  1907              		.syntax unified
@@ -3718,7 +3718,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  715:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****         }
  1954              		.loc 1 715 0
  1955 013c 0320     		movs	r0, #3
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 63
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 63
 
 
  1956 013e 70BD     		pop	{r4, r5, r6, pc}
@@ -3778,7 +3778,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  2001 0188 23F46053 		bic	r3, r3, #14336
  2002 018c 2169     		ldr	r1, [r4, #16]
  2003 018e 43EAC103 		orr	r3, r3, r1, lsl #3
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 64
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 64
 
 
  2004 0192 5360     		str	r3, [r2, #4]
@@ -3838,7 +3838,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  2053 01d0 00000000 		.word	SystemCoreClock
  2054              		.cfi_endproc
  2055              	.LFE126:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 65
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 65
 
 
  2057              		.section	.text.HAL_RCC_GetHCLKFreq,"ax",%progbits
@@ -3898,7 +3898,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  989:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c **** uint32_t HAL_RCC_GetPCLK1Freq(void)
  990:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c **** {
  2093              		.loc 1 990 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 66
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 66
 
 
  2094              		.cfi_startproc
@@ -3958,7 +3958,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  2147              	.LFB133:
  994:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c **** 
  995:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c **** /**
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 67
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 67
 
 
  996:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   * @brief  Returns the PCLK2 frequency     
@@ -4018,7 +4018,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  2193              		.section	.text.HAL_RCC_GetOscConfig,"ax",%progbits
  2194              		.align	1
  2195              		.global	HAL_RCC_GetOscConfig
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 68
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 68
 
 
  2196              		.syntax unified
@@ -4078,7 +4078,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
 1036:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   }
 1037:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c **** #if defined(RCC_CFGR_PLLSRC_HSI_DIV2)
 1038:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   RCC_OscInitStruct->HSEPredivValue = __HAL_RCC_HSE_GET_PREDIV();
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 69
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 69
 
 
  2221              		.loc 1 1038 0
@@ -4138,7 +4138,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  2259 0046 28D0     		beq	.L187
 1055:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   {
 1056:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****     RCC_OscInitStruct->LSEState = RCC_LSE_BYPASS;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 70
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 70
 
 
  2260              		.loc 1 1056 0
@@ -4198,7 +4198,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  2283 0068 144A     		ldr	r2, .L195
  2284 006a 5368     		ldr	r3, [r2, #4]
  2285 006c 03F48033 		and	r3, r3, #65536
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 71
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 71
 
 
  2286 0070 0362     		str	r3, [r0, #32]
@@ -4258,7 +4258,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  2331 00b4 D1E7     		b	.L191
  2332              	.L194:
 1081:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 72
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 72
 
 
  2333              		.loc 1 1081 0
@@ -4318,7 +4318,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  2365 0006 5A68     		ldr	r2, [r3, #4]
  2366 0008 02F00302 		and	r2, r2, #3
  2367 000c 4260     		str	r2, [r0, #4]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 73
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 73
 
 
 1113:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   
@@ -4378,7 +4378,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
 1132:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c **** void HAL_RCC_NMI_IRQHandler(void)
 1133:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c **** {
 1134:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   /* Check RCC CSSF flag  */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 74
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 74
 
 
 1135:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****   if(__HAL_RCC_GET_IT(RCC_IT_CSS))
@@ -4438,7 +4438,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
 1138:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c ****     
  2442              		.loc 1 1138 0
  2443 000e FFF7FEFF 		bl	HAL_RCC_CSSCallback
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 75
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 75
 
 
  2444              	.LVL200:
@@ -4459,116 +4459,119 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 1
  2457              	.LFE136:
  2459              		.global	aPredivFactorTable
  2460              		.global	aPLLMULFactorTable
- 2461              		.section	.rodata.aPLLMULFactorTable,"a",%progbits
- 2462              		.align	2
- 2463              		.set	.LANCHOR0,. + 0
- 2466              	aPLLMULFactorTable:
- 2467 0000 02       		.byte	2
- 2468 0001 03       		.byte	3
- 2469 0002 04       		.byte	4
- 2470 0003 05       		.byte	5
- 2471 0004 06       		.byte	6
- 2472 0005 07       		.byte	7
- 2473 0006 08       		.byte	8
- 2474 0007 09       		.byte	9
- 2475 0008 0A       		.byte	10
- 2476 0009 0B       		.byte	11
- 2477 000a 0C       		.byte	12
- 2478 000b 0D       		.byte	13
- 2479 000c 0E       		.byte	14
- 2480 000d 0F       		.byte	15
- 2481 000e 10       		.byte	16
- 2482 000f 10       		.byte	16
- 2483              		.section	.rodata.aPredivFactorTable,"a",%progbits
- 2484              		.align	2
- 2485              		.set	.LANCHOR1,. + 0
- 2488              	aPredivFactorTable:
- 2489 0000 01       		.byte	1
- 2490 0001 02       		.byte	2
- 2491 0002 03       		.byte	3
- 2492 0003 04       		.byte	4
- 2493 0004 05       		.byte	5
- 2494 0005 06       		.byte	6
- 2495 0006 07       		.byte	7
- 2496 0007 08       		.byte	8
- 2497 0008 09       		.byte	9
- 2498 0009 0A       		.byte	10
- 2499 000a 0B       		.byte	11
- 2500 000b 0C       		.byte	12
- 2501 000c 0D       		.byte	13
- 2502 000d 0E       		.byte	14
- 2503 000e 0F       		.byte	15
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 76
+ 2461              		.comm	globalTick,4,4
+ 2462              		.section	.rodata.aPLLMULFactorTable,"a",%progbits
+ 2463              		.align	2
+ 2464              		.set	.LANCHOR0,. + 0
+ 2467              	aPLLMULFactorTable:
+ 2468 0000 02       		.byte	2
+ 2469 0001 03       		.byte	3
+ 2470 0002 04       		.byte	4
+ 2471 0003 05       		.byte	5
+ 2472 0004 06       		.byte	6
+ 2473 0005 07       		.byte	7
+ 2474 0006 08       		.byte	8
+ 2475 0007 09       		.byte	9
+ 2476 0008 0A       		.byte	10
+ 2477 0009 0B       		.byte	11
+ 2478 000a 0C       		.byte	12
+ 2479 000b 0D       		.byte	13
+ 2480 000c 0E       		.byte	14
+ 2481 000d 0F       		.byte	15
+ 2482 000e 10       		.byte	16
+ 2483 000f 10       		.byte	16
+ 2484              		.section	.rodata.aPredivFactorTable,"a",%progbits
+ 2485              		.align	2
+ 2486              		.set	.LANCHOR1,. + 0
+ 2489              	aPredivFactorTable:
+ 2490 0000 01       		.byte	1
+ 2491 0001 02       		.byte	2
+ 2492 0002 03       		.byte	3
+ 2493 0003 04       		.byte	4
+ 2494 0004 05       		.byte	5
+ 2495 0005 06       		.byte	6
+ 2496 0006 07       		.byte	7
+ 2497 0007 08       		.byte	8
+ 2498 0008 09       		.byte	9
+ 2499 0009 0A       		.byte	10
+ 2500 000a 0B       		.byte	11
+ 2501 000b 0C       		.byte	12
+ 2502 000c 0D       		.byte	13
+ 2503 000d 0E       		.byte	14
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 76
 
 
- 2504 000f 10       		.byte	16
- 2505              		.text
- 2506              	.Letext0:
- 2507              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 2508              		.file 4 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 2509              		.file 5 "Drivers/CMSIS/Include/core_cm4.h"
- 2510              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
- 2511              		.file 7 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
- 2512              		.file 8 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h"
- 2513              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 2514              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
- 2515              		.file 11 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
- 2516              		.file 12 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
- 2517              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
- 2518              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h"
- 2519              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
- 2520              		.file 16 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 77
+ 2504 000e 0F       		.byte	15
+ 2505 000f 10       		.byte	16
+ 2506              		.text
+ 2507              	.Letext0:
+ 2508              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 2509              		.file 4 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 2510              		.file 5 "Inc/main.h"
+ 2511              		.file 6 "Drivers/CMSIS/Include/core_cm4.h"
+ 2512              		.file 7 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 2513              		.file 8 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
+ 2514              		.file 9 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h"
+ 2515              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 2516              		.file 11 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 2517              		.file 12 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 2518              		.file 13 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 2519              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 2520              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h"
+ 2521              		.file 16 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
+ 2522              		.file 17 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 77
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f3xx_hal_rcc.c
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:18     .text.HAL_RCC_DeInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:25     .text.HAL_RCC_DeInit:0000000000000000 HAL_RCC_DeInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:69     .text.HAL_RCC_DeInit:0000000000000038 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:77     .text.HAL_RCC_OscConfig:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:84     .text.HAL_RCC_OscConfig:0000000000000000 HAL_RCC_OscConfig
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:713    .text.HAL_RCC_OscConfig:00000000000002e4 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:720    .text.HAL_RCC_OscConfig:00000000000002ec $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:1411   .text.HAL_RCC_OscConfig:00000000000005fc $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:1419   .text.HAL_RCC_OscConfig:0000000000000608 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:1425   .text.HAL_RCC_MCOConfig:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:1432   .text.HAL_RCC_MCOConfig:0000000000000000 HAL_RCC_MCOConfig
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:1499   .text.HAL_RCC_MCOConfig:000000000000004c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:1504   .text.HAL_RCC_EnableCSS:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:1511   .text.HAL_RCC_EnableCSS:0000000000000000 HAL_RCC_EnableCSS
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:1544   .text.HAL_RCC_DisableCSS:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:1551   .text.HAL_RCC_DisableCSS:0000000000000000 HAL_RCC_DisableCSS
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:1584   .text.HAL_RCC_GetSysClockFreq:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:1591   .text.HAL_RCC_GetSysClockFreq:0000000000000000 HAL_RCC_GetSysClockFreq
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:1681   .text.HAL_RCC_GetSysClockFreq:000000000000005c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:1690   .text.HAL_RCC_ClockConfig:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:1697   .text.HAL_RCC_ClockConfig:0000000000000000 HAL_RCC_ClockConfig
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2050   .text.HAL_RCC_ClockConfig:00000000000001c4 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2058   .text.HAL_RCC_GetHCLKFreq:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2065   .text.HAL_RCC_GetHCLKFreq:0000000000000000 HAL_RCC_GetHCLKFreq
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2079   .text.HAL_RCC_GetHCLKFreq:0000000000000008 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2084   .text.HAL_RCC_GetPCLK1Freq:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2091   .text.HAL_RCC_GetPCLK1Freq:0000000000000000 HAL_RCC_GetPCLK1Freq
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2133   .text.HAL_RCC_GetPCLK1Freq:0000000000000024 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2139   .text.HAL_RCC_GetPCLK2Freq:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2146   .text.HAL_RCC_GetPCLK2Freq:0000000000000000 HAL_RCC_GetPCLK2Freq
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2188   .text.HAL_RCC_GetPCLK2Freq:0000000000000024 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2194   .text.HAL_RCC_GetOscConfig:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2201   .text.HAL_RCC_GetOscConfig:0000000000000000 HAL_RCC_GetOscConfig
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2340   .text.HAL_RCC_GetOscConfig:00000000000000bc $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2345   .text.HAL_RCC_GetClockConfig:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2352   .text.HAL_RCC_GetClockConfig:0000000000000000 HAL_RCC_GetClockConfig
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2390   .text.HAL_RCC_GetClockConfig:0000000000000034 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2396   .text.HAL_RCC_CSSCallback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2403   .text.HAL_RCC_CSSCallback:0000000000000000 HAL_RCC_CSSCallback
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2415   .text.HAL_RCC_NMI_IRQHandler:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2422   .text.HAL_RCC_NMI_IRQHandler:0000000000000000 HAL_RCC_NMI_IRQHandler
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2454   .text.HAL_RCC_NMI_IRQHandler:000000000000001c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2488   .rodata.aPredivFactorTable:0000000000000000 aPredivFactorTable
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2466   .rodata.aPLLMULFactorTable:0000000000000000 aPLLMULFactorTable
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2462   .rodata.aPLLMULFactorTable:0000000000000000 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s:2484   .rodata.aPredivFactorTable:0000000000000000 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:18     .text.HAL_RCC_DeInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:25     .text.HAL_RCC_DeInit:0000000000000000 HAL_RCC_DeInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:69     .text.HAL_RCC_DeInit:0000000000000038 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:77     .text.HAL_RCC_OscConfig:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:84     .text.HAL_RCC_OscConfig:0000000000000000 HAL_RCC_OscConfig
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:713    .text.HAL_RCC_OscConfig:00000000000002e4 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:720    .text.HAL_RCC_OscConfig:00000000000002ec $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:1411   .text.HAL_RCC_OscConfig:00000000000005fc $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:1419   .text.HAL_RCC_OscConfig:0000000000000608 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:1425   .text.HAL_RCC_MCOConfig:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:1432   .text.HAL_RCC_MCOConfig:0000000000000000 HAL_RCC_MCOConfig
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:1499   .text.HAL_RCC_MCOConfig:000000000000004c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:1504   .text.HAL_RCC_EnableCSS:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:1511   .text.HAL_RCC_EnableCSS:0000000000000000 HAL_RCC_EnableCSS
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:1544   .text.HAL_RCC_DisableCSS:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:1551   .text.HAL_RCC_DisableCSS:0000000000000000 HAL_RCC_DisableCSS
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:1584   .text.HAL_RCC_GetSysClockFreq:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:1591   .text.HAL_RCC_GetSysClockFreq:0000000000000000 HAL_RCC_GetSysClockFreq
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:1681   .text.HAL_RCC_GetSysClockFreq:000000000000005c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:1690   .text.HAL_RCC_ClockConfig:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:1697   .text.HAL_RCC_ClockConfig:0000000000000000 HAL_RCC_ClockConfig
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2050   .text.HAL_RCC_ClockConfig:00000000000001c4 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2058   .text.HAL_RCC_GetHCLKFreq:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2065   .text.HAL_RCC_GetHCLKFreq:0000000000000000 HAL_RCC_GetHCLKFreq
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2079   .text.HAL_RCC_GetHCLKFreq:0000000000000008 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2084   .text.HAL_RCC_GetPCLK1Freq:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2091   .text.HAL_RCC_GetPCLK1Freq:0000000000000000 HAL_RCC_GetPCLK1Freq
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2133   .text.HAL_RCC_GetPCLK1Freq:0000000000000024 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2139   .text.HAL_RCC_GetPCLK2Freq:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2146   .text.HAL_RCC_GetPCLK2Freq:0000000000000000 HAL_RCC_GetPCLK2Freq
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2188   .text.HAL_RCC_GetPCLK2Freq:0000000000000024 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2194   .text.HAL_RCC_GetOscConfig:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2201   .text.HAL_RCC_GetOscConfig:0000000000000000 HAL_RCC_GetOscConfig
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2340   .text.HAL_RCC_GetOscConfig:00000000000000bc $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2345   .text.HAL_RCC_GetClockConfig:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2352   .text.HAL_RCC_GetClockConfig:0000000000000000 HAL_RCC_GetClockConfig
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2390   .text.HAL_RCC_GetClockConfig:0000000000000034 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2396   .text.HAL_RCC_CSSCallback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2403   .text.HAL_RCC_CSSCallback:0000000000000000 HAL_RCC_CSSCallback
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2415   .text.HAL_RCC_NMI_IRQHandler:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2422   .text.HAL_RCC_NMI_IRQHandler:0000000000000000 HAL_RCC_NMI_IRQHandler
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2454   .text.HAL_RCC_NMI_IRQHandler:000000000000001c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2489   .rodata.aPredivFactorTable:0000000000000000 aPredivFactorTable
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2467   .rodata.aPLLMULFactorTable:0000000000000000 aPLLMULFactorTable
+                            *COM*:0000000000000004 globalTick
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2463   .rodata.aPLLMULFactorTable:0000000000000000 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s:2485   .rodata.aPredivFactorTable:0000000000000000 $d
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS
@@ -4577,7 +4580,7 @@ HAL_GetTick
 HAL_GPIO_Init
 HAL_InitTick
 AHBPrescTable
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctx8fYa.s 			page 78
+
+
 APBPrescTable
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccIcCaHB.s 			page 78
-
-

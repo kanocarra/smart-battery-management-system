@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s 			page 1
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s 			page 1
   39 0004 0C4B     		ldr	r3, .L5+4
   40 0006 0360     		str	r3, [r0]
   18:Src/can.c     ****   hcan.Init.Prescaler = 16;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s 			page 2
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s 			page 2
 
 
   41              		.loc 1 18 0
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s 			page 1
   79              	.L6:
   80              		.align	2
   81              	.L5:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s 			page 3
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s 			page 3
 
 
   82 0034 00000000 		.word	hcan
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s 			page 1
  128              	.LBE2:
   44:Src/can.c     ****   
   45:Src/can.c     ****     /**CAN GPIO Configuration    
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s 			page 4
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s 			page 4
 
 
   46:Src/can.c     ****     PB8     ------> CAN_RX
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s 			page 1
  169              		.thumb_func
  170              		.fpu fpv4-sp-d16
  172              	HAL_CAN_MspDeInit:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s 			page 5
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s 			page 5
 
 
  173              	.LFB126:
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s 			page 1
  208 0022 00BF     		.align	2
  209              	.L20:
  210 0024 00640040 		.word	1073767424
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s 			page 6
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s 			page 6
 
 
  211 0028 00100240 		.word	1073876992
@@ -306,44 +306,47 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s 			page 1
  213              		.cfi_endproc
  214              	.LFE126:
  216              		.comm	hcan,64,4
- 217              		.section	.rodata.MX_CAN_Init.str1.4,"aMS",%progbits,1
- 218              		.align	2
- 219              	.LC0:
- 220 0000 5372632F 		.ascii	"Src/can.c\000"
- 220      63616E2E 
- 220      6300
- 221              		.text
- 222              	.Letext0:
- 223              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 224              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 225              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
- 226              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
- 227              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
- 228              		.file 7 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 229              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 230              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 231              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
- 232              		.file 11 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h"
- 233              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
- 234              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
- 235              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_can.h"
- 236              		.file 15 "Inc/can.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s 			page 7
+ 217              		.comm	globalTick,4,4
+ 218              		.section	.rodata.MX_CAN_Init.str1.4,"aMS",%progbits,1
+ 219              		.align	2
+ 220              	.LC0:
+ 221 0000 5372632F 		.ascii	"Src/can.c\000"
+ 221      63616E2E 
+ 221      6300
+ 222              		.text
+ 223              	.Letext0:
+ 224              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 225              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 226              		.file 4 "Inc/main.h"
+ 227              		.file 5 "Drivers/CMSIS/Include/core_cm4.h"
+ 228              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 229              		.file 7 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
+ 230              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 231              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 232              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 233              		.file 11 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 234              		.file 12 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h"
+ 235              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 236              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
+ 237              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_can.h"
+ 238              		.file 16 "Inc/can.h"
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 can.c
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s:18     .text.MX_CAN_Init:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s:25     .text.MX_CAN_Init:0000000000000000 MX_CAN_Init
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s:82     .text.MX_CAN_Init:0000000000000034 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s:18     .text.MX_CAN_Init:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s:25     .text.MX_CAN_Init:0000000000000000 MX_CAN_Init
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s:82     .text.MX_CAN_Init:0000000000000034 $d
                             *COM*:0000000000000040 hcan
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s:89     .text.HAL_CAN_MspInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s:96     .text.HAL_CAN_MspInit:0000000000000000 HAL_CAN_MspInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s:159    .text.HAL_CAN_MspInit:0000000000000048 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s:165    .text.HAL_CAN_MspDeInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s:172    .text.HAL_CAN_MspDeInit:0000000000000000 HAL_CAN_MspDeInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s:210    .text.HAL_CAN_MspDeInit:0000000000000024 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccGJlBDh.s:218    .rodata.MX_CAN_Init.str1.4:0000000000000000 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s:89     .text.HAL_CAN_MspInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s:96     .text.HAL_CAN_MspInit:0000000000000000 HAL_CAN_MspInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s:159    .text.HAL_CAN_MspInit:0000000000000048 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s:165    .text.HAL_CAN_MspDeInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s:172    .text.HAL_CAN_MspDeInit:0000000000000000 HAL_CAN_MspDeInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s:210    .text.HAL_CAN_MspDeInit:0000000000000024 $d
+                            *COM*:0000000000000004 globalTick
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccnlfOKN.s:219    .rodata.MX_CAN_Init.str1.4:0000000000000000 $d
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

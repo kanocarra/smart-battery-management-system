@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s 			page 1
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s 			page 1
   38 0002 0C48     		ldr	r0, .L5
   39 0004 0C4B     		ldr	r3, .L5+4
   40 0006 0360     		str	r3, [r0]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s 			page 2
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s 			page 2
 
 
   19:Src/usart.c   ****   huart3.Init.BaudRate = 38400;
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s 			page 1
   81              	.LFE124:
   83              		.section	.text.HAL_UART_MspInit,"ax",%progbits
   84              		.align	1
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s 			page 3
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s 			page 3
 
 
   85              		.global	HAL_UART_MspInit
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s 			page 1
   48:Src/usart.c   ****     GPIO_InitStruct.Pin = GPIO_PIN_10|GPIO_PIN_11;
  124              		.loc 1 48 0
  125 0024 4FF44063 		mov	r3, #3072
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s 			page 4
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s 			page 4
 
 
  126 0028 0193     		str	r3, [sp, #4]
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s 			page 1
  171              		@ args = 0, pretend = 0, frame = 0
  172              		@ frame_needed = 0, uses_anonymous_args = 0
  173              	.LVL5:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s 			page 5
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s 			page 5
 
 
  174 0000 08B5     		push	{r3, lr}
@@ -293,48 +293,51 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s 			page 1
  209              	.LFE126:
  211              		.comm	huart3,112,4
  212              		.comm	UART_transmit_buffer,120,4
- 213              		.section	.rodata.MX_USART3_UART_Init.str1.4,"aMS",%progbits,1
- 214              		.align	2
- 215              	.LC0:
- 216 0000 5372632F 		.ascii	"Src/usart.c\000"
- 216      75736172 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s 			page 6
+ 213              		.comm	globalTick,4,4
+ 214              		.section	.rodata.MX_USART3_UART_Init.str1.4,"aMS",%progbits,1
+ 215              		.align	2
+ 216              	.LC0:
+ 217 0000 5372632F 		.ascii	"Src/usart.c\000"
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s 			page 6
 
 
- 216      742E6300 
- 217              		.text
- 218              	.Letext0:
- 219              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 220              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 221              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
- 222              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
- 223              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
- 224              		.file 7 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 225              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 226              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 227              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
- 228              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
- 229              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
- 230              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
- 231              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h"
- 232              		.file 15 "Inc/usart.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s 			page 7
+ 217      75736172 
+ 217      742E6300 
+ 218              		.text
+ 219              	.Letext0:
+ 220              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 221              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 222              		.file 4 "Inc/main.h"
+ 223              		.file 5 "Drivers/CMSIS/Include/core_cm4.h"
+ 224              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 225              		.file 7 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
+ 226              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 227              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 228              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 229              		.file 11 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 230              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 231              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
+ 232              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
+ 233              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h"
+ 234              		.file 16 "Inc/usart.h"
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 usart.c
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s:18     .text.MX_USART3_UART_Init:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s:25     .text.MX_USART3_UART_Init:0000000000000000 MX_USART3_UART_Init
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s:77     .text.MX_USART3_UART_Init:0000000000000034 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s:18     .text.MX_USART3_UART_Init:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s:25     .text.MX_USART3_UART_Init:0000000000000000 MX_USART3_UART_Init
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s:77     .text.MX_USART3_UART_Init:0000000000000034 $d
                             *COM*:0000000000000070 huart3
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s:84     .text.HAL_UART_MspInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s:91     .text.HAL_UART_MspInit:0000000000000000 HAL_UART_MspInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s:154    .text.HAL_UART_MspInit:0000000000000048 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s:160    .text.HAL_UART_MspDeInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s:167    .text.HAL_UART_MspDeInit:0000000000000000 HAL_UART_MspDeInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s:205    .text.HAL_UART_MspDeInit:0000000000000024 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s:84     .text.HAL_UART_MspInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s:91     .text.HAL_UART_MspInit:0000000000000000 HAL_UART_MspInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s:154    .text.HAL_UART_MspInit:0000000000000048 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s:160    .text.HAL_UART_MspDeInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s:167    .text.HAL_UART_MspDeInit:0000000000000000 HAL_UART_MspDeInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s:205    .text.HAL_UART_MspDeInit:0000000000000024 $d
                             *COM*:0000000000000078 UART_transmit_buffer
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cch0xLt8.s:214    .rodata.MX_USART3_UART_Init.str1.4:0000000000000000 $d
+                            *COM*:0000000000000004 globalTick
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cctZyiti.s:215    .rodata.MX_USART3_UART_Init.str1.4:0000000000000000 $d
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

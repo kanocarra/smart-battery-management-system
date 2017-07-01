@@ -39,7 +39,7 @@
 #ifndef __MAIN_H
 #define __MAIN_H
   /* Includes ------------------------------------------------------------------*/
-
+#include <stdint.h>
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
@@ -84,6 +84,7 @@
 void _Error_Handler(char *, int);
 
 #define Error_Handler() _Error_Handler(__FILE__, __LINE__)
+uint32_t globalTick;
 
 
 #endif /* __MAIN_H */

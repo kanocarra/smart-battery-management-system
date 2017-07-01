@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
   29:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   * are permitted provided that the following conditions are met:
   30:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   *   1. Redistributions of source code must retain the above copyright notice,
   31:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   *      this list of conditions and the following disclaimer.
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 2
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 2
 
 
   32:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   *   2. Redistributions in binary form must reproduce the above copyright notice,
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
   86:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   * @}
   87:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   */
   88:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 3
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 3
 
 
   89:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c **** /* Private macro -------------------------------------------------------------*/
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
  143:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   *         the clock configuration
  144:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   *             
  145:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   * @note   The Systick configuration is based on HSI clock, as HSI is the clock
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 4
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 4
 
 
  146:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   *         used after a system Reset and the NVIC configuration is set to Priority group 4 
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
  200:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   * @brief  Initializes the MSP.
  201:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   * @retval None
  202:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 5
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 5
 
 
  203:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c **** __weak void HAL_MspInit(void)
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
   71 0000 10B5     		push	{r4, lr}
   72              	.LCFI0:
   73              		.cfi_def_cfa_offset 8
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 6
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 6
 
 
   74              		.cfi_offset 4, -8
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
  224:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   *         Tick interrupt priority. 
  225:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   * @note   This function is called  automatically at the beginning of program after
  226:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   *         reset by HAL_Init() or at any time when clock is reconfigured  by HAL_RCC_ClockConfig()
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 7
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 7
 
 
  227:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   * @note   In the default implementation , SysTick timer is the source of time base. 
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
  147 0024 00000000 		.word	SystemCoreClock
  148 0028 D34D6210 		.word	274877907
  149              		.cfi_endproc
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 8
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 8
 
 
  150              	.LFE128:
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
  201              		.thumb
  202              		.thumb_func
  203              		.fpu fpv4-sp-d16
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 9
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 9
 
 
  205              	HAL_IncTick:
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
  219 000a 00BF     		.align	2
  220              	.L16:
  221 000c 00000000 		.word	uwTick
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 10
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 10
 
 
  222              		.cfi_endproc
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
  306:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   *         is incremented.
  307:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   *         The function is declared as __Weak  to be overwritten  in case of other
  308:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   *         implementations  in user file.
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 11
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 11
 
 
  309:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   * @param  Delay: specifies the delay time length, in milliseconds.
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
  319:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c **** 
  320:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c **** /**
  321:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   * @brief  Suspend Tick increment.
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 12
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 12
 
 
  322:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   * @note   In the default implementation , SysTick timer is the source of time base. It is  
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
  336              		.loc 1 349 0
  337              		.cfi_startproc
  338              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 13
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 13
 
 
  339              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
  384              	.LFB135:
  363:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c **** 
  364:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c **** /**
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 14
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 14
 
 
  365:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c ****   * @brief  Returns the device revision identifier.
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
  425 000a 00BF     		.align	2
  426              	.L35:
  427 000c 002004E0 		.word	-536600576
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 15
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 15
 
 
  428              		.cfi_endproc
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
  470              		.cfi_startproc
  471              		@ args = 0, pretend = 0, frame = 0
  472              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 16
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 16
 
 
  473              		@ link register save eliminated.
@@ -958,7 +958,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
  520              		.thumb_func
  521              		.fpu fpv4-sp-d16
  523              	HAL_DBGMCU_DisableDBGStopMode:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 17
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 17
 
 
  524              	.LFB140:
@@ -1018,7 +1018,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
  562 0008 5360     		str	r3, [r2, #4]
  563 000a 7047     		bx	lr
  564              	.L51:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 18
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 18
 
 
  565              		.align	2
@@ -1062,82 +1062,85 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 1
  596              		.cfi_endproc
  597              	.LFE142:
  599              		.comm	uwTick,4,4
- 600              		.text
- 601              	.Letext0:
- 602              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 603              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 604              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
- 605              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
- 606              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
- 607              		.file 7 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 608              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 609              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 610              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
- 611              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
- 612              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 19
+ 600              		.comm	globalTick,4,4
+ 601              		.text
+ 602              	.Letext0:
+ 603              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 604              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 605              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
+ 606              		.file 5 "Inc/main.h"
+ 607              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 608              		.file 7 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
+ 609              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 610              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 611              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 612              		.file 11 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 613              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 614              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h"
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 19
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f3xx_hal.c
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:18     .text.HAL_MspInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:25     .text.HAL_MspInit:0000000000000000 HAL_MspInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:38     .text.HAL_MspDeInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:45     .text.HAL_MspDeInit:0000000000000000 HAL_MspDeInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:57     .text.HAL_DeInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:64     .text.HAL_DeInit:0000000000000000 HAL_DeInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:100    .text.HAL_DeInit:0000000000000020 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:105    .text.HAL_InitTick:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:112    .text.HAL_InitTick:0000000000000000 HAL_InitTick
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:147    .text.HAL_InitTick:0000000000000024 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:153    .text.HAL_Init:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:160    .text.HAL_Init:0000000000000000 HAL_Init
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:193    .text.HAL_Init:0000000000000020 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:198    .text.HAL_IncTick:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:205    .text.HAL_IncTick:0000000000000000 HAL_IncTick
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:221    .text.HAL_IncTick:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:18     .text.HAL_MspInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:25     .text.HAL_MspInit:0000000000000000 HAL_MspInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:38     .text.HAL_MspDeInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:45     .text.HAL_MspDeInit:0000000000000000 HAL_MspDeInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:57     .text.HAL_DeInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:64     .text.HAL_DeInit:0000000000000000 HAL_DeInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:100    .text.HAL_DeInit:0000000000000020 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:105    .text.HAL_InitTick:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:112    .text.HAL_InitTick:0000000000000000 HAL_InitTick
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:147    .text.HAL_InitTick:0000000000000024 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:153    .text.HAL_Init:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:160    .text.HAL_Init:0000000000000000 HAL_Init
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:193    .text.HAL_Init:0000000000000020 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:198    .text.HAL_IncTick:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:205    .text.HAL_IncTick:0000000000000000 HAL_IncTick
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:221    .text.HAL_IncTick:000000000000000c $d
                             *COM*:0000000000000004 uwTick
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:226    .text.HAL_GetTick:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:233    .text.HAL_GetTick:0000000000000000 HAL_GetTick
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:248    .text.HAL_GetTick:0000000000000008 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:253    .text.HAL_Delay:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:260    .text.HAL_Delay:0000000000000000 HAL_Delay
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:299    .text.HAL_SuspendTick:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:306    .text.HAL_SuspendTick:0000000000000000 HAL_SuspendTick
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:322    .text.HAL_SuspendTick:000000000000000c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:327    .text.HAL_ResumeTick:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:334    .text.HAL_ResumeTick:0000000000000000 HAL_ResumeTick
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:350    .text.HAL_ResumeTick:000000000000000c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:355    .text.HAL_GetHalVersion:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:362    .text.HAL_GetHalVersion:0000000000000000 HAL_GetHalVersion
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:376    .text.HAL_GetREVID:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:383    .text.HAL_GetREVID:0000000000000000 HAL_GetREVID
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:399    .text.HAL_GetREVID:0000000000000008 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:404    .text.HAL_GetDEVID:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:411    .text.HAL_GetDEVID:0000000000000000 HAL_GetDEVID
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:427    .text.HAL_GetDEVID:000000000000000c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:432    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:439    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 HAL_DBGMCU_EnableDBGSleepMode
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:455    .text.HAL_DBGMCU_EnableDBGSleepMode:000000000000000c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:460    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:467    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 HAL_DBGMCU_DisableDBGSleepMode
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:483    .text.HAL_DBGMCU_DisableDBGSleepMode:000000000000000c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:488    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:495    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 HAL_DBGMCU_EnableDBGStopMode
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:511    .text.HAL_DBGMCU_EnableDBGStopMode:000000000000000c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:516    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:523    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 HAL_DBGMCU_DisableDBGStopMode
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:539    .text.HAL_DBGMCU_DisableDBGStopMode:000000000000000c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:544    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:551    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 HAL_DBGMCU_EnableDBGStandbyMode
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:567    .text.HAL_DBGMCU_EnableDBGStandbyMode:000000000000000c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:572    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:579    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 HAL_DBGMCU_DisableDBGStandbyMode
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s:595    .text.HAL_DBGMCU_DisableDBGStandbyMode:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:226    .text.HAL_GetTick:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:233    .text.HAL_GetTick:0000000000000000 HAL_GetTick
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:248    .text.HAL_GetTick:0000000000000008 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:253    .text.HAL_Delay:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:260    .text.HAL_Delay:0000000000000000 HAL_Delay
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:299    .text.HAL_SuspendTick:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:306    .text.HAL_SuspendTick:0000000000000000 HAL_SuspendTick
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:322    .text.HAL_SuspendTick:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:327    .text.HAL_ResumeTick:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:334    .text.HAL_ResumeTick:0000000000000000 HAL_ResumeTick
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:350    .text.HAL_ResumeTick:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:355    .text.HAL_GetHalVersion:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:362    .text.HAL_GetHalVersion:0000000000000000 HAL_GetHalVersion
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:376    .text.HAL_GetREVID:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:383    .text.HAL_GetREVID:0000000000000000 HAL_GetREVID
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:399    .text.HAL_GetREVID:0000000000000008 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:404    .text.HAL_GetDEVID:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:411    .text.HAL_GetDEVID:0000000000000000 HAL_GetDEVID
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:427    .text.HAL_GetDEVID:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:432    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:439    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 HAL_DBGMCU_EnableDBGSleepMode
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:455    .text.HAL_DBGMCU_EnableDBGSleepMode:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:460    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:467    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 HAL_DBGMCU_DisableDBGSleepMode
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:483    .text.HAL_DBGMCU_DisableDBGSleepMode:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:488    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:495    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 HAL_DBGMCU_EnableDBGStopMode
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:511    .text.HAL_DBGMCU_EnableDBGStopMode:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:516    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:523    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 HAL_DBGMCU_DisableDBGStopMode
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:539    .text.HAL_DBGMCU_DisableDBGStopMode:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:544    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:551    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 HAL_DBGMCU_EnableDBGStandbyMode
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:567    .text.HAL_DBGMCU_EnableDBGStandbyMode:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:572    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:579    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 HAL_DBGMCU_DisableDBGStandbyMode
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s:595    .text.HAL_DBGMCU_DisableDBGStandbyMode:000000000000000c $d
+                            *COM*:0000000000000004 globalTick
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccuJvzx8.s 			page 20
+
+
                      .debug_frame:0000000000000010 $d
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc3huzwm.s 			page 20
-
-
 
 UNDEFINED SYMBOLS
 HAL_SYSTICK_Config

@@ -31,8 +31,8 @@
 //Make #defines for the UV and OV levels
 //Note: 12 bits long
 //Data sheet for the cells shows 2.8V to 3.8V range
-#define OVERVOLTAGE_ALARM_LEVEL		0x908	//3.6992 V --> Comparison voltage = VOV*16*100uV
-#define UNDERVOLTAGE_ALARM_LEVEL	311	//3.0 V --> Comparison voltage = (VUV+1)*16*100uV
+#define OVERVOLTAGE_ALARM_LEVEL		2625	//3.6992 V --> Comparison voltage = VOV*16*100uV
+#define UNDERVOLTAGE_ALARM_LEVEL	1874	//3.0 V --> Comparison voltage = (VUV+1)*16*100uV
 
 //DATA STRUCTURES
 //A struct that represents the config register block

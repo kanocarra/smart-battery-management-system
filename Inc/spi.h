@@ -18,7 +18,6 @@ uint8_t SPI_recieve_buffer[SPI_BUFFER_LENGTH];
 uint8_t SPI_transmit_buffer[SPI_BUFFER_LENGTH];
 
 extern SPI_HandleTypeDef hspi1;
-extern volatile uint32_t globalTick;
 
 extern void _Error_Handler(char *, int);
 

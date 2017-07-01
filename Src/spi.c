@@ -81,3 +81,42 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* spiHandle)
     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_7);
   }
 } 
+
+uint8_t SPI_transmit(uint8_t data)
+{
+	//local dummy temporary storage
+	uint8_t rxReturn;
+	//Note: the size parameter represents a byte of data here. The number of
+	//bits can be changed with CubeMX
+	HAL_SPI_TransmitReceive(&hspi1,&data,&rxReturn,1,1000);
+
+	return rxReturn;
+}
+
+
+void Slave_select(uint8_t Slave)
+{
+	//Turn off all of the slave select lines by setting them high
+	HAL_GPIO_WritePin(SS0_GPIO_Port,SS0_Pin,GPIO_PIN_SET);
+	HAL_GPIO_WritePin(SS1_GPIO_Port,SS1_Pin,GPIO_PIN_SET);
+
+	//Use a case statement to turn on the correct slave by pulling the line low
+	switch (Slave)
+	{
+		case 0 : HAL_GPIO_WritePin(SS0_GPIO_Port,SS0_Pin,GPIO_PIN_RESET);
+		break;
+		case 1 : HAL_GPIO_WritePin(SS1_GPIO_Port,SS1_Pin,GPIO_PIN_RESET);
+		break;
+	}
+}
+
+//This function de-selects all slaves on the SPI bus
+void Slave_deselect(void)
+{
+	//Turn off all of the slave select lines by setting them high
+	HAL_GPIO_WritePin(SS0_GPIO_Port,SS0_Pin,GPIO_PIN_SET);
+	HAL_GPIO_WritePin(SS1_GPIO_Port,SS1_Pin,GPIO_PIN_SET);
+}
+
+
+

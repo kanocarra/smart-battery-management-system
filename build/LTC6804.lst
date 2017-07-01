@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
   29:Src/LTC6804.c **** //This function sets the OV and UV levels in the config buffer
   30:Src/LTC6804.c **** void set_UV_OV_threshold(void)
   31:Src/LTC6804.c **** {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 2
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 2
 
 
   32:Src/LTC6804.c **** 	//Need to check this works
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
   86:Src/LTC6804.c **** 	status_B_6804_2.C3OV = (SPI_recieve_buffer[2] & 0x01<<5)>>5;
   87:Src/LTC6804.c **** 	status_B_6804_2.C4UV = (SPI_recieve_buffer[2] & 0x01<<6)>>6;
   88:Src/LTC6804.c **** 	status_B_6804_2.C4OV = (SPI_recieve_buffer[2] & 0x01<<7)>>7;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 3
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 3
 
 
   89:Src/LTC6804.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
  130:Src/LTC6804.c **** 
  131:Src/LTC6804.c **** 	//place the command in the array
  132:Src/LTC6804.c **** 	SPI_transmit_buffer[0] = (uint8_t)(cmd >> 8);
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 4
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 4
 
 
   41              		.loc 1 132 0
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
   71 002c A278     		ldrb	r2, [r4, #2]	@ zero_extendqisi2
   72 002e 9A71     		strb	r2, [r3, #6]
  157:Src/LTC6804.c **** 		SPI_transmit_buffer[7] = data[3];
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 5
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 5
 
 
   73              		.loc 1 157 0
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
  109              	.LVL10:
  176:Src/LTC6804.c **** 	SPI_transmit(SPI_transmit_buffer[1]);
  110              		.loc 1 176 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 6
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 6
 
 
  111 0062 6078     		ldrb	r0, [r4, #1]	@ zero_extendqisi2
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
  152 00a4 6871     		strb	r0, [r5, #5]
  190:Src/LTC6804.c **** 
  191:Src/LTC6804.c **** 	//Send the second checksum
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 7
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 7
 
 
  192:Src/LTC6804.c **** 	SPI_transmit(SPI_transmit_buffer[10]);
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
  198              	.LFB124:
    5:Src/LTC6804.c **** 	//Holds the formatted config data
  199              		.loc 1 5 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 8
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 8
 
 
  200              		.cfi_startproc
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
  247 005a 5379     		ldrb	r3, [r2, #5]	@ zero_extendqisi2
  248 005c 03F00F01 		and	r1, r3, #15
  249 0060 5379     		ldrb	r3, [r2, #5]	@ zero_extendqisi2
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 9
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 9
 
 
  250 0062 1B09     		lsrs	r3, r3, #4
@@ -526,24 +526,24 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
  290              		.loc 1 33 0
  291 0002 094B     		ldr	r3, .L14
  292 0004 9A78     		ldrb	r2, [r3, #2]	@ zero_extendqisi2
- 293 0006 0121     		movs	r1, #1
+ 293 0006 0721     		movs	r1, #7
  294 0008 61F30712 		bfi	r2, r1, #4, #4
  295 000c 9A70     		strb	r2, [r3, #2]
   34:Src/LTC6804.c **** 
  296              		.loc 1 34 0
- 297 000e 3722     		movs	r2, #55
+ 297 000e 5222     		movs	r2, #82
  298 0010 5A70     		strb	r2, [r3, #1]
   37:Src/LTC6804.c **** 	config_6804_2_buffer.VOVLB = (uint8_t)(OVERVOLTAGE_ALARM_LEVEL&0x00F);
  299              		.loc 1 37 0
- 300 0012 9022     		movs	r2, #144
+ 300 0012 A422     		movs	r2, #164
  301 0014 DA70     		strb	r2, [r3, #3]
   38:Src/LTC6804.c **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 10
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 10
 
 
  302              		.loc 1 38 0
  303 0016 9A78     		ldrb	r2, [r3, #2]	@ zero_extendqisi2
- 304 0018 0821     		movs	r1, #8
+ 304 0018 0121     		movs	r1, #1
  305 001a 61F30302 		bfi	r2, r1, #0, #4
  306 001e 9A70     		strb	r2, [r3, #2]
   41:Src/LTC6804.c **** 
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
  352 0018 9178     		ldrb	r1, [r2, #2]	@ zero_extendqisi2
  353 001a 9970     		strb	r1, [r3, #2]
   60:Src/LTC6804.c **** 	status_A_6804_2.VALB	= SPI_recieve_buffer[4];
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 11
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 11
 
 
  354              		.loc 1 60 0
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
   79:Src/LTC6804.c **** 
  404              		.loc 1 79 0
  405 0014 4A78     		ldrb	r2, [r1, #1]	@ zero_extendqisi2
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 12
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 12
 
 
  406 0016 5A70     		strb	r2, [r3, #1]
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
  451 007c D870     		strb	r0, [r3, #3]
   92:Src/LTC6804.c **** 	status_B_6804_2.C6UV = (SPI_recieve_buffer[3] & 0x01<<2)>>2;
  452              		.loc 1 92 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 13
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 13
 
 
  453 007e C2F34004 		ubfx	r4, r2, #1, #1
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
  498 00e6 C2F38004 		ubfx	r4, r2, #2, #1
  499 00ea 1879     		ldrb	r0, [r3, #4]	@ zero_extendqisi2
  500 00ec 64F34510 		bfi	r0, r4, #5, #1
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 14
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 14
 
 
  501 00f0 1871     		strb	r0, [r3, #4]
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
  546 0156 5971     		strb	r1, [r3, #5]
  116:Src/LTC6804.c **** 
  547              		.loc 1 116 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 15
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 15
 
 
  548 0158 0120     		movs	r0, #1
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
  587 000e 48F2F030 		movw	r0, #33776
  588 0012 FFF7FEFF 		bl	SPI_transmit_word
  589              	.LVL31:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 16
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 16
 
 
  214:Src/LTC6804.c **** 
@@ -958,7 +958,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
  628 005e A378     		ldrb	r3, [r4, #2]	@ zero_extendqisi2
  629 0060 43EA0223 		orr	r3, r3, r2, lsl #8
  630 0064 A5F85030 		strh	r3, [r5, #80]	@ movhi
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 17
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 17
 
 
  230:Src/LTC6804.c **** 	Cell_array[5].Cell_voltage = ((uint16_t)SPI_recieve_buffer[5] << 8) | SPI_recieve_buffer[4];
@@ -1018,7 +1018,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
  249:Src/LTC6804.c **** 	Cell_array[10].Cell_voltage = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
  666              		.loc 1 249 0
  667 00b8 E278     		ldrb	r2, [r4, #3]	@ zero_extendqisi2
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 18
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 18
 
 
  668 00ba A378     		ldrb	r3, [r4, #2]	@ zero_extendqisi2
@@ -1051,56 +1051,59 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 1
  694              		.comm	UART_transmit_buffer,120,4
  695              		.comm	SPI_transmit_buffer,12,4
  696              		.comm	SPI_recieve_buffer,12,4
- 697              		.text
- 698              	.Letext0:
- 699              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 700              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 701              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
- 702              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
- 703              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
- 704              		.file 7 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 705              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 706              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 707              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
- 708              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
- 709              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
- 710              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h"
- 711              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h"
- 712              		.file 15 "Inc/spi.h"
- 713              		.file 16 "Inc/usart.h"
- 714              		.file 17 "Inc/LTC6804.h"
- 715              		.file 18 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
- 716              		.file 19 "Inc/PEC15.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s 			page 19
+ 697              		.comm	globalTick,4,4
+ 698              		.text
+ 699              	.Letext0:
+ 700              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 701              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 702              		.file 4 "Inc/main.h"
+ 703              		.file 5 "Drivers/CMSIS/Include/core_cm4.h"
+ 704              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 705              		.file 7 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
+ 706              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 707              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 708              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 709              		.file 11 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 710              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 711              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
+ 712              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h"
+ 713              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h"
+ 714              		.file 16 "Inc/spi.h"
+ 715              		.file 17 "Inc/usart.h"
+ 716              		.file 18 "Inc/LTC6804.h"
+ 717              		.file 19 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
+ 718              		.file 20 "Inc/PEC15.h"
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s 			page 19
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 LTC6804.c
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:18     .text.SPI_transmit_word:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:25     .text.SPI_transmit_word:0000000000000000 SPI_transmit_word
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:184    .text.SPI_transmit_word:00000000000000c8 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:18     .text.SPI_transmit_word:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:25     .text.SPI_transmit_word:0000000000000000 SPI_transmit_word
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:184    .text.SPI_transmit_word:00000000000000c8 $d
                             *COM*:000000000000000c SPI_transmit_buffer
                             *COM*:000000000000000c SPI_recieve_buffer
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:190    .text.write_config_6804_2:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:197    .text.write_config_6804_2:0000000000000000 write_config_6804_2
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:267    .text.write_config_6804_2:000000000000007c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:190    .text.write_config_6804_2:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:197    .text.write_config_6804_2:0000000000000000 write_config_6804_2
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:267    .text.write_config_6804_2:000000000000007c $d
                             *COM*:0000000000000006 config_6804_2_buffer
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:272    .text.set_UV_OV_threshold:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:279    .text.set_UV_OV_threshold:0000000000000000 set_UV_OV_threshold
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:314    .text.set_UV_OV_threshold:0000000000000028 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:319    .text.read_status_A_6804_2:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:326    .text.read_status_A_6804_2:0000000000000000 read_status_A_6804_2
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:369    .text.read_status_A_6804_2:000000000000002c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:272    .text.set_UV_OV_threshold:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:279    .text.set_UV_OV_threshold:0000000000000000 set_UV_OV_threshold
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:314    .text.set_UV_OV_threshold:0000000000000028 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:319    .text.read_status_A_6804_2:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:326    .text.read_status_A_6804_2:0000000000000000 read_status_A_6804_2
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:369    .text.read_status_A_6804_2:000000000000002c $d
                             *COM*:0000000000000006 status_A_6804_2
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:375    .text.read_status_B_6804_2:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:382    .text.read_status_B_6804_2:0000000000000000 read_status_B_6804_2
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:553    .text.read_status_B_6804_2:000000000000015c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:375    .text.read_status_B_6804_2:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:382    .text.read_status_B_6804_2:0000000000000000 read_status_B_6804_2
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:553    .text.read_status_B_6804_2:000000000000015c $d
                             *COM*:0000000000000006 status_B_6804_2
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:559    .text.ADC_read_cell_voltages:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:566    .text.ADC_read_cell_voltages:0000000000000000 ADC_read_cell_voltages
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccsaCdBZ.s:685    .text.ADC_read_cell_voltages:00000000000000d4 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:559    .text.ADC_read_cell_voltages:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:566    .text.ADC_read_cell_voltages:0000000000000000 ADC_read_cell_voltages
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccDG6nqZ.s:685    .text.ADC_read_cell_voltages:00000000000000d4 $d
                             *COM*:00000000000000f0 Cell_array
                             *COM*:0000000000000078 UART_transmit_buffer
+                            *COM*:0000000000000004 globalTick
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

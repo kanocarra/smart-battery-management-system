@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s 			page 1
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s 			page 1
   39 0004 114B     		ldr	r3, .L5+4
   40 0006 0360     		str	r3, [r0]
   18:Src/spi.c     ****   hspi1.Init.Mode = SPI_MODE_MASTER;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s 			page 2
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s 			page 2
 
 
   41              		.loc 1 18 0
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s 			page 1
   80              		.loc 1 33 0
   81 003c 2121     		movs	r1, #33
   82 003e 0448     		ldr	r0, .L5+8
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s 			page 3
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s 			page 3
 
 
   83 0040 FFF7FEFF 		bl	_Error_Handler
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s 			page 1
   45:Src/spi.c     ****     __HAL_RCC_SPI1_CLK_ENABLE();
  127              		.loc 1 45 0
  128 000e 03F56043 		add	r3, r3, #57344
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s 			page 4
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s 			page 4
 
 
  129 0012 9A69     		ldr	r2, [r3, #24]
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s 			page 1
  165              		.align	2
  166              	.L14:
  167 0048 00300140 		.word	1073819648
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s 			page 5
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s 			page 5
 
 
  168              		.cfi_endproc
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s 			page 1
  206              		.loc 1 81 0
  207 0016 E021     		movs	r1, #224
  208 0018 4FF09040 		mov	r0, #1207959552
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s 			page 6
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s 			page 6
 
 
  209              	.LVL8:
@@ -315,49 +315,248 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s 			page 1
  218 0028 00100240 		.word	1073876992
  219              		.cfi_endproc
  220              	.LFE126:
- 222              		.comm	hspi1,100,4
- 223              		.comm	SPI_transmit_buffer,12,4
- 224              		.comm	SPI_recieve_buffer,12,4
- 225              		.section	.rodata.MX_SPI1_Init.str1.4,"aMS",%progbits,1
- 226              		.align	2
- 227              	.LC0:
- 228 0000 5372632F 		.ascii	"Src/spi.c\000"
- 228      7370692E 
- 228      6300
- 229              		.text
- 230              	.Letext0:
- 231              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 232              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 233              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
- 234              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
- 235              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
- 236              		.file 7 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 237              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 238              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 239              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
- 240              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
- 241              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
- 242              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
- 243              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h"
- 244              		.file 15 "Inc/spi.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s 			page 7
+ 222              		.section	.text.SPI_transmit,"ax",%progbits
+ 223              		.align	1
+ 224              		.global	SPI_transmit
+ 225              		.syntax unified
+ 226              		.thumb
+ 227              		.thumb_func
+ 228              		.fpu fpv4-sp-d16
+ 230              	SPI_transmit:
+ 231              	.LFB127:
+  84:Src/spi.c     **** 
+  85:Src/spi.c     **** uint8_t SPI_transmit(uint8_t data)
+  86:Src/spi.c     **** {
+ 232              		.loc 1 86 0
+ 233              		.cfi_startproc
+ 234              		@ args = 0, pretend = 0, frame = 16
+ 235              		@ frame_needed = 0, uses_anonymous_args = 0
+ 236              	.LVL10:
+ 237 0000 00B5     		push	{lr}
+ 238              	.LCFI5:
+ 239              		.cfi_def_cfa_offset 4
+ 240              		.cfi_offset 14, -4
+ 241 0002 87B0     		sub	sp, sp, #28
+ 242              	.LCFI6:
+ 243              		.cfi_def_cfa_offset 32
+ 244 0004 8DF80F00 		strb	r0, [sp, #15]
+  87:Src/spi.c     **** 	//local dummy temporary storage
+  88:Src/spi.c     **** 	uint8_t rxReturn;
+  89:Src/spi.c     **** 	//Note: the size parameter represents a byte of data here. The number of
+  90:Src/spi.c     **** 	//bits can be changed with CubeMX
+  91:Src/spi.c     **** 	HAL_SPI_TransmitReceive(&hspi1,&data,&rxReturn,1,1000);
+ 245              		.loc 1 91 0
+ 246 0008 4FF47A73 		mov	r3, #1000
+ 247 000c 0093     		str	r3, [sp]
+ 248 000e 0123     		movs	r3, #1
+ 249 0010 0DF11702 		add	r2, sp, #23
+ 250 0014 0DF10F01 		add	r1, sp, #15
+ 251 0018 0348     		ldr	r0, .L24
+ 252              	.LVL11:
+ 253 001a FFF7FEFF 		bl	HAL_SPI_TransmitReceive
+ 254              	.LVL12:
+  92:Src/spi.c     **** 
+  93:Src/spi.c     **** 	return rxReturn;
+  94:Src/spi.c     **** }
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s 			page 7
+
+
+ 255              		.loc 1 94 0
+ 256 001e 9DF81700 		ldrb	r0, [sp, #23]	@ zero_extendqisi2
+ 257 0022 07B0     		add	sp, sp, #28
+ 258              	.LCFI7:
+ 259              		.cfi_def_cfa_offset 4
+ 260              		@ sp needed
+ 261 0024 5DF804FB 		ldr	pc, [sp], #4
+ 262              	.L25:
+ 263              		.align	2
+ 264              	.L24:
+ 265 0028 00000000 		.word	hspi1
+ 266              		.cfi_endproc
+ 267              	.LFE127:
+ 269              		.section	.text.Slave_select,"ax",%progbits
+ 270              		.align	1
+ 271              		.global	Slave_select
+ 272              		.syntax unified
+ 273              		.thumb
+ 274              		.thumb_func
+ 275              		.fpu fpv4-sp-d16
+ 277              	Slave_select:
+ 278              	.LFB128:
+  95:Src/spi.c     **** 
+  96:Src/spi.c     **** 
+  97:Src/spi.c     **** void Slave_select(uint8_t Slave)
+  98:Src/spi.c     **** {
+ 279              		.loc 1 98 0
+ 280              		.cfi_startproc
+ 281              		@ args = 0, pretend = 0, frame = 0
+ 282              		@ frame_needed = 0, uses_anonymous_args = 0
+ 283              	.LVL13:
+ 284 0000 10B5     		push	{r4, lr}
+ 285              	.LCFI8:
+ 286              		.cfi_def_cfa_offset 8
+ 287              		.cfi_offset 4, -8
+ 288              		.cfi_offset 14, -4
+ 289 0002 0446     		mov	r4, r0
+  99:Src/spi.c     **** 	//Turn off all of the slave select lines by setting them high
+ 100:Src/spi.c     **** 	HAL_GPIO_WritePin(SS0_GPIO_Port,SS0_Pin,GPIO_PIN_SET);
+ 290              		.loc 1 100 0
+ 291 0004 0122     		movs	r2, #1
+ 292 0006 4021     		movs	r1, #64
+ 293 0008 0D48     		ldr	r0, .L31
+ 294              	.LVL14:
+ 295 000a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 296              	.LVL15:
+ 101:Src/spi.c     **** 	HAL_GPIO_WritePin(SS1_GPIO_Port,SS1_Pin,GPIO_PIN_SET);
+ 297              		.loc 1 101 0
+ 298 000e 0122     		movs	r2, #1
+ 299 0010 4FF48051 		mov	r1, #4096
+ 300 0014 4FF09040 		mov	r0, #1207959552
+ 301 0018 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 302              	.LVL16:
+ 102:Src/spi.c     **** 
+ 103:Src/spi.c     **** 	//Use a case statement to turn on the correct slave by pulling the line low
+ 104:Src/spi.c     **** 	switch (Slave)
+ 303              		.loc 1 104 0
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s 			page 8
+
+
+ 304 001c 14B1     		cbz	r4, .L28
+ 305 001e 012C     		cmp	r4, #1
+ 306 0020 06D0     		beq	.L29
+ 307 0022 10BD     		pop	{r4, pc}
+ 308              	.L28:
+ 105:Src/spi.c     **** 	{
+ 106:Src/spi.c     **** 		case 0 : HAL_GPIO_WritePin(SS0_GPIO_Port,SS0_Pin,GPIO_PIN_RESET);
+ 309              		.loc 1 106 0
+ 310 0024 0022     		movs	r2, #0
+ 311 0026 4021     		movs	r1, #64
+ 312 0028 0548     		ldr	r0, .L31
+ 313 002a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 314              	.LVL17:
+ 107:Src/spi.c     **** 		break;
+ 315              		.loc 1 107 0
+ 316 002e 10BD     		pop	{r4, pc}
+ 317              	.L29:
+ 108:Src/spi.c     **** 		case 1 : HAL_GPIO_WritePin(SS1_GPIO_Port,SS1_Pin,GPIO_PIN_RESET);
+ 318              		.loc 1 108 0
+ 319 0030 0022     		movs	r2, #0
+ 320 0032 4FF48051 		mov	r1, #4096
+ 321 0036 4FF09040 		mov	r0, #1207959552
+ 322 003a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 323              	.LVL18:
+ 324 003e 10BD     		pop	{r4, pc}
+ 325              	.L32:
+ 326              		.align	2
+ 327              	.L31:
+ 328 0040 00040048 		.word	1207960576
+ 329              		.cfi_endproc
+ 330              	.LFE128:
+ 332              		.section	.text.Slave_deselect,"ax",%progbits
+ 333              		.align	1
+ 334              		.global	Slave_deselect
+ 335              		.syntax unified
+ 336              		.thumb
+ 337              		.thumb_func
+ 338              		.fpu fpv4-sp-d16
+ 340              	Slave_deselect:
+ 341              	.LFB129:
+ 109:Src/spi.c     **** 		break;
+ 110:Src/spi.c     **** 	}
+ 111:Src/spi.c     **** }
+ 112:Src/spi.c     **** 
+ 113:Src/spi.c     **** //This function de-selects all slaves on the SPI bus
+ 114:Src/spi.c     **** void Slave_deselect(void)
+ 115:Src/spi.c     **** {
+ 342              		.loc 1 115 0
+ 343              		.cfi_startproc
+ 344              		@ args = 0, pretend = 0, frame = 0
+ 345              		@ frame_needed = 0, uses_anonymous_args = 0
+ 346 0000 08B5     		push	{r3, lr}
+ 347              	.LCFI9:
+ 348              		.cfi_def_cfa_offset 8
+ 349              		.cfi_offset 3, -8
+ 350              		.cfi_offset 14, -4
+ 116:Src/spi.c     **** 	//Turn off all of the slave select lines by setting them high
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s 			page 9
+
+
+ 117:Src/spi.c     **** 	HAL_GPIO_WritePin(SS0_GPIO_Port,SS0_Pin,GPIO_PIN_SET);
+ 351              		.loc 1 117 0
+ 352 0002 0122     		movs	r2, #1
+ 353 0004 4021     		movs	r1, #64
+ 354 0006 0548     		ldr	r0, .L35
+ 355 0008 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 356              	.LVL19:
+ 118:Src/spi.c     **** 	HAL_GPIO_WritePin(SS1_GPIO_Port,SS1_Pin,GPIO_PIN_SET);
+ 357              		.loc 1 118 0
+ 358 000c 0122     		movs	r2, #1
+ 359 000e 4FF48051 		mov	r1, #4096
+ 360 0012 4FF09040 		mov	r0, #1207959552
+ 361 0016 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 362              	.LVL20:
+ 363 001a 08BD     		pop	{r3, pc}
+ 364              	.L36:
+ 365              		.align	2
+ 366              	.L35:
+ 367 001c 00040048 		.word	1207960576
+ 368              		.cfi_endproc
+ 369              	.LFE129:
+ 371              		.comm	hspi1,100,4
+ 372              		.comm	SPI_transmit_buffer,12,4
+ 373              		.comm	SPI_recieve_buffer,12,4
+ 374              		.comm	globalTick,4,4
+ 375              		.section	.rodata.MX_SPI1_Init.str1.4,"aMS",%progbits,1
+ 376              		.align	2
+ 377              	.LC0:
+ 378 0000 5372632F 		.ascii	"Src/spi.c\000"
+ 378      7370692E 
+ 378      6300
+ 379              		.text
+ 380              	.Letext0:
+ 381              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 382              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 383              		.file 4 "Inc/main.h"
+ 384              		.file 5 "Drivers/CMSIS/Include/core_cm4.h"
+ 385              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 386              		.file 7 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
+ 387              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 388              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 389              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 390              		.file 11 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 391              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 392              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
+ 393              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
+ 394              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h"
+ 395              		.file 16 "Inc/spi.h"
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 spi.c
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s:18     .text.MX_SPI1_Init:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s:25     .text.MX_SPI1_Init:0000000000000000 MX_SPI1_Init
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s:90     .text.MX_SPI1_Init:0000000000000048 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:18     .text.MX_SPI1_Init:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:25     .text.MX_SPI1_Init:0000000000000000 MX_SPI1_Init
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:90     .text.MX_SPI1_Init:0000000000000048 $d
                             *COM*:0000000000000064 hspi1
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s:97     .text.HAL_SPI_MspInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s:104    .text.HAL_SPI_MspInit:0000000000000000 HAL_SPI_MspInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s:167    .text.HAL_SPI_MspInit:0000000000000048 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s:172    .text.HAL_SPI_MspDeInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s:179    .text.HAL_SPI_MspDeInit:0000000000000000 HAL_SPI_MspDeInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s:217    .text.HAL_SPI_MspDeInit:0000000000000024 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:97     .text.HAL_SPI_MspInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:104    .text.HAL_SPI_MspInit:0000000000000000 HAL_SPI_MspInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:167    .text.HAL_SPI_MspInit:0000000000000048 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:172    .text.HAL_SPI_MspDeInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:179    .text.HAL_SPI_MspDeInit:0000000000000000 HAL_SPI_MspDeInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:217    .text.HAL_SPI_MspDeInit:0000000000000024 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:223    .text.SPI_transmit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:230    .text.SPI_transmit:0000000000000000 SPI_transmit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:265    .text.SPI_transmit:0000000000000028 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:270    .text.Slave_select:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:277    .text.Slave_select:0000000000000000 Slave_select
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:328    .text.Slave_select:0000000000000040 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:333    .text.Slave_deselect:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:340    .text.Slave_deselect:0000000000000000 Slave_deselect
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:367    .text.Slave_deselect:000000000000001c $d
                             *COM*:000000000000000c SPI_transmit_buffer
                             *COM*:000000000000000c SPI_recieve_buffer
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8ERIQk.s:226    .rodata.MX_SPI1_Init.str1.4:0000000000000000 $d
+                            *COM*:0000000000000004 globalTick
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc21m5xL.s:376    .rodata.MX_SPI1_Init.str1.4:0000000000000000 $d
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS
@@ -365,3 +564,5 @@ HAL_SPI_Init
 _Error_Handler
 HAL_GPIO_Init
 HAL_GPIO_DeInit
+HAL_SPI_TransmitReceive
+HAL_GPIO_WritePin
