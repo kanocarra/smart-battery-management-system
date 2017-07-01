@@ -13,7 +13,7 @@
 ######################################
 # target
 ######################################
-TARGET = STM32f334_settings_v1
+TARGET = smart-battery-management-system
 
 
 ######################################
@@ -46,7 +46,7 @@ BUILD_DIR = build
 ######################################
 # source
 ######################################
-# C sources
+# C sources - ADD NEW FILES TO BE BUILT HERE
 C_SOURCES =  \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c \
@@ -92,11 +92,11 @@ PERIFLIB_SOURCES =
 #######################################
 BINPATH = 
 PREFIX = arm-none-eabi-
-CC = $(BINPATH)/$(PREFIX)gcc
-AS = $(BINPATH)/$(PREFIX)gcc -x assembler-with-cpp
-CP = $(BINPATH)/$(PREFIX)objcopy
-AR = $(BINPATH)/$(PREFIX)ar
-SZ = $(BINPATH)/$(PREFIX)size
+CC = $(BINPATH)$(PREFIX)gcc
+AS = $(BINPATH)$(PREFIX)gcc -x assembler-with-cpp
+CP = $(BINPATH)$(PREFIX)objcopy
+AR = $(BINPATH)$(PREFIX)ar
+SZ = $(BINPATH)$(PREFIX)size
 HEX = $(CP) -O ihex
 BIN = $(CP) -O binary -S
  
@@ -205,5 +205,9 @@ clean:
 # dependencies
 #######################################
 -include $(shell mkdir .dep 2>/dev/null) $(wildcard .dep/*)
+
+flash: $(BUILD_DIR)/$(TARGET).bin
+	st-flash --reset write $< 0x8000000
+
 
 # *** EOF ***
