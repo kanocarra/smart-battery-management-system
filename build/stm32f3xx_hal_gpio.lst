@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
   29:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****     (+) All GPIO pins have weak internal pull-up and pull-down resistors, which can be
   30:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****         activated or not.
   31:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 2
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 2
 
 
   32:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****     (+) In Output or Alternate mode, each IO can be configured on open-drain or push-pull
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
   86:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****         priority over the GPIO function.
   87:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c **** 
   88:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****     (#) The HSE oscillator pins OSC_IN/OSC_OUT can be used as
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 3
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 3
 
 
   89:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****         general purpose PF0 and PF1, respectively, when the HSE oscillator is off.
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  143:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c **** #define EXTI_MODE             (0x10000000U)
  144:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c **** #define GPIO_MODE_IT          (0x00010000U)
  145:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c **** #define GPIO_MODE_EVT         (0x00020000U)
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 4
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 4
 
 
  146:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c **** #define RISING_EDGE           (0x00100000U)
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
   36              		.cfi_offset 4, -20
   37              		.cfi_offset 5, -16
   38              		.cfi_offset 6, -12
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 5
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 5
 
 
   39              		.cfi_offset 7, -8
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
   63              		.loc 1 221 0
   64 0022 0F69     		ldr	r7, [r1, #16]
   65 0024 07FA0EF7 		lsl	r7, r7, lr
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 6
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 6
 
 
   66 0028 3C43     		orrs	r4, r4, r7
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
   95 004a 9E40     		lsls	r6, r6, r3
   96 004c 3543     		orrs	r5, r5, r6
   97              	.LVL12:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 7
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 7
 
 
  247:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****         GPIOx->OTYPER = temp;
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  135 007e 424C     		ldr	r4, .L21+4
  136 0080 54F82640 		ldr	r4, [r4, r6, lsl #2]
  137              	.LVL19:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 8
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 8
 
 
  264:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****         temp &= ~((0x0FU) << (4U * (position & 0x03U)));
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  272:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****         {
  273:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****           temp |= iocurrent;
  184              		.loc 1 273 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 9
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 9
 
 
  185 00d0 42EA0506 		orr	r6, r2, r5
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  291:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****         }
  292:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****         EXTI->RTSR = temp;
  222              		.loc 1 292 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 10
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 10
 
 
  223 0100 234D     		ldr	r5, .L21+12
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  261              		.loc 1 212 0
  262 012a 4C68     		ldr	r4, [r1, #4]
  263 012c 022C     		cmp	r4, #2
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 11
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 11
 
 
  264 012e 3FF46BAF 		beq	.L4
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  309 0176 0127     		movs	r7, #1
  310 0178 9AE7     		b	.L8
  311              	.L16:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 12
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 12
 
 
  312 017a 0227     		movs	r7, #2
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  323:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   assert_param(IS_GPIO_PIN(GPIO_Pin));
  324:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c **** 
  325:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   /* Configure the port pins */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 13
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 13
 
 
  326:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   while ((GPIO_Pin >> position) != RESET)
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  373 0016 9442     		cmp	r4, r2
  374 0018 45D0     		beq	.L36
  375              	.LVL49:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 14
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 14
 
 
  376              	.L25:
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  410 0052 40F82750 		str	r5, [r0, r7, lsl #2]
  341:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c **** 
  411              		.loc 1 341 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 15
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 15
 
 
  412 0056 8568     		ldr	r5, [r0, #8]
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  457 00a2 0225     		movs	r5, #2
  458 00a4 B5E7     		b	.L26
  459              	.L36:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 16
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 16
 
 
  460              	.LVL56:
@@ -958,7 +958,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  507              		.cfi_endproc
  508              	.LFE125:
  510              		.section	.text.HAL_GPIO_ReadPin,"ax",%progbits
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 17
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 17
 
 
  511              		.align	1
@@ -1018,7 +1018,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  409:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   {
  410:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****     bitstatus = GPIO_PIN_RESET;
  530              		.loc 1 410 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 18
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 18
 
 
  531 0006 0020     		movs	r0, #0
@@ -1078,7 +1078,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  437:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   if(PinState != GPIO_PIN_RESET)
  560              		.loc 1 437 0
  561 0000 0AB9     		cbnz	r2, .L48
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 19
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 19
 
 
  438:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   {
@@ -1138,7 +1138,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  597              		.section	.text.HAL_GPIO_LockPin,"ax",%progbits
  598              		.align	1
  599              		.global	HAL_GPIO_LockPin
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 20
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 20
 
 
  600              		.syntax unified
@@ -1198,7 +1198,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  486:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   /* Set LCKx bit(s): LCKK='1' + LCK[15U-0] */
  487:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   GPIOx->LCKR = tmp;
  628              		.loc 1 487 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 21
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 21
 
 
  629 0014 019B     		ldr	r3, [sp, #4]
@@ -1258,7 +1258,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  502:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   * @brief  Handle EXTI interrupt request.
  503:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   * @param  GPIO_Pin: Specifies the port pin connected to corresponding EXTI line.
  504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   * @retval None
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 22
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 22
 
 
  505:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c ****   */
@@ -1318,7 +1318,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  705 0008 00D1     		bne	.L59
  706              	.LVL74:
  707              	.L56:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 23
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 23
 
 
  708 000a 08BD     		pop	{r3, pc}
@@ -1355,30 +1355,30 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 1
  737              		.file 11 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h"
  738              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
  739              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s 			page 24
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f3xx_hal_gpio.c
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:18     .text.HAL_GPIO_Init:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:25     .text.HAL_GPIO_Init:0000000000000000 HAL_GPIO_Init
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:325    .text.HAL_GPIO_Init:0000000000000184 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:333    .text.HAL_GPIO_DeInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:340    .text.HAL_GPIO_DeInit:0000000000000000 HAL_GPIO_DeInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:505    .text.HAL_GPIO_DeInit:00000000000000e4 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:511    .text.HAL_GPIO_ReadPin:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:518    .text.HAL_GPIO_ReadPin:0000000000000000 HAL_GPIO_ReadPin
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:545    .text.HAL_GPIO_WritePin:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:552    .text.HAL_GPIO_WritePin:0000000000000000 HAL_GPIO_WritePin
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:573    .text.HAL_GPIO_TogglePin:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:580    .text.HAL_GPIO_TogglePin:0000000000000000 HAL_GPIO_TogglePin
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:598    .text.HAL_GPIO_LockPin:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:605    .text.HAL_GPIO_LockPin:0000000000000000 HAL_GPIO_LockPin
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:661    .text.HAL_GPIO_EXTI_Callback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:668    .text.HAL_GPIO_EXTI_Callback:0000000000000000 HAL_GPIO_EXTI_Callback
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:681    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:688    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000000 HAL_GPIO_EXTI_IRQHandler
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccSBYKpo.s:722    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000018 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:18     .text.HAL_GPIO_Init:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:25     .text.HAL_GPIO_Init:0000000000000000 HAL_GPIO_Init
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:325    .text.HAL_GPIO_Init:0000000000000184 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:333    .text.HAL_GPIO_DeInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:340    .text.HAL_GPIO_DeInit:0000000000000000 HAL_GPIO_DeInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:505    .text.HAL_GPIO_DeInit:00000000000000e4 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:511    .text.HAL_GPIO_ReadPin:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:518    .text.HAL_GPIO_ReadPin:0000000000000000 HAL_GPIO_ReadPin
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:545    .text.HAL_GPIO_WritePin:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:552    .text.HAL_GPIO_WritePin:0000000000000000 HAL_GPIO_WritePin
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:573    .text.HAL_GPIO_TogglePin:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:580    .text.HAL_GPIO_TogglePin:0000000000000000 HAL_GPIO_TogglePin
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:598    .text.HAL_GPIO_LockPin:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:605    .text.HAL_GPIO_LockPin:0000000000000000 HAL_GPIO_LockPin
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:661    .text.HAL_GPIO_EXTI_Callback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:668    .text.HAL_GPIO_EXTI_Callback:0000000000000000 HAL_GPIO_EXTI_Callback
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:681    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:688    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000000 HAL_GPIO_EXTI_IRQHandler
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccoPRUj.s:722    .text.HAL_GPIO_EXTI_IRQHandler:0000000000000018 $d
                      .debug_frame:0000000000000010 $d
 
 NO UNDEFINED SYMBOLS

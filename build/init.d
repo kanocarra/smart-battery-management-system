@@ -1,5 +1,4 @@
-build/main.d: Src/main.c Inc/main.h \
- Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h \
+build/init.d: Src/init.c Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h \
  Inc/stm32f3xx_hal_conf.h Inc/main.h \
  Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h \
  Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h \
@@ -31,8 +30,6 @@ build/main.d: Src/main.c Inc/main.h \
  Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h \
  Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h \
  Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h Inc/init.h
-
-Inc/main.h:
 
 Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:
 

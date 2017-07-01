@@ -66,6 +66,8 @@ Src/stm32f3xx_it.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c \
 Src/main.c \
+Src/error_handler.c \
+Src/init.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c \
