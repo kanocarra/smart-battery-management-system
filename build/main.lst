@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwjiKps.s 			page 1
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -17,15 +17,15 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwjiKps.s 			page 1
   14              		.text
   15              	.Ltext0:
   16              		.cfi_sections	.debug_frame
-  17              		.section	.text.main,"ax",%progbits
+  17              		.section	.text.idle,"ax",%progbits
   18              		.align	1
-  19              		.global	main
+  19              		.global	idle
   20              		.syntax unified
   21              		.thumb
   22              		.thumb_func
   23              		.fpu fpv4-sp-d16
-  25              	main:
-  26              	.LFB124:
+  25              	idle:
+  26              	.LFB125:
   27              		.file 1 "Src/main.c"
    1:Src/main.c    **** /**
    2:Src/main.c    ****   ******************************************************************************
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwjiKps.s 			page 1
   29:Src/main.c    ****   * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
   30:Src/main.c    ****   * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
   31:Src/main.c    ****   * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwjiKps.s 			page 2
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s 			page 2
 
 
   32:Src/main.c    ****   * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
@@ -71,130 +71,709 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwjiKps.s 			page 1
   39:Src/main.c    **** #include "main.h"
   40:Src/main.c    **** #include "stm32f3xx_hal.h"
   41:Src/main.c    **** #include "init.h"
-  42:Src/main.c    **** 
-  43:Src/main.c    **** int main(void)
-  44:Src/main.c    **** {
-  28              		.loc 1 44 0
+  42:Src/main.c    **** #include "fsm.h"
+  43:Src/main.c    **** 
+  44:Src/main.c    **** void main(void)
+  45:Src/main.c    **** {
+  46:Src/main.c    **** 
+  47:Src/main.c    ****   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  48:Src/main.c    ****   HAL_Init();
+  49:Src/main.c    **** 
+  50:Src/main.c    ****   /* Configure the system clock */
+  51:Src/main.c    ****   SystemClock_Config();
+  52:Src/main.c    **** 
+  53:Src/main.c    ****   /* Initialize all configured peripherals */
+  54:Src/main.c    ****   MX_GPIO_Init();
+  55:Src/main.c    ****   MX_DMA_Init();
+  56:Src/main.c    ****   MX_ADC1_Init();
+  57:Src/main.c    ****   MX_ADC2_Init();
+  58:Src/main.c    ****   MX_CAN_Init();
+  59:Src/main.c    ****   MX_RTC_Init();
+  60:Src/main.c    ****   MX_SPI1_Init();
+  61:Src/main.c    ****   MX_USART3_UART_Init();
+  62:Src/main.c    **** 
+  63:Src/main.c    ****  State currentState = idle;
+  64:Src/main.c    **** 
+  65:Src/main.c    ****   while (1)
+  66:Src/main.c    ****   {
+  67:Src/main.c    ****     currentState = (State)currentState();
+  68:Src/main.c    ****   }
+  69:Src/main.c    **** 
+  70:Src/main.c    **** }
+  71:Src/main.c    **** 
+  72:Src/main.c    **** State idle(void){
+  28              		.loc 1 72 0
   29              		.cfi_startproc
-  30              		@ Volatile: function does not return.
-  31              		@ args = 0, pretend = 0, frame = 0
-  32              		@ frame_needed = 0, uses_anonymous_args = 0
-  33 0000 08B5     		push	{r3, lr}
-  34              	.LCFI0:
-  35              		.cfi_def_cfa_offset 8
-  36              		.cfi_offset 3, -8
-  37              		.cfi_offset 14, -4
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 10B5     		push	{r4, lr}
+  33              	.LCFI0:
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 4, -8
+  36              		.cfi_offset 14, -4
+  73:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 1); 
+  37              		.loc 1 73 0
+  38 0002 084C     		ldr	r4, .L3
+  39 0004 0122     		movs	r2, #1
+  40 0006 2021     		movs	r1, #32
+  41 0008 2046     		mov	r0, r4
+  42 000a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s 			page 3
+
+
+  43              	.LVL0:
+  74:Src/main.c    ****   HAL_Delay(1000);
+  44              		.loc 1 74 0
+  45 000e 4FF47A70 		mov	r0, #1000
+  46 0012 FFF7FEFF 		bl	HAL_Delay
+  47              	.LVL1:
+  75:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 0);
+  48              		.loc 1 75 0
+  49 0016 0022     		movs	r2, #0
+  50 0018 2021     		movs	r1, #32
+  51 001a 2046     		mov	r0, r4
+  52 001c FFF7FEFF 		bl	HAL_GPIO_WritePin
+  53              	.LVL2:
+  76:Src/main.c    ****   return (State)start;
+  77:Src/main.c    **** }
+  54              		.loc 1 77 0
+  55 0020 0148     		ldr	r0, .L3+4
+  56 0022 10BD     		pop	{r4, pc}
+  57              	.L4:
+  58              		.align	2
+  59              	.L3:
+  60 0024 00080048 		.word	1207961600
+  61 0028 00000000 		.word	start
+  62              		.cfi_endproc
+  63              	.LFE125:
+  65              		.section	.text.start,"ax",%progbits
+  66              		.align	1
+  67              		.global	start
+  68              		.syntax unified
+  69              		.thumb
+  70              		.thumb_func
+  71              		.fpu fpv4-sp-d16
+  73              	start:
+  74              	.LFB126:
+  78:Src/main.c    **** 
+  79:Src/main.c    **** State start(void){
+  75              		.loc 1 79 0
+  76              		.cfi_startproc
+  77              		@ args = 0, pretend = 0, frame = 0
+  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  79 0000 10B5     		push	{r4, lr}
+  80              	.LCFI1:
+  81              		.cfi_def_cfa_offset 8
+  82              		.cfi_offset 4, -8
+  83              		.cfi_offset 14, -4
+  80:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
+  84              		.loc 1 80 0
+  85 0002 084C     		ldr	r4, .L7
+  86 0004 0122     		movs	r2, #1
+  87 0006 8021     		movs	r1, #128
+  88 0008 2046     		mov	r0, r4
+  89 000a FFF7FEFF 		bl	HAL_GPIO_WritePin
+  90              	.LVL3:
+  81:Src/main.c    ****   HAL_Delay(1000);
+  91              		.loc 1 81 0
+  92 000e 4FF47A70 		mov	r0, #1000
+  93 0012 FFF7FEFF 		bl	HAL_Delay
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s 			page 4
+
+
+  94              	.LVL4:
+  82:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 0); 
+  95              		.loc 1 82 0
+  96 0016 0022     		movs	r2, #0
+  97 0018 8021     		movs	r1, #128
+  98 001a 2046     		mov	r0, r4
+  99 001c FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 100              	.LVL5:
+  83:Src/main.c    ****   return (State)measure;
+  84:Src/main.c    **** }
+ 101              		.loc 1 84 0
+ 102 0020 0148     		ldr	r0, .L7+4
+ 103 0022 10BD     		pop	{r4, pc}
+ 104              	.L8:
+ 105              		.align	2
+ 106              	.L7:
+ 107 0024 00080048 		.word	1207961600
+ 108 0028 00000000 		.word	measure
+ 109              		.cfi_endproc
+ 110              	.LFE126:
+ 112              		.section	.text.measure,"ax",%progbits
+ 113              		.align	1
+ 114              		.global	measure
+ 115              		.syntax unified
+ 116              		.thumb
+ 117              		.thumb_func
+ 118              		.fpu fpv4-sp-d16
+ 120              	measure:
+ 121              	.LFB127:
+  85:Src/main.c    **** 
+  86:Src/main.c    **** State measure(void){
+ 122              		.loc 1 86 0
+ 123              		.cfi_startproc
+ 124              		@ args = 0, pretend = 0, frame = 0
+ 125              		@ frame_needed = 0, uses_anonymous_args = 0
+ 126 0000 10B5     		push	{r4, lr}
+ 127              	.LCFI2:
+ 128              		.cfi_def_cfa_offset 8
+ 129              		.cfi_offset 4, -8
+ 130              		.cfi_offset 14, -4
+  87:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 1); 
+ 131              		.loc 1 87 0
+ 132 0002 094C     		ldr	r4, .L11
+ 133 0004 0122     		movs	r2, #1
+ 134 0006 4FF48071 		mov	r1, #256
+ 135 000a 2046     		mov	r0, r4
+ 136 000c FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 137              	.LVL6:
+  88:Src/main.c    ****   HAL_Delay(1000);
+ 138              		.loc 1 88 0
+ 139 0010 4FF47A70 		mov	r0, #1000
+ 140 0014 FFF7FEFF 		bl	HAL_Delay
+ 141              	.LVL7:
+  89:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 0);   
+ 142              		.loc 1 89 0
+ 143 0018 0022     		movs	r2, #0
+ 144 001a 4FF48071 		mov	r1, #256
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s 			page 5
+
+
+ 145 001e 2046     		mov	r0, r4
+ 146 0020 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 147              	.LVL8:
+  90:Src/main.c    ****   return (State)estimate_soc;
+  91:Src/main.c    **** }
+ 148              		.loc 1 91 0
+ 149 0024 0148     		ldr	r0, .L11+4
+ 150 0026 10BD     		pop	{r4, pc}
+ 151              	.L12:
+ 152              		.align	2
+ 153              	.L11:
+ 154 0028 00080048 		.word	1207961600
+ 155 002c 00000000 		.word	estimate_soc
+ 156              		.cfi_endproc
+ 157              	.LFE127:
+ 159              		.section	.text.estimate_soc,"ax",%progbits
+ 160              		.align	1
+ 161              		.global	estimate_soc
+ 162              		.syntax unified
+ 163              		.thumb
+ 164              		.thumb_func
+ 165              		.fpu fpv4-sp-d16
+ 167              	estimate_soc:
+ 168              	.LFB128:
+  92:Src/main.c    **** 
+  93:Src/main.c    **** State estimate_soc(void){
+ 169              		.loc 1 93 0
+ 170              		.cfi_startproc
+ 171              		@ args = 0, pretend = 0, frame = 0
+ 172              		@ frame_needed = 0, uses_anonymous_args = 0
+ 173 0000 10B5     		push	{r4, lr}
+ 174              	.LCFI3:
+ 175              		.cfi_def_cfa_offset 8
+ 176              		.cfi_offset 4, -8
+ 177              		.cfi_offset 14, -4
+  94:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, RLED2_Pin, 1); 
+ 178              		.loc 1 94 0
+ 179 0002 084C     		ldr	r4, .L15
+ 180 0004 0122     		movs	r2, #1
+ 181 0006 0421     		movs	r1, #4
+ 182 0008 2046     		mov	r0, r4
+ 183 000a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 184              	.LVL9:
+  95:Src/main.c    ****   HAL_Delay(1000);
+ 185              		.loc 1 95 0
+ 186 000e 4FF47A70 		mov	r0, #1000
+ 187 0012 FFF7FEFF 		bl	HAL_Delay
+ 188              	.LVL10:
+  96:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, RLED2_Pin, 0); 
+ 189              		.loc 1 96 0
+ 190 0016 0022     		movs	r2, #0
+ 191 0018 0421     		movs	r1, #4
+ 192 001a 2046     		mov	r0, r4
+ 193 001c FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 194              	.LVL11:
+  97:Src/main.c    ****   return (State)compute_resistance;
+  98:Src/main.c    **** 
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s 			page 6
+
+
+  99:Src/main.c    **** }
+ 195              		.loc 1 99 0
+ 196 0020 0148     		ldr	r0, .L15+4
+ 197 0022 10BD     		pop	{r4, pc}
+ 198              	.L16:
+ 199              		.align	2
+ 200              	.L15:
+ 201 0024 00080048 		.word	1207961600
+ 202 0028 00000000 		.word	compute_resistance
+ 203              		.cfi_endproc
+ 204              	.LFE128:
+ 206              		.section	.text.compute_resistance,"ax",%progbits
+ 207              		.align	1
+ 208              		.global	compute_resistance
+ 209              		.syntax unified
+ 210              		.thumb
+ 211              		.thumb_func
+ 212              		.fpu fpv4-sp-d16
+ 214              	compute_resistance:
+ 215              	.LFB129:
+ 100:Src/main.c    **** 
+ 101:Src/main.c    **** State compute_resistance(void){
+ 216              		.loc 1 101 0
+ 217              		.cfi_startproc
+ 218              		@ args = 0, pretend = 0, frame = 0
+ 219              		@ frame_needed = 0, uses_anonymous_args = 0
+ 220 0000 10B5     		push	{r4, lr}
+ 221              	.LCFI4:
+ 222              		.cfi_def_cfa_offset 8
+ 223              		.cfi_offset 4, -8
+ 224              		.cfi_offset 14, -4
+ 102:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 1); 
+ 225              		.loc 1 102 0
+ 226 0002 0E4C     		ldr	r4, .L19
+ 227 0004 0122     		movs	r2, #1
+ 228 0006 2021     		movs	r1, #32
+ 229 0008 2046     		mov	r0, r4
+ 230 000a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 231              	.LVL12:
+ 103:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 1); 
+ 232              		.loc 1 103 0
+ 233 000e 0122     		movs	r2, #1
+ 234 0010 4FF48071 		mov	r1, #256
+ 235 0014 2046     		mov	r0, r4
+ 236 0016 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 237              	.LVL13:
+ 104:Src/main.c    ****   HAL_Delay(1000);
+ 238              		.loc 1 104 0
+ 239 001a 4FF47A70 		mov	r0, #1000
+ 240 001e FFF7FEFF 		bl	HAL_Delay
+ 241              	.LVL14:
+ 105:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 0); 
+ 242              		.loc 1 105 0
+ 243 0022 0022     		movs	r2, #0
+ 244 0024 2021     		movs	r1, #32
+ 245 0026 2046     		mov	r0, r4
+ 246 0028 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s 			page 7
+
+
+ 247              	.LVL15:
+ 106:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 0); 
+ 248              		.loc 1 106 0
+ 249 002c 0022     		movs	r2, #0
+ 250 002e 4FF48071 		mov	r1, #256
+ 251 0032 2046     		mov	r0, r4
+ 252 0034 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 253              	.LVL16:
+ 107:Src/main.c    ****   return (State)compute_capacity;
+ 108:Src/main.c    **** }
+ 254              		.loc 1 108 0
+ 255 0038 0148     		ldr	r0, .L19+4
+ 256 003a 10BD     		pop	{r4, pc}
+ 257              	.L20:
+ 258              		.align	2
+ 259              	.L19:
+ 260 003c 00080048 		.word	1207961600
+ 261 0040 00000000 		.word	compute_capacity
+ 262              		.cfi_endproc
+ 263              	.LFE129:
+ 265              		.section	.text.compute_capacity,"ax",%progbits
+ 266              		.align	1
+ 267              		.global	compute_capacity
+ 268              		.syntax unified
+ 269              		.thumb
+ 270              		.thumb_func
+ 271              		.fpu fpv4-sp-d16
+ 273              	compute_capacity:
+ 274              	.LFB130:
+ 109:Src/main.c    **** 
+ 110:Src/main.c    **** State compute_capacity(void){
+ 275              		.loc 1 110 0
+ 276              		.cfi_startproc
+ 277              		@ args = 0, pretend = 0, frame = 0
+ 278              		@ frame_needed = 0, uses_anonymous_args = 0
+ 279 0000 10B5     		push	{r4, lr}
+ 280              	.LCFI5:
+ 281              		.cfi_def_cfa_offset 8
+ 282              		.cfi_offset 4, -8
+ 283              		.cfi_offset 14, -4
+ 111:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 1); 
+ 284              		.loc 1 111 0
+ 285 0002 0D4C     		ldr	r4, .L23
+ 286 0004 0122     		movs	r2, #1
+ 287 0006 2021     		movs	r1, #32
+ 288 0008 2046     		mov	r0, r4
+ 289 000a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 290              	.LVL17:
+ 112:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, RLED2_Pin, 1); 
+ 291              		.loc 1 112 0
+ 292 000e 0122     		movs	r2, #1
+ 293 0010 0421     		movs	r1, #4
+ 294 0012 2046     		mov	r0, r4
+ 295 0014 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 296              	.LVL18:
+ 113:Src/main.c    ****   HAL_Delay(1000);
+ 297              		.loc 1 113 0
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s 			page 8
+
+
+ 298 0018 4FF47A70 		mov	r0, #1000
+ 299 001c FFF7FEFF 		bl	HAL_Delay
+ 300              	.LVL19:
+ 114:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 0); 
+ 301              		.loc 1 114 0
+ 302 0020 0022     		movs	r2, #0
+ 303 0022 2021     		movs	r1, #32
+ 304 0024 2046     		mov	r0, r4
+ 305 0026 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 306              	.LVL20:
+ 115:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, RLED2_Pin, 0); 
+ 307              		.loc 1 115 0
+ 308 002a 0022     		movs	r2, #0
+ 309 002c 0421     		movs	r1, #4
+ 310 002e 2046     		mov	r0, r4
+ 311 0030 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 312              	.LVL21:
+ 116:Src/main.c    ****   return (State)balancing;
+ 117:Src/main.c    **** }
+ 313              		.loc 1 117 0
+ 314 0034 0148     		ldr	r0, .L23+4
+ 315 0036 10BD     		pop	{r4, pc}
+ 316              	.L24:
+ 317              		.align	2
+ 318              	.L23:
+ 319 0038 00080048 		.word	1207961600
+ 320 003c 00000000 		.word	balancing
+ 321              		.cfi_endproc
+ 322              	.LFE130:
+ 324              		.section	.text.balancing,"ax",%progbits
+ 325              		.align	1
+ 326              		.global	balancing
+ 327              		.syntax unified
+ 328              		.thumb
+ 329              		.thumb_func
+ 330              		.fpu fpv4-sp-d16
+ 332              	balancing:
+ 333              	.LFB131:
+ 118:Src/main.c    **** 
+ 119:Src/main.c    **** State balancing(void){
+ 334              		.loc 1 119 0
+ 335              		.cfi_startproc
+ 336              		@ args = 0, pretend = 0, frame = 0
+ 337              		@ frame_needed = 0, uses_anonymous_args = 0
+ 338 0000 10B5     		push	{r4, lr}
+ 339              	.LCFI6:
+ 340              		.cfi_def_cfa_offset 8
+ 341              		.cfi_offset 4, -8
+ 342              		.cfi_offset 14, -4
+ 120:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
+ 343              		.loc 1 120 0
+ 344 0002 0E4C     		ldr	r4, .L27
+ 345 0004 0122     		movs	r2, #1
+ 346 0006 8021     		movs	r1, #128
+ 347 0008 2046     		mov	r0, r4
+ 348 000a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 349              	.LVL22:
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s 			page 9
+
+
+ 121:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 1); 
+ 350              		.loc 1 121 0
+ 351 000e 0122     		movs	r2, #1
+ 352 0010 4FF48071 		mov	r1, #256
+ 353 0014 2046     		mov	r0, r4
+ 354 0016 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 355              	.LVL23:
+ 122:Src/main.c    ****   HAL_Delay(1000);
+ 356              		.loc 1 122 0
+ 357 001a 4FF47A70 		mov	r0, #1000
+ 358 001e FFF7FEFF 		bl	HAL_Delay
+ 359              	.LVL24:
+ 123:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 0); 
+ 360              		.loc 1 123 0
+ 361 0022 0022     		movs	r2, #0
+ 362 0024 8021     		movs	r1, #128
+ 363 0026 2046     		mov	r0, r4
+ 364 0028 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 365              	.LVL25:
+ 124:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 0); 
+ 366              		.loc 1 124 0
+ 367 002c 0022     		movs	r2, #0
+ 368 002e 4FF48071 		mov	r1, #256
+ 369 0032 2046     		mov	r0, r4
+ 370 0034 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 371              	.LVL26:
+ 125:Src/main.c    ****   return (State)send_data;
+ 126:Src/main.c    **** 
+ 127:Src/main.c    **** }
+ 372              		.loc 1 127 0
+ 373 0038 0148     		ldr	r0, .L27+4
+ 374 003a 10BD     		pop	{r4, pc}
+ 375              	.L28:
+ 376              		.align	2
+ 377              	.L27:
+ 378 003c 00080048 		.word	1207961600
+ 379 0040 00000000 		.word	send_data
+ 380              		.cfi_endproc
+ 381              	.LFE131:
+ 383              		.section	.text.send_data,"ax",%progbits
+ 384              		.align	1
+ 385              		.global	send_data
+ 386              		.syntax unified
+ 387              		.thumb
+ 388              		.thumb_func
+ 389              		.fpu fpv4-sp-d16
+ 391              	send_data:
+ 392              	.LFB132:
+ 128:Src/main.c    **** State send_data(void){
+ 393              		.loc 1 128 0
+ 394              		.cfi_startproc
+ 395              		@ args = 0, pretend = 0, frame = 0
+ 396              		@ frame_needed = 0, uses_anonymous_args = 0
+ 397 0000 10B5     		push	{r4, lr}
+ 398              	.LCFI7:
+ 399              		.cfi_def_cfa_offset 8
+ 400              		.cfi_offset 4, -8
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s 			page 10
+
+
+ 401              		.cfi_offset 14, -4
+ 129:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 1); 
+ 402              		.loc 1 129 0
+ 403 0002 0D4C     		ldr	r4, .L31
+ 404 0004 0122     		movs	r2, #1
+ 405 0006 2021     		movs	r1, #32
+ 406 0008 2046     		mov	r0, r4
+ 407 000a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 408              	.LVL27:
+ 130:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
+ 409              		.loc 1 130 0
+ 410 000e 0122     		movs	r2, #1
+ 411 0010 8021     		movs	r1, #128
+ 412 0012 2046     		mov	r0, r4
+ 413 0014 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 414              	.LVL28:
+ 131:Src/main.c    ****   HAL_Delay(1000);
+ 415              		.loc 1 131 0
+ 416 0018 4FF47A70 		mov	r0, #1000
+ 417 001c FFF7FEFF 		bl	HAL_Delay
+ 418              	.LVL29:
+ 132:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 0); 
+ 419              		.loc 1 132 0
+ 420 0020 0022     		movs	r2, #0
+ 421 0022 2021     		movs	r1, #32
+ 422 0024 2046     		mov	r0, r4
+ 423 0026 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 424              	.LVL30:
+ 133:Src/main.c    ****   HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 0); 
+ 425              		.loc 1 133 0
+ 426 002a 0022     		movs	r2, #0
+ 427 002c 8021     		movs	r1, #128
+ 428 002e 2046     		mov	r0, r4
+ 429 0030 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 430              	.LVL31:
+ 134:Src/main.c    ****   return (State)shutdown;
+ 135:Src/main.c    **** 
+ 136:Src/main.c    **** }
+ 431              		.loc 1 136 0
+ 432 0034 0148     		ldr	r0, .L31+4
+ 433 0036 10BD     		pop	{r4, pc}
+ 434              	.L32:
+ 435              		.align	2
+ 436              	.L31:
+ 437 0038 00080048 		.word	1207961600
+ 438 003c 00000000 		.word	shutdown
+ 439              		.cfi_endproc
+ 440              	.LFE132:
+ 442              		.section	.text.shutdown,"ax",%progbits
+ 443              		.align	1
+ 444              		.global	shutdown
+ 445              		.syntax unified
+ 446              		.thumb
+ 447              		.thumb_func
+ 448              		.fpu fpv4-sp-d16
+ 450              	shutdown:
+ 451              	.LFB133:
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s 			page 11
+
+
+ 137:Src/main.c    **** 
+ 138:Src/main.c    **** State shutdown(void){
+ 452              		.loc 1 138 0
+ 453              		.cfi_startproc
+ 454              		@ args = 0, pretend = 0, frame = 0
+ 455              		@ frame_needed = 0, uses_anonymous_args = 0
+ 456 0000 08B5     		push	{r3, lr}
+ 457              	.LCFI8:
+ 458              		.cfi_def_cfa_offset 8
+ 459              		.cfi_offset 3, -8
+ 460              		.cfi_offset 14, -4
+ 139:Src/main.c    ****   HAL_Delay(1000);
+ 461              		.loc 1 139 0
+ 462 0002 4FF47A70 		mov	r0, #1000
+ 463 0006 FFF7FEFF 		bl	HAL_Delay
+ 464              	.LVL32:
+ 140:Src/main.c    ****   return (State)idle;
+ 141:Src/main.c    **** }
+ 465              		.loc 1 141 0
+ 466 000a 0148     		ldr	r0, .L35
+ 467 000c 08BD     		pop	{r3, pc}
+ 468              	.L36:
+ 469 000e 00BF     		.align	2
+ 470              	.L35:
+ 471 0010 00000000 		.word	idle
+ 472              		.cfi_endproc
+ 473              	.LFE133:
+ 475              		.section	.text.main,"ax",%progbits
+ 476              		.align	1
+ 477              		.global	main
+ 478              		.syntax unified
+ 479              		.thumb
+ 480              		.thumb_func
+ 481              		.fpu fpv4-sp-d16
+ 483              	main:
+ 484              	.LFB124:
   45:Src/main.c    **** 
-  46:Src/main.c    ****   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  47:Src/main.c    ****   HAL_Init();
-  38              		.loc 1 47 0
-  39 0002 FFF7FEFF 		bl	HAL_Init
-  40              	.LVL0:
+ 485              		.loc 1 45 0
+ 486              		.cfi_startproc
+ 487              		@ args = 0, pretend = 0, frame = 0
+ 488              		@ frame_needed = 0, uses_anonymous_args = 0
+ 489 0000 08B5     		push	{r3, lr}
+ 490              	.LCFI9:
+ 491              		.cfi_def_cfa_offset 8
+ 492              		.cfi_offset 3, -8
+ 493              		.cfi_offset 14, -4
   48:Src/main.c    **** 
-  49:Src/main.c    ****   /* Configure the system clock */
-  50:Src/main.c    ****   SystemClock_Config();
-  41              		.loc 1 50 0
-  42 0006 FFF7FEFF 		bl	SystemClock_Config
-  43              	.LVL1:
+ 494              		.loc 1 48 0
+ 495 0002 FFF7FEFF 		bl	HAL_Init
+ 496              	.LVL33:
   51:Src/main.c    **** 
-  52:Src/main.c    ****   /* Initialize all configured peripherals */
-  53:Src/main.c    ****   MX_GPIO_Init();
-  44              		.loc 1 53 0
-  45 000a FFF7FEFF 		bl	MX_GPIO_Init
-  46              	.LVL2:
+ 497              		.loc 1 51 0
+ 498 0006 FFF7FEFF 		bl	SystemClock_Config
+ 499              	.LVL34:
   54:Src/main.c    ****   MX_DMA_Init();
-  47              		.loc 1 54 0
-  48 000e FFF7FEFF 		bl	MX_DMA_Init
-  49              	.LVL3:
+ 500              		.loc 1 54 0
+ 501 000a FFF7FEFF 		bl	MX_GPIO_Init
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s 			page 12
+
+
+ 502              	.LVL35:
   55:Src/main.c    ****   MX_ADC1_Init();
-  50              		.loc 1 55 0
-  51 0012 FFF7FEFF 		bl	MX_ADC1_Init
-  52              	.LVL4:
+ 503              		.loc 1 55 0
+ 504 000e FFF7FEFF 		bl	MX_DMA_Init
+ 505              	.LVL36:
   56:Src/main.c    ****   MX_ADC2_Init();
-  53              		.loc 1 56 0
-  54 0016 FFF7FEFF 		bl	MX_ADC2_Init
-  55              	.LVL5:
+ 506              		.loc 1 56 0
+ 507 0012 FFF7FEFF 		bl	MX_ADC1_Init
+ 508              	.LVL37:
   57:Src/main.c    ****   MX_CAN_Init();
-  56              		.loc 1 57 0
-  57 001a FFF7FEFF 		bl	MX_CAN_Init
-  58              	.LVL6:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwjiKps.s 			page 3
-
-
+ 509              		.loc 1 57 0
+ 510 0016 FFF7FEFF 		bl	MX_ADC2_Init
+ 511              	.LVL38:
   58:Src/main.c    ****   MX_RTC_Init();
-  59              		.loc 1 58 0
-  60 001e FFF7FEFF 		bl	MX_RTC_Init
-  61              	.LVL7:
+ 512              		.loc 1 58 0
+ 513 001a FFF7FEFF 		bl	MX_CAN_Init
+ 514              	.LVL39:
   59:Src/main.c    ****   MX_SPI1_Init();
-  62              		.loc 1 59 0
-  63 0022 FFF7FEFF 		bl	MX_SPI1_Init
-  64              	.LVL8:
+ 515              		.loc 1 59 0
+ 516 001e FFF7FEFF 		bl	MX_RTC_Init
+ 517              	.LVL40:
   60:Src/main.c    ****   MX_USART3_UART_Init();
-  65              		.loc 1 60 0
-  66 0026 FFF7FEFF 		bl	MX_USART3_UART_Init
-  67              	.LVL9:
-  68              	.L2:
+ 518              		.loc 1 60 0
+ 519 0022 FFF7FEFF 		bl	MX_SPI1_Init
+ 520              	.LVL41:
   61:Src/main.c    **** 
-  62:Src/main.c    ****   while (1)
-  63:Src/main.c    ****   {
-  64:Src/main.c    ****     HAL_GPIO_TogglePin(GPIOC, RLED1_Pin); //Toggle the state of pin PC9
-  69              		.loc 1 64 0 discriminator 1
-  70 002a 4FF48071 		mov	r1, #256
-  71 002e 0448     		ldr	r0, .L4
-  72 0030 FFF7FEFF 		bl	HAL_GPIO_TogglePin
-  73              	.LVL10:
-  65:Src/main.c    **** 		HAL_Delay(1000); //delay 100ms
-  74              		.loc 1 65 0 discriminator 1
-  75 0034 4FF47A70 		mov	r0, #1000
-  76 0038 FFF7FEFF 		bl	HAL_Delay
-  77              	.LVL11:
-  78 003c F5E7     		b	.L2
-  79              	.L5:
-  80 003e 00BF     		.align	2
-  81              	.L4:
-  82 0040 00080048 		.word	1207961600
-  83              		.cfi_endproc
-  84              	.LFE124:
-  86              		.comm	huart3,112,4
-  87              		.comm	hspi1,100,4
-  88              		.comm	hrtc,32,4
-  89              		.comm	hcan,64,4
-  90              		.comm	hdma_adc1,68,4
-  91              		.comm	hadc2,84,4
-  92              		.comm	hadc1,84,4
-  93              		.text
-  94              	.Letext0:
-  95              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
-  96              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
-  97              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
-  98              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
-  99              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
- 100              		.file 7 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 101              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 102              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
- 103              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
- 104              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
- 105              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
- 106              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc_ex.h"
- 107              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc.h"
- 108              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_can.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwjiKps.s 			page 4
+ 521              		.loc 1 61 0
+ 522 0026 FFF7FEFF 		bl	MX_USART3_UART_Init
+ 523              	.LVL42:
+  63:Src/main.c    **** 
+ 524              		.loc 1 63 0
+ 525 002a 0148     		ldr	r0, .L40
+ 526              	.LVL43:
+ 527              	.L38:
+  67:Src/main.c    ****   }
+ 528              		.loc 1 67 0 discriminator 1
+ 529 002c 8047     		blx	r0
+ 530              	.LVL44:
+ 531 002e FDE7     		b	.L38
+ 532              	.L41:
+ 533              		.align	2
+ 534              	.L40:
+ 535 0030 00000000 		.word	idle
+ 536              		.cfi_endproc
+ 537              	.LFE124:
+ 539              		.comm	huart3,112,4
+ 540              		.comm	hspi1,100,4
+ 541              		.comm	hrtc,32,4
+ 542              		.comm	hcan,64,4
+ 543              		.comm	hdma_adc1,68,4
+ 544              		.comm	hadc2,84,4
+ 545              		.comm	hadc1,84,4
+ 546              		.text
+ 547              	.Letext0:
+ 548              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 549              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 550              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s 			page 13
 
 
- 109              		.file 16 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rtc.h"
- 110              		.file 17 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h"
- 111              		.file 18 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h"
- 112              		.file 19 "Inc/init.h"
- 113              		.file 20 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
- 114              		.file 21 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwjiKps.s 			page 5
+ 551              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 552              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
+ 553              		.file 7 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 554              		.file 8 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 555              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 556              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
+ 557              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 558              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
+ 559              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc_ex.h"
+ 560              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc.h"
+ 561              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_can.h"
+ 562              		.file 16 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rtc.h"
+ 563              		.file 17 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h"
+ 564              		.file 18 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h"
+ 565              		.file 19 "Inc/init.h"
+ 566              		.file 20 "Inc/fsm.h"
+ 567              		.file 21 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
+ 568              		.file 22 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 main.c
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwjiKps.s:18     .text.main:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwjiKps.s:25     .text.main:0000000000000000 main
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwjiKps.s:82     .text.main:0000000000000040 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:18     .text.idle:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:25     .text.idle:0000000000000000 idle
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:60     .text.idle:0000000000000024 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:73     .text.start:0000000000000000 start
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:66     .text.start:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:107    .text.start:0000000000000024 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:120    .text.measure:0000000000000000 measure
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:113    .text.measure:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:154    .text.measure:0000000000000028 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:167    .text.estimate_soc:0000000000000000 estimate_soc
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:160    .text.estimate_soc:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:201    .text.estimate_soc:0000000000000024 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:214    .text.compute_resistance:0000000000000000 compute_resistance
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:207    .text.compute_resistance:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:260    .text.compute_resistance:000000000000003c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:273    .text.compute_capacity:0000000000000000 compute_capacity
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:266    .text.compute_capacity:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:319    .text.compute_capacity:0000000000000038 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:332    .text.balancing:0000000000000000 balancing
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:325    .text.balancing:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:378    .text.balancing:000000000000003c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:391    .text.send_data:0000000000000000 send_data
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:384    .text.send_data:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:437    .text.send_data:0000000000000038 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:450    .text.shutdown:0000000000000000 shutdown
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:443    .text.shutdown:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:471    .text.shutdown:0000000000000010 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:476    .text.main:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:483    .text.main:0000000000000000 main
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccpS4vVn.s:535    .text.main:0000000000000030 $d
                             *COM*:0000000000000070 huart3
                             *COM*:0000000000000064 hspi1
                             *COM*:0000000000000020 hrtc
@@ -205,6 +784,8 @@ DEFINED SYMBOLS
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS
+HAL_GPIO_WritePin
+HAL_Delay
 HAL_Init
 SystemClock_Config
 MX_GPIO_Init
@@ -215,5 +796,3 @@ MX_CAN_Init
 MX_RTC_Init
 MX_SPI1_Init
 MX_USART3_UART_Init
-HAL_GPIO_TogglePin
-HAL_Delay

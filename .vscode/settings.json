@@ -1,5 +1,29 @@
 {
     "files.associations": {
-        "init.c": "cpp"
+        "init.c": "cpp",
+        "main.h": "c",
+        "fsm.h": "c",
+        "stm32f3xx_hal_adc.h": "c",
+        "stm32f3xx_hal_can.h": "c",
+        "stm32f3xx_hal_comp.h": "c",
+        "stm32f3xx_hal_crc.h": "c",
+        "stm32f3xx_hal_dac.h": "c",
+        "stm32f3xx_hal_dma.h": "c",
+        "stm32f3xx_hal_hrtim.h": "c",
+        "stm32f3xx_hal_i2c.h": "c",
+        "stm32f3xx_hal_i2s.h": "c",
+        "stm32f3xx_hal_nand.h": "c",
+        "stm32f3xx_hal_nor.h": "c",
+        "stm32f3xx_hal_opamp.h": "c",
+        "stm32f3xx_hal_pccard.h": "c",
+        "stm32f3xx_hal_pcd.h": "c",
+        "stm32f3xx_hal_rtc.h": "c",
+        "stm32f3xx_hal_sdadc.h": "c",
+        "stm32f3xx_hal_smbus.h": "c",
+        "stm32f3xx_hal_spi.h": "c",
+        "stm32f3xx_hal_sram.h": "c",
+        "stm32f3xx_hal_tim.h": "c",
+        "stm32f3xx_hal_tsc.h": "c",
+        "stm32f3xx_hal_usart.h": "c"
     }
 }

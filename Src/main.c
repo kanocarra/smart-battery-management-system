@@ -39,8 +39,9 @@
 #include "main.h"
 #include "stm32f3xx_hal.h"
 #include "init.h"
+#include "fsm.h"
 
-int main(void)
+void main(void)
 {
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
@@ -59,13 +60,86 @@ int main(void)
   MX_SPI1_Init();
   MX_USART3_UART_Init();
 
+ State currentState = idle;
+
   while (1)
   {
-    HAL_GPIO_TogglePin(GPIOC, RLED1_Pin); //Toggle the state of pin PC9
-		HAL_Delay(1000); //delay 100ms
+    currentState = (State)currentState();
   }
 
 }
+
+State idle(void){
+  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 1); 
+  HAL_Delay(1000);
+  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 0);
+  return (State)start;
+}
+
+State start(void){
+  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
+  HAL_Delay(1000);
+  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 0); 
+  return (State)measure;
+}
+
+State measure(void){
+  HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 1); 
+  HAL_Delay(1000);
+  HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 0);   
+  return (State)estimate_soc;
+}
+
+State estimate_soc(void){
+  HAL_GPIO_WritePin(GPIOC, RLED2_Pin, 1); 
+  HAL_Delay(1000);
+  HAL_GPIO_WritePin(GPIOC, RLED2_Pin, 0); 
+  return (State)compute_resistance;
+
+}
+
+State compute_resistance(void){
+  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 1); 
+  HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 1); 
+  HAL_Delay(1000);
+  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 0); 
+  HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 0); 
+  return (State)compute_capacity;
+}
+
+State compute_capacity(void){
+  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 1); 
+  HAL_GPIO_WritePin(GPIOC, RLED2_Pin, 1); 
+  HAL_Delay(1000);
+  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 0); 
+  HAL_GPIO_WritePin(GPIOC, RLED2_Pin, 0); 
+  return (State)balancing;
+}
+
+State balancing(void){
+  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
+  HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 1); 
+  HAL_Delay(1000);
+  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 0); 
+  HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 0); 
+  return (State)send_data;
+
+}
+State send_data(void){
+  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 1); 
+  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
+  HAL_Delay(1000);
+  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 0); 
+  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 0); 
+  return (State)shutdown;
+
+}
+
+State shutdown(void){
+  HAL_Delay(1000);
+  return (State)idle;
+}
+
 
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
