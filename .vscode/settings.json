@@ -24,6 +24,16 @@
         "stm32f3xx_hal_sram.h": "c",
         "stm32f3xx_hal_tim.h": "c",
         "stm32f3xx_hal_tsc.h": "c",
-        "stm32f3xx_hal_usart.h": "c"
+        "stm32f3xx_hal_usart.h": "c",
+        "ltc6804.c": "cpp",
+        "stdint.h": "c",
+        "error_handler.c": "cpp",
+        "stm32f3xx_hal_gpio.h": "c",
+        "stm32f3xx_ll_gpio.h": "c",
+        "stm32f3xx_hal_cortex.c": "cpp",
+        "rtc.c": "cpp",
+        "stm32f3xx_hal_uart.h": "c",
+        "pec15.c": "cpp",
+        "stm32f3xx_hal.h": "c"
     }
 }

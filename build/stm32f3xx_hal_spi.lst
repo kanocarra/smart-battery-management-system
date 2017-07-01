@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
   30:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****           (##) NVIC configuration if you need to use interrupt process
   31:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****               (+++) Configure the SPIx interrupt priority
   32:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****               (+++) Enable the NVIC SPI IRQ handle
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 2
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 2
 
 
   33:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****           (##) DMA Configuration if you need to use DMA process
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
   87:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****        |    X    |----------------|----------|----------|-----------|----------|-----------|-------
   88:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****        |         |       DMA      | Fpclk/4  | Fpclk/2  | Fpclk/2   | Fpclk/16 | Fpclk/2   | Fpclk/
   89:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****        |=========|================|==========|==========|===========|==========|===========|=======
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 3
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 3
 
 
   90:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****        |         |     Polling    | Fpclk/8  | Fpclk/2  |     NA    |    NA    | Fpclk/8   | Fpclk/
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  144:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
  145:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  146:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 4
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 4
 
 
  147:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  201:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** static void SPI_TxISR_8BIT(struct __SPI_HandleTypeDef *hspi);
  202:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** static void SPI_TxISR_16BIT(struct __SPI_HandleTypeDef *hspi);
  203:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** static void SPI_RxISR_8BIT(struct __SPI_HandleTypeDef *hspi);
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 5
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 5
 
 
  204:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** static void SPI_RxISR_16BIT(struct __SPI_HandleTypeDef *hspi);
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  258:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
  259:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       (+) Call the function HAL_SPI_DeInit() to restore the default configuration
  260:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****           of the selected SPIx peripheral.
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 6
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 6
 
 
  261:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  315:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     HAL_SPI_MspInit(hspi);
  316:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   }
  317:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 7
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 7
 
 
  318:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->State = HAL_SPI_STATE_BUSY;
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  372:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** #if (USE_SPI_CRC != 0U)
  373:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /*---------------------------- SPIx CRCPOLY Configuration ------------------*/
  374:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Configure : CRC Polynomial */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 8
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 8
 
 
  375:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   if (hspi->Init.CRCCalculation == SPI_CRCCALCULATION_ENABLE)
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  429:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   *               the configuration information for SPI module.
  430:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * @retval None
  431:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 9
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 9
 
 
  432:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** __weak void HAL_SPI_MspInit(SPI_HandleTypeDef *hspi)
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  486:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****             The HAL_SPI_ErrorCallback()user callback will be executed when a communication error is
  487:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
  488:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     (#) APIs provided for these 2 transfer modes (Blocking mode or Non blocking mode using either I
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 10
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 10
 
 
  489:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         exist for 1Line (simplex) and 2Lines (full duplex) modes.
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  543:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
  544:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Configure communication direction : 1Line */
  545:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   if (hspi->Init.Direction == SPI_DIRECTION_1LINE)
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 11
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 11
 
 
  546:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  600:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       if (hspi->TxXferCount > 1U)
  601:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       {
  602:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         /* write on the data register in packing mode */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 12
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 12
 
 
  603:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         hspi->Instance->DR = *((uint16_t *)pData);
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  657:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   if (hspi->Init.Direction == SPI_DIRECTION_2LINES)
  658:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
  659:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     __HAL_SPI_CLEAR_OVRFLAG(hspi);
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 13
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 13
 
 
  660:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   }
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  714:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   }
  715:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
  716:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Set the transaction information */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 14
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 14
 
 
  717:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->State       = HAL_SPI_STATE_BUSY_RX;
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  771:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       /* Check the RXNE flag */
  772:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       if (__HAL_SPI_GET_FLAG(hspi, SPI_FLAG_RXNE))
  773:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 15
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 15
 
 
  774:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         /* read the received data */
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  828:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
  829:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     /* Receive last data in 16 Bit mode */
  830:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     if (hspi->Init.DataSize > SPI_DATASIZE_8BIT)
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 16
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 16
 
 
  831:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     {
@@ -958,7 +958,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  885:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Check if CRC error occurred */
  886:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   if (__HAL_SPI_GET_FLAG(hspi, SPI_FLAG_CRCERR))
  887:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 17
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 17
 
 
  888:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     SET_BIT(hspi->ErrorCode, HAL_SPI_ERROR_CRC);
@@ -1018,7 +1018,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  942:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     goto error;
  943:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   }
  944:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 18
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 18
 
 
  945:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   if ((pTxData == NULL) || (pRxData == NULL) || (Size == 0U))
@@ -1078,7 +1078,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  999:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
 1000:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     if ((hspi->Init.Mode == SPI_MODE_SLAVE) || (hspi->TxXferCount == 0x01U))
 1001:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 19
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 19
 
 
 1002:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       hspi->Instance->DR = *((uint16_t *)pTxData);
@@ -1138,7 +1138,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1056:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         hspi->TxXferCount -= 2U;
 1057:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       }
 1058:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       else
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 20
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 20
 
 
 1059:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       {
@@ -1198,7 +1198,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1113:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****           (*(uint8_t *)pRxData++) = *(__IO uint8_t *)&hspi->Instance->DR;
 1114:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****           hspi->RxXferCount--;
 1115:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 21
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 21
 
 
 1116:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         /* Next Data is a Transmission (Tx). Tx is allowed */
@@ -1258,7 +1258,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1170:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
 1171:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     SET_BIT(hspi->ErrorCode, HAL_SPI_ERROR_CRC);
 1172:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     /* Clear CRC Flag */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 22
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 22
 
 
 1173:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     __HAL_SPI_CLEAR_CRCERRFLAG(hspi);
@@ -1318,7 +1318,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1227:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->State       = HAL_SPI_STATE_BUSY_TX;
 1228:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->ErrorCode   = HAL_SPI_ERROR_NONE;
 1229:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->pTxBuffPtr  = (uint8_t *)pData;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 23
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 23
 
 
 1230:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->TxXferSize  = Size;
@@ -1378,7 +1378,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1284:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * @param  Size: amount of data to be sent
 1285:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * @retval HAL status
 1286:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 24
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 24
 
 
 1287:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** HAL_StatusTypeDef HAL_SPI_Receive_IT(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size)
@@ -1438,7 +1438,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1341:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   if (hspi->Init.Direction == SPI_DIRECTION_1LINE)
 1342:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
 1343:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     SPI_1LINE_RX(hspi);
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 25
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 25
 
 
 1344:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   }
@@ -1498,7 +1498,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1398:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   assert_param(IS_SPI_DIRECTION_2LINES(hspi->Init.Direction));
 1399:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
 1400:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Process locked */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 26
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 26
 
 
 1401:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   __HAL_LOCK(hspi);
@@ -1558,7 +1558,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1455:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     SPI_RESET_CRC(hspi);
 1456:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   }
 1457:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   else
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 27
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 27
 
 
 1458:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
@@ -1618,7 +1618,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1512:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   if (hspi->State != HAL_SPI_STATE_READY)
 1513:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
 1514:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     errorcode = HAL_BUSY;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 28
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 28
 
 
 1515:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     goto error;
@@ -1678,7 +1678,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1569:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     if ((hspi->TxXferCount & 0x1U) == 0U)
 1570:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     {
 1571:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       CLEAR_BIT(hspi->Instance->CR2, SPI_CR2_LDMATX);
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 29
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 29
 
 
 1572:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       hspi->TxXferCount = (hspi->TxXferCount >> 1U);
@@ -1738,7 +1738,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1626:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   
 1627:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     /* Call transmit-receive function to send Dummy data on Tx line and generate clock on CLK line 
 1628:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     return HAL_SPI_TransmitReceive_DMA(hspi, pData, pData, Size);
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 30
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 30
 
 
 1629:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   }
@@ -1798,7 +1798,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1683:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   CLEAR_BIT(hspi->Instance->CR2, SPI_CR2_LDMARX);
 1684:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   if (hspi->Init.DataSize > SPI_DATASIZE_8BIT)
 1685:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 31
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 31
 
 
 1686:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     /* Set fiforxthresold according the reception data length: 16bit */
@@ -1858,7 +1858,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1740:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** error:
 1741:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Process Unlocked */
 1742:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   __HAL_UNLOCK(hspi);
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 32
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 32
 
 
 1743:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   return errorcode;
@@ -1918,7 +1918,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1797:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->TxXferCount = Size;
 1798:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->pRxBuffPtr  = (uint8_t *)pRxData;
 1799:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->RxXferSize  = Size;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 33
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 33
 
 
 1800:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->RxXferCount = Size;
@@ -1978,7 +1978,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1854:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     {
 1855:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       /* Set fiforxthresold according the reception data length: 16bit */
 1856:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       CLEAR_BIT(hspi->Instance->CR2, SPI_RXFIFO_THRESHOLD);
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 34
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 34
 
 
 1857:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
@@ -2038,7 +2038,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1911:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     __HAL_SPI_ENABLE(hspi);
 1912:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   }
 1913:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Enable the SPI Error Interrupt Bit */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 35
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 35
 
 
 1914:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   __HAL_SPI_ENABLE_IT(hspi, (SPI_IT_ERR));
@@ -2098,7 +2098,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1968:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     hspi->RxISR = SPI_AbortRx_ISR;
 1969:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     /* Wait HAL_SPI_STATE_ABORT state */
 1970:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     do
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 36
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 36
 
 
 1971:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     {
@@ -2158,7 +2158,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2025:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
 2026:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       /* Abort DMA Rx Handle linked to SPI Peripheral */
 2027:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       if (HAL_DMA_Abort(hspi->hdmarx) != HAL_OK)
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 37
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 37
 
 
 2028:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       {
@@ -2218,7 +2218,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2082:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   *         This procedure performs following operations :
 2083:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   *           - Disable SPI Interrupts (depending of transfer direction)
 2084:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   *           - Disable the DMA transfer in the peripheral register (if enabled)
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 38
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 38
 
 
 2085:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   *           - Abort DMA transfer by calling HAL_DMA_Abort_IT (in case of transfer in DMA mode)
@@ -2278,7 +2278,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2139:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Clear ERRIE interrupts in case of DMA Mode */
 2140:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   CLEAR_BIT(hspi->Instance->CR2, SPI_CR2_ERRIE);
 2141:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 39
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 39
 
 
 2142:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* If DMA Tx and/or DMA Rx Handles are associated to SPI Handle, DMA Abort complete callbacks sho
@@ -2338,7 +2338,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2196:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         hspi->hdmarx->XferAbortCallback = NULL;
 2197:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         hspi->ErrorCode = HAL_SPI_ERROR_ABORT;
 2198:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         abortcplt = 1U;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 40
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 40
 
 
 2199:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       }
@@ -2398,7 +2398,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2253:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       /* return HAL_Error in case of error during Abort procedure */
 2254:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       errorcode = HAL_ERROR;
 2255:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 41
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 41
 
 
 2256:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     else
@@ -2458,7 +2458,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2310:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Process Unlocked */
 2311:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   __HAL_UNLOCK(hspi);
 2312:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 42
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 42
 
 
 2313:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   return HAL_OK;
@@ -2518,7 +2518,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2367:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   if (((itflag & SPI_FLAG_TXE) != RESET) && ((itsource & SPI_IT_TXE) != RESET))
 2368:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
 2369:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     hspi->TxISR(hspi);
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 43
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 43
 
 
 2370:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     return;
@@ -2578,7 +2578,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2424:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         /* Abort the SPI DMA Tx channel */
 2425:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         if (hspi->hdmatx != NULL)
 2426:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 44
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 44
 
 
 2427:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****           /* Set the SPI DMA Abort callback :
@@ -2638,7 +2638,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2481:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** __weak void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi)
 2482:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** {
 2483:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Prevent unused argument(s) compilation warning */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 45
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 45
 
 
 2484:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   UNUSED(hspi);
@@ -2698,7 +2698,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2538:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
 2539:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** /**
 2540:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * @brief SPI error callback.
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 46
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 46
 
 
 2541:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * @param  hspi: pointer to a SPI_HandleTypeDef structure that contains
@@ -2758,7 +2758,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2595:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   *               the configuration information for SPI module.
 2596:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * @retval SPI state
 2597:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 47
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 47
 
 
 2598:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** HAL_SPI_StateTypeDef HAL_SPI_GetState(SPI_HandleTypeDef *hspi)
@@ -2818,7 +2818,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2652:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     /* Check the end of the transaction */
 2653:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     if (SPI_EndRxTxTransaction(hspi, SPI_DEFAULT_TIMEOUT, tickstart) != HAL_OK)
 2654:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 48
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 48
 
 
 2655:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       SET_BIT(hspi->ErrorCode, HAL_SPI_ERROR_FLAG);
@@ -2878,7 +2878,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2709:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       /* Read CRC */
 2710:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       if (hspi->Init.DataSize > SPI_DATASIZE_8BIT)
 2711:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 49
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 49
 
 
 2712:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         tmpreg = hspi->Instance->DR;
@@ -2938,7 +2938,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2766:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
 2767:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** /**
 2768:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * @brief  DMA SPI transmit receive process complete callback.
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 50
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 50
 
 
 2769:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * @param  hdma: pointer to a DMA_HandleTypeDef structure that contains
@@ -2998,7 +2998,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2823:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     {
 2824:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       SET_BIT(hspi->ErrorCode, HAL_SPI_ERROR_FLAG);
 2825:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 51
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 51
 
 
 2826:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
@@ -3058,7 +3058,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2880:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * @param  hdma: pointer to a DMA_HandleTypeDef structure that contains
 2881:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   *               the configuration information for the specified DMA module.
 2882:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * @retval None
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 52
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 52
 
 
 2883:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   */
@@ -3118,7 +3118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2937:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
 2938:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Disable Tx DMA Request */
 2939:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   CLEAR_BIT(hspi->Instance->CR2, SPI_CR2_TXDMAEN);
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 53
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 53
 
 
 2940:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
@@ -3178,7 +3178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2994:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** static void SPI_DMARxAbortCallback(DMA_HandleTypeDef *hdma)
 2995:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** {
 2996:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   SPI_HandleTypeDef *hspi = (SPI_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 54
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 54
 
 
 2997:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
@@ -3238,7 +3238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 3051:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * @param  hspi: pointer to a SPI_HandleTypeDef structure that contains
 3052:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   *               the configuration information for SPI module.
 3053:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * @retval None
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 55
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 55
 
 
 3054:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   */
@@ -3298,7 +3298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 3108:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
 3109:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Read data register to flush CRC */
 3110:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   tmpreg = *((__IO uint8_t *)&hspi->Instance->DR);
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 56
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 56
 
 
 3111:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
@@ -3358,7 +3358,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 3165:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** #endif /* USE_SPI_CRC */
 3166:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
 3167:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     /* Disable TXE interrupt */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 57
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 57
 
 
 3168:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     __HAL_SPI_DISABLE_IT(hspi, SPI_IT_TXE);
@@ -3418,7 +3418,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 3222:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Read data register to flush CRC */
 3223:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   tmpreg = hspi->Instance->DR;
 3224:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 58
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 58
 
 
 3225:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* To avoid GCC warning */
@@ -3478,7 +3478,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 3279:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** static void SPI_RxISR_8BITCRC(struct __SPI_HandleTypeDef *hspi)
 3280:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** {
 3281:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   __IO uint8_t tmpreg = 0U;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 59
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 59
 
 
 3282:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
@@ -3538,7 +3538,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 3336:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   */
 3337:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** static void SPI_RxISR_16BITCRC(struct __SPI_HandleTypeDef *hspi)
 3338:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 60
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 60
 
 
 3339:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   __IO uint16_t tmpreg = 0U;
@@ -3598,7 +3598,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 3393:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** static void SPI_TxISR_8BIT(struct __SPI_HandleTypeDef *hspi)
 3394:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** {
 3395:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   *(__IO uint8_t *)&hspi->Instance->DR = (*hspi->pTxBuffPtr++);
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 61
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 61
 
 
 3396:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->TxXferCount--;
@@ -3658,7 +3658,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 3450:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   while ((__HAL_SPI_GET_FLAG(hspi, Flag) ? SET : RESET) != State)
 3451:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
 3452:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     if (Timeout != HAL_MAX_DELAY)
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 62
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 62
 
 
 3453:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     {
@@ -3718,7 +3718,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
   32 0000 F0B5     		push	{r4, r5, r6, r7, lr}
   33              	.LCFI0:
   34              		.cfi_def_cfa_offset 20
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 63
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 63
 
 
   35              		.cfi_offset 4, -20
@@ -3778,7 +3778,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
   72 0030 9DF80730 		ldrb	r3, [sp, #7]	@ zero_extendqisi2
   73 0034 EBE7     		b	.L3
   74              	.L12:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 64
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 64
 
 
 3514:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     {
@@ -3838,7 +3838,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 3540:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         __HAL_UNLOCK(hspi);
  103              		.loc 1 3540 0
  104 0064 0023     		movs	r3, #0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 65
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 65
 
 
  105 0066 87F85C30 		strb	r3, [r7, #92]
@@ -3898,7 +3898,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  148              		.section	.text.SPI_WaitFlagStateUntilTimeout,"ax",%progbits
  149              		.align	1
  150              		.syntax unified
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 66
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 66
 
 
  151              		.thumb
@@ -3958,7 +3958,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  199              		.loc 1 3471 0
  200 002c AB6A     		ldr	r3, [r5, #40]
  201 002e B3F5005F 		cmp	r3, #8192
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 67
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 67
 
 
  202 0032 14D0     		beq	.L29
@@ -4018,7 +4018,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 3452:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     {
  247              		.loc 1 3452 0 is_stmt 1
  248 007a B4F1FF3F 		cmp	r4, #-1
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 68
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 68
 
 
  249 007e C5D1     		bne	.L31
@@ -4078,7 +4078,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 3576:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
 3577:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     /* Empty the FRLVL fifo */
 3578:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     if (SPI_WaitFifoStateUntilTimeout(hspi, SPI_FLAG_FRLVL, SPI_FRLVL_EMPTY, Timeout, Tickstart) !=
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 69
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 69
 
 
 3579:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     {
@@ -4138,7 +4138,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  307              		.loc 1 3600 0
  308 0022 0323     		movs	r3, #3
  309              	.L35:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 70
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 70
 
 
 3601:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   }
@@ -4198,7 +4198,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  353              		.cfi_startproc
  354              		@ args = 0, pretend = 0, frame = 0
  355              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 71
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 71
 
 
  356              	.LVL13:
@@ -4258,7 +4258,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  405              	.LCFI11:
  406              		.cfi_restore_state
 3560:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****                                                || (hspi->Init.Direction == SPI_DIRECTION_2LINES_RXO
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 72
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 72
 
 
  407              		.loc 1 3560 0 discriminator 1
@@ -4318,7 +4318,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  453 0084 D3E7     		b	.L41
  454              		.cfi_endproc
  455              	.LFE173:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 73
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 73
 
 
  457              		.section	.text.SPI_AbortRx_ISR,"ax",%progbits
@@ -4378,7 +4378,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 3656:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       }
 3657:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     }
 3658:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     else
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 74
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 74
 
 
 3659:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     {
@@ -4438,7 +4438,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 3713:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   *               the configuration information for SPI module.
 3714:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   * @retval None
 3715:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 75
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 75
 
 
 3716:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** static void SPI_CloseTx_ISR(SPI_HandleTypeDef *hspi)
@@ -4498,7 +4498,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  479 0004 0446     		mov	r4, r0
 3757:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   __IO uint32_t count;
 3758:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 76
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 76
 
 
 3759:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Disable SPI Peripheral */
@@ -4558,7 +4558,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  515 0048 2366     		str	r3, [r4, #96]
  516              	.L47:
 3777:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 77
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 77
 
 
 3778:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Control the BSY flag */
@@ -4618,7 +4618,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  557              	.L54:
  558 0086 00BF     		.align	2
  559              	.L53:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 78
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 78
 
 
  560 0088 00000000 		.word	SystemCoreClock
@@ -4678,7 +4678,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  601 0022 5360     		str	r3, [r2, #4]
  602              	.L58:
 3807:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 79
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 79
 
 
 3808:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Check TXEIE is disabled */
@@ -4738,7 +4738,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 3826:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
 3827:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Empty the FRLVL fifo */
 3828:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   if (SPI_WaitFifoStateUntilTimeout(hspi, SPI_FLAG_FRLVL, SPI_FRLVL_EMPTY, SPI_DEFAULT_TIMEOUT, HAL
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 80
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 80
 
 
  638              		.loc 1 3828 0
@@ -4798,7 +4798,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  687 0000 7047     		bx	lr
  688              		.cfi_endproc
  689              	.LFE126:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 81
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 81
 
 
  691              		.section	.text.HAL_SPI_Init,"ax",%progbits
@@ -4858,7 +4858,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  737              		.loc 1 326 0
  738 002c 0021     		movs	r1, #0
  739              	.L69:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 82
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 82
 
 
  740              	.LVL37:
@@ -4918,7 +4918,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  786 007e 606B     		ldr	r0, [r4, #52]
  787 0080 0343     		orrs	r3, r3, r0
  788 0082 E068     		ldr	r0, [r4, #12]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 83
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 83
 
 
  789 0084 0343     		orrs	r3, r3, r0
@@ -4978,7 +4978,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  836              		.thumb_func
  837              		.fpu fpv4-sp-d16
  839              	HAL_SPI_MspDeInit:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 84
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 84
 
 
  840              	.LFB127:
@@ -5038,7 +5038,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  888 001c 2066     		str	r0, [r4, #96]
  418:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
  889              		.loc 1 418 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 85
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 85
 
 
  890 001e 84F85D00 		strb	r0, [r4, #93]
@@ -5098,7 +5098,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  941 000e 03D1     		bne	.L121
  942 0010 0220     		movs	r0, #2
  943              	.LVL51:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 86
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 86
 
 
  944              	.L89:
@@ -5158,7 +5158,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  524:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
  989              		.loc 1 524 0 is_stmt 0 discriminator 1
  990 004a B8F1000F 		cmp	r8, #0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 87
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 87
 
 
  991 004e 00F0B180 		beq	.L114
@@ -5218,7 +5218,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1031 0090 B3F5E06F 		cmp	r3, #1792
  1032 0094 31D9     		bls	.L93
  568:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 88
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 88
 
 
  1033              		.loc 1 568 0
@@ -5278,7 +5278,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1079 00d8 9BB2     		uxth	r3, r3
  1080 00da 002B     		cmp	r3, #0
  1081 00dc 53D0     		beq	.L100
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 89
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 89
 
 
  578:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       {
@@ -5338,7 +5338,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1128              	.L103:
  609:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         hspi->TxXferCount--;
  1129              		.loc 1 609 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 90
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 90
 
 
  1130 0122 2368     		ldr	r3, [r4]
@@ -5398,7 +5398,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1175 015e 9BB2     		uxth	r3, r3
  1176 0160 8BB1     		cbz	r3, .L100
  616:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 91
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 91
 
 
  1177              		.loc 1 616 0
@@ -5458,7 +5458,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1224              	.LBE2:
  662:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
  1225              		.loc 1 662 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 92
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 92
 
 
  1226 01a8 236E     		ldr	r3, [r4, #96]
@@ -5518,7 +5518,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1276              		@ frame_needed = 0, uses_anonymous_args = 0
  1277              	.LVL78:
  1278 0000 2DE9F843 		push	{r3, r4, r5, r6, r7, r8, r9, lr}
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 93
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 93
 
 
  1279              	.LCFI26:
@@ -5578,7 +5578,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1325 0034 B2F5827F 		cmp	r2, #260
  1326 0038 08D0     		beq	.L166
  941:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     goto error;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 94
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 94
 
 
  1327              		.loc 1 941 0 is_stmt 1
@@ -5638,7 +5638,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1370              		.loc 1 954 0
  1371 007a 0523     		movs	r3, #5
  1372 007c 84F85D30 		strb	r3, [r4, #93]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 95
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 95
 
 
  1373              	.L128:
@@ -5698,7 +5698,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1414 00c0 03D1     		bne	.L132
  994:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   }
  1415              		.loc 1 994 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 96
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 96
 
 
  1416 00c2 1A68     		ldr	r2, [r3]
@@ -5758,7 +5758,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1462 0106 9BB2     		uxth	r3, r3
  1463 0108 83B1     		cbz	r3, .L138
 1032:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 97
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 97
 
 
  1464              		.loc 1 1032 0 is_stmt 0 discriminator 1
@@ -5818,7 +5818,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1509 0158 E38F     		ldrh	r3, [r4, #62]
  1510 015a 9BB2     		uxth	r3, r3
  1511 015c 002B     		cmp	r3, #0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 98
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 98
 
 
  1512 015e D0D0     		beq	.L137
@@ -5878,7 +5878,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1557 019e 9BB2     		uxth	r3, r3
  1558 01a0 023B     		subs	r3, r3, #2
  1559 01a2 9BB2     		uxth	r3, r3
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 99
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 99
 
 
  1560 01a4 E387     		strh	r3, [r4, #62]	@ movhi
@@ -5938,7 +5938,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1604 01dc 2368     		ldr	r3, [r4]
  1605 01de 9A68     		ldr	r2, [r3, #8]
  1606 01e0 12F0010F 		tst	r2, #1
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 100
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 100
 
 
  1607 01e4 15D0     		beq	.L148
@@ -5998,7 +5998,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1652              	.L151:
 1067:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       {
  1653              		.loc 1 1067 0 is_stmt 1
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 101
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 101
 
 
  1654 0234 B9F1000F 		cmp	r9, #0
@@ -6058,7 +6058,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1699              		.loc 1 1113 0
  1700 027a 1B7B     		ldrb	r3, [r3, #12]	@ zero_extendqisi2
  1701 027c 3370     		strb	r3, [r6]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 102
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 102
 
 
 1114:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         }
@@ -6118,7 +6118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1747              	.L158:
  1748 02b4 0120     		movs	r0, #1
  1749              	.LVL134:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 103
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 103
 
 
  1750 02b6 C1E6     		b	.L127
@@ -6178,7 +6178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1802 000c 1D46     		mov	r5, r3
  1803              	.LVL139:
  691:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 104
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 104
 
 
  1804              		.loc 1 691 0
@@ -6238,7 +6238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1851 0048 0746     		mov	r7, r0
  1852              	.LVL147:
  704:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 105
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 105
 
 
  1853              		.loc 1 704 0 discriminator 2
@@ -6298,7 +6298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  726:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->RxISR       = NULL;
  1894              		.loc 1 726 0
  1895 0086 E387     		strh	r3, [r4, #62]	@ movhi
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 106
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 106
 
 
  727:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->TxISR       = NULL;
@@ -6358,7 +6358,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1940 00d0 1368     		ldr	r3, [r2]
  1941 00d2 23F48043 		bic	r3, r3, #16384
  1942 00d6 1360     		str	r3, [r2]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 107
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 107
 
 
  1943 00d8 E5E7     		b	.L174
@@ -6418,7 +6418,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  1987              	.LVL153:
  1988 0122 C01B     		subs	r0, r0, r7
  1989 0124 8542     		cmp	r5, r0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 108
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 108
 
 
  1990 0126 29D9     		bls	.L193
@@ -6478,7 +6478,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  2035 016a 74E7     		b	.L171
  2036              	.LVL158:
  2037              	.L189:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 109
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 109
 
 
  2038 016c 0120     		movs	r0, #1
@@ -6538,7 +6538,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1214:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
  2088              		.loc 1 1214 0 is_stmt 1 discriminator 2
  2089 0010 0029     		cmp	r1, #0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 110
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 110
 
 
  2090 0012 39D0     		beq	.L207
@@ -6598,7 +6598,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  2130 004c 1A65     		str	r2, [r3, #80]
  2131              	.L204:
 1250:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 111
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 111
 
 
  2132              		.loc 1 1250 0
@@ -6658,7 +6658,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1275:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   return errorcode;
  2179              		.loc 1 1275 0
  2180 008e 0022     		movs	r2, #0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 112
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 112
 
 
  2181 0090 83F85C20 		strb	r2, [r3, #92]
@@ -6718,7 +6718,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  2230 000a 0124     		movs	r4, #1
  2231 000c 80F85C40 		strb	r4, [r0, #92]
 1403:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   tmp1 = hspi->Init.Mode;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 113
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 113
 
 
  2232              		.loc 1 1403 0 is_stmt 1 discriminator 2
@@ -6778,7 +6778,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  2277 003a 0223     		movs	r3, #2
  2278              	.LVL181:
  2279 003c F2E7     		b	.L218
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 114
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 114
 
 
  2280              	.LVL182:
@@ -6838,7 +6838,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1437:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     hspi->TxISR     = SPI_2linesTxISR_16BIT;
  2321              		.loc 1 1437 0
  2322 0076 1C4B     		ldr	r3, .L235
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 115
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 115
 
 
  2323 0078 C364     		str	r3, [r0, #76]
@@ -6898,7 +6898,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1443:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   }
  2368              		.loc 1 1443 0
  2369 00be 0D4B     		ldr	r3, .L235+12
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 116
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 116
 
 
  2370 00c0 0365     		str	r3, [r0, #80]
@@ -6958,7 +6958,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  2419 00f0 00000000 		.word	SPI_2linesRxISR_8BIT
  2420 00f4 00000000 		.word	SPI_2linesTxISR_8BIT
  2421              		.cfi_endproc
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 117
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 117
 
 
  2422              	.LFE133:
@@ -7018,7 +7018,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1379:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   return errorcode;
  2471              		.loc 1 1379 0
  2472 002a 0023     		movs	r3, #0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 118
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 118
 
 
  2473 002c 84F85C30 		strb	r3, [r4, #92]
@@ -7078,7 +7078,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  2514 0064 E387     		strh	r3, [r4, #62]	@ movhi
 1324:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
  2515              		.loc 1 1324 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 119
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 119
 
 
  2516 0066 2365     		str	r3, [r4, #80]
@@ -7138,7 +7138,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  2561 00ae 5360     		str	r3, [r2, #4]
  2562              	.LVL213:
 1337:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 120
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 120
 
 
  2563              		.loc 1 1337 0
@@ -7198,7 +7198,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  2613              		.cfi_startproc
  2614              		@ args = 0, pretend = 0, frame = 0
  2615              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 121
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 121
 
 
  2616              	.LVL218:
@@ -7258,7 +7258,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1527:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->TxXferSize  = Size;
  2659              		.loc 1 1527 0
  2660 0038 8163     		str	r1, [r0, #56]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 122
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 122
 
 
 1528:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->TxXferCount = Size;
@@ -7318,7 +7318,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1566:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
  2702              		.loc 1 1566 0
  2703 0076 E368     		ldr	r3, [r4, #12]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 123
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 123
 
 
  2704 0078 B3F5E06F 		cmp	r3, #1792
@@ -7378,7 +7378,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  2750              	.LVL226:
  2751 00c4 1368     		ldr	r3, [r2]
  2752 00c6 43F48043 		orr	r3, r3, #16384
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 124
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 124
 
 
  2753 00ca 1360     		str	r3, [r2]
@@ -7438,7 +7438,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  2800              		.loc 1 1510 0
  2801 0108 0220     		movs	r0, #2
  2802              	.LVL233:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 125
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 125
 
 
  2803 010a 7047     		bx	lr
@@ -7498,7 +7498,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  2853 001c 0128     		cmp	r0, #1
  2854 001e 0FD0     		beq	.L277
 1774:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         ((tmp1 == SPI_MODE_MASTER) && (hspi->Init.Direction == SPI_DIRECTION_2LINES) && (tmp == HAL
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 126
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 126
 
 
  2855              		.loc 1 1774 0 is_stmt 0 discriminator 1
@@ -7558,7 +7558,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  2898              		.loc 1 1790 0
  2899 005c 0520     		movs	r0, #5
  2900 005e 84F85D00 		strb	r0, [r4, #93]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 127
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 127
 
 
  2901              	.L279:
@@ -7618,7 +7618,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  2942 009c 042B     		cmp	r3, #4
  2943 009e 00F08A80 		beq	.L297
 1881:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     hspi->hdmarx->XferCpltCallback     = SPI_DMATransmitReceiveCplt;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 128
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 128
 
 
  2944              		.loc 1 1881 0
@@ -7678,7 +7678,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  2988              		.loc 1 1905 0
  2989 00e6 2268     		ldr	r2, [r4]
  2990 00e8 E38F     		ldrh	r3, [r4, #62]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 129
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 129
 
 
  2991 00ea 9BB2     		uxth	r3, r3
@@ -7738,7 +7738,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  3037 013c ABD1     		bne	.L281
 1856:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
  3038              		.loc 1 1856 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 130
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 130
 
 
  3039 013e 2268     		ldr	r2, [r4]
@@ -7798,7 +7798,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1865:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****         hspi->RxXferCount = (hspi->RxXferCount >> 1U) + 1U;
  3085              		.loc 1 1865 0
  3086 019c 2268     		ldr	r2, [r4]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 131
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 131
 
 
  3087 019e 5368     		ldr	r3, [r2, #4]
@@ -7858,7 +7858,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  3134 01d6 38BD     		pop	{r3, r4, r5, pc}
  3135              	.LVL262:
  3136              	.L300:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 132
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 132
 
 
  3137              		.align	2
@@ -7918,7 +7918,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  3187              		.loc 1 1634 0 is_stmt 1 discriminator 2
  3188 0020 94F85D00 		ldrb	r0, [r4, #93]	@ zero_extendqisi2
  3189 0024 C0B2     		uxtb	r0, r0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 133
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 133
 
 
  3190 0026 9842     		cmp	r0, r3
@@ -7978,7 +7978,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  3232 005c A4F84620 		strh	r2, [r4, #70]	@ movhi
 1654:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->TxISR       = NULL;
  3233              		.loc 1 1654 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 134
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 134
 
 
  3234 0060 E364     		str	r3, [r4, #76]
@@ -8038,7 +8038,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1725:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
  3277              		.loc 1 1725 0
  3278 00a2 2168     		ldr	r1, [r4]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 135
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 135
 
 
  3279              	.LVL272:
@@ -8098,7 +8098,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 1694:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     {
  3326              		.loc 1 1694 0
  3327 00f4 A36D     		ldr	r3, [r4, #88]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 136
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 136
 
 
  3328 00f6 5B69     		ldr	r3, [r3, #20]
@@ -8158,7 +8158,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  3373              		.loc 1 1744 0
  3374 014e 38BD     		pop	{r3, r4, r5, pc}
  3375              	.LVL278:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 137
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 137
 
 
  3376              	.L319:
@@ -8218,7 +8218,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  3427              		.loc 1 1951 0
  3428 0028 564B     		ldr	r3, .L342+8
  3429 002a 0365     		str	r3, [r0, #80]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 138
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 138
 
 
  3430              	.L324:
@@ -8278,7 +8278,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  3475 0072 2366     		str	r3, [r4, #96]
  3476              	.L327:
 1980:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 139
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 139
 
 
  3477              		.loc 1 1980 0
@@ -8338,7 +8338,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  3522 00ba FFF7FEFF 		bl	SPI_EndRxTxTransaction
  3523              	.LVL284:
  3524 00be 08B1     		cbz	r0, .L333
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 140
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 140
 
 
 2007:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       }
@@ -8398,7 +8398,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  3569              		.loc 1 2036 0
  3570 0106 FFF7FEFF 		bl	HAL_GetTick
  3571              	.LVL288:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 141
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 141
 
 
  3572 010a 0090     		str	r0, [sp]
@@ -8458,7 +8458,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  3618              	.LVL292:
  3619              	.LBB3:
 2068:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   __HAL_SPI_CLEAR_FREFLAG(hspi);
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 142
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 142
 
 
  3620              		.loc 1 2068 0
@@ -8518,7 +8518,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  3672              	HAL_SPI_DMAPause:
  3673              	.LFB139:
 2283:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   /* Process Locked */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 143
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 143
 
 
  3674              		.loc 1 2283 0
@@ -8578,7 +8578,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  3722              		@ frame_needed = 0, uses_anonymous_args = 0
  3723              		@ link register save eliminated.
  3724              	.LVL298:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 144
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 144
 
 
 2305:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
@@ -8638,7 +8638,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  3773              		.cfi_offset 14, -4
  3774 0002 0446     		mov	r4, r0
 2331:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 145
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 145
 
 
  3775              		.loc 1 2331 0
@@ -8698,7 +8698,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  3825              		.align	1
  3826              		.weak	HAL_SPI_RxCpltCallback
  3827              		.syntax unified
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 146
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 146
 
 
  3828              		.thumb
@@ -8758,7 +8758,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  3885              		.align	1
  3886              		.syntax unified
  3887              		.thumb
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 147
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 147
 
 
  3888              		.thumb_func
@@ -8818,7 +8818,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2872:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   SPI_HandleTypeDef *hspi = (SPI_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent;
  3943              		.loc 1 2872 0
  3944              		.cfi_startproc
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 148
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 148
 
 
  3945              		@ args = 0, pretend = 0, frame = 0
@@ -8878,7 +8878,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  3998              		.loc 1 2885 0
  3999 0000 08B5     		push	{r3, lr}
  4000              	.LCFI46:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 149
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 149
 
 
  4001              		.cfi_def_cfa_offset 8
@@ -8938,7 +8938,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4055              	.LCFI48:
  4056              		.cfi_def_cfa_offset 16
  4057 0004 0446     		mov	r4, r0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 150
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 150
 
 
  4058              	.LVL326:
@@ -8998,7 +8998,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4103              	.LVL330:
  4104              	.L367:
 3747:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 151
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 151
 
 
  4105              		.loc 1 3747 0
@@ -9058,7 +9058,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4156              		.loc 1 3398 0
  4157 0018 C38F     		ldrh	r3, [r0, #62]
  4158 001a 9BB2     		uxth	r3, r3
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 152
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 152
 
 
  4159 001c 03B1     		cbz	r3, .L377
@@ -9118,7 +9118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4208 001a C38F     		ldrh	r3, [r0, #62]
  4209 001c 9BB2     		uxth	r3, r3
  4210 001e 03B1     		cbz	r3, .L381
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 153
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 153
 
 
  4211              	.LVL338:
@@ -9178,7 +9178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4261 0024 2366     		str	r3, [r4, #96]
  4262              	.L383:
 3684:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 154
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 154
 
 
  4263              		.loc 1 3684 0
@@ -9238,7 +9238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4313 0014 013B     		subs	r3, r3, #1
  4314 0016 9BB2     		uxth	r3, r3
  4315 0018 A0F84630 		strh	r3, [r0, #70]	@ movhi
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 155
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 155
 
 
 3317:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
@@ -9298,7 +9298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4365 0018 9BB2     		uxth	r3, r3
  4366 001a A0F84630 		strh	r3, [r0, #70]	@ movhi
 3374:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 156
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 156
 
 
  4367              		.loc 1 3374 0
@@ -9358,7 +9358,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4417              	.LVL358:
  4418 0018 FFF7FEFF 		bl	SPI_EndRxTxTransaction
  4419              	.LVL359:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 157
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 157
 
 
  4420 001c 18B1     		cbz	r0, .L397
@@ -9418,7 +9418,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4466              		.align	1
  4467              		.syntax unified
  4468              		.thumb
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 158
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 158
 
 
  4469              		.thumb_func
@@ -9478,7 +9478,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4516 0036 9BB2     		uxth	r3, r3
  4517 0038 63B1     		cbz	r3, .L408
  4518              	.LVL366:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 159
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 159
 
 
  4519              	.L403:
@@ -9538,7 +9538,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4569 000a 25D9     		bls	.L410
 3060:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     hspi->pRxBuffPtr += sizeof(uint16_t);
  4570              		.loc 1 3060 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 160
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 160
 
 
  4571 000c 036C     		ldr	r3, [r0, #64]
@@ -9598,7 +9598,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4617 0058 036C     		ldr	r3, [r0, #64]
  4618 005a 5A1C     		adds	r2, r3, #1
  4619 005c 0264     		str	r2, [r0, #64]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 161
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 161
 
 
  4620 005e 0268     		ldr	r2, [r0]
@@ -9658,7 +9658,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4669 0012 9BB2     		uxth	r3, r3
  4670 0014 013B     		subs	r3, r3, #1
  4671 0016 9BB2     		uxth	r3, r3
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 162
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 162
 
 
  4672 0018 C387     		strh	r3, [r0, #62]	@ movhi
@@ -9718,7 +9718,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4721 0006 D268     		ldr	r2, [r2, #12]
  4722 0008 1A80     		strh	r2, [r3]	@ movhi
 3187:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   hspi->RxXferCount--;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 163
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 163
 
 
  4723              		.loc 1 3187 0
@@ -9778,7 +9778,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4772              	.LVL381:
  4773 0000 08B5     		push	{r3, lr}
  4774              	.LCFI61:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 164
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 164
 
 
  4775              		.cfi_def_cfa_offset 8
@@ -9838,7 +9838,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4824              		.loc 1 2637 0
  4825 0006 446A     		ldr	r4, [r0, #36]
  4826              	.LVL385:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 165
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 165
 
 
 2641:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
@@ -9898,7 +9898,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4872              		.loc 1 2664 0
  4873 0050 0023     		movs	r3, #0
  4874 0052 E387     		strh	r3, [r4, #62]	@ movhi
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 166
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 166
 
 
 2665:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
@@ -9958,7 +9958,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4924              		.cfi_offset 3, -16
  4925              		.cfi_offset 4, -12
  4926              		.cfi_offset 5, -8
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 167
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 167
 
 
  4927              		.cfi_offset 14, -4
@@ -10018,7 +10018,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  4971              	.L434:
 2764:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** }
  4972              		.loc 1 2764 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 168
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 168
 
 
  4973 0048 2046     		mov	r0, r4
@@ -10078,7 +10078,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5022 0014 2268     		ldr	r2, [r4]
  5023 0016 5368     		ldr	r3, [r2, #4]
  5024 0018 23F02003 		bic	r3, r3, #32
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 169
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 169
 
 
  5025 001c 5360     		str	r3, [r2, #4]
@@ -10138,7 +10138,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5069              		.cfi_endproc
  5070              	.LFE155:
  5072              		.section	.text.HAL_SPI_IRQHandler,"ax",%progbits
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 170
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 170
 
 
  5073              		.align	1
@@ -10198,7 +10198,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5120 0026 11F0200F 		tst	r1, #32
  5121 002a 5AD0     		beq	.L445
 2377:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 171
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 171
 
 
  5122              		.loc 1 2377 0 is_stmt 1
@@ -10258,7 +10258,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5168 0078 236E     		ldr	r3, [r4, #96]
  5169              	.LVL412:
  5170 007a 43F00803 		orr	r3, r3, #8
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 172
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 172
 
 
  5171 007e 2366     		str	r3, [r4, #96]
@@ -10318,7 +10318,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2429:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****           HAL_DMA_Abort_IT(hspi->hdmatx);
  5215              		.loc 1 2429 0
  5216 00c2 0F4A     		ldr	r2, .L458
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 173
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 173
 
 
  5217 00c4 5A63     		str	r2, [r3, #52]
@@ -10378,7 +10378,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5264 00f0 0193     		str	r3, [sp, #4]
  5265 00f2 019B     		ldr	r3, [sp, #4]
  5266              	.LBE10:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 174
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 174
 
 
 2387:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       }
@@ -10438,7 +10438,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5317              		.align	1
  5318              		.weak	HAL_SPI_AbortCpltCallback
  5319              		.syntax unified
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 175
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 175
 
 
  5320              		.thumb
@@ -10498,7 +10498,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5372              		.loc 1 2102 0
  5373 001a 029B     		ldr	r3, [sp, #8]
  5374 001c 0393     		str	r3, [sp, #12]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 176
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 176
 
 
 2105:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
@@ -10558,7 +10558,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5419 0060 94F85D30 		ldrb	r3, [r4, #93]	@ zero_extendqisi2
  5420 0064 DBB2     		uxtb	r3, r3
  5421 0066 072B     		cmp	r3, #7
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 177
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 177
 
 
  5422 0068 F6D1     		bne	.L471
@@ -10618,7 +10618,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5466 00ac 25D0     		beq	.L482
 2174:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
  5467              		.loc 1 2174 0 is_stmt 0 discriminator 1
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 178
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 178
 
 
  5468 00ae 5B68     		ldr	r3, [r3, #4]
@@ -10678,7 +10678,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5511              		.loc 1 2155 0
  5512 00e6 0022     		movs	r2, #0
  5513 00e8 5A63     		str	r2, [r3, #52]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 179
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 179
 
 
  5514 00ea D2E7     		b	.L472
@@ -10738,7 +10738,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5558 011c 5B68     		ldr	r3, [r3, #4]
  5559 011e 13F0010F 		tst	r3, #1
  5560 0122 09D0     		beq	.L479
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 180
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 180
 
 
 2229:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****     {
@@ -10798,7 +10798,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2221:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****       }
  5606              		.loc 1 2221 0
  5607 014a 0025     		movs	r5, #0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 181
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 181
 
 
  5608              	.LVL448:
@@ -10858,7 +10858,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 2270:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   }
  5654              		.loc 1 2270 0
  5655 0182 2046     		mov	r0, r4
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 182
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 182
 
 
  5656 0184 FFF7FEFF 		bl	HAL_SPI_AbortCpltCallback
@@ -10918,7 +10918,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
 3001:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c **** 
  5708              		.loc 1 3001 0
  5709 0010 A36D     		ldr	r3, [r4, #88]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 183
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 183
 
 
  5710 0012 0025     		movs	r5, #0
@@ -10978,7 +10978,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5756              	.LCFI79:
  5757              		.cfi_remember_state
  5758              		.cfi_def_cfa_offset 12
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 184
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 184
 
 
  5759              		@ sp needed
@@ -11038,7 +11038,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5805              	.LFE162:
  5807              		.section	.text.SPI_DMATxAbortCallback,"ax",%progbits
  5808              		.align	1
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 185
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 185
 
 
  5809              		.syntax unified
@@ -11098,7 +11098,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5857 002e 23F04003 		bic	r3, r3, #64
  5858 0032 1360     		str	r3, [r2]
 2950:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 186
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 186
 
 
  5859              		.loc 1 2950 0
@@ -11158,7 +11158,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5905              	.LBB15:
 2976:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c ****   __HAL_SPI_CLEAR_FREFLAG(hspi);
  5906              		.loc 1 2976 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 187
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 187
 
 
  5907 006c 0022     		movs	r2, #0
@@ -11218,7 +11218,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5958              		.section	.text.HAL_SPI_GetError,"ax",%progbits
  5959              		.align	1
  5960              		.global	HAL_SPI_GetError
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 188
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 188
 
 
  5961              		.syntax unified
@@ -11259,140 +11259,140 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 1
  5995              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
  5996              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h"
  5997              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 189
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 189
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f3xx_hal_spi.c
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:18     .text.SPI_WaitFifoStateUntilTimeout:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:24     .text.SPI_WaitFifoStateUntilTimeout:0000000000000000 SPI_WaitFifoStateUntilTimeout
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:149    .text.SPI_WaitFlagStateUntilTimeout:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:155    .text.SPI_WaitFlagStateUntilTimeout:0000000000000000 SPI_WaitFlagStateUntilTimeout
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:267    .text.SPI_EndRxTxTransaction:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:273    .text.SPI_EndRxTxTransaction:0000000000000000 SPI_EndRxTxTransaction
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:344    .text.SPI_EndRxTransaction:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:350    .text.SPI_EndRxTransaction:0000000000000000 SPI_EndRxTransaction
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:458    .text.SPI_AbortRx_ISR:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:464    .text.SPI_AbortRx_ISR:0000000000000000 SPI_AbortRx_ISR
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:560    .text.SPI_AbortRx_ISR:0000000000000088 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:566    .text.SPI_AbortTx_ISR:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:572    .text.SPI_AbortTx_ISR:0000000000000000 SPI_AbortTx_ISR
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:666    .text.SPI_AbortTx_ISR:0000000000000084 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:672    .text.HAL_SPI_MspInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:679    .text.HAL_SPI_MspInit:0000000000000000 HAL_SPI_MspInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:692    .text.HAL_SPI_Init:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:699    .text.HAL_SPI_Init:0000000000000000 HAL_SPI_Init
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:832    .text.HAL_SPI_MspDeInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:839    .text.HAL_SPI_MspDeInit:0000000000000000 HAL_SPI_MspDeInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:852    .text.HAL_SPI_DeInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:859    .text.HAL_SPI_DeInit:0000000000000000 HAL_SPI_DeInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:909    .text.HAL_SPI_Transmit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:916    .text.HAL_SPI_Transmit:0000000000000000 HAL_SPI_Transmit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:1264   .text.HAL_SPI_TransmitReceive:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:1271   .text.HAL_SPI_TransmitReceive:0000000000000000 HAL_SPI_TransmitReceive
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:1773   .text.HAL_SPI_Receive:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:1780   .text.HAL_SPI_Receive:0000000000000000 HAL_SPI_Receive
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:2063   .text.HAL_SPI_Transmit_IT:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:2070   .text.HAL_SPI_Transmit_IT:0000000000000000 HAL_SPI_Transmit_IT
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:2198   .text.HAL_SPI_Transmit_IT:00000000000000a0 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4180   .text.SPI_TxISR_16BIT:0000000000000000 SPI_TxISR_16BIT
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4131   .text.SPI_TxISR_8BIT:0000000000000000 SPI_TxISR_8BIT
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:2204   .text.HAL_SPI_TransmitReceive_IT:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:2211   .text.HAL_SPI_TransmitReceive_IT:0000000000000000 HAL_SPI_TransmitReceive_IT
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:2417   .text.HAL_SPI_TransmitReceive_IT:00000000000000e8 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4706   .text.SPI_2linesRxISR_16BIT:0000000000000000 SPI_2linesRxISR_16BIT
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4646   .text.SPI_2linesTxISR_16BIT:0000000000000000 SPI_2linesTxISR_16BIT
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4553   .text.SPI_2linesRxISR_8BIT:0000000000000000 SPI_2linesRxISR_8BIT
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4472   .text.SPI_2linesTxISR_8BIT:0000000000000000 SPI_2linesTxISR_8BIT
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:2425   .text.HAL_SPI_Receive_IT:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:2432   .text.HAL_SPI_Receive_IT:0000000000000000 HAL_SPI_Receive_IT
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:2597   .text.HAL_SPI_Receive_IT:00000000000000d4 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4340   .text.SPI_RxISR_16BIT:0000000000000000 SPI_RxISR_16BIT
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4291   .text.SPI_RxISR_8BIT:0000000000000000 SPI_RxISR_8BIT
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:2603   .text.HAL_SPI_Transmit_DMA:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:2610   .text.HAL_SPI_Transmit_DMA:0000000000000000 HAL_SPI_Transmit_DMA
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:2807   .text.HAL_SPI_Transmit_DMA:000000000000010c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3891   .text.SPI_DMAHalfTransmitCplt:0000000000000000 SPI_DMAHalfTransmitCplt
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4807   .text.SPI_DMATransmitCplt:0000000000000000 SPI_DMATransmitCplt
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4766   .text.SPI_DMAError:0000000000000000 SPI_DMAError
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:2814   .text.HAL_SPI_TransmitReceive_DMA:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:2821   .text.HAL_SPI_TransmitReceive_DMA:0000000000000000 HAL_SPI_TransmitReceive_DMA
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3139   .text.HAL_SPI_TransmitReceive_DMA:00000000000001d8 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3991   .text.SPI_DMAHalfTransmitReceiveCplt:0000000000000000 SPI_DMAHalfTransmitReceiveCplt
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 190
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:18     .text.SPI_WaitFifoStateUntilTimeout:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:24     .text.SPI_WaitFifoStateUntilTimeout:0000000000000000 SPI_WaitFifoStateUntilTimeout
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:149    .text.SPI_WaitFlagStateUntilTimeout:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:155    .text.SPI_WaitFlagStateUntilTimeout:0000000000000000 SPI_WaitFlagStateUntilTimeout
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:267    .text.SPI_EndRxTxTransaction:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:273    .text.SPI_EndRxTxTransaction:0000000000000000 SPI_EndRxTxTransaction
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:344    .text.SPI_EndRxTransaction:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:350    .text.SPI_EndRxTransaction:0000000000000000 SPI_EndRxTransaction
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:458    .text.SPI_AbortRx_ISR:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:464    .text.SPI_AbortRx_ISR:0000000000000000 SPI_AbortRx_ISR
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:560    .text.SPI_AbortRx_ISR:0000000000000088 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:566    .text.SPI_AbortTx_ISR:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:572    .text.SPI_AbortTx_ISR:0000000000000000 SPI_AbortTx_ISR
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:666    .text.SPI_AbortTx_ISR:0000000000000084 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:672    .text.HAL_SPI_MspInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:679    .text.HAL_SPI_MspInit:0000000000000000 HAL_SPI_MspInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:692    .text.HAL_SPI_Init:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:699    .text.HAL_SPI_Init:0000000000000000 HAL_SPI_Init
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:832    .text.HAL_SPI_MspDeInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:839    .text.HAL_SPI_MspDeInit:0000000000000000 HAL_SPI_MspDeInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:852    .text.HAL_SPI_DeInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:859    .text.HAL_SPI_DeInit:0000000000000000 HAL_SPI_DeInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:909    .text.HAL_SPI_Transmit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:916    .text.HAL_SPI_Transmit:0000000000000000 HAL_SPI_Transmit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:1264   .text.HAL_SPI_TransmitReceive:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:1271   .text.HAL_SPI_TransmitReceive:0000000000000000 HAL_SPI_TransmitReceive
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:1773   .text.HAL_SPI_Receive:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:1780   .text.HAL_SPI_Receive:0000000000000000 HAL_SPI_Receive
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:2063   .text.HAL_SPI_Transmit_IT:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:2070   .text.HAL_SPI_Transmit_IT:0000000000000000 HAL_SPI_Transmit_IT
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:2198   .text.HAL_SPI_Transmit_IT:00000000000000a0 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4180   .text.SPI_TxISR_16BIT:0000000000000000 SPI_TxISR_16BIT
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4131   .text.SPI_TxISR_8BIT:0000000000000000 SPI_TxISR_8BIT
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:2204   .text.HAL_SPI_TransmitReceive_IT:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:2211   .text.HAL_SPI_TransmitReceive_IT:0000000000000000 HAL_SPI_TransmitReceive_IT
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:2417   .text.HAL_SPI_TransmitReceive_IT:00000000000000e8 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4706   .text.SPI_2linesRxISR_16BIT:0000000000000000 SPI_2linesRxISR_16BIT
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4646   .text.SPI_2linesTxISR_16BIT:0000000000000000 SPI_2linesTxISR_16BIT
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4553   .text.SPI_2linesRxISR_8BIT:0000000000000000 SPI_2linesRxISR_8BIT
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4472   .text.SPI_2linesTxISR_8BIT:0000000000000000 SPI_2linesTxISR_8BIT
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:2425   .text.HAL_SPI_Receive_IT:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:2432   .text.HAL_SPI_Receive_IT:0000000000000000 HAL_SPI_Receive_IT
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:2597   .text.HAL_SPI_Receive_IT:00000000000000d4 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4340   .text.SPI_RxISR_16BIT:0000000000000000 SPI_RxISR_16BIT
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4291   .text.SPI_RxISR_8BIT:0000000000000000 SPI_RxISR_8BIT
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:2603   .text.HAL_SPI_Transmit_DMA:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:2610   .text.HAL_SPI_Transmit_DMA:0000000000000000 HAL_SPI_Transmit_DMA
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:2807   .text.HAL_SPI_Transmit_DMA:000000000000010c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3891   .text.SPI_DMAHalfTransmitCplt:0000000000000000 SPI_DMAHalfTransmitCplt
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4807   .text.SPI_DMATransmitCplt:0000000000000000 SPI_DMATransmitCplt
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4766   .text.SPI_DMAError:0000000000000000 SPI_DMAError
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:2814   .text.HAL_SPI_TransmitReceive_DMA:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:2821   .text.HAL_SPI_TransmitReceive_DMA:0000000000000000 HAL_SPI_TransmitReceive_DMA
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3139   .text.HAL_SPI_TransmitReceive_DMA:00000000000001d8 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3991   .text.SPI_DMAHalfTransmitReceiveCplt:0000000000000000 SPI_DMAHalfTransmitReceiveCplt
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 190
 
 
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4995   .text.SPI_DMATransmitReceiveCplt:0000000000000000 SPI_DMATransmitReceiveCplt
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3941   .text.SPI_DMAHalfReceiveCplt:0000000000000000 SPI_DMAHalfReceiveCplt
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4914   .text.SPI_DMAReceiveCplt:0000000000000000 SPI_DMAReceiveCplt
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3148   .text.HAL_SPI_Receive_DMA:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3155   .text.HAL_SPI_Receive_DMA:0000000000000000 HAL_SPI_Receive_DMA
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3379   .text.HAL_SPI_Receive_DMA:0000000000000150 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3386   .text.HAL_SPI_Abort:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3393   .text.HAL_SPI_Abort:0000000000000000 HAL_SPI_Abort
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3657   .text.HAL_SPI_Abort:000000000000017c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3665   .text.HAL_SPI_DMAPause:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3672   .text.HAL_SPI_DMAPause:0000000000000000 HAL_SPI_DMAPause
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3710   .text.HAL_SPI_DMAResume:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3717   .text.HAL_SPI_DMAResume:0000000000000000 HAL_SPI_DMAResume
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3755   .text.HAL_SPI_DMAStop:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3762   .text.HAL_SPI_DMAStop:0000000000000000 HAL_SPI_DMAStop
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3805   .text.HAL_SPI_TxCpltCallback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3812   .text.HAL_SPI_TxCpltCallback:0000000000000000 HAL_SPI_TxCpltCallback
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3825   .text.HAL_SPI_RxCpltCallback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3832   .text.HAL_SPI_RxCpltCallback:0000000000000000 HAL_SPI_RxCpltCallback
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3845   .text.HAL_SPI_TxRxCpltCallback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3852   .text.HAL_SPI_TxRxCpltCallback:0000000000000000 HAL_SPI_TxRxCpltCallback
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3865   .text.HAL_SPI_TxHalfCpltCallback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3872   .text.HAL_SPI_TxHalfCpltCallback:0000000000000000 HAL_SPI_TxHalfCpltCallback
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3885   .text.SPI_DMAHalfTransmitCplt:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3915   .text.HAL_SPI_RxHalfCpltCallback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3922   .text.HAL_SPI_RxHalfCpltCallback:0000000000000000 HAL_SPI_RxHalfCpltCallback
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3935   .text.SPI_DMAHalfReceiveCplt:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3965   .text.HAL_SPI_TxRxHalfCpltCallback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3972   .text.HAL_SPI_TxRxHalfCpltCallback:0000000000000000 HAL_SPI_TxRxHalfCpltCallback
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:3985   .text.SPI_DMAHalfTransmitReceiveCplt:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4015   .text.HAL_SPI_ErrorCallback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4022   .text.HAL_SPI_ErrorCallback:0000000000000000 HAL_SPI_ErrorCallback
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4035   .text.SPI_CloseTx_ISR:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4041   .text.SPI_CloseTx_ISR:0000000000000000 SPI_CloseTx_ISR
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4125   .text.SPI_TxISR_8BIT:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4174   .text.SPI_TxISR_16BIT:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4225   .text.SPI_CloseRx_ISR:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4231   .text.SPI_CloseRx_ISR:0000000000000000 SPI_CloseRx_ISR
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4285   .text.SPI_RxISR_8BIT:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4334   .text.SPI_RxISR_16BIT:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4385   .text.SPI_CloseRxTx_ISR:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4391   .text.SPI_CloseRxTx_ISR:0000000000000000 SPI_CloseRxTx_ISR
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4466   .text.SPI_2linesTxISR_8BIT:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4547   .text.SPI_2linesRxISR_8BIT:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4640   .text.SPI_2linesTxISR_16BIT:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4700   .text.SPI_2linesRxISR_16BIT:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4760   .text.SPI_DMAError:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4801   .text.SPI_DMATransmitCplt:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4908   .text.SPI_DMAReceiveCplt:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:4989   .text.SPI_DMATransmitReceiveCplt:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5073   .text.HAL_SPI_IRQHandler:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5080   .text.HAL_SPI_IRQHandler:0000000000000000 HAL_SPI_IRQHandler
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5278   .text.HAL_SPI_IRQHandler:0000000000000100 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5289   .text.SPI_DMAAbortOnError:0000000000000000 SPI_DMAAbortOnError
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5283   .text.SPI_DMAAbortOnError:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5317   .text.HAL_SPI_AbortCpltCallback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5324   .text.HAL_SPI_AbortCpltCallback:0000000000000000 HAL_SPI_AbortCpltCallback
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s 			page 191
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4995   .text.SPI_DMATransmitReceiveCplt:0000000000000000 SPI_DMATransmitReceiveCplt
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3941   .text.SPI_DMAHalfReceiveCplt:0000000000000000 SPI_DMAHalfReceiveCplt
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4914   .text.SPI_DMAReceiveCplt:0000000000000000 SPI_DMAReceiveCplt
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3148   .text.HAL_SPI_Receive_DMA:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3155   .text.HAL_SPI_Receive_DMA:0000000000000000 HAL_SPI_Receive_DMA
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3379   .text.HAL_SPI_Receive_DMA:0000000000000150 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3386   .text.HAL_SPI_Abort:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3393   .text.HAL_SPI_Abort:0000000000000000 HAL_SPI_Abort
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3657   .text.HAL_SPI_Abort:000000000000017c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3665   .text.HAL_SPI_DMAPause:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3672   .text.HAL_SPI_DMAPause:0000000000000000 HAL_SPI_DMAPause
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3710   .text.HAL_SPI_DMAResume:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3717   .text.HAL_SPI_DMAResume:0000000000000000 HAL_SPI_DMAResume
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3755   .text.HAL_SPI_DMAStop:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3762   .text.HAL_SPI_DMAStop:0000000000000000 HAL_SPI_DMAStop
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3805   .text.HAL_SPI_TxCpltCallback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3812   .text.HAL_SPI_TxCpltCallback:0000000000000000 HAL_SPI_TxCpltCallback
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3825   .text.HAL_SPI_RxCpltCallback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3832   .text.HAL_SPI_RxCpltCallback:0000000000000000 HAL_SPI_RxCpltCallback
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3845   .text.HAL_SPI_TxRxCpltCallback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3852   .text.HAL_SPI_TxRxCpltCallback:0000000000000000 HAL_SPI_TxRxCpltCallback
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3865   .text.HAL_SPI_TxHalfCpltCallback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3872   .text.HAL_SPI_TxHalfCpltCallback:0000000000000000 HAL_SPI_TxHalfCpltCallback
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3885   .text.SPI_DMAHalfTransmitCplt:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3915   .text.HAL_SPI_RxHalfCpltCallback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3922   .text.HAL_SPI_RxHalfCpltCallback:0000000000000000 HAL_SPI_RxHalfCpltCallback
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3935   .text.SPI_DMAHalfReceiveCplt:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3965   .text.HAL_SPI_TxRxHalfCpltCallback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3972   .text.HAL_SPI_TxRxHalfCpltCallback:0000000000000000 HAL_SPI_TxRxHalfCpltCallback
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:3985   .text.SPI_DMAHalfTransmitReceiveCplt:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4015   .text.HAL_SPI_ErrorCallback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4022   .text.HAL_SPI_ErrorCallback:0000000000000000 HAL_SPI_ErrorCallback
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4035   .text.SPI_CloseTx_ISR:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4041   .text.SPI_CloseTx_ISR:0000000000000000 SPI_CloseTx_ISR
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4125   .text.SPI_TxISR_8BIT:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4174   .text.SPI_TxISR_16BIT:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4225   .text.SPI_CloseRx_ISR:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4231   .text.SPI_CloseRx_ISR:0000000000000000 SPI_CloseRx_ISR
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4285   .text.SPI_RxISR_8BIT:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4334   .text.SPI_RxISR_16BIT:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4385   .text.SPI_CloseRxTx_ISR:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4391   .text.SPI_CloseRxTx_ISR:0000000000000000 SPI_CloseRxTx_ISR
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4466   .text.SPI_2linesTxISR_8BIT:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4547   .text.SPI_2linesRxISR_8BIT:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4640   .text.SPI_2linesTxISR_16BIT:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4700   .text.SPI_2linesRxISR_16BIT:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4760   .text.SPI_DMAError:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4801   .text.SPI_DMATransmitCplt:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4908   .text.SPI_DMAReceiveCplt:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:4989   .text.SPI_DMATransmitReceiveCplt:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5073   .text.HAL_SPI_IRQHandler:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5080   .text.HAL_SPI_IRQHandler:0000000000000000 HAL_SPI_IRQHandler
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5278   .text.HAL_SPI_IRQHandler:0000000000000100 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5289   .text.SPI_DMAAbortOnError:0000000000000000 SPI_DMAAbortOnError
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5283   .text.SPI_DMAAbortOnError:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5317   .text.HAL_SPI_AbortCpltCallback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5324   .text.HAL_SPI_AbortCpltCallback:0000000000000000 HAL_SPI_AbortCpltCallback
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s 			page 191
 
 
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5337   .text.HAL_SPI_Abort_IT:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5344   .text.HAL_SPI_Abort_IT:0000000000000000 HAL_SPI_Abort_IT
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5668   .text.HAL_SPI_Abort_IT:0000000000000190 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5814   .text.SPI_DMATxAbortCallback:0000000000000000 SPI_DMATxAbortCallback
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5684   .text.SPI_DMARxAbortCallback:0000000000000000 SPI_DMARxAbortCallback
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5678   .text.SPI_DMARxAbortCallback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5808   .text.SPI_DMATxAbortCallback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5935   .text.HAL_SPI_GetState:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5942   .text.HAL_SPI_GetState:0000000000000000 HAL_SPI_GetState
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5959   .text.HAL_SPI_GetError:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccmG4lws.s:5966   .text.HAL_SPI_GetError:0000000000000000 HAL_SPI_GetError
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5337   .text.HAL_SPI_Abort_IT:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5344   .text.HAL_SPI_Abort_IT:0000000000000000 HAL_SPI_Abort_IT
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5668   .text.HAL_SPI_Abort_IT:0000000000000190 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5814   .text.SPI_DMATxAbortCallback:0000000000000000 SPI_DMATxAbortCallback
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5684   .text.SPI_DMARxAbortCallback:0000000000000000 SPI_DMARxAbortCallback
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5678   .text.SPI_DMARxAbortCallback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5808   .text.SPI_DMATxAbortCallback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5935   .text.HAL_SPI_GetState:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5942   .text.HAL_SPI_GetState:0000000000000000 HAL_SPI_GetState
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5959   .text.HAL_SPI_GetError:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccwYfDxO.s:5966   .text.HAL_SPI_GetError:0000000000000000 HAL_SPI_GetError
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

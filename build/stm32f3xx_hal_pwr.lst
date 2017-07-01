@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
   29:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   *
   30:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
   31:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 2
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 2
 
 
   32:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
   86:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   * @{
   87:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   */
   88:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 3
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 3
 
 
   89:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** /**
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  108:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   SET_BIT(PWR->CR, PWR_CR_DBP);  
   65              		.loc 1 108 0
   66 0000 024A     		ldr	r2, .L5
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 4
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 4
 
 
   67 0002 1368     		ldr	r3, [r2]
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  112              		.fpu fpv4-sp-d16
  114              	HAL_PWR_EnableWakeUpPin:
  115              	.LFB127:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 5
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 5
 
 
  121:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** }
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  175:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****       (+) Entry:
  176:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****           The Sleep mode is entered by using the HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON, PWR_S
  177:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****               functions with
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 6
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 6
 
 
  178:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****           (++) PWR_SLEEPENTRY_WFI: enter SLEEP mode with WFI instruction
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  232:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** 
  233:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****       (++) To wake up from the Stop mode with an RTC alarm event, it is necessary to
  234:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****             configure the RTC to generate the RTC alarm using the HAL_RTC_SetAlarm_IT() function.
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 7
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 7
 
 
  235:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** 
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  139              		.syntax unified
  140              		.thumb
  141              		.thumb_func
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 8
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 8
 
 
  142              		.fpu fpv4-sp-d16
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  290:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   *            @arg PWR_LOWPOWERREGULATOR_ON: SLEEP mode with low power regulator ON
  291:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   * @note This parameter has no effect in F3 family and is just maintained to 
  292:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   *       offer full portability of other STM32 families softwares.
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 9
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 9
 
 
  293:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   * @param SLEEPEntry: Specifies if SLEEP mode is entered with WFI or WFE instruction.
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
   20:Drivers/CMSIS/Include/cmsis_gcc.h ****    *
   21:Drivers/CMSIS/Include/cmsis_gcc.h ****    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
   22:Drivers/CMSIS/Include/cmsis_gcc.h ****    AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 10
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 10
 
 
   23:Drivers/CMSIS/Include/cmsis_gcc.h ****    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
   77:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the content of the Control Register.
   78:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Control Register value
   79:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 11
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 11
 
 
   80:Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_CONTROL(void)
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  134:Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_xPSR(void)
  135:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  136:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 12
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 12
 
 
  137:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  191:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  192:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  193:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 13
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 13
 
 
  194:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  248:Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_BASEPRI(void)
  249:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  250:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 14
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 14
 
 
  251:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  305:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  306:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  307:Drivers/CMSIS/Include/cmsis_gcc.h **** #if       (__CORTEX_M == 0x04U) || (__CORTEX_M == 0x07U)
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 15
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 15
 
 
  308:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  362:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_OUT_REG(r) "=l" (r)
  363:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_USE_REG(r) "l" (r)
  364:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 16
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 16
 
 
  365:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_OUT_REG(r) "=r" (r)
@@ -958,7 +958,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  204              		.loc 2 396 0
  205              		.syntax unified
  206              	@ 396 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 17
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 17
 
 
  207 0010 20BF     		wfe
@@ -1018,7 +1018,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  319:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****     __WFE();
  320:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****     __WFE();
  321:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 18
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 18
 
 
  322:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** }
@@ -1078,7 +1078,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  360:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   /* Store the new value */
  361:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   PWR->CR = tmpreg;
  270              		.loc 1 361 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 19
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 19
 
 
  271 000a 1060     		str	r0, [r2]
@@ -1138,7 +1138,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  373:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   {
  374:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****     /* Request Wait For Event */
  375:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****     __SEV();
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 20
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 20
 
 
  376:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****     __WFE();
@@ -1198,7 +1198,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  394:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** {
  350              		.loc 1 394 0
  351              		.cfi_startproc
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 21
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 21
 
 
  352              		@ args = 0, pretend = 0, frame = 0
@@ -1258,7 +1258,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  407:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** }
  408:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** 
  409:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c **** /**
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 22
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 22
 
 
  410:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   * @brief Indicates Sleep-On-Exit when returning from Handler mode to Thread mode. 
@@ -1318,7 +1318,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  433:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c ****   CLEAR_BIT(SCB->SCR, ((uint32_t)SCB_SCR_SLEEPONEXIT_Msk));
  428              		.loc 1 433 0
  429 0000 024A     		ldr	r2, .L35
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 23
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 23
 
 
  430 0002 1369     		ldr	r3, [r2, #16]
@@ -1378,7 +1378,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  473              		.thumb
  474              		.thumb_func
  475              		.fpu fpv4-sp-d16
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 24
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 24
 
 
  477              	HAL_PWR_DisableSEVOnPend:
@@ -1424,47 +1424,47 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 1
  505              		.file 9 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
  506              		.file 10 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
  507              		.file 11 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s 			page 25
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s 			page 25
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f3xx_hal_pwr.c
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:18     .text.HAL_PWR_DeInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:25     .text.HAL_PWR_DeInit:0000000000000000 HAL_PWR_DeInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:46     .text.HAL_PWR_DeInit:0000000000000014 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:51     .text.HAL_PWR_EnableBkUpAccess:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:58     .text.HAL_PWR_EnableBkUpAccess:0000000000000000 HAL_PWR_EnableBkUpAccess
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:74     .text.HAL_PWR_EnableBkUpAccess:000000000000000c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:79     .text.HAL_PWR_DisableBkUpAccess:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:86     .text.HAL_PWR_DisableBkUpAccess:0000000000000000 HAL_PWR_DisableBkUpAccess
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:102    .text.HAL_PWR_DisableBkUpAccess:000000000000000c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:107    .text.HAL_PWR_EnableWakeUpPin:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:114    .text.HAL_PWR_EnableWakeUpPin:0000000000000000 HAL_PWR_EnableWakeUpPin
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:132    .text.HAL_PWR_EnableWakeUpPin:000000000000000c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:137    .text.HAL_PWR_DisableWakeUpPin:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:144    .text.HAL_PWR_DisableWakeUpPin:0000000000000000 HAL_PWR_DisableWakeUpPin
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:162    .text.HAL_PWR_DisableWakeUpPin:000000000000000c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:167    .text.HAL_PWR_EnterSLEEPMode:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:174    .text.HAL_PWR_EnterSLEEPMode:0000000000000000 HAL_PWR_EnterSLEEPMode
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:238    .text.HAL_PWR_EnterSLEEPMode:000000000000001c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:245    .text.HAL_PWR_EnterSTOPMode:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:252    .text.HAL_PWR_EnterSTOPMode:0000000000000000 HAL_PWR_EnterSTOPMode
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:333    .text.HAL_PWR_EnterSTOPMode:0000000000000030 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:341    .text.HAL_PWR_EnterSTANDBYMode:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:348    .text.HAL_PWR_EnterSTANDBYMode:0000000000000000 HAL_PWR_EnterSTANDBYMode
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:378    .text.HAL_PWR_EnterSTANDBYMode:0000000000000018 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:386    .text.HAL_PWR_EnableSleepOnExit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:393    .text.HAL_PWR_EnableSleepOnExit:0000000000000000 HAL_PWR_EnableSleepOnExit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:409    .text.HAL_PWR_EnableSleepOnExit:000000000000000c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:414    .text.HAL_PWR_DisableSleepOnExit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:421    .text.HAL_PWR_DisableSleepOnExit:0000000000000000 HAL_PWR_DisableSleepOnExit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:437    .text.HAL_PWR_DisableSleepOnExit:000000000000000c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:442    .text.HAL_PWR_EnableSEVOnPend:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:449    .text.HAL_PWR_EnableSEVOnPend:0000000000000000 HAL_PWR_EnableSEVOnPend
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:465    .text.HAL_PWR_EnableSEVOnPend:000000000000000c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:470    .text.HAL_PWR_DisableSEVOnPend:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:477    .text.HAL_PWR_DisableSEVOnPend:0000000000000000 HAL_PWR_DisableSEVOnPend
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cccpfgtv.s:493    .text.HAL_PWR_DisableSEVOnPend:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:18     .text.HAL_PWR_DeInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:25     .text.HAL_PWR_DeInit:0000000000000000 HAL_PWR_DeInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:46     .text.HAL_PWR_DeInit:0000000000000014 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:51     .text.HAL_PWR_EnableBkUpAccess:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:58     .text.HAL_PWR_EnableBkUpAccess:0000000000000000 HAL_PWR_EnableBkUpAccess
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:74     .text.HAL_PWR_EnableBkUpAccess:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:79     .text.HAL_PWR_DisableBkUpAccess:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:86     .text.HAL_PWR_DisableBkUpAccess:0000000000000000 HAL_PWR_DisableBkUpAccess
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:102    .text.HAL_PWR_DisableBkUpAccess:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:107    .text.HAL_PWR_EnableWakeUpPin:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:114    .text.HAL_PWR_EnableWakeUpPin:0000000000000000 HAL_PWR_EnableWakeUpPin
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:132    .text.HAL_PWR_EnableWakeUpPin:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:137    .text.HAL_PWR_DisableWakeUpPin:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:144    .text.HAL_PWR_DisableWakeUpPin:0000000000000000 HAL_PWR_DisableWakeUpPin
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:162    .text.HAL_PWR_DisableWakeUpPin:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:167    .text.HAL_PWR_EnterSLEEPMode:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:174    .text.HAL_PWR_EnterSLEEPMode:0000000000000000 HAL_PWR_EnterSLEEPMode
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:238    .text.HAL_PWR_EnterSLEEPMode:000000000000001c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:245    .text.HAL_PWR_EnterSTOPMode:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:252    .text.HAL_PWR_EnterSTOPMode:0000000000000000 HAL_PWR_EnterSTOPMode
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:333    .text.HAL_PWR_EnterSTOPMode:0000000000000030 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:341    .text.HAL_PWR_EnterSTANDBYMode:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:348    .text.HAL_PWR_EnterSTANDBYMode:0000000000000000 HAL_PWR_EnterSTANDBYMode
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:378    .text.HAL_PWR_EnterSTANDBYMode:0000000000000018 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:386    .text.HAL_PWR_EnableSleepOnExit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:393    .text.HAL_PWR_EnableSleepOnExit:0000000000000000 HAL_PWR_EnableSleepOnExit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:409    .text.HAL_PWR_EnableSleepOnExit:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:414    .text.HAL_PWR_DisableSleepOnExit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:421    .text.HAL_PWR_DisableSleepOnExit:0000000000000000 HAL_PWR_DisableSleepOnExit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:437    .text.HAL_PWR_DisableSleepOnExit:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:442    .text.HAL_PWR_EnableSEVOnPend:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:449    .text.HAL_PWR_EnableSEVOnPend:0000000000000000 HAL_PWR_EnableSEVOnPend
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:465    .text.HAL_PWR_EnableSEVOnPend:000000000000000c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:470    .text.HAL_PWR_DisableSEVOnPend:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:477    .text.HAL_PWR_DisableSEVOnPend:0000000000000000 HAL_PWR_DisableSEVOnPend
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccin4qGT.s:493    .text.HAL_PWR_DisableSEVOnPend:000000000000000c $d
                      .debug_frame:0000000000000010 $d
 
 NO UNDEFINED SYMBOLS

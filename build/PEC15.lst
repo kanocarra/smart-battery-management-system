@@ -1,0 +1,446 @@
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8NGdvX.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.eabi_attribute 27, 1
+   3              		.eabi_attribute 28, 1
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"PEC15.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.pec15_calc,"ax",%progbits
+  18              		.align	1
+  19              		.global	pec15_calc
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  23              		.fpu fpv4-sp-d16
+  25              	pec15_calc:
+  26              	.LFB0:
+  27              		.file 1 "Src/PEC15.c"
+   1:Src/PEC15.c   **** 
+   2:Src/PEC15.c   **** 
+   3:Src/PEC15.c   **** #include "PEC15.h"
+   4:Src/PEC15.c   **** 
+   5:Src/PEC15.c   **** 
+   6:Src/PEC15.c   **** //This table speeds up the calculation of the CRC code
+   7:Src/PEC15.c   **** const unsigned int crc15Table[256] = {0x0, //!<precomputed CRC15 Table
+   8:Src/PEC15.c   **** 	0xc599, 0xceab, 0xb32 , 0xd8cf, 0x1d56, 0x1664, 0xd3fd, 0xf407, 0x319e, 0x3aac,
+   9:Src/PEC15.c   **** 	0xff35, 0x2cc8, 0xe951, 0xe263, 0x27fa, 0xad97, 0x680e, 0x633c, 0xa6a5, 0x7558, 0xb0c1,
+  10:Src/PEC15.c   **** 	0xbbf3, 0x7e6a, 0x5990, 0x9c09, 0x973b, 0x52a2, 0x815f, 0x44c6, 0x4ff4, 0x8a6d, 0x5b2e,
+  11:Src/PEC15.c   **** 	0x9eb7, 0x9585, 0x501c, 0x83e1, 0x4678, 0x4d4a, 0x88d3, 0xaf29, 0x6ab0, 0x6182, 0xa41b,
+  12:Src/PEC15.c   **** 	0x77e6, 0xb27f, 0xb94d, 0x7cd4, 0xf6b9, 0x3320, 0x3812, 0xfd8b, 0x2e76, 0xebef, 0xe0dd,
+  13:Src/PEC15.c   **** 	0x2544, 0x2be , 0xc727, 0xcc15, 0x98c , 0xda71, 0x1fe8, 0x14da, 0xd143, 0xf3c5, 0x365c,
+  14:Src/PEC15.c   **** 	0x3d6e, 0xf8f7, 0x2b0a, 0xee93, 0xe5a1, 0x2038, 0x7c2 , 0xc25b, 0xc969, 0xcf0 , 0xdf0d,
+  15:Src/PEC15.c   **** 	0x1a94, 0x11a6, 0xd43f, 0x5e52, 0x9bcb, 0x90f9, 0x5560, 0x869d, 0x4304, 0x4836, 0x8daf,
+  16:Src/PEC15.c   **** 	0xaa55, 0x6fcc, 0x64fe, 0xa167, 0x729a, 0xb703, 0xbc31, 0x79a8, 0xa8eb, 0x6d72, 0x6640,
+  17:Src/PEC15.c   **** 	0xa3d9, 0x7024, 0xb5bd, 0xbe8f, 0x7b16, 0x5cec, 0x9975, 0x9247, 0x57de, 0x8423, 0x41ba,
+  18:Src/PEC15.c   **** 	0x4a88, 0x8f11, 0x57c , 0xc0e5, 0xcbd7, 0xe4e , 0xddb3, 0x182a, 0x1318, 0xd681, 0xf17b,
+  19:Src/PEC15.c   **** 	0x34e2, 0x3fd0, 0xfa49, 0x29b4, 0xec2d, 0xe71f, 0x2286, 0xa213, 0x678a, 0x6cb8, 0xa921,
+  20:Src/PEC15.c   **** 	0x7adc, 0xbf45, 0xb477, 0x71ee, 0x5614, 0x938d, 0x98bf, 0x5d26, 0x8edb, 0x4b42, 0x4070,
+  21:Src/PEC15.c   **** 	0x85e9, 0xf84 , 0xca1d, 0xc12f, 0x4b6 , 0xd74b, 0x12d2, 0x19e0, 0xdc79, 0xfb83, 0x3e1a,
+  22:Src/PEC15.c   **** 	0x3528, 0xf0b1, 0x234c, 0xe6d5, 0xede7, 0x287e, 0xf93d, 0x3ca4, 0x3796, 0xf20f, 0x21f2,
+  23:Src/PEC15.c   **** 	0xe46b, 0xef59, 0x2ac0, 0xd3a , 0xc8a3, 0xc391, 0x608 , 0xd5f5, 0x106c, 0x1b5e, 0xdec7,
+  24:Src/PEC15.c   **** 	0x54aa, 0x9133, 0x9a01, 0x5f98, 0x8c65, 0x49fc, 0x42ce, 0x8757, 0xa0ad, 0x6534, 0x6e06,
+  25:Src/PEC15.c   **** 	0xab9f, 0x7862, 0xbdfb, 0xb6c9, 0x7350, 0x51d6, 0x944f, 0x9f7d, 0x5ae4, 0x8919, 0x4c80,
+  26:Src/PEC15.c   **** 	0x47b2, 0x822b, 0xa5d1, 0x6048, 0x6b7a, 0xaee3, 0x7d1e, 0xb887, 0xb3b5, 0x762c, 0xfc41,
+  27:Src/PEC15.c   **** 	0x39d8, 0x32ea, 0xf773, 0x248e, 0xe117, 0xea25, 0x2fbc, 0x846 , 0xcddf, 0xc6ed, 0x374 ,
+  28:Src/PEC15.c   **** 	0xd089, 0x1510, 0x1e22, 0xdbbb, 0xaf8 , 0xcf61, 0xc453, 0x1ca , 0xd237, 0x17ae, 0x1c9c,
+  29:Src/PEC15.c   **** 	0xd905, 0xfeff, 0x3b66, 0x3054, 0xf5cd, 0x2630, 0xe3a9, 0xe89b, 0x2d02, 0xa76f, 0x62f6,
+  30:Src/PEC15.c   **** 	0x69c4, 0xac5d, 0x7fa0, 0xba39, 0xb10b, 0x7492, 0x5368, 0x96f1, 0x9dc3, 0x585a, 0x8ba7,
+  31:Src/PEC15.c   **** 0x4e3e, 0x450c, 0x8095};
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8NGdvX.s 			page 2
+
+
+  32:Src/PEC15.c   **** 
+  33:Src/PEC15.c   **** 
+  34:Src/PEC15.c   **** //Reads the checksum from the table
+  35:Src/PEC15.c   **** uint16_t pec15_calc(uint8_t start, uint8_t len, uint8_t *data)
+  36:Src/PEC15.c   **** {
+  28              		.loc 1 36 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              	.LVL0:
+  34 0000 70B4     		push	{r4, r5, r6}
+  35              	.LCFI0:
+  36              		.cfi_def_cfa_offset 12
+  37              		.cfi_offset 4, -12
+  38              		.cfi_offset 5, -8
+  39              		.cfi_offset 6, -4
+  40              	.LVL1:
+  41              	.LBB2:
+  37:Src/PEC15.c   **** 	uint16_t remainder,addr;
+  38:Src/PEC15.c   **** 
+  39:Src/PEC15.c   **** 	remainder = 16;//initialize the PEC
+  40:Src/PEC15.c   **** 	for(uint8_t i = start; i<(len+start);i++) // loops for each byte in data array
+  42              		.loc 1 40 0
+  43 0002 0446     		mov	r4, r0
+  44              	.LBE2:
+  39:Src/PEC15.c   **** 	for(uint8_t i = start; i<(len+start);i++) // loops for each byte in data array
+  45              		.loc 1 39 0
+  46 0004 1023     		movs	r3, #16
+  47              	.LBB3:
+  48              		.loc 1 40 0
+  49 0006 0BE0     		b	.L2
+  50              	.LVL2:
+  51              	.L3:
+  41:Src/PEC15.c   **** 	{
+  42:Src/PEC15.c   **** 		addr = ((remainder>>7)^data[i])&0xff;//calculate PEC table address
+  52              		.loc 1 42 0 discriminator 3
+  53 0008 155D     		ldrb	r5, [r2, r4]	@ zero_extendqisi2
+  54 000a 85EAD315 		eor	r5, r5, r3, lsr #7
+  55 000e EDB2     		uxtb	r5, r5
+  56              	.LVL3:
+  43:Src/PEC15.c   **** 		remainder = (remainder<<8)^crc15Table[addr];
+  57              		.loc 1 43 0 discriminator 3
+  58 0010 1B02     		lsls	r3, r3, #8
+  59              	.LVL4:
+  60 0012 9BB2     		uxth	r3, r3
+  61 0014 064E     		ldr	r6, .L5
+  62 0016 36F82550 		ldrh	r5, [r6, r5, lsl #2]
+  63              	.LVL5:
+  64 001a 6B40     		eors	r3, r3, r5
+  65              	.LVL6:
+  40:Src/PEC15.c   **** 	{
+  66              		.loc 1 40 0 discriminator 3
+  67 001c 0134     		adds	r4, r4, #1
+  68              	.LVL7:
+  69 001e E4B2     		uxtb	r4, r4
+  70              	.LVL8:
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8NGdvX.s 			page 3
+
+
+  71              	.L2:
+  40:Src/PEC15.c   **** 	{
+  72              		.loc 1 40 0 is_stmt 0 discriminator 1
+  73 0020 0D18     		adds	r5, r1, r0
+  74 0022 AC42     		cmp	r4, r5
+  75 0024 F0DB     		blt	.L3
+  76              	.LBE3:
+  44:Src/PEC15.c   **** 
+  45:Src/PEC15.c   **** 	}
+  46:Src/PEC15.c   **** 	return(remainder*2);//The CRC15 has a 0 in the LSB so the remainder must be multiplied by 2
+  77              		.loc 1 46 0 is_stmt 1
+  78 0026 5800     		lsls	r0, r3, #1
+  79              	.LVL9:
+  80 0028 80B2     		uxth	r0, r0
+  47:Src/PEC15.c   **** }
+  81              		.loc 1 47 0
+  82 002a 70BC     		pop	{r4, r5, r6}
+  83              	.LCFI1:
+  84              		.cfi_restore 6
+  85              		.cfi_restore 5
+  86              		.cfi_restore 4
+  87              		.cfi_def_cfa_offset 0
+  88              	.LVL10:
+  89 002c 7047     		bx	lr
+  90              	.L6:
+  91 002e 00BF     		.align	2
+  92              	.L5:
+  93 0030 00000000 		.word	.LANCHOR0
+  94              		.cfi_endproc
+  95              	.LFE0:
+  97              		.global	crc15Table
+  98              		.section	.rodata.crc15Table,"a",%progbits
+  99              		.align	2
+ 100              		.set	.LANCHOR0,. + 0
+ 103              	crc15Table:
+ 104 0000 00000000 		.word	0
+ 105 0004 99C50000 		.word	50585
+ 106 0008 ABCE0000 		.word	52907
+ 107 000c 320B0000 		.word	2866
+ 108 0010 CFD80000 		.word	55503
+ 109 0014 561D0000 		.word	7510
+ 110 0018 64160000 		.word	5732
+ 111 001c FDD30000 		.word	54269
+ 112 0020 07F40000 		.word	62471
+ 113 0024 9E310000 		.word	12702
+ 114 0028 AC3A0000 		.word	15020
+ 115 002c 35FF0000 		.word	65333
+ 116 0030 C82C0000 		.word	11464
+ 117 0034 51E90000 		.word	59729
+ 118 0038 63E20000 		.word	57955
+ 119 003c FA270000 		.word	10234
+ 120 0040 97AD0000 		.word	44439
+ 121 0044 0E680000 		.word	26638
+ 122 0048 3C630000 		.word	25404
+ 123 004c A5A60000 		.word	42661
+ 124 0050 58750000 		.word	30040
+ 125 0054 C1B00000 		.word	45249
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8NGdvX.s 			page 4
+
+
+ 126 0058 F3BB0000 		.word	48115
+ 127 005c 6A7E0000 		.word	32362
+ 128 0060 90590000 		.word	22928
+ 129 0064 099C0000 		.word	39945
+ 130 0068 3B970000 		.word	38715
+ 131 006c A2520000 		.word	21154
+ 132 0070 5F810000 		.word	33119
+ 133 0074 C6440000 		.word	17606
+ 134 0078 F44F0000 		.word	20468
+ 135 007c 6D8A0000 		.word	35437
+ 136 0080 2E5B0000 		.word	23342
+ 137 0084 B79E0000 		.word	40631
+ 138 0088 85950000 		.word	38277
+ 139 008c 1C500000 		.word	20508
+ 140 0090 E1830000 		.word	33761
+ 141 0094 78460000 		.word	18040
+ 142 0098 4A4D0000 		.word	19786
+ 143 009c D3880000 		.word	35027
+ 144 00a0 29AF0000 		.word	44841
+ 145 00a4 B06A0000 		.word	27312
+ 146 00a8 82610000 		.word	24962
+ 147 00ac 1BA40000 		.word	42011
+ 148 00b0 E6770000 		.word	30694
+ 149 00b4 7FB20000 		.word	45695
+ 150 00b8 4DB90000 		.word	47437
+ 151 00bc D47C0000 		.word	31956
+ 152 00c0 B9F60000 		.word	63161
+ 153 00c4 20330000 		.word	13088
+ 154 00c8 12380000 		.word	14354
+ 155 00cc 8BFD0000 		.word	64907
+ 156 00d0 762E0000 		.word	11894
+ 157 00d4 EFEB0000 		.word	60399
+ 158 00d8 DDE00000 		.word	57565
+ 159 00dc 44250000 		.word	9540
+ 160 00e0 BE020000 		.word	702
+ 161 00e4 27C70000 		.word	50983
+ 162 00e8 15CC0000 		.word	52245
+ 163 00ec 8C090000 		.word	2444
+ 164 00f0 71DA0000 		.word	55921
+ 165 00f4 E81F0000 		.word	8168
+ 166 00f8 DA140000 		.word	5338
+ 167 00fc 43D10000 		.word	53571
+ 168 0100 C5F30000 		.word	62405
+ 169 0104 5C360000 		.word	13916
+ 170 0108 6E3D0000 		.word	15726
+ 171 010c F7F80000 		.word	63735
+ 172 0110 0A2B0000 		.word	11018
+ 173 0114 93EE0000 		.word	61075
+ 174 0118 A1E50000 		.word	58785
+ 175 011c 38200000 		.word	8248
+ 176 0120 C2070000 		.word	1986
+ 177 0124 5BC20000 		.word	49755
+ 178 0128 69C90000 		.word	51561
+ 179 012c F00C0000 		.word	3312
+ 180 0130 0DDF0000 		.word	57101
+ 181 0134 941A0000 		.word	6804
+ 182 0138 A6110000 		.word	4518
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8NGdvX.s 			page 5
+
+
+ 183 013c 3FD40000 		.word	54335
+ 184 0140 525E0000 		.word	24146
+ 185 0144 CB9B0000 		.word	39883
+ 186 0148 F9900000 		.word	37113
+ 187 014c 60550000 		.word	21856
+ 188 0150 9D860000 		.word	34461
+ 189 0154 04430000 		.word	17156
+ 190 0158 36480000 		.word	18486
+ 191 015c AF8D0000 		.word	36271
+ 192 0160 55AA0000 		.word	43605
+ 193 0164 CC6F0000 		.word	28620
+ 194 0168 FE640000 		.word	25854
+ 195 016c 67A10000 		.word	41319
+ 196 0170 9A720000 		.word	29338
+ 197 0174 03B70000 		.word	46851
+ 198 0178 31BC0000 		.word	48177
+ 199 017c A8790000 		.word	31144
+ 200 0180 EBA80000 		.word	43243
+ 201 0184 726D0000 		.word	28018
+ 202 0188 40660000 		.word	26176
+ 203 018c D9A30000 		.word	41945
+ 204 0190 24700000 		.word	28708
+ 205 0194 BDB50000 		.word	46525
+ 206 0198 8FBE0000 		.word	48783
+ 207 019c 167B0000 		.word	31510
+ 208 01a0 EC5C0000 		.word	23788
+ 209 01a4 75990000 		.word	39285
+ 210 01a8 47920000 		.word	37447
+ 211 01ac DE570000 		.word	22494
+ 212 01b0 23840000 		.word	33827
+ 213 01b4 BA410000 		.word	16826
+ 214 01b8 884A0000 		.word	19080
+ 215 01bc 118F0000 		.word	36625
+ 216 01c0 7C050000 		.word	1404
+ 217 01c4 E5C00000 		.word	49381
+ 218 01c8 D7CB0000 		.word	52183
+ 219 01cc 4E0E0000 		.word	3662
+ 220 01d0 B3DD0000 		.word	56755
+ 221 01d4 2A180000 		.word	6186
+ 222 01d8 18130000 		.word	4888
+ 223 01dc 81D60000 		.word	54913
+ 224 01e0 7BF10000 		.word	61819
+ 225 01e4 E2340000 		.word	13538
+ 226 01e8 D03F0000 		.word	16336
+ 227 01ec 49FA0000 		.word	64073
+ 228 01f0 B4290000 		.word	10676
+ 229 01f4 2DEC0000 		.word	60461
+ 230 01f8 1FE70000 		.word	59167
+ 231 01fc 86220000 		.word	8838
+ 232 0200 13A20000 		.word	41491
+ 233 0204 8A670000 		.word	26506
+ 234 0208 B86C0000 		.word	27832
+ 235 020c 21A90000 		.word	43297
+ 236 0210 DC7A0000 		.word	31452
+ 237 0214 45BF0000 		.word	48965
+ 238 0218 77B40000 		.word	46199
+ 239 021c EE710000 		.word	29166
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8NGdvX.s 			page 6
+
+
+ 240 0220 14560000 		.word	22036
+ 241 0224 8D930000 		.word	37773
+ 242 0228 BF980000 		.word	39103
+ 243 022c 265D0000 		.word	23846
+ 244 0230 DB8E0000 		.word	36571
+ 245 0234 424B0000 		.word	19266
+ 246 0238 70400000 		.word	16496
+ 247 023c E9850000 		.word	34281
+ 248 0240 840F0000 		.word	3972
+ 249 0244 1DCA0000 		.word	51741
+ 250 0248 2FC10000 		.word	49455
+ 251 024c B6040000 		.word	1206
+ 252 0250 4BD70000 		.word	55115
+ 253 0254 D2120000 		.word	4818
+ 254 0258 E0190000 		.word	6624
+ 255 025c 79DC0000 		.word	56441
+ 256 0260 83FB0000 		.word	64387
+ 257 0264 1A3E0000 		.word	15898
+ 258 0268 28350000 		.word	13608
+ 259 026c B1F00000 		.word	61617
+ 260 0270 4C230000 		.word	9036
+ 261 0274 D5E60000 		.word	59093
+ 262 0278 E7ED0000 		.word	60903
+ 263 027c 7E280000 		.word	10366
+ 264 0280 3DF90000 		.word	63805
+ 265 0284 A43C0000 		.word	15524
+ 266 0288 96370000 		.word	14230
+ 267 028c 0FF20000 		.word	61967
+ 268 0290 F2210000 		.word	8690
+ 269 0294 6BE40000 		.word	58475
+ 270 0298 59EF0000 		.word	61273
+ 271 029c C02A0000 		.word	10944
+ 272 02a0 3A0D0000 		.word	3386
+ 273 02a4 A3C80000 		.word	51363
+ 274 02a8 91C30000 		.word	50065
+ 275 02ac 08060000 		.word	1544
+ 276 02b0 F5D50000 		.word	54773
+ 277 02b4 6C100000 		.word	4204
+ 278 02b8 5E1B0000 		.word	7006
+ 279 02bc C7DE0000 		.word	57031
+ 280 02c0 AA540000 		.word	21674
+ 281 02c4 33910000 		.word	37171
+ 282 02c8 019A0000 		.word	39425
+ 283 02cc 985F0000 		.word	24472
+ 284 02d0 658C0000 		.word	35941
+ 285 02d4 FC490000 		.word	18940
+ 286 02d8 CE420000 		.word	17102
+ 287 02dc 57870000 		.word	34647
+ 288 02e0 ADA00000 		.word	41133
+ 289 02e4 34650000 		.word	25908
+ 290 02e8 066E0000 		.word	28166
+ 291 02ec 9FAB0000 		.word	43935
+ 292 02f0 62780000 		.word	30818
+ 293 02f4 FBBD0000 		.word	48635
+ 294 02f8 C9B60000 		.word	46793
+ 295 02fc 50730000 		.word	29520
+ 296 0300 D6510000 		.word	20950
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8NGdvX.s 			page 7
+
+
+ 297 0304 4F940000 		.word	37967
+ 298 0308 7D9F0000 		.word	40829
+ 299 030c E45A0000 		.word	23268
+ 300 0310 19890000 		.word	35097
+ 301 0314 804C0000 		.word	19584
+ 302 0318 B2470000 		.word	18354
+ 303 031c 2B820000 		.word	33323
+ 304 0320 D1A50000 		.word	42449
+ 305 0324 48600000 		.word	24648
+ 306 0328 7A6B0000 		.word	27514
+ 307 032c E3AE0000 		.word	44771
+ 308 0330 1E7D0000 		.word	32030
+ 309 0334 87B80000 		.word	47239
+ 310 0338 B5B30000 		.word	46005
+ 311 033c 2C760000 		.word	30252
+ 312 0340 41FC0000 		.word	64577
+ 313 0344 D8390000 		.word	14808
+ 314 0348 EA320000 		.word	13034
+ 315 034c 73F70000 		.word	63347
+ 316 0350 8E240000 		.word	9358
+ 317 0354 17E10000 		.word	57623
+ 318 0358 25EA0000 		.word	59941
+ 319 035c BC2F0000 		.word	12220
+ 320 0360 46080000 		.word	2118
+ 321 0364 DFCD0000 		.word	52703
+ 322 0368 EDC60000 		.word	50925
+ 323 036c 74030000 		.word	884
+ 324 0370 89D00000 		.word	53385
+ 325 0374 10150000 		.word	5392
+ 326 0378 221E0000 		.word	7714
+ 327 037c BBDB0000 		.word	56251
+ 328 0380 F80A0000 		.word	2808
+ 329 0384 61CF0000 		.word	53089
+ 330 0388 53C40000 		.word	50259
+ 331 038c CA010000 		.word	458
+ 332 0390 37D20000 		.word	53815
+ 333 0394 AE170000 		.word	6062
+ 334 0398 9C1C0000 		.word	7324
+ 335 039c 05D90000 		.word	55557
+ 336 03a0 FFFE0000 		.word	65279
+ 337 03a4 663B0000 		.word	15206
+ 338 03a8 54300000 		.word	12372
+ 339 03ac CDF50000 		.word	62925
+ 340 03b0 30260000 		.word	9776
+ 341 03b4 A9E30000 		.word	58281
+ 342 03b8 9BE80000 		.word	59547
+ 343 03bc 022D0000 		.word	11522
+ 344 03c0 6FA70000 		.word	42863
+ 345 03c4 F6620000 		.word	25334
+ 346 03c8 C4690000 		.word	27076
+ 347 03cc 5DAC0000 		.word	44125
+ 348 03d0 A07F0000 		.word	32672
+ 349 03d4 39BA0000 		.word	47673
+ 350 03d8 0BB10000 		.word	45323
+ 351 03dc 92740000 		.word	29842
+ 352 03e0 68530000 		.word	21352
+ 353 03e4 F1960000 		.word	38641
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8NGdvX.s 			page 8
+
+
+ 354 03e8 C39D0000 		.word	40387
+ 355 03ec 5A580000 		.word	22618
+ 356 03f0 A78B0000 		.word	35751
+ 357 03f4 3E4E0000 		.word	20030
+ 358 03f8 0C450000 		.word	17676
+ 359 03fc 95800000 		.word	32917
+ 360              		.text
+ 361              	.Letext0:
+ 362              		.file 2 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ 363              		.file 3 "/usr/local/Caskroom/gcc-arm-embedded/6-2017-q1-update/gcc-arm-none-eabi-6-2017-q1-update/
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8NGdvX.s 			page 9
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 PEC15.c
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8NGdvX.s:18     .text.pec15_calc:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8NGdvX.s:25     .text.pec15_calc:0000000000000000 pec15_calc
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8NGdvX.s:93     .text.pec15_calc:0000000000000030 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8NGdvX.s:103    .rodata.crc15Table:0000000000000000 crc15Table
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc8NGdvX.s:99     .rodata.crc15Table:0000000000000000 $d
+                     .debug_frame:0000000000000010 $d
+
+NO UNDEFINED SYMBOLS

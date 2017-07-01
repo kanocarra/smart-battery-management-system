@@ -67,7 +67,16 @@ Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c \
 Src/main.c \
 Src/error_handler.c \
-Src/init.c \
+Src/bms_controller.c \
+Src/gpio.c \
+Src/LTC6804.c \
+Src/PEC15.c \
+Src/rtc.c \
+Src/spi.c \
+Src/usart.c \
+Src/can.c \
+Src/adc.c \
+Src/dma.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c \

@@ -81,21 +81,10 @@
 #define SDA_Pin GPIO_PIN_7
 #define SDA_GPIO_Port GPIOB
 
-/* USER CODE BEGIN Private defines */
-
-/* USER CODE END Private defines */
-
 void _Error_Handler(char *, int);
 
 #define Error_Handler() _Error_Handler(__FILE__, __LINE__)
 
-/**
-  * @}
-  */ 
-
-/**
-  * @}
-*/ 
 
 #endif /* __MAIN_H */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
   29:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****          standby voltage supplied by a battery or by another source.
   30:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   
   31:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     [..] To allow the RTC to operate even when the main digital supply (VDD) 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 2
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 2
 
 
   32:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****          is turned off, the VBAT pin powers the following blocks:
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
   86:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     *** Alarm configuration ***
   87:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     ===========================
   88:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     [..]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 3
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 3
 
 
   89:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         (+) To configure the RTC Alarm use the HAL_RTC_SetAlarm() function. 
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  143:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****          Wakeup from STOP and Standby modes is possible only when the RTC clock source
  144:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****          is LSE or LSI.
  145:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****      
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 4
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 4
 
 
  146:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   @endverbatim
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  200:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   * @{
  201:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   */
  202:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 5
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 5
 
 
  203:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c **** /** @addtogroup RTC_Exported_Functions_Group1
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  257:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   assert_param(IS_RTC_OUTPUT_POL(hrtc->Init.OutPutPolarity));
  258:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   assert_param(IS_RTC_OUTPUT_TYPE(hrtc->Init.OutPutType));
  259:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 6
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 6
 
 
  260:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   if(hrtc->State == HAL_RTC_STATE_RESET)
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  314:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   * @brief  DeInitialize the RTC peripheral.
  315:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   * @param  hrtc: RTC handle
  316:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   * @note   This function doesn't reset the RTC Backup Data registers.   
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 7
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 7
 
 
  317:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   * @retval HAL status
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  371:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     hrtc->Instance->PRER = ((uint32_t)(RTC_PRER_PREDIV_A | 0x000000FFU));
  372:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     hrtc->Instance->ALRMAR = 0x00000000U;        
  373:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     hrtc->Instance->ALRMBR = 0x00000000U;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 8
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 8
 
 
  374:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     hrtc->Instance->SHIFTR = 0x00000000U;
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
   35              		.cfi_endproc
   36              	.LFE126:
   38              		.section	.text.HAL_RTC_MspDeInit,"ax",%progbits
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 9
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 9
 
 
   39              		.align	1
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  449:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****  *  @brief   RTC Time and Date functions
  450:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****  *
  451:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c **** @verbatim   
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 10
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 10
 
 
  452:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****  ===============================================================================
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  506:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   else
  507:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   {
  508:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     if((hrtc->Instance->CR & RTC_CR_FMT) != (uint32_t)RESET)
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 11
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 11
 
 
  509:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     {
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  563:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         /* Enable the write protection for RTC registers */
  564:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         __HAL_RTC_WRITEPROTECTION_ENABLE(hrtc);  
  565:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 12
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 12
 
 
  566:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         hrtc->State = HAL_RTC_STATE_ERROR;
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  620:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   sTime->Minutes = (uint8_t)((tmpreg & (RTC_TR_MNT | RTC_TR_MNU)) >>8U);
  621:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   sTime->Seconds = (uint8_t)(tmpreg & (RTC_TR_ST | RTC_TR_SU));
  622:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   sTime->TimeFormat = (uint8_t)((tmpreg & (RTC_TR_PM)) >> 16U); 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 13
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 13
 
 
  623:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  677:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   {   
  678:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     assert_param(IS_RTC_YEAR(RTC_Bcd2ToByte(sDate->Year)));
  679:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     datetmpreg = RTC_Bcd2ToByte(sDate->Month);
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 14
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 14
 
 
  680:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     assert_param(IS_RTC_MONTH(datetmpreg));
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  734:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     
  735:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     hrtc->State = HAL_RTC_STATE_READY ;
  736:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 15
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 15
 
 
  737:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     /* Process Unlocked */ 
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  791:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****  ===============================================================================  
  792:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****  
  793:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****  [..] This section provides functions allowing to configure Alarm feature
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 16
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 16
 
 
  794:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c **** 
@@ -958,7 +958,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  848:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     }
  849:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     
  850:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     tmpreg = (((uint32_t)RTC_ByteToBcd2(sAlarm->AlarmTime.Hours) << 16U) | \
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 17
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 17
 
 
  851:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****               ((uint32_t)RTC_ByteToBcd2(sAlarm->AlarmTime.Minutes) << 8U) | \
@@ -1018,7 +1018,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  905:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     __HAL_RTC_ALARMA_DISABLE(hrtc);
  906:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     
  907:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     /* In case of interrupt mode is used, the interrupt source must disabled */ 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 18
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 18
 
 
  908:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     __HAL_RTC_ALARM_DISABLE_IT(hrtc, RTC_IT_ALRA);
@@ -1078,7 +1078,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  962:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     hrtc->Instance->ALRMBSSR = subsecondtmpreg;
  963:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     /* Configure the Alarm state: Enable Alarm */
  964:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     __HAL_RTC_ALARMB_ENABLE(hrtc); 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 19
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 19
 
 
  965:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   }
@@ -1138,7 +1138,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
 1019:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****       sAlarm->AlarmTime.TimeFormat = 0x00U;
 1020:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****       assert_param(IS_RTC_HOUR24(sAlarm->AlarmTime.Hours));
 1021:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 20
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 20
 
 
 1022:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     assert_param(IS_RTC_MINUTES(sAlarm->AlarmTime.Minutes));
@@ -1198,7 +1198,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
 1076:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   /* Configure the Alarm A or Alarm B Sub Second registers */
 1077:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   subsecondtmpreg = (uint32_t)((uint32_t)(sAlarm->AlarmTime.SubSeconds) | (uint32_t)(sAlarm->AlarmS
 1078:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 21
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 21
 
 
 1079:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   /* Disable the write protection for RTC registers */
@@ -1258,7 +1258,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
 1133:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         
 1134:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         hrtc->State = HAL_RTC_STATE_TIMEOUT; 
 1135:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 22
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 22
 
 
 1136:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         /* Process Unlocked */ 
@@ -1318,7 +1318,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
   79              		.cfi_offset 5, -8
   80              		.cfi_offset 14, -4
   81              	.LVL3:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 23
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 23
 
 
 1179:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   uint32_t tickstart = 0U;
@@ -1378,7 +1378,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
 1212:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         /* Process Unlocked */ 
 1213:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         __HAL_UNLOCK(hrtc);
 1214:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 24
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 24
 
 
 1215:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         return HAL_TIMEOUT;
@@ -1438,7 +1438,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  134              		.loc 1 1237 0
  135 005a 0320     		movs	r0, #3
  136 005c 6077     		strb	r0, [r4, #29]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 25
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 25
 
 
 1238:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         
@@ -1498,7 +1498,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  178              		.loc 1 1213 0
  179 009e 0023     		movs	r3, #0
  180 00a0 2377     		strb	r3, [r4, #28]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 26
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 26
 
 
 1215:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****       }      
@@ -1558,7 +1558,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
 1261:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   * @param  Alarm: Specifies the Alarm.
 1262:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   *          This parameter can be one of the following values:
 1263:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   *             @arg RTC_ALARM_A: AlarmA
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 27
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 27
 
 
 1264:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   *             @arg RTC_ALARM_B: AlarmB  
@@ -1618,7 +1618,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
 1318:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   * @param  hrtc: RTC handle
 1319:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   * @retval None
 1320:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   */
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 28
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 28
 
 
 1321:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c **** void HAL_RTC_AlarmIRQHandler(RTC_HandleTypeDef* hrtc)
@@ -1678,7 +1678,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  228              		.align	1
  229              		.global	HAL_RTC_AlarmIRQHandler
  230              		.syntax unified
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 29
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 29
 
 
  231              		.thumb
@@ -1738,7 +1738,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  278              	.LVL17:
  279              	.L19:
 1330:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****       
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 30
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 30
 
 
  280              		.loc 1 1330 0
@@ -1798,7 +1798,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
 1379:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c **** HAL_StatusTypeDef HAL_RTC_PollForAlarmAEvent(RTC_HandleTypeDef *hrtc, uint32_t Timeout)
 1380:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c **** {  
  319              		.loc 1 1380 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 31
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 31
 
 
  320              		.cfi_startproc
@@ -1858,7 +1858,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
 1392:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****       }
 1393:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     }
 1394:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 32
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 32
 
 
 1395:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   
@@ -1918,7 +1918,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
 1426:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   *         synchronized with RTC APB clock.
 1427:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   * @note   The RTC Resynchronization mode is write protected, use the 
 1428:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   *         __HAL_RTC_WRITEPROTECTION_DISABLE() before calling this function. 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 33
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 33
 
 
 1429:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   * @note   To read the calendar through the shadow registers after Calendar 
@@ -1978,7 +1978,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  420              	.LVL29:
  421 0022 401B     		subs	r0, r0, r5
  422 0024 B0F57A7F 		cmp	r0, #1000
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 34
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 34
 
 
  423 0028 F4D9     		bls	.L32
@@ -2038,7 +2038,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
 1483:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c **** {
  446              		.loc 1 1483 0
  447              		.cfi_startproc
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 35
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 35
 
 
  448              		@ args = 0, pretend = 0, frame = 0
@@ -2098,7 +2098,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  477              		.cfi_def_cfa_offset 16
  478              		.cfi_offset 3, -16
  479              		.cfi_offset 4, -12
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 36
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 36
 
 
  480              		.cfi_offset 5, -8
@@ -2158,7 +2158,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  510 0028 FFF7FEFF 		bl	HAL_GetTick
  511              	.LVL39:
  512 002c 401B     		subs	r0, r0, r5
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 37
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 37
 
 
  513 002e B0F57A7F 		cmp	r0, #1000
@@ -2218,7 +2218,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  561 000e 0223     		movs	r3, #2
  562 0010 6377     		strb	r3, [r4, #29]
  273:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 38
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 38
 
 
  563              		.loc 1 273 0
@@ -2278,7 +2278,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  610 0068 0B6C     		ldr	r3, [r1, #64]
  611 006a 23F48023 		bic	r3, r3, #262144
  612 006e 0B64     		str	r3, [r1, #64]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 39
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 39
 
 
  301:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****     
@@ -2338,7 +2338,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  657              		.loc 1 248 0
  658 009e 0122     		movs	r2, #1
  311:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 40
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 40
 
 
  659              		.loc 1 311 0
@@ -2398,7 +2398,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  709 0020 0423     		movs	r3, #4
  710 0022 6377     		strb	r3, [r4, #29]
  341:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   }  
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 41
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 41
 
 
  711              		.loc 1 341 0
@@ -2458,7 +2458,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  756 0066 0326     		movs	r6, #3
  757 0068 6677     		strb	r6, [r4, #29]
  364:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****       } 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 42
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 42
 
 
  758              		.loc 1 364 0
@@ -2518,7 +2518,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  800 00a4 13F0200F 		tst	r3, #32
  801 00a8 03D1     		bne	.L64
  388:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****       {
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 43
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 43
 
 
  802              		.loc 1 388 0
@@ -2578,7 +2578,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  850              	.LFB142:
 1532:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c **** 
 1533:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c **** 
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 44
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 44
 
 
 1534:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c **** /**
@@ -2638,7 +2638,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  888              		.global	HAL_RTC_SetTime
  889              		.syntax unified
  890              		.thumb
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 45
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 45
 
 
  891              		.thumb_func
@@ -2698,7 +2698,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  938 0028 FFF7FEFF 		bl	RTC_ByteToBcd2
  939              	.LVL68:
  940 002c 0504     		lsls	r5, r0, #16
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 46
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 46
 
 
  502:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****                         ((uint32_t)RTC_ByteToBcd2(sTime->Seconds)) | \
@@ -2758,7 +2758,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  984              		.loc 1 553 0
  985 0074 2168     		ldr	r1, [r4]
  986 0076 8B68     		ldr	r3, [r1, #8]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 47
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 47
 
 
  987 0078 F268     		ldr	r2, [r6, #12]
@@ -2818,7 +2818,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  1031 00b8 0002     		lsls	r0, r0, #8
  521:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****               ((uint32_t)(sTime->Minutes) << 8U) | \
  1032              		.loc 1 521 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 48
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 48
 
 
  1033 00ba 40EA0540 		orr	r0, r0, r5, lsl #16
@@ -2878,7 +2878,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  1075 00f0 0023     		movs	r3, #0
  1076 00f2 2377     		strb	r3, [r4, #28]
  571:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****       }
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 49
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 49
 
 
  1077              		.loc 1 571 0
@@ -2938,7 +2938,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  1126 0010 3AB9     		cbnz	r2, .L87
  658:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   {
  1127              		.loc 1 658 0 is_stmt 0 discriminator 1
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 50
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 50
 
 
  1128 0012 4B78     		ldrb	r3, [r1, #1]	@ zero_extendqisi2
@@ -2998,7 +2998,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  694:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   {
  1172              		.loc 1 694 0
  1173 0056 2046     		mov	r0, r4
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 51
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 51
 
 
  1174 0058 FFF7FEFF 		bl	RTC_EnterInitMode
@@ -3058,7 +3058,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  1217              		.loc 1 685 0
  1218 0096 0002     		lsls	r0, r0, #8
  684:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****                   (((uint32_t)sDate->Month) << 8U) | \
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 52
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 52
 
 
  1219              		.loc 1 684 0
@@ -3118,7 +3118,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  728:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****       }
  1262              		.loc 1 728 0
  1263 00d0 0126     		movs	r6, #1
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 53
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 53
 
 
  1264 00d2 00E0     		b	.L86
@@ -3178,7 +3178,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  826:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   {
  1314              		.loc 1 826 0 discriminator 2
  1315 0016 002A     		cmp	r2, #0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 54
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 54
 
 
  1316 0018 4DD1     		bne	.L98
@@ -3238,7 +3238,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  1357 0056 0643     		orrs	r6, r6, r0
  856:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   }
  1358              		.loc 1 856 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 55
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 55
 
 
  1359 0058 6B69     		ldr	r3, [r5, #20]
@@ -3298,7 +3298,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  1404 009e 401B     		subs	r0, r0, r5
  1405 00a0 B0F57A7F 		cmp	r0, #1000
  1406 00a4 F4D9     		bls	.L106
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 56
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 56
 
 
  949:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         
@@ -3358,7 +3358,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  1447 00d6 43EA0243 		orr	r3, r3, r2, lsl #16
  890:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****               ((uint32_t)sAlarm->AlarmDateWeekDaySel) | \
  1448              		.loc 1 890 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 57
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 57
 
 
  1449 00da 95F82020 		ldrb	r2, [r5, #32]	@ zero_extendqisi2
@@ -3418,7 +3418,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  919:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         
  1493              		.loc 1 919 0
  1494 0120 0320     		movs	r0, #3
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 58
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 58
 
 
  1495 0122 6077     		strb	r0, [r4, #29]
@@ -3478,7 +3478,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  1537 015a F8BD     		pop	{r3, r4, r5, r6, r7, pc}
  1538              	.LVL120:
  1539              	.L108:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 59
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 59
 
 
  822:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   
@@ -3538,7 +3538,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  1588              		.loc 1 1012 0
  1589 001a 0368     		ldr	r3, [r0]
  1590 001c 9B68     		ldr	r3, [r3, #8]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 60
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 60
 
 
  1591 001e 13F0400F 		tst	r3, #64
@@ -3598,7 +3598,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  1631              		.loc 1 1033 0
  1632 005a 1E43     		orrs	r6, r6, r3
  1633              	.LVL129:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 61
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 61
 
 
  1634              	.L117:
@@ -3658,7 +3658,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  1679              		.loc 1 1132 0
  1680 00a8 2368     		ldr	r3, [r4]
  1681 00aa FF22     		movs	r2, #255
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 62
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 62
 
 
  1682 00ac 5A62     		str	r2, [r3, #36]
@@ -3718,7 +3718,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
 1071:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****               ((uint32_t)(sAlarm->AlarmDateWeekDay) << 24U) | \
  1722              		.loc 1 1071 0
  1723 00e0 43EA0263 		orr	r3, r3, r2, lsl #24
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 63
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 63
 
 
 1072:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****               ((uint32_t)sAlarm->AlarmDateWeekDaySel) | \
@@ -3778,7 +3778,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  1768 0126 6077     		strb	r0, [r4, #29]
 1103:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****         
  1769              		.loc 1 1103 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 64
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 64
 
 
  1770 0128 0023     		movs	r3, #0
@@ -3838,7 +3838,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
 1155:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   
  1814              		.loc 1 1155 0
  1815 016e 9A68     		ldr	r2, [r3, #8]
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 65
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 65
 
 
  1816 0170 42F40032 		orr	r2, r2, #131072
@@ -3898,7 +3898,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  1858              		@ link register save eliminated.
  1859              	.LVL144:
 1559:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   uint32_t tmp = 0U;
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 66
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 66
 
 
 1560:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   tmp = ((uint8_t)(Value & (uint8_t)0xF0U) >> (uint8_t)0x4U) * 10U;
@@ -3958,7 +3958,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  1909 0014 1B68     		ldr	r3, [r3]
  1910 0016 03F07F33 		and	r3, r3, #2139062143
  1911 001a 23F0FE43 		bic	r3, r3, #2130706432
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 67
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 67
 
 
  1912              	.LVL149:
@@ -4018,7 +4018,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  1958              		.fpu fpv4-sp-d16
  1960              	HAL_RTC_GetDate:
  1961              	.LFB131:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 68
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 68
 
 
  755:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   uint32_t datetmpreg = 0U;
@@ -4078,7 +4078,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  776:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   }
  2007              		.loc 1 776 0
  2008 0036 2846     		mov	r0, r5
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 69
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 69
 
 
  2009 0038 FFF7FEFF 		bl	RTC_Bcd2ToByte
@@ -4138,7 +4138,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  2059 0014 C7F30E07 		ubfx	r7, r7, #0, #15
  2060              	.LVL169:
  2061              	.L141:
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 70
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 70
 
 
 1296:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   sAlarm->AlarmTime.Minutes = (uint32_t)((tmpreg & (RTC_ALRMAR_MNT | RTC_ALRMAR_MNU)) >> 8U);
@@ -4198,7 +4198,7 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  2104 0062 A070     		strb	r0, [r4, #2]
 1310:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c ****   }  
  2105              		.loc 1 1310 0
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 71
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 71
 
 
  2106 0064 3846     		mov	r0, r7
@@ -4246,54 +4246,54 @@ ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 1
  2145              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rtc.h"
  2146              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
  2147              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rtc_ex.h"
-ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s 			page 72
+ARM GAS  /var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s 			page 72
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f3xx_hal_rtc.c
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:18     .text.HAL_RTC_MspInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:25     .text.HAL_RTC_MspInit:0000000000000000 HAL_RTC_MspInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:39     .text.HAL_RTC_MspDeInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:46     .text.HAL_RTC_MspDeInit:0000000000000000 HAL_RTC_MspDeInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:59     .text.HAL_RTC_DeactivateAlarm:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:66     .text.HAL_RTC_DeactivateAlarm:0000000000000000 HAL_RTC_DeactivateAlarm
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:208    .text.HAL_RTC_AlarmAEventCallback:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:215    .text.HAL_RTC_AlarmAEventCallback:0000000000000000 HAL_RTC_AlarmAEventCallback
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:228    .text.HAL_RTC_AlarmIRQHandler:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:235    .text.HAL_RTC_AlarmIRQHandler:0000000000000000 HAL_RTC_AlarmIRQHandler
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:305    .text.HAL_RTC_AlarmIRQHandler:000000000000005c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:310    .text.HAL_RTC_PollForAlarmAEvent:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:317    .text.HAL_RTC_PollForAlarmAEvent:0000000000000000 HAL_RTC_PollForAlarmAEvent
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:379    .text.HAL_RTC_WaitForSynchro:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:386    .text.HAL_RTC_WaitForSynchro:0000000000000000 HAL_RTC_WaitForSynchro
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:437    .text.HAL_RTC_GetState:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:444    .text.HAL_RTC_GetState:0000000000000000 HAL_RTC_GetState
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:461    .text.RTC_EnterInitMode:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:468    .text.RTC_EnterInitMode:0000000000000000 RTC_EnterInitMode
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:528    .text.HAL_RTC_Init:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:535    .text.HAL_RTC_Init:0000000000000000 HAL_RTC_Init
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:667    .text.HAL_RTC_DeInit:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:674    .text.HAL_RTC_DeInit:0000000000000000 HAL_RTC_DeInit
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:837    .text.HAL_RTC_DeInit:00000000000000d4 $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:842    .text.RTC_ByteToBcd2:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:849    .text.RTC_ByteToBcd2:0000000000000000 RTC_ByteToBcd2
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:887    .text.HAL_RTC_SetTime:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:894    .text.HAL_RTC_SetTime:0000000000000000 HAL_RTC_SetTime
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:1093   .text.HAL_RTC_SetDate:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:1100   .text.HAL_RTC_SetDate:0000000000000000 HAL_RTC_SetDate
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:1278   .text.HAL_RTC_SetAlarm:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:1285   .text.HAL_RTC_SetAlarm:0000000000000000 HAL_RTC_SetAlarm
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:1549   .text.HAL_RTC_SetAlarm_IT:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:1556   .text.HAL_RTC_SetAlarm_IT:0000000000000000 HAL_RTC_SetAlarm_IT
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:1840   .text.HAL_RTC_SetAlarm_IT:000000000000018c $d
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:1845   .text.RTC_Bcd2ToByte:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:1852   .text.RTC_Bcd2ToByte:0000000000000000 RTC_Bcd2ToByte
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:1876   .text.HAL_RTC_GetTime:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:1883   .text.HAL_RTC_GetTime:0000000000000000 HAL_RTC_GetTime
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:1953   .text.HAL_RTC_GetDate:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:1960   .text.HAL_RTC_GetDate:0000000000000000 HAL_RTC_GetDate
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:2021   .text.HAL_RTC_GetAlarm:0000000000000000 $t
-/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//cc068G4O.s:2028   .text.HAL_RTC_GetAlarm:0000000000000000 HAL_RTC_GetAlarm
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:18     .text.HAL_RTC_MspInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:25     .text.HAL_RTC_MspInit:0000000000000000 HAL_RTC_MspInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:39     .text.HAL_RTC_MspDeInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:46     .text.HAL_RTC_MspDeInit:0000000000000000 HAL_RTC_MspDeInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:59     .text.HAL_RTC_DeactivateAlarm:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:66     .text.HAL_RTC_DeactivateAlarm:0000000000000000 HAL_RTC_DeactivateAlarm
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:208    .text.HAL_RTC_AlarmAEventCallback:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:215    .text.HAL_RTC_AlarmAEventCallback:0000000000000000 HAL_RTC_AlarmAEventCallback
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:228    .text.HAL_RTC_AlarmIRQHandler:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:235    .text.HAL_RTC_AlarmIRQHandler:0000000000000000 HAL_RTC_AlarmIRQHandler
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:305    .text.HAL_RTC_AlarmIRQHandler:000000000000005c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:310    .text.HAL_RTC_PollForAlarmAEvent:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:317    .text.HAL_RTC_PollForAlarmAEvent:0000000000000000 HAL_RTC_PollForAlarmAEvent
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:379    .text.HAL_RTC_WaitForSynchro:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:386    .text.HAL_RTC_WaitForSynchro:0000000000000000 HAL_RTC_WaitForSynchro
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:437    .text.HAL_RTC_GetState:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:444    .text.HAL_RTC_GetState:0000000000000000 HAL_RTC_GetState
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:461    .text.RTC_EnterInitMode:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:468    .text.RTC_EnterInitMode:0000000000000000 RTC_EnterInitMode
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:528    .text.HAL_RTC_Init:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:535    .text.HAL_RTC_Init:0000000000000000 HAL_RTC_Init
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:667    .text.HAL_RTC_DeInit:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:674    .text.HAL_RTC_DeInit:0000000000000000 HAL_RTC_DeInit
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:837    .text.HAL_RTC_DeInit:00000000000000d4 $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:842    .text.RTC_ByteToBcd2:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:849    .text.RTC_ByteToBcd2:0000000000000000 RTC_ByteToBcd2
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:887    .text.HAL_RTC_SetTime:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:894    .text.HAL_RTC_SetTime:0000000000000000 HAL_RTC_SetTime
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:1093   .text.HAL_RTC_SetDate:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:1100   .text.HAL_RTC_SetDate:0000000000000000 HAL_RTC_SetDate
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:1278   .text.HAL_RTC_SetAlarm:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:1285   .text.HAL_RTC_SetAlarm:0000000000000000 HAL_RTC_SetAlarm
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:1549   .text.HAL_RTC_SetAlarm_IT:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:1556   .text.HAL_RTC_SetAlarm_IT:0000000000000000 HAL_RTC_SetAlarm_IT
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:1840   .text.HAL_RTC_SetAlarm_IT:000000000000018c $d
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:1845   .text.RTC_Bcd2ToByte:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:1852   .text.RTC_Bcd2ToByte:0000000000000000 RTC_Bcd2ToByte
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:1876   .text.HAL_RTC_GetTime:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:1883   .text.HAL_RTC_GetTime:0000000000000000 HAL_RTC_GetTime
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:1953   .text.HAL_RTC_GetDate:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:1960   .text.HAL_RTC_GetDate:0000000000000000 HAL_RTC_GetDate
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:2021   .text.HAL_RTC_GetAlarm:0000000000000000 $t
+/var/folders/p7/nwmyw04531jbkqkgv59cx10h0000gn/T//ccqIDAuH.s:2028   .text.HAL_RTC_GetAlarm:0000000000000000 HAL_RTC_GetAlarm
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS
