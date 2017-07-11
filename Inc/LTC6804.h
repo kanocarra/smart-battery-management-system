@@ -22,6 +22,7 @@
 #define RDSTATA 0b00000010000	//Read Status Register Group A
 #define RDSTATB 0b00000010010	//Read Status Register Group B
 #define ADAX	0b10111100000	//Start GPIOs ADC Conversion and Poll Status (default all GPIOs and 2nd REF) mode 11 (27 Hz)
+#define ADCVAX	0b10111111111	//Start combined cell votlage and GPIO1, GPIO2 conversion and poll status
 #define CLRCELL 0b11100010001
 #define CLRAUX	0b11100010010
 #define CLRSTAT 0b11100010011
@@ -30,8 +31,7 @@
 
 //Make #defines for the UV and OV levels
 //Note: 12 bits long
-//Data sheet for the cells shows 2.8V to 3.8V range
-#define OVERVOLTAGE_ALARM_LEVEL		2625	//3.6992 V --> Comparison voltage = VOV*16*100uV
+#define OVERVOLTAGE_ALARM_LEVEL		2625	//4.2V --> Comparison voltage = VOV*16*100uV
 #define UNDERVOLTAGE_ALARM_LEVEL	1874	//3.0 V --> Comparison voltage = (VUV+1)*16*100uV
 
 //DATA STRUCTURES

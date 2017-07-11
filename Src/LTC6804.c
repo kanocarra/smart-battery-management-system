@@ -250,7 +250,15 @@ void ADC_read_cell_voltages(void)
 	Cell_array[11].Cell_voltage = ((uint16_t)SPI_recieve_buffer[5] << 8) | SPI_recieve_buffer[4];
 }
 
+void read_voltage_and_current(void){
+	uint8_t data[6] = {0};
 
+	uint16_t command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | ADCVAX;
+
+	//SPI_transmit_word(command);
+
+}
+	
 
 
 

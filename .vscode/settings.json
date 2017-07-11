@@ -34,6 +34,8 @@
         "rtc.c": "cpp",
         "stm32f3xx_hal_uart.h": "c",
         "pec15.c": "cpp",
-        "stm32f3xx_hal.h": "c"
+        "stm32f3xx_hal.h": "c",
+        "usart.h": "c",
+        "stm32f334x8.h": "c"
     }
 }

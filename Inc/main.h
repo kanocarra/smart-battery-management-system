@@ -40,9 +40,6 @@
 #define __MAIN_H
   /* Includes ------------------------------------------------------------------*/
 #include <stdint.h>
-/* USER CODE BEGIN Includes */
-
-/* USER CODE END Includes */
 
 /* Private define ------------------------------------------------------------*/
 
