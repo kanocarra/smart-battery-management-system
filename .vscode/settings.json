@@ -36,6 +36,7 @@
         "pec15.c": "cpp",
         "stm32f3xx_hal.h": "c",
         "usart.h": "c",
-        "stm32f334x8.h": "c"
+        "stm32f334x8.h": "c",
+        "bms.h": "c"
     }
 }

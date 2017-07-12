@@ -1,12 +1,14 @@
 #ifndef FSM_H_
 #define FSM_H_
 
+#include "bms.h"
+
 typedef void(*functionPointer)();
 typedef functionPointer(*State)();
 
 State idle(void);
 State start(void);
-State measure(void);
+State measure(Battery* battery);
 State estimate_soc(void);
 State compute_resistance(void);
 State compute_capacity(void);

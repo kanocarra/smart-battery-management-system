@@ -69,7 +69,6 @@ Src/main.c \
 Src/error_handler.c \
 Src/bms_controller.c \
 Src/gpio.c \
-Src/LTC6804.c \
 Src/PEC15.c \
 Src/rtc.c \
 Src/spi.c \
