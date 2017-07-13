@@ -99,7 +99,8 @@ void set_GPIO_6804_2(uint8_t input);
 StatusA* read_status_A_6804_2(void);
 StatusB* read_status_B_6804_2(void);
 void SPI_transmit_word(uint16_t cmd, uint8_t *data);
-void ADC_read_cell_voltages(Battery* batter);
+void ADC_read_cell_voltages(Battery *const battery);
+void read_voltage_and_current(Battery *const battery);
 
 
 #endif /* BMS_H_ */

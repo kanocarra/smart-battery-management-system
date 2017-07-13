@@ -221,7 +221,7 @@ void SPI_transmit_word(uint16_t cmd, uint8_t *data)
 }
 
 //This function reads the cell voltage registers and places the data in an array
-void ADC_read_cell_voltages(Battery* battery)
+void ADC_read_cell_voltages(Battery *const battery)
 {
 	//Use a dummy block of data
 	uint8_t data[6] = {0};
@@ -265,16 +265,32 @@ void ADC_read_cell_voltages(Battery* battery)
 	// battery->cells[10].voltage = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
 	// battery->cells[11].voltage = ((uint16_t)SPI_recieve_buffer[5] << 8) | SPI_recieve_buffer[4];
 
-	return ((uint16_t)SPI_recieve_buffer[1] << 8) | SPI_recieve_buffer[0];
-
 }
 
-void read_voltage_and_current(void){
+void read_voltage_and_current(Battery *const battery){
 	uint8_t data[6] = {0};
 
 	uint16_t command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | ADCVAX;
 
-	//SPI_transmit_word(command);
+	SPI_transmit_word(command, NULL);
+
+	HAL_Delay(250);
+
+	//Request the Group A cell voltages
+	SPI_transmit_word(0x8004, data);
+	//Copy the values from the SPI rx buffer
+	battery->cells[0].voltage = ((uint16_t)SPI_recieve_buffer[1] << 8) | SPI_recieve_buffer[0];
+	battery->cells[1].voltage = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
+	
+	// //Request the Group C cell voltages
+	SPI_transmit_word(0x8008, data);
+	// //Copy the values from the SPI rx buffer
+	battery->cells[2].voltage = (((uint16_t)SPI_recieve_buffer[1] << 8) & 0xff00) | (SPI_recieve_buffer[0] & 0xff);
+	battery->cells[3].voltage = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
+
+	command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | RDAUXA;
+	SPI_transmit_word(command, NULL);
+	battery->current = ((uint16_t)SPI_recieve_buffer[1] << 8) | SPI_recieve_buffer[0];
 
 }
 	

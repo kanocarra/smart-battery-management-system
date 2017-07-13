@@ -108,7 +108,7 @@ State measure(Battery *const battery){
   sprintf(UART_transmit_buffer, "Digital Voltage: %i \n", (int)status_regB->VDUB);
   UART_transmit_word(); 
 
-  ADC_read_cell_voltages(battery);
+  read_voltage_and_current(battery);
   sprintf(UART_transmit_buffer, "Cell 0: %i \n", (int)battery->cells[0].voltage);
   UART_transmit_word(); 
   sprintf(UART_transmit_buffer, "Cell 1: %i \n", (int)battery->cells[1].voltage);
@@ -116,6 +116,8 @@ State measure(Battery *const battery){
   sprintf(UART_transmit_buffer, "Cell 6: %i \n", (int)battery->cells[2].voltage);
   UART_transmit_word(); 
   sprintf(UART_transmit_buffer, "Cell 7: %i \n", (int)battery->cells[3].voltage);
+  UART_transmit_word(); 
+  sprintf(UART_transmit_buffer, "Current: %i \n", (int)battery->current);
   UART_transmit_word(); 
 
 
