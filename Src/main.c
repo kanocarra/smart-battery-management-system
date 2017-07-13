@@ -100,23 +100,24 @@ State start(void){
 State measure(Battery *const battery){
   led_flash(MEASURE);
 
-  uint8_t result = read_status_A_6804_2();
-
-  if (result) {
-    sprintf(UART_transmit_buffer, "Success A \n");
-  } else {
-    sprintf(UART_transmit_buffer, "Fail A \n");
-  }
+  StatusA* status_regA = read_status_A_6804_2();
+  sprintf(UART_transmit_buffer, "Temperature: %i %i\n", status_regA->ITMPUB, status_regA->ITMPLB );
   UART_transmit_word(); 
 
-  result = read_status_B_6804_2();
-
-  if (result) {
-    sprintf(UART_transmit_buffer, "Success B \n");
-  } else {
-    sprintf(UART_transmit_buffer, "Fail B \n");
-  }
+  StatusB* status_regB = read_status_B_6804_2();
+  sprintf(UART_transmit_buffer, "Digital Voltage: %i \n", (int)status_regB->VDUB);
   UART_transmit_word(); 
+
+  ADC_read_cell_voltages(battery);
+  sprintf(UART_transmit_buffer, "Cell 0: %i \n", (int)battery->cells[0].voltage);
+  UART_transmit_word(); 
+  sprintf(UART_transmit_buffer, "Cell 1: %i \n", (int)battery->cells[1].voltage);
+  UART_transmit_word();
+  sprintf(UART_transmit_buffer, "Cell 6: %i \n", (int)battery->cells[2].voltage);
+  UART_transmit_word(); 
+  sprintf(UART_transmit_buffer, "Cell 7: %i \n", (int)battery->cells[3].voltage);
+  UART_transmit_word(); 
+
 
 
   return (State)estimate_soc(battery);

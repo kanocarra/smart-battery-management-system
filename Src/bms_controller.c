@@ -243,27 +243,30 @@ void ADC_read_cell_voltages(Battery* battery)
 	//Copy the values from the SPI rx buffer
 	battery->cells[0].voltage = ((uint16_t)SPI_recieve_buffer[1] << 8) | SPI_recieve_buffer[0];
 	battery->cells[1].voltage = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
-	battery->cells[2].voltage = ((uint16_t)SPI_recieve_buffer[5] << 8) | SPI_recieve_buffer[4];
-	//Request the Group B cell voltages
-	SPI_transmit_word(0x8006, data);
-	//Copy the values from the SPI rx buffer
-	battery->cells[3].voltage = ((uint16_t)SPI_recieve_buffer[1] << 8) | SPI_recieve_buffer[0];
-	battery->cells[4].voltage = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
-	battery->cells[5].voltage = ((uint16_t)SPI_recieve_buffer[5] << 8) | SPI_recieve_buffer[4];
+	// //Request the Group B cell voltages
+	// //Copy the values from the SPI rx buffer
+	//battery->cells[3].voltage = ((uint16_t)SPI_recieve_buffer[1] << 8) | SPI_recieve_buffer[0];
+	// battery->cells[4].voltage = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
+	// battery->cells[5].voltage = ((uint16_t)SPI_recieve_buffer[5] << 8) | SPI_recieve_buffer[4];
 
-	//Request the Group C cell voltages
+	
+
+	// //Request the Group C cell voltages
 	SPI_transmit_word(0x8008, data);
-	//Copy the values from the SPI rx buffer
-	battery->cells[6].voltage = (((uint16_t)SPI_recieve_buffer[1] << 8) & 0xff00) | (SPI_recieve_buffer[0] & 0xff);
-	battery->cells[7].voltage = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
-	battery->cells[8].voltage = ((uint16_t)SPI_recieve_buffer[5] << 8) | SPI_recieve_buffer[4];
+	// //Copy the values from the SPI rx buffer
+	battery->cells[2].voltage = (((uint16_t)SPI_recieve_buffer[1] << 8) & 0xff00) | (SPI_recieve_buffer[0] & 0xff);
+	battery->cells[3].voltage = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
+	//battery->cells[8].voltage = ((uint16_t)SPI_recieve_buffer[5] << 8) | SPI_recieve_buffer[4];
 
-	//Request the Group D cell voltages
-	SPI_transmit_word(0x800A, data);
-	//Copy the values from the SPI rx buffer
-	battery->cells[9].voltage = ((uint16_t)SPI_recieve_buffer[1] << 8) | SPI_recieve_buffer[0];
-	battery->cells[10].voltage = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
-	battery->cells[11].voltage = ((uint16_t)SPI_recieve_buffer[5] << 8) | SPI_recieve_buffer[4];
+	// //Request the Group D cell voltages
+	// SPI_transmit_word(0x800A, data);
+	// //Copy the values from the SPI rx buffer
+	// battery->cells[9].voltage = ((uint16_t)SPI_recieve_buffer[1] << 8) | SPI_recieve_buffer[0];
+	// battery->cells[10].voltage = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
+	// battery->cells[11].voltage = ((uint16_t)SPI_recieve_buffer[5] << 8) | SPI_recieve_buffer[4];
+
+	return ((uint16_t)SPI_recieve_buffer[1] << 8) | SPI_recieve_buffer[0];
+
 }
 
 void read_voltage_and_current(void){
