@@ -8,8 +8,8 @@ typedef functionPointer(*State)();
 
 State idle(void);
 State start(void);
-State measure(Battery* battery);
-State estimate_soc(void);
+State measure(Battery *const battery);
+State estimate_soc(Battery *const battery);
 State compute_resistance(void);
 State compute_capacity(void);
 State balancing(void);

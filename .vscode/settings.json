@@ -37,6 +37,19 @@
         "stm32f3xx_hal.h": "c",
         "usart.h": "c",
         "stm32f334x8.h": "c",
-        "bms.h": "c"
+        "bms.h": "c",
+        "stm32f3xx_hal_rcc.h": "c",
+        "core_cm0.h": "c",
+        "core_cm0plus.h": "c",
+        "core_cm3.h": "c",
+        "core_cm4.h": "c",
+        "core_cm7.h": "c",
+        "core_sc000.h": "c",
+        "core_sc300.h": "c",
+        "led_controller.c": "cpp",
+        "gpio.c": "cpp",
+        "stm32f3xx_hal_gpio.c": "cpp",
+        "gpio.h": "c",
+        "spi.h": "c"
     }
 }

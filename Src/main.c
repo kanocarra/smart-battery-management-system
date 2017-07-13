@@ -45,9 +45,8 @@
 #include "spi.h"
 #include "usart.h"
 #include "gpio.h"
-#include "fsm.h"
 #include "PEC15.h"
-#include "bms.h"
+#include "fsm.h"
 
 void SystemClock_Config(void);
 
@@ -77,104 +76,81 @@ void main(void)
     currentState = (State)currentState();
   }
 
-}
+}  
 
 State idle(void){
-  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 1); 
-  HAL_Delay(1000);
-  sprintf(UART_transmit_buffer, "State: Idle\n");
-  UART_transmit_word();
+  led_flash(IDLE);
   return (State)start;
 }
 
 State start(void){
+
+  led_flash(START);
+ 
   //Initialise the battery
   Battery battery = init_battery();
-  const Battery* r_battery = &battery;
+  Battery *const r_battery = &battery;
   
   // Set under and over voltage thresholds
   set_UV_OV_threshold();
-  
-  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
-  
-  HAL_Delay(1000);
-  sprintf(UART_transmit_buffer, "State: Start\n");
-  UART_transmit_word();
+
   return (State)measure(r_battery);
 }
 
-State measure(Battery* battery){
-  HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 1); 
-  HAL_Delay(1000);
-  sprintf(UART_transmit_buffer, "State: Measure\n");
-  UART_transmit_word();
-  battery->state_of_charge = 6;
-  HAL_Delay(1000);
-  sprintf(UART_transmit_buffer, "%i V\n", (int)battery->state_of_charge);
-  UART_transmit_word();
-  HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 0);   
-  return (State)estimate_soc;
+State measure(Battery *const battery){
+  led_flash(MEASURE);
+
+  uint8_t result = read_status_A_6804_2();
+
+  if (result) {
+    sprintf(UART_transmit_buffer, "Success A \n");
+  } else {
+    sprintf(UART_transmit_buffer, "Fail A \n");
+  }
+  UART_transmit_word(); 
+
+  result = read_status_B_6804_2();
+
+  if (result) {
+    sprintf(UART_transmit_buffer, "Success B \n");
+  } else {
+    sprintf(UART_transmit_buffer, "Fail B \n");
+  }
+  UART_transmit_word(); 
+
+
+  return (State)estimate_soc(battery);
 }
 
-State estimate_soc(void){
-  HAL_GPIO_WritePin(GPIOC, RLED2_Pin, 1); 
-  HAL_Delay(1000);
-  sprintf(UART_transmit_buffer, "State: Estimate SoC\n");
-  UART_transmit_word();
-  HAL_GPIO_WritePin(GPIOC, RLED2_Pin, 0); 
+State estimate_soc(Battery *const battery){
+  led_flash(ESTIMATE_SOC);
   return (State)compute_resistance;
 }
 
 State compute_resistance(void){
-  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 1); 
-  HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 1); 
-  HAL_Delay(1000);
-  sprintf(UART_transmit_buffer, "State: Compute Resistance\n");
-  UART_transmit_word();
-  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 0); 
-  HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 0); 
+  led_flash(COMPUTE_R);
   return (State)compute_capacity;
 }
 
 State compute_capacity(void){
-  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 1); 
-  HAL_GPIO_WritePin(GPIOC, RLED2_Pin, 1); 
-  HAL_Delay(1000);
-  sprintf(UART_transmit_buffer, "State: Compute Capacity\n");
-  UART_transmit_word();
-  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 0); 
-  HAL_GPIO_WritePin(GPIOC, RLED2_Pin, 0); 
+  led_flash(COMPUTE_C);
   return (State)balancing;
 }
 
 State balancing(void){
-  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
-  HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 1); 
-  HAL_Delay(1000);
-  sprintf(UART_transmit_buffer, "State: Balancing\n");
-  UART_transmit_word();
-  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 0); 
-  HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 0); 
+  led_flash(BAL);
   return (State)send_data;
 
 }
 
 State send_data(void){
-  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 1); 
-  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
-  HAL_Delay(1000);
-  sprintf(UART_transmit_buffer, "State: Send Data\n");
-  UART_transmit_word();
-  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 0); 
-  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 0); 
+  led_flash(SEND);
   return (State)shutdown;
 
 }
 
 State shutdown(void){
-  sprintf(UART_transmit_buffer, "State: Shutdown\n");
-  UART_transmit_word();
-  HAL_Delay(1000);
+  led_flash(SHUTDOWN);
   return (State)idle;
 }
 

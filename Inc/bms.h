@@ -40,63 +40,26 @@
 
 //DATA STRUCTURES
 //A struct that holds the status
-struct status_A_6804_2_struct{
+typedef struct {
 	uint8_t SOCLB;
 	uint8_t SOCUB;
 	uint8_t ITMPLB;
 	uint8_t ITMPUB;
 	uint8_t VALB;
 	uint8_t VAUB;
-};
+} StatusA;
 
-struct status_B_6804_2_struct{
+typedef struct{
 	uint8_t VDLB;
 	uint8_t VDUB;
 	uint8_t C4OV  : 1, C4UV  : 1, C3OV  : 1, C3UV  : 1, C2OV  : 1, C2UV  : 1, C1OV : 1, C1UV : 1;
 	uint8_t C8OV  : 1, C8UV  : 1, C7OV  : 1, C7UV  : 1, C6OV  : 1, C6UV  : 1, C5OV : 1, C5UV : 1;
 	uint8_t C12OV : 1, C12UV : 1, C11OV : 1, C11UV : 1, C10OV : 1, C10UV : 1, C9OV : 1, C9UV : 1;
 	uint8_t REV   : 4, RSVD  : 2, MUXFAIL:1, THSD  : 1;
-};
-
-//Stores data for the cells
-struct Cell_struct{
-	//NOTE: Voltages are stored as unsigned ints, 16 bits, start at 0, 100uV per count
-	uint16_t Cell_voltage;
-
-	//Stores the current state of cell voltage
-	//enum voltage_state Cell_voltage_state;
-
-	//NOTE: temperatures are stored and processed as 10 bit ADC values, as they are easier to work with
-
-	//DISPALAYED as singed 16 Bit, 10 m degC per count
-	int16_t Cell_temp_degrees_C;
-
-	//STORED as 10 (of 16) bit ADC values, start at 0V, 1024 = Vcc
-	uint16_t Cell_temp_count;
-
-	//Follow format for serial numbers
-	//Index		Value
-	//0			-1 = 200Ahr, 12V; -2 = 200Ahr, 12V
-	//1			-A = Prototype; -B = Production
-	//2			-Serial number
-	//3			-Serial number
-	//4			-Serial number
-	//uint8_t	Cell_serial_no[CELL_SERIAL_NO_LENGTH];
-
-	//Cell state of charge, need to consider starting at a less than zero value???
-	//mC of charge to top
-	uint32_t Cell_SOC;
-
-	//Make 32 bit to fix bug consider a more memory efficient fix later
-	int32_t Ballance_points;
-
-	//Used to set the sensitivity of the balance algorithum
-	//Consider smaller data size for SOC calculations??
-	uint32_t Ballance_hystersis;
-};
+} StatusB;
 
 // Model for a cell
-typedef struct  {
+typedef struct {
     double voltage; //in volts
     double internal_resistance; // in milliohms
     double capacity; // in mAhr
@@ -104,7 +67,7 @@ typedef struct  {
 } Cell;
 
 // Model for parameters of the battery pack
-typedef struct {
+typedef struct Battery {
     double time_elapsed;
     double current;
     bool is_charging;
@@ -126,15 +89,15 @@ typedef struct {
 volatile Bms_Config config_6804_buffer;
 
 //Declare a global buffer for the two status structs
-volatile struct status_A_6804_2_struct status_A_6804_2;
-volatile struct status_B_6804_2_struct status_B_6804_2;
+volatile StatusA status_regA;
+volatile StatusB status_regB;
 
 Battery init_battery(void);
 void write_config_6804_2(void);
 void set_UV_OV_threshold(void);
 void set_GPIO_6804_2(uint8_t input);
-uint8_t read_status_A_6804_2(void);
-uint8_t read_status_B_6804_2(void);
+StatusA* read_status_A_6804_2(void);
+StatusB* read_status_B_6804_2(void);
 void SPI_transmit_word(uint16_t cmd, uint8_t *data);
 void ADC_read_cell_voltages(Battery* batter);
 

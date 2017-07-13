@@ -67,7 +67,7 @@ void set_UV_OV_threshold(void)
 }
 
 //This function reads the status register block A and stores it in the status buffer
-uint8_t read_status_A_6804_2(void)
+StatusA* read_status_A_6804_2(void)
 {
 	uint16_t command = 0;
 	//Format the command
@@ -77,18 +77,18 @@ uint8_t read_status_A_6804_2(void)
 	SPI_transmit_word(command, NULL);
 
 	//Read the status from the RX buffer
-	status_A_6804_2.SOCLB	= SPI_recieve_buffer[0];
-	status_A_6804_2.SOCUB	= SPI_recieve_buffer[1];
-	status_A_6804_2.ITMPLB	= SPI_recieve_buffer[2];
-	status_A_6804_2.ITMPUB	= SPI_recieve_buffer[3];
-	status_A_6804_2.VALB	= SPI_recieve_buffer[4];
-	status_A_6804_2.VAUB	= SPI_recieve_buffer[5];
+	status_regA.SOCLB	= SPI_recieve_buffer[0];
+	status_regA.SOCUB	= SPI_recieve_buffer[1];
+	status_regA.ITMPLB	= SPI_recieve_buffer[2];
+	status_regA.ITMPUB	= SPI_recieve_buffer[3];
+	status_regA.VALB	= SPI_recieve_buffer[4];
+	status_regA.VAUB	= SPI_recieve_buffer[5];
 
-	return RETURN_VALUE_SUCCESS;
+	return &status_regA;
 }
 
 //This function reads the status register block B and stores it in the status buffer
-uint8_t read_status_B_6804_2(void)
+StatusB* read_status_B_6804_2(void)
 {
 	uint16_t command = 0;
 	//Format the command
@@ -98,44 +98,43 @@ uint8_t read_status_B_6804_2(void)
 	SPI_transmit_word(command, NULL);
 
 	//Read the status from the RX buffer
-	status_B_6804_2.VDLB = SPI_recieve_buffer[0];
-	status_B_6804_2.VDUB = SPI_recieve_buffer[1];
+	status_regB.VDLB = SPI_recieve_buffer[0];
+	status_regB.VDUB = SPI_recieve_buffer[1];
 
-	status_B_6804_2.C1UV = (SPI_recieve_buffer[2] & 0x01<<0)>>0;
-	status_B_6804_2.C1OV = (SPI_recieve_buffer[2] & 0x01<<1)>>1;
-	status_B_6804_2.C2UV = (SPI_recieve_buffer[2] & 0x01<<2)>>2;
-	status_B_6804_2.C2OV = (SPI_recieve_buffer[2] & 0x01<<3)>>3;
-	status_B_6804_2.C3UV = (SPI_recieve_buffer[2] & 0x01<<4)>>4;
-	status_B_6804_2.C3OV = (SPI_recieve_buffer[2] & 0x01<<5)>>5;
-	status_B_6804_2.C4UV = (SPI_recieve_buffer[2] & 0x01<<6)>>6;
-	status_B_6804_2.C4OV = (SPI_recieve_buffer[2] & 0x01<<7)>>7;
-
-
-	status_B_6804_2.C5UV = (SPI_recieve_buffer[3] & 0x01<<0)>>0;
-	status_B_6804_2.C5OV = (SPI_recieve_buffer[3] & 0x01<<1)>>1;
-	status_B_6804_2.C6UV = (SPI_recieve_buffer[3] & 0x01<<2)>>2;
-	status_B_6804_2.C6OV = (SPI_recieve_buffer[3] & 0x01<<3)>>3;
-	status_B_6804_2.C7UV = (SPI_recieve_buffer[3] & 0x01<<4)>>4;
-	status_B_6804_2.C7OV = (SPI_recieve_buffer[3] & 0x01<<5)>>5;
-	status_B_6804_2.C8UV = (SPI_recieve_buffer[3] & 0x01<<6)>>6;
-	status_B_6804_2.C8OV = (SPI_recieve_buffer[3] & 0x01<<7)>>7;
-
-	status_B_6804_2.C9UV = (SPI_recieve_buffer[4] & 0x01<<0)>>0;
-	status_B_6804_2.C9OV = (SPI_recieve_buffer[4] & 0x01<<1)>>1;
-	status_B_6804_2.C10UV = (SPI_recieve_buffer[4] & 0x01<<2)>>2;
-	status_B_6804_2.C10OV = (SPI_recieve_buffer[4] & 0x01<<3)>>3;
-	status_B_6804_2.C11UV = (SPI_recieve_buffer[4] & 0x01<<4)>>4;
-	status_B_6804_2.C11OV = (SPI_recieve_buffer[4] & 0x01<<5)>>5;
-	status_B_6804_2.C12UV = (SPI_recieve_buffer[4] & 0x01<<6)>>6;
-	status_B_6804_2.C12OV = (SPI_recieve_buffer[4] & 0x01<<7)>>7;
-
-	status_B_6804_2.THSD = (SPI_recieve_buffer[5] & 0x01<<0)>>0;
-	status_B_6804_2.MUXFAIL = (SPI_recieve_buffer[5] & 0x01<<1)>>1;
-	status_B_6804_2.RSVD = (SPI_recieve_buffer[5] & 0x03<<2)>>2;
-	status_B_6804_2.REV = (SPI_recieve_buffer[5] & 0x0F<<4)>>4;
+	status_regB.C1UV = (SPI_recieve_buffer[2] & 0x01<<0)>>0;
+	status_regB.C1OV = (SPI_recieve_buffer[2] & 0x01<<1)>>1;
+	status_regB.C2UV = (SPI_recieve_buffer[2] & 0x01<<2)>>2;
+	status_regB.C2OV = (SPI_recieve_buffer[2] & 0x01<<3)>>3;
+	status_regB.C3UV = (SPI_recieve_buffer[2] & 0x01<<4)>>4;
+	status_regB.C3OV = (SPI_recieve_buffer[2] & 0x01<<5)>>5;
+	status_regB.C4UV = (SPI_recieve_buffer[2] & 0x01<<6)>>6;
+	status_regB.C4OV = (SPI_recieve_buffer[2] & 0x01<<7)>>7;
 
 
-	return RETURN_VALUE_SUCCESS;
+	status_regB.C5UV = (SPI_recieve_buffer[3] & 0x01<<0)>>0;
+	status_regB.C5OV = (SPI_recieve_buffer[3] & 0x01<<1)>>1;
+	status_regB.C6UV = (SPI_recieve_buffer[3] & 0x01<<2)>>2;
+	status_regB.C6OV = (SPI_recieve_buffer[3] & 0x01<<3)>>3;
+	status_regB.C7UV = (SPI_recieve_buffer[3] & 0x01<<4)>>4;
+	status_regB.C7OV = (SPI_recieve_buffer[3] & 0x01<<5)>>5;
+	status_regB.C8UV = (SPI_recieve_buffer[3] & 0x01<<6)>>6;
+	status_regB.C8OV = (SPI_recieve_buffer[3] & 0x01<<7)>>7;
+
+	status_regB.C9UV = (SPI_recieve_buffer[4] & 0x01<<0)>>0;
+	status_regB.C9OV = (SPI_recieve_buffer[4] & 0x01<<1)>>1;
+	status_regB.C10UV = (SPI_recieve_buffer[4] & 0x01<<2)>>2;
+	status_regB.C10OV = (SPI_recieve_buffer[4] & 0x01<<3)>>3;
+	status_regB.C11UV = (SPI_recieve_buffer[4] & 0x01<<4)>>4;
+	status_regB.C11OV = (SPI_recieve_buffer[4] & 0x01<<5)>>5;
+	status_regB.C12UV = (SPI_recieve_buffer[4] & 0x01<<6)>>6;
+	status_regB.C12OV = (SPI_recieve_buffer[4] & 0x01<<7)>>7;
+
+	status_regB.THSD = (SPI_recieve_buffer[5] & 0x01<<0)>>0;
+	status_regB.MUXFAIL = (SPI_recieve_buffer[5] & 0x01<<1)>>1;
+	status_regB.RSVD = (SPI_recieve_buffer[5] & 0x03<<2)>>2;
+	status_regB.REV = (SPI_recieve_buffer[5] & 0x0F<<4)>>4;
+	
+	return &status_regB;
 }
 
 //includes the returned data, tested OK
