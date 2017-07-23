@@ -74,7 +74,6 @@ Src/PEC15.c \
 Src/rtc.c \
 Src/spi.c \
 Src/usart.c \
-Src/can.c \
 Src/adc.c \
 Src/dma.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c \

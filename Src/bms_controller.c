@@ -289,7 +289,9 @@ void read_voltage_and_current(Battery *const battery){
 	battery->cells[3].voltage = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
 
 	command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | RDAUXA;
+	
 	SPI_transmit_word(command, NULL);
+	
 	battery->current = ((uint16_t)SPI_recieve_buffer[1] << 8) | SPI_recieve_buffer[0];
 
 }

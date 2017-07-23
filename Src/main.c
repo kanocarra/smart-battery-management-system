@@ -39,7 +39,6 @@
 #include "main.h"
 #include "stm32f3xx_hal.h"
 #include "adc.h"
-#include "can.h"
 #include "dma.h"
 #include "rtc.h"
 #include "spi.h"
@@ -64,12 +63,15 @@ void main(void)
   MX_DMA_Init();
   MX_ADC1_Init();
   MX_ADC2_Init();
-  MX_CAN_Init();
   MX_RTC_Init();
   MX_SPI1_Init();
   MX_USART3_UART_Init();
 
   State currentState = idle;
+
+  HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 1); 
+  HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 1); 
+  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
 
   while (1)
   {
@@ -80,17 +82,21 @@ void main(void)
 
 State idle(void){
   led_flash(IDLE);
+  sprintf(UART_transmit_buffer, "State: Idle");
+  UART_transmit_word(); 
   return (State)start;
 }
 
 State start(void){
 
   led_flash(START);
- 
+  sprintf(UART_transmit_buffer, "State: Start");
+  UART_transmit_word(); 
+
   //Initialise the battery
   Battery battery = init_battery();
   Battery *const r_battery = &battery;
-  
+
   // Set under and over voltage thresholds
   set_UV_OV_threshold();
 
@@ -99,6 +105,8 @@ State start(void){
 
 State measure(Battery *const battery){
   led_flash(MEASURE);
+  sprintf(UART_transmit_buffer, "State: Measure");
+  UART_transmit_word(); 
 
   StatusA* status_regA = read_status_A_6804_2();
   sprintf(UART_transmit_buffer, "Temperature: %i %i\n", status_regA->ITMPUB, status_regA->ITMPLB );
@@ -119,41 +127,50 @@ State measure(Battery *const battery){
   UART_transmit_word(); 
   sprintf(UART_transmit_buffer, "Current: %i \n", (int)battery->current);
   UART_transmit_word(); 
-
-
-
   return (State)estimate_soc(battery);
 }
 
 State estimate_soc(Battery *const battery){
   led_flash(ESTIMATE_SOC);
+  sprintf(UART_transmit_buffer, "State: Estimate SoC");
+  UART_transmit_word(); 
   return (State)compute_resistance;
 }
 
 State compute_resistance(void){
   led_flash(COMPUTE_R);
+  sprintf(UART_transmit_buffer, "State: Compute Resistance");
+  UART_transmit_word(); 
   return (State)compute_capacity;
 }
 
 State compute_capacity(void){
   led_flash(COMPUTE_C);
+  sprintf(UART_transmit_buffer, "State: Compute Capacity");
+  UART_transmit_word(); 
   return (State)balancing;
 }
 
 State balancing(void){
   led_flash(BAL);
+  sprintf(UART_transmit_buffer, "State: Balancing");
+  UART_transmit_word(); 
   return (State)send_data;
 
 }
 
 State send_data(void){
   led_flash(SEND);
+  sprintf(UART_transmit_buffer, "State: Send Data");
+  UART_transmit_word(); 
   return (State)shutdown;
 
 }
 
 State shutdown(void){
   led_flash(SHUTDOWN);
+  sprintf(UART_transmit_buffer, "State: Shutdown");
+  UART_transmit_word(); 
   return (State)idle;
 }
 
@@ -166,13 +183,12 @@ void SystemClock_Config(void)
 
     /**Initializes the CPU, AHB and APB busses clocks 
     */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_LSI|RCC_OSCILLATORTYPE_HSE;
-  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
-  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.HSICalibrationValue = 16;
   RCC_OscInitStruct.LSIState = RCC_LSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
@@ -188,7 +204,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
   }
