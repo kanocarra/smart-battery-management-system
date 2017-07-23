@@ -69,6 +69,7 @@ Src/main.c \
 Src/error_handler.c \
 Src/bms_controller.c \
 Src/led_controller.c \
+Src/log_controller.c \
 Src/gpio.c \
 Src/PEC15.c \
 Src/rtc.c \
@@ -84,7 +85,17 @@ Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc_ex.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi_ex.c \
-Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c  
+Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c \
+SDcard/fatfs/drivers/fatfs_sd.c \
+SDcard/fatfs/option/syscall.c \
+SDcard/fatfs/option/unicode.c \
+SDcard/fatfs/diskio.c \
+SDcard/fatfs/ff.c \
+SDcard/tm_stm32_delay.c \
+SDcard/tm_stm32_fatfs.c \
+SDcard/tm_stm32_gpio.c \
+SDcard/tm_stm32_spi.c
+
 
 # ASM sources
 ASM_SOURCES =  \
@@ -144,7 +155,10 @@ C_INCLUDES =  \
 -IDrivers/STM32F3xx_HAL_Driver/Inc \
 -IDrivers/STM32F3xx_HAL_Driver/Inc/Legacy \
 -IDrivers/CMSIS/Device/ST/STM32F3xx/Include \
--IDrivers/CMSIS/Include
+-IDrivers/CMSIS/Include \
+-ISDcard \
+-ISDcard/fatfs \
+-ISDcard/fatfs/drivers \
 
 
 # compile gcc flags

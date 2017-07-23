@@ -46,6 +46,7 @@
 #include "gpio.h"
 #include "PEC15.h"
 #include "fsm.h"
+#include "log.h"
 
 void SystemClock_Config(void);
 
@@ -117,6 +118,7 @@ State measure(Battery *const battery){
   UART_transmit_word(); 
 
   read_voltage_and_current(battery);
+  
   sprintf(UART_transmit_buffer, "Cell 0: %i \n", (int)battery->cells[0].voltage);
   UART_transmit_word(); 
   sprintf(UART_transmit_buffer, "Cell 1: %i \n", (int)battery->cells[1].voltage);
@@ -127,6 +129,9 @@ State measure(Battery *const battery){
   UART_transmit_word(); 
   sprintf(UART_transmit_buffer, "Current: %i \n", (int)battery->current);
   UART_transmit_word(); 
+  
+  log_data(battery);
+
   return (State)estimate_soc(battery);
 }
 
