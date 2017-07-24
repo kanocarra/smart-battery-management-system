@@ -31,7 +31,7 @@ void log_data(Battery *const battery){
         sprintf(buffer,"%02d:%02d:%02d:%04d",
                 RTCtime.Hours,
                 RTCtime.Minutes,
-                RTCtime.Seconds
+                RTCtime.Seconds,
                 RTCtime.SubSeconds);
         strcat(SD_buffer,buffer);
     }
