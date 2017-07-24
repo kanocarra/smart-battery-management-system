@@ -29,7 +29,7 @@ void log_data(Battery *const battery){
     //Note:read the date after reading time or the clock would freeze.
     if((HAL_RTC_GetTime(&hrtc,&RTCtime,RTC_FORMAT_BIN) == HAL_OK && HAL_RTC_GetDate(&hrtc,&RTCdate,RTC_FORMAT_BIN)) == HAL_OK)
     {
-        sprintf(buffer,"%02d:%02d:%02d:%04d",
+        sprintf(buffer,"%02d:%02d:%02d:%04d,",
                 RTCtime.Hours,
                 RTCtime.Minutes,
                 RTCtime.Seconds,
@@ -37,7 +37,13 @@ void log_data(Battery *const battery){
         strcat(SD_buffer,buffer);
     }
 
-    sprintf(buffer, "hello");
+    sprintf(buffer, "%i,", (int)(battery->cells[0].state_of_charge *1000.0));
+    strcat(SD_buffer,buffer);
+    sprintf(buffer, "%i,", (int)(battery->cells[1].state_of_charge * 1000.0));
+    strcat(SD_buffer,buffer);
+    sprintf(buffer, "%i,", (int)(battery->cells[2].state_of_charge*1000.0));
+    strcat(SD_buffer,buffer);
+    sprintf(buffer, "%i", (int)battery->cells[3].state_of_charge*1000.0);
     strcat(SD_buffer,buffer);
     strcat(SD_buffer,"\n\r");
     write_log_file();

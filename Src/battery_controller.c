@@ -79,7 +79,10 @@ int get_soc(Battery *const battery) {
     long double inputs[5] = {-0.871483, -0.009009, -0.98628, 0.903284, -0.922976};
     long double normalised_soc = compute_result(layers, inputs);
     long double soc = (((normalised_soc- -1.0) * 100.0) / 2.0);
-    
+    battery->cells[0].state_of_charge = soc;
+    battery->cells[1].state_of_charge = soc;
+    battery->cells[2].state_of_charge = soc;
+    battery->cells[3].state_of_charge = soc;
     return (int)(soc*1000.0);
 }
 

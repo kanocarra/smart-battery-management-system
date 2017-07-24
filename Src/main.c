@@ -133,8 +133,6 @@ State measure(Battery *const battery){
   UART_transmit_word(); 
   sprintf(UART_transmit_buffer, "Current: %i \n", (int)battery->current);
   UART_transmit_word(); 
-  
-  log_data(battery);
 
   return (State)estimate_soc(battery);
 }
@@ -144,7 +142,7 @@ State estimate_soc(Battery *const battery){
   int soc = get_soc(battery);
   sprintf(UART_transmit_buffer, "SoC = %i \n", soc);
   UART_transmit_word(); 
- 
+  log_data(battery);
   return (State)compute_resistance;
 }
 

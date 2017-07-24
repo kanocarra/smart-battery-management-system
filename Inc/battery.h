@@ -14,7 +14,7 @@ typedef struct {
     double voltage; //in volts
     double internal_resistance; // in milliohms
     double capacity; // in mAhr
-    double state_of_charge; // in %
+    long double state_of_charge; // in %
 } Cell;
 
 // Model for parameters of the battery pack
