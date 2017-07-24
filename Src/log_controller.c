@@ -1,5 +1,6 @@
 #include "log.h"
 #include "rtc.h"
+#include "usart.h"
 
 //SD card objects declarations
 FATFS FS;

@@ -4,7 +4,7 @@
 #include "tm_stm32_fatfs.h"
 #include "tm_stm32_gpio.h"
 #include "tm_stm32_spi.h"
-#include "bms.h"
+#include "battery.h"
 
 void open_log_file(void);
 

@@ -5,7 +5,7 @@
 #include "usart.h"
 #include "PEC15.h"
 #include "gpio.h"
-#include <stdbool.h>
+#include "battery.h"
 
 
 //LTC6804_2
@@ -35,9 +35,6 @@
 #define OVERVOLTAGE_ALARM_LEVEL		2625	//4.2V --> Comparison voltage = VOV*16*100uV
 #define UNDERVOLTAGE_ALARM_LEVEL	1874	//3.0 V --> Comparison voltage = (VUV+1)*16*100uV
 
-// Number of cells in system
-#define NUM_CELLS 4
-
 //DATA STRUCTURES
 //A struct that holds the status
 typedef struct {
@@ -58,23 +55,6 @@ typedef struct{
 	uint8_t REV   : 4, RSVD  : 2, MUXFAIL:1, THSD  : 1;
 } StatusB;
 
-// Model for a cell
-typedef struct {
-    double voltage; //in volts
-    double internal_resistance; // in milliohms
-    double capacity; // in mAhr
-    double state_of_charge; // in %
-} Cell;
-
-// Model for parameters of the battery pack
-typedef struct Battery {
-    double time_elapsed;
-    double current;
-    bool is_charging;
-    double state_of_charge;
-	Cell cells[NUM_CELLS];
-} Battery;
-
 //A struct that represents the config register block
 typedef struct {
     uint8_t GPIO5 : 5, REFON : 1, SWTRD : 1, ADCOPT : 1;
@@ -92,7 +72,6 @@ volatile Bms_Config config_6804_buffer;
 volatile StatusA status_regA;
 volatile StatusB status_regB;
 
-Battery init_battery(void);
 void write_config_6804_2(void);
 void set_UV_OV_threshold(void);
 void set_GPIO_6804_2(uint8_t input);

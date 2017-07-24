@@ -1,27 +1,5 @@
+
 #include "bms.h"
-
-// Create the battery object with number of cells
-Battery init_battery(void){	
-	Battery battery = {
-		.time_elapsed = 0,
-		.current = 0,
-		.is_charging = 0,
-		.state_of_charge = 0 
-	};
-
-	for(int i = 0; i < NUM_CELLS; i++){
-		Cell cell = {
-			.voltage = 0,
-			.internal_resistance = 0,
-			.capacity = 0,
-			.state_of_charge = 0
-		};
-		battery.cells[i] = cell;
-	}  
-
-	return battery;
-}
-
 
 //This function writes the config registers of the LTC6804-2
 void write_config_6804_2(void)

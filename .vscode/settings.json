@@ -53,6 +53,8 @@
         "spi.h": "c",
         "stm32f3xx_hal_gpio_ex.h": "c",
         "stm32f3xx_hal_rcc_ex.h": "c",
-        "rtc.h": "c"
+        "rtc.h": "c",
+        "battery.h": "c",
+        "neuron.h": "c"
     }
 }

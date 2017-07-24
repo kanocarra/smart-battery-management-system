@@ -47,6 +47,7 @@
 #include "PEC15.h"
 #include "fsm.h"
 #include "log.h"
+#include "bms.h"
 
 void SystemClock_Config(void);
 
@@ -118,7 +119,7 @@ State measure(Battery *const battery){
   UART_transmit_word(); 
 
   read_voltage_and_current(battery);
-  
+
   sprintf(UART_transmit_buffer, "Cell 0: %i \n", (int)battery->cells[0].voltage);
   UART_transmit_word(); 
   sprintf(UART_transmit_buffer, "Cell 1: %i \n", (int)battery->cells[1].voltage);

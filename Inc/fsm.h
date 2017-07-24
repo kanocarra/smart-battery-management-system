@@ -1,7 +1,7 @@
 #ifndef FSM_H_
 #define FSM_H_
 
-#include "bms.h"
+#include "battery.h"
 
 typedef void(*functionPointer)();
 typedef functionPointer(*State)();
