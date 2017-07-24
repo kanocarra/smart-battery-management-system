@@ -55,6 +55,7 @@
         "stm32f3xx_hal_rcc_ex.h": "c",
         "rtc.h": "c",
         "battery.h": "c",
-        "neuron.h": "c"
+        "neuron.h": "c",
+        "layer.h": "c"
     }
 }

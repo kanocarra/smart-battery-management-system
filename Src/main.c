@@ -84,7 +84,7 @@ void main(void)
 
 State idle(void){
   led_flash(IDLE);
-  sprintf(UART_transmit_buffer, "State: Idle");
+  sprintf(UART_transmit_buffer, "State: Idle\n");
   UART_transmit_word(); 
   return (State)start;
 }
@@ -92,12 +92,15 @@ State idle(void){
 State start(void){
 
   led_flash(START);
-  sprintf(UART_transmit_buffer, "State: Start");
+  sprintf(UART_transmit_buffer, "State: Start\n");
   UART_transmit_word(); 
 
   //Initialise the battery
   Battery battery = init_battery();
   Battery *const r_battery = &battery;
+
+  // Initialise the SoC estimation model 
+  init_model(); 
 
   // Set under and over voltage thresholds
   set_UV_OV_threshold();
@@ -107,7 +110,7 @@ State start(void){
 
 State measure(Battery *const battery){
   led_flash(MEASURE);
-  sprintf(UART_transmit_buffer, "State: Measure");
+  sprintf(UART_transmit_buffer, "State: Measure\n");
   UART_transmit_word(); 
 
   StatusA* status_regA = read_status_A_6804_2();
@@ -138,28 +141,30 @@ State measure(Battery *const battery){
 
 State estimate_soc(Battery *const battery){
   led_flash(ESTIMATE_SOC);
-  sprintf(UART_transmit_buffer, "State: Estimate SoC");
+  int soc = get_soc(battery);
+  sprintf(UART_transmit_buffer, "SoC = %i \n", soc);
   UART_transmit_word(); 
+ 
   return (State)compute_resistance;
 }
 
 State compute_resistance(void){
   led_flash(COMPUTE_R);
-  sprintf(UART_transmit_buffer, "State: Compute Resistance");
+  sprintf(UART_transmit_buffer, "State: Compute Resistance\n");
   UART_transmit_word(); 
   return (State)compute_capacity;
 }
 
 State compute_capacity(void){
   led_flash(COMPUTE_C);
-  sprintf(UART_transmit_buffer, "State: Compute Capacity");
+  sprintf(UART_transmit_buffer, "State: Compute Capacity\n");
   UART_transmit_word(); 
   return (State)balancing;
 }
 
 State balancing(void){
   led_flash(BAL);
-  sprintf(UART_transmit_buffer, "State: Balancing");
+  sprintf(UART_transmit_buffer, "State: Balancing\n");
   UART_transmit_word(); 
   return (State)send_data;
 
@@ -167,7 +172,7 @@ State balancing(void){
 
 State send_data(void){
   led_flash(SEND);
-  sprintf(UART_transmit_buffer, "State: Send Data");
+  sprintf(UART_transmit_buffer, "State: Send Data\n");
   UART_transmit_word(); 
   return (State)shutdown;
 
@@ -175,7 +180,7 @@ State send_data(void){
 
 State shutdown(void){
   led_flash(SHUTDOWN);
-  sprintf(UART_transmit_buffer, "State: Shutdown");
+  sprintf(UART_transmit_buffer, "State: Shutdown\n");
   UART_transmit_word(); 
   return (State)idle;
 }

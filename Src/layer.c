@@ -1,4 +1,5 @@
 #include "layer.h"
+#include "usart.h"
 
 Layer init_layer(void) {
     Layer layer = {.next_index = 0};
@@ -19,12 +20,10 @@ long double compute_result(Layer* layers[N_LAYERS], long double inputs[MAX_INPUT
                                                     {0,0,0,0,0},
                                                     {0,0,0,0,0}
                                                     };
-    
     for(int i= 0; i < N_LAYERS; i++) {
         Layer* tmp = layers[i];
         int n_neurons = tmp->next_index;
         long double layer_outputs[n_neurons];
-        
         for(int j =0; j < n_neurons; j++){
             if (i == 0){
                 layer_outputs[j] = compute_output(&(tmp->neurons[j]), inputs);

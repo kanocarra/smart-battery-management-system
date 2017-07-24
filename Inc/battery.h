@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include "neuron.h"
 #include "layer.h"
+#include "usart.h"
 
 // Number of cells in system
 #define NUM_CELLS 4
@@ -26,5 +27,7 @@ typedef struct Battery {
 } Battery;
 
 Battery init_battery(void);
+int get_soc(Battery *const battery);
+void init_model(void);
 
 #endif /* BATTERY_H_ */
