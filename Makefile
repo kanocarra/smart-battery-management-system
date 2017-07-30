@@ -71,6 +71,7 @@ Src/error_handler.c \
 Src/bms_controller.c \
 Src/led_controller.c \
 Src/log_controller.c \
+Src/comms_controller.c \
 Src/gpio.c \
 Src/PEC15.c \
 Src/layer.c \

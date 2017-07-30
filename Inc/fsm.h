@@ -13,6 +13,6 @@ State estimate_soc(Battery *const battery);
 State compute_resistance(void);
 State compute_capacity(void);
 State balancing(void);
-State send_data(void);
+State send_data(Battery *const battery);
 State shutdown(void);
 #endif /* FSM_H_ */

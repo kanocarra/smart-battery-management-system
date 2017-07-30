@@ -11,23 +11,25 @@
 
 // Model for a cell
 typedef struct {
-    double voltage; //in volts
+    uint16_t voltage; //in volts
     double internal_resistance; // in milliohms
     double capacity; // in mAhr
-    long double state_of_charge; // in %
+    uint16_t state_of_charge; // in %
+    char cell_number;
+    uint16_t temperature;
 } Cell;
 
 // Model for parameters of the battery pack
 typedef struct Battery {
     double time_elapsed;
-    double current;
+    uint16_t current;
     bool is_charging;
-    double state_of_charge;
+    uint16_t state_of_charge;
 	Cell cells[NUM_CELLS];
 } Battery;
 
 Battery init_battery(void);
-int get_soc(Battery *const battery);
+void get_soc(Battery *const battery);
 void init_model(void);
 
 #endif /* BATTERY_H_ */

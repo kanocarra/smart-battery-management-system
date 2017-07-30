@@ -13,8 +13,6 @@ uint8_t SD_buffer[SD_BUFFER_LENGTH];
 
 void write_log_file(void){
     if(f_mount(&FS,"SD:",1) == FR_OK) {
-        sprintf(UART_transmit_buffer, "SD card loaded\n");
-        UART_transmit_word();
         //flush to SD, see: http://elm-chan.org/fsw/ff/00index_e.html for more functions
         f_mount(&FS, "SD:", 1);
         f_open(&fil,"SD:BATDATA.CSV", FA_OPEN_APPEND|FA_WRITE);

@@ -48,6 +48,7 @@
 #include "fsm.h"
 #include "log.h"
 #include "bms.h"
+#include "comms.h"
 
 void SystemClock_Config(void);
 
@@ -84,16 +85,12 @@ void main(void)
 
 State idle(void){
   led_flash(IDLE);
-  sprintf(UART_transmit_buffer, "State: Idle\n");
-  UART_transmit_word(); 
   return (State)start;
 }
 
 State start(void){
 
   led_flash(START);
-  sprintf(UART_transmit_buffer, "State: Start\n");
-  UART_transmit_word(); 
 
   //Initialise the battery
   Battery battery = init_battery();
@@ -110,76 +107,48 @@ State start(void){
 
 State measure(Battery *const battery){
   led_flash(MEASURE);
-  sprintf(UART_transmit_buffer, "State: Measure\n");
-  UART_transmit_word(); 
 
   StatusA* status_regA = read_status_A_6804_2();
-  sprintf(UART_transmit_buffer, "Temperature: %i %i\n", status_regA->ITMPUB, status_regA->ITMPLB );
-  UART_transmit_word(); 
 
   StatusB* status_regB = read_status_B_6804_2();
-  sprintf(UART_transmit_buffer, "Digital Voltage: %i \n", (int)status_regB->VDUB);
-  UART_transmit_word(); 
 
   read_voltage_and_current(battery);
-
-  sprintf(UART_transmit_buffer, "Cell 0: %i \n", (int)battery->cells[0].voltage);
-  UART_transmit_word(); 
-  sprintf(UART_transmit_buffer, "Cell 1: %i \n", (int)battery->cells[1].voltage);
-  UART_transmit_word();
-  sprintf(UART_transmit_buffer, "Cell 6: %i \n", (int)battery->cells[2].voltage);
-  UART_transmit_word(); 
-  sprintf(UART_transmit_buffer, "Cell 7: %i \n", (int)battery->cells[3].voltage);
-  UART_transmit_word(); 
-  sprintf(UART_transmit_buffer, "Current: %i \n", (int)battery->current);
-  UART_transmit_word(); 
 
   return (State)estimate_soc(battery);
 }
 
 State estimate_soc(Battery *const battery){
   led_flash(ESTIMATE_SOC);
-  int soc = get_soc(battery);
-  sprintf(UART_transmit_buffer, "SoC = %i \n", soc);
-  UART_transmit_word(); 
+  get_soc(battery);
   log_data(battery);
-  return (State)compute_resistance;
+  return (State)send_data(battery);
 }
 
 State compute_resistance(void){
   led_flash(COMPUTE_R);
-  sprintf(UART_transmit_buffer, "State: Compute Resistance\n");
-  UART_transmit_word(); 
   return (State)compute_capacity;
 }
 
 State compute_capacity(void){
   led_flash(COMPUTE_C);
-  sprintf(UART_transmit_buffer, "State: Compute Capacity\n");
-  UART_transmit_word(); 
   return (State)balancing;
 }
 
 State balancing(void){
   led_flash(BAL);
-  sprintf(UART_transmit_buffer, "State: Balancing\n");
-  UART_transmit_word(); 
   return (State)send_data;
 
 }
 
-State send_data(void){
+State send_data(Battery *const battery){
   led_flash(SEND);
-  sprintf(UART_transmit_buffer, "State: Send Data\n");
-  UART_transmit_word(); 
-  return (State)shutdown;
+  send_packet(battery);
+  return (State)measure(battery);
 
 }
 
 State shutdown(void){
   led_flash(SHUTDOWN);
-  sprintf(UART_transmit_buffer, "State: Shutdown\n");
-  UART_transmit_word(); 
   return (State)idle;
 }
 
