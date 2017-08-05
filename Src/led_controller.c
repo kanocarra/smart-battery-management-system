@@ -1,5 +1,13 @@
+/**
+  ******************************************************************************
+  * File Name          : led_controller.c
+  * Description        : This file provides code to control the onboard LEDs
+  ******************************************************************************
+*/
+
 #include "gpio.h"
 
+// Turn on LEDs in a binary representation of the combination number
 void led_flash(int led_combination){
 
     // Reset all LEDs

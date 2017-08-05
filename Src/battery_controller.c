@@ -1,3 +1,11 @@
+/**
+  ******************************************************************************
+  * File Name          : battery_controller.c
+  * Description        : This file provides code for the battery model and
+                        estimating the state of charge
+  ******************************************************************************
+*/
+
 #include "battery.h"
 
 Layer* layers[N_LAYERS];
@@ -22,7 +30,7 @@ Battery init_battery(void){
 			.capacity = 0,
 			.state_of_charge = 0,
             .cell_number = cell_identifiers[i],
-            .temperature = 0
+            .temperature = 212
 		};
 		battery.cells[i] = cell;
 	}  
@@ -30,9 +38,13 @@ Battery init_battery(void){
 	return battery;
 }
 
+// Pass the inputs through the multiperceptron layer model
 void get_soc(Battery *const battery) {
+
+    // Initialise hidden layer
     Layer input_layer = init_layer();
     
+    //Intialise nodes
     long double sigmoid_node1_weights[MAX_INPUTS];
     long double sigmoid_node2_weights[MAX_INPUTS];
     long double sigmoid_node3_weights[MAX_INPUTS];
@@ -40,6 +52,7 @@ void get_soc(Battery *const battery) {
     long double sigmoid_node2_bias;
     long double sigmoid_node3_bias;
     
+    // Node 1
     sigmoid_node1_weights[TIME_ELAPSED] = 4.878289914735682;
     sigmoid_node1_weights[VOLTAGE] = 6.353756026857561;
     sigmoid_node1_weights[CURRENT] = 3.407684855151011;
@@ -48,6 +61,7 @@ void get_soc(Battery *const battery) {
     sigmoid_node1_bias =  4.742042871760883;
     add_neuron(sigmoid_node1_weights, &input_layer, 1, 5, sigmoid_node1_bias);
     
+    //Node 2
     sigmoid_node2_weights[TIME_ELAPSED] = 1.176881690677296;
     sigmoid_node2_weights[VOLTAGE] =  0.025788514341405753;
     sigmoid_node2_weights[CURRENT] = -0.9214576810041776;
@@ -56,6 +70,7 @@ void get_soc(Battery *const battery) {
     sigmoid_node2_bias =   -2.9953645011246555;
     add_neuron(sigmoid_node2_weights, &input_layer, 1, 5, sigmoid_node2_bias);
     
+    //Node 3
     sigmoid_node3_weights[TIME_ELAPSED] = 0.2994308683068657;
     sigmoid_node3_weights[VOLTAGE] = 14.855021773095666;
     sigmoid_node3_weights[CURRENT] =  0.8361545963317351;
@@ -66,11 +81,14 @@ void get_soc(Battery *const battery) {
 
     layers[0] = &input_layer;
     
+    // Initialise output layer
     Layer output_layer = init_layer();
     
+    // Initialise node
     long double linear_node0_weights[3];
     long double linear_node0_bias;
     
+    // Output Node
     linear_node0_weights[SM1] =  1.017107093283043;
     linear_node0_weights[SM2] =   0.7075539003596144;
     linear_node0_weights[SM3] = 1.0182853576502393;
@@ -79,9 +97,12 @@ void get_soc(Battery *const battery) {
 
     layers[1] = &output_layer;
 
+    // Run the model
     long double inputs[5] = {-0.871483, -0.009009, -0.98628, 0.903284, -0.922976};
     long double normalised_soc = compute_result(layers, inputs);
     long double soc = (((normalised_soc- -1.0) * 100.0) / 2.0);
+
+    // Update state of charge estimate
     battery->cells[0].state_of_charge = (uint16_t)(soc * 100.0);
     battery->cells[1].state_of_charge = (uint16_t)(soc * 100.0);
     battery->cells[2].state_of_charge = (uint16_t)(soc * 100.0);

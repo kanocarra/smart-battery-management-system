@@ -82,7 +82,6 @@ Src/usart.c \
 Src/adc.c \
 Src/dma.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c \
-Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc_ex.c \
@@ -100,7 +99,7 @@ SDcard/tm_stm32_fatfs.c \
 SDcard/tm_stm32_gpio.c \
 SDcard/tm_stm32_spi.c
 
-
+#Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c \
 # ASM sources
 ASM_SOURCES =  \
 startup_stm32f334x8.s

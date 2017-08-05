@@ -8,6 +8,7 @@
 
 // Number of cells in system
 #define NUM_CELLS 4
+#define CHARGE 99U
 
 // Model for a cell
 typedef struct {

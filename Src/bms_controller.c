@@ -1,7 +1,14 @@
+/**
+  ******************************************************************************
+  * File Name          : bms_controller.c
+  * Description        : This file provides code to control the LTC6804 BMS 
+  						 chip over SPI
+  ******************************************************************************
+*/
 
 #include "bms.h"
 
-//This function writes the config registers of the LTC6804-2
+// Writes the config registers of the LTC6804-2
 void write_config_6804_2(void)
 {
 	//Holds the formatted config data
@@ -27,7 +34,7 @@ void write_config_6804_2(void)
 	return;
 }
 
-//This function sets the OV and UV levels in the config buffer
+// Set the OV and UV levels in the config buffer
 void set_UV_OV_threshold(void)
 {
 	//Need to check this works
@@ -44,7 +51,7 @@ void set_UV_OV_threshold(void)
 	return;
 }
 
-//This function reads the status register block A and stores it in the status buffer
+// Read the status register block A and stores it in the status buffer
 StatusA* read_status_A_6804_2(void)
 {
 	uint16_t command = 0;
@@ -65,7 +72,7 @@ StatusA* read_status_A_6804_2(void)
 	return &status_regA;
 }
 
-//This function reads the status register block B and stores it in the status buffer
+// Read the status register block B and stores it in the status buffer
 StatusB* read_status_B_6804_2(void)
 {
 	uint16_t command = 0;
@@ -115,7 +122,7 @@ StatusB* read_status_B_6804_2(void)
 	return &status_regB;
 }
 
-//includes the returned data, tested OK
+// Transmit over SPI
 void SPI_transmit_word(uint16_t cmd, uint8_t *data)
 {
 	//Inputs, cmd is the command to be used, data is the 6 bytes of data to be sent
@@ -198,7 +205,7 @@ void SPI_transmit_word(uint16_t cmd, uint8_t *data)
 	return;
 }
 
-//This function reads the cell voltage registers and places the data in an array
+// Read the cell voltage registers and places the data in an array
 void ADC_read_cell_voltages(Battery *const battery)
 {
 	//Use a dummy block of data
@@ -245,6 +252,7 @@ void ADC_read_cell_voltages(Battery *const battery)
 
 }
 
+// Read the voltage and current of each cell
 void read_voltage_and_current(Battery *const battery){
 	uint8_t data[6] = {0};
 

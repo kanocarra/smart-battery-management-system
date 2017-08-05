@@ -1,6 +1,14 @@
+/**
+  ******************************************************************************
+  * File Name          : layer.c
+  * Description        : This file provides code defines and computes the 
+                        layers in a neural network
+  ******************************************************************************
+*/
 #include "layer.h"
 #include "usart.h"
 
+// Create a new layer
 Layer init_layer(void) {
     Layer layer = {.next_index = 0};
     return layer;
@@ -8,12 +16,14 @@ Layer init_layer(void) {
     
 }
 
+// Add a neuron to the given layer
 void add_neuron(long double weights[MAX_INPUTS], Layer* layer, bool is_sigmoid, int n_inputs, long double bias) {
     Neuron next_neuron = init_neuron(weights, is_sigmoid, n_inputs, bias);
     layer->neurons[layer->next_index] = next_neuron;
     layer->next_index++;
 }
 
+// Run through the whole model to cmopute the output
 long double compute_result(Layer* layers[N_LAYERS], long double inputs[MAX_INPUTS]){
     long double result = 0;
     long double next_layer_inputs[N_LAYERS][MAX_INPUTS] = {
