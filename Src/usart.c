@@ -56,8 +56,6 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
     
     // Enable USART Interrupt
     __HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
-    HAL_UART_Receive_IT(&huart3, UART_receive_buffer, UART_BUFFER_LENGTH);
-
   }
 }
 

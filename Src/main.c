@@ -70,36 +70,45 @@ void main(void)
   MX_SPI1_Init();
   MX_USART3_UART_Init();
 
+    //Initialise the battery
+  Battery battery = init_battery();
+  Battery *const r_battery = &battery;
+
+  //Create context structure for the whole application
+
   // Set state to idle
   State currentState = idle;
+  led_flash(IDLE);
 
   while (1)
   {
-    currentState = (State)currentState();
+    currentState = (State)currentState(r_battery);
   }
 
 }  
 
-State idle(void){
-  led_flash(IDLE);
-  return (State)start;
+State idle(Battery *const battery){
+  HAL_UART_Receive_IT(&huart3, UART_receive_buffer, UART_BUFFER_LENGTH);
+  if(UART_receive_buffer[0] == CHARGE){
+       return (State)start;
+  }
+  return (State)idle;
 }
 
-State start(void){
+State start(Battery *const battery){
 
   led_flash(START);
 
-  //Initialise the battery
-  Battery battery = init_battery();
-  Battery *const r_battery = &battery;
-
   // Initialise the SoC estimation model 
-  init_model(); 
+  init_soc_model(); 
 
   // Set under and over voltage thresholds
   set_UV_OV_threshold();
 
-  return (State)measure(r_battery);
+    // Add 1s delay
+  HAL_Delay(1000);
+
+  return (State)measure(battery);
 }
 
 State measure(Battery *const battery){
@@ -109,7 +118,10 @@ State measure(Battery *const battery){
 
   StatusB* status_regB = read_status_B_6804_2();
 
-  read_voltage_and_current(battery);
+  ADC_read_cell_voltages(battery);
+
+    // Add 1s delay
+  HAL_Delay(1000);
 
   return (State)estimate_soc(battery);
 }
@@ -117,21 +129,24 @@ State measure(Battery *const battery){
 State estimate_soc(Battery *const battery){
   led_flash(ESTIMATE_SOC);
   get_soc(battery);
-  log_data(battery);
-  return (State)send_data(battery);
+  //log_data(battery);
+
+    // Add 1s delay
+  HAL_Delay(1000);
+  return (State)measure(battery);
 }
 
-State compute_resistance(void){
+State compute_resistance(Battery *const battery){
   led_flash(COMPUTE_R);
   return (State)compute_capacity;
 }
 
-State compute_capacity(void){
+State compute_capacity(Battery *const battery){
   led_flash(COMPUTE_C);
   return (State)balancing;
 }
 
-State balancing(void){
+State balancing(Battery *const battery){
   led_flash(BAL);
   return (State)send_data;
 
@@ -140,11 +155,13 @@ State balancing(void){
 State send_data(Battery *const battery){
   led_flash(SEND);
   send_packet(battery);
+  // Add 1s delay
+  HAL_Delay(1000);
   return (State)measure(battery);
 
 }
 
-State shutdown(void){
+State shutdown(Battery *const battery){
   led_flash(SHUTDOWN);
   return (State)idle;
 }
@@ -204,6 +221,5 @@ void SystemClock_Config(void)
   /* SysTick_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(SysTick_IRQn, 0, 0);
 }
-
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

@@ -243,6 +243,9 @@ void ADC_read_cell_voltages(Battery *const battery)
 	battery->cells[3].voltage = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
 	//battery->cells[8].voltage = ((uint16_t)SPI_recieve_buffer[5] << 8) | SPI_recieve_buffer[4];
 
+    sprintf(UART_transmit_buffer, "%i %i %i %i \n", battery->cells[0].voltage, battery->cells[1].voltage, battery->cells[2].voltage, battery->cells[3].voltage);
+    UART_transmit_word(); 
+
 	// //Request the Group D cell voltages
 	// SPI_transmit_word(0x800A, data);
 	// //Copy the values from the SPI rx buffer

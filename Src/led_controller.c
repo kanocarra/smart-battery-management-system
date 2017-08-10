@@ -38,7 +38,4 @@ void led_flash(int led_combination){
     if(led_combination >= 8) {
         HAL_GPIO_WritePin(GPIOC, RLED2_Pin, 1); 
     }
-
-    // Add 1s delay
-    HAL_Delay(1000);
 }

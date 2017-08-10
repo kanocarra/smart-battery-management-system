@@ -31,6 +31,6 @@ typedef struct Battery {
 
 Battery init_battery(void);
 void get_soc(Battery *const battery);
-void init_model(void);
+void init_soc_model(void);
 
 #endif /* BATTERY_H_ */

@@ -9,6 +9,19 @@
 #include "battery.h"
 
 Layer* layers[N_LAYERS];
+Layer input_layer;
+Layer output_layer;
+
+//Intialise nodes
+long double sigmoid_node1_weights[MAX_INPUTS];
+long double sigmoid_node2_weights[MAX_INPUTS];
+long double sigmoid_node3_weights[MAX_INPUTS];
+long double sigmoid_node1_bias;
+long double sigmoid_node2_bias;
+long double sigmoid_node3_bias;
+// Initialise node
+long double linear_node0_weights[3];
+long double linear_node0_bias;
 enum input{TIME_ELAPSED, VOLTAGE, CURRENT, CAPACITY, INTERNAL_RESISTANCE};
 enum nodes{SM1, SM2, SM3};
 char cell_identifiers[NUM_CELLS] = {'1', '2', '6', '7'};
@@ -38,19 +51,10 @@ Battery init_battery(void){
 	return battery;
 }
 
-// Pass the inputs through the multiperceptron layer model
-void get_soc(Battery *const battery) {
-
-    // Initialise hidden layer
-    Layer input_layer = init_layer();
+void init_soc_model(){
     
-    //Intialise nodes
-    long double sigmoid_node1_weights[MAX_INPUTS];
-    long double sigmoid_node2_weights[MAX_INPUTS];
-    long double sigmoid_node3_weights[MAX_INPUTS];
-    long double sigmoid_node1_bias;
-    long double sigmoid_node2_bias;
-    long double sigmoid_node3_bias;
+    // Initialise hidden layer
+    input_layer = init_layer();
     
     // Node 1
     sigmoid_node1_weights[TIME_ELAPSED] = 4.878289914735682;
@@ -82,11 +86,7 @@ void get_soc(Battery *const battery) {
     layers[0] = &input_layer;
     
     // Initialise output layer
-    Layer output_layer = init_layer();
-    
-    // Initialise node
-    long double linear_node0_weights[3];
-    long double linear_node0_bias;
+    output_layer = init_layer();
     
     // Output Node
     linear_node0_weights[SM1] =  1.017107093283043;
@@ -96,6 +96,10 @@ void get_soc(Battery *const battery) {
     add_neuron(linear_node0_weights, &output_layer, 0, 5, linear_node0_bias);
 
     layers[1] = &output_layer;
+}
+
+// Pass the inputs through the multiperceptron layer model
+void get_soc(Battery *const battery) {
 
     // Run the model
     long double inputs[5] = {-0.871483, -0.009009, -0.98628, 0.903284, -0.922976};
@@ -107,9 +111,4 @@ void get_soc(Battery *const battery) {
     battery->cells[1].state_of_charge = (uint16_t)(soc * 100.0);
     battery->cells[2].state_of_charge = (uint16_t)(soc * 100.0);
     battery->cells[3].state_of_charge = (uint16_t)(soc * 100.0);
-}
-
-void init_model(void) {
-
-   
 }

@@ -6,13 +6,13 @@
 typedef void(*functionPointer)();
 typedef functionPointer(*State)();
 
-State idle(void);
-State start(void);
+State idle(Battery *const battery);
+State start(Battery *const battery);
 State measure(Battery *const battery);
 State estimate_soc(Battery *const battery);
-State compute_resistance(void);
-State compute_capacity(void);
-State balancing(void);
+State compute_resistance(Battery *const battery);
+State compute_capacity(Battery *const battery);
+State balancing(Battery *const battery);
 State send_data(Battery *const battery);
-State shutdown(void);
+State shutdown(Battery *const battery);
 #endif /* FSM_H_ */
