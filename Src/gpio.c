@@ -5,7 +5,13 @@
   *                      of all used GPIO pins.
   ******************************************************************************
 */
+
+/* Includes ------------------------------------------------------------------*/
 #include "gpio.h"
+/* USER CODE BEGIN 0 */
+
+/* USER CODE END 0 */
+
 /*----------------------------------------------------------------------------*/
 /* Configure GPIO                                                             */
 /*----------------------------------------------------------------------------*/
@@ -24,10 +30,6 @@ void MX_GPIO_Init(void)
 {
 
   GPIO_InitTypeDef GPIO_InitStruct;
-void MX_GPIO_Init(void)
-{
-
-  GPIO_InitTypeDef GPIO_InitStruct;
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOC_CLK_ENABLE();
@@ -37,7 +39,7 @@ void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, LED3_Pin|GLED1_Pin|GLED2_Pin|RLED1_Pin 
-                          |LED0_Pin|LED1_Pin|LED2_Pin, GPIO_PIN_RESET);
+                          |COMS_Pin|LED0_Pin|LED1_Pin|LED2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, PA0_Pin|PA1_Pin|SS1_Pin, GPIO_PIN_RESET);
@@ -50,9 +52,9 @@ void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(RLED2_GPIO_Port, RLED2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : PCPin PCPin PCPin PCPin 
-                           PCPin PCPin PCPin */
+                           PCPin PCPin PCPin PCPin */
   GPIO_InitStruct.Pin = LED3_Pin|GLED1_Pin|GLED2_Pin|RLED1_Pin 
-                          |LED0_Pin|LED1_Pin|LED2_Pin;
+                          |COMS_Pin|LED0_Pin|LED1_Pin|LED2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -88,6 +90,17 @@ void MX_GPIO_Init(void)
   HAL_GPIO_Init(RLED2_GPIO_Port, &GPIO_InitStruct);
 
 }
-  HAL_GPIO_Init(RLED2_GPIO_Port, &GPIO_InitStruct);
 
-}
+/* USER CODE BEGIN 2 */
+
+/* USER CODE END 2 */
+
+/**
+  * @}
+  */
+
+/**
+  * @}
+  */
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

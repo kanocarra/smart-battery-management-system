@@ -7,6 +7,7 @@
 */
 
 #include "comms.h"
+#include "usart.h"
 
 // Sends data packet in the required format for each cell
 void send_packet(Battery const* battery){

@@ -11,6 +11,7 @@
 UART_HandleTypeDef huart3;
 
 /* USART3 init function */
+
 void MX_USART3_UART_Init(void)
 {
 
@@ -36,6 +37,9 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
   GPIO_InitTypeDef GPIO_InitStruct;
   if(uartHandle->Instance==USART3)
   {
+  /* USER CODE BEGIN USART3_MspInit 0 */
+
+  /* USER CODE END USART3_MspInit 0 */
     /* Peripheral clock enable */
     __HAL_RCC_USART3_CLK_ENABLE();
   
@@ -53,9 +57,9 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
     /* USART3 interrupt Init */
     HAL_NVIC_SetPriority(USART3_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(USART3_IRQn);
-    
-    // Enable USART Interrupt
-    __HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
+  /* USER CODE BEGIN USART3_MspInit 1 */
+
+  /* USER CODE END USART3_MspInit 1 */
   }
 }
 
@@ -78,15 +82,13 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 
     /* USART3 interrupt Deinit */
     HAL_NVIC_DisableIRQ(USART3_IRQn);
-  /* USER CODE BEGIN USART3_MspDeInit 1 */
-
-  /* USER CODE END USART3_MspDeInit 1 */
+    
   }
 } 
 
 void UART_transmit(unsigned char data)
 {
-	//Param: size - number of char to be transmitted.
+	//Param: size - number of char to be transmitted
 	HAL_UART_Transmit(&huart3,&data,1,1000);
 }
 
@@ -96,5 +98,3 @@ void UART_transmit_word(void)
 	uint16_t len = strlen(UART_transmit_buffer);
 	HAL_UART_Transmit(&huart3,UART_transmit_buffer,len,1000);
 }
-
-

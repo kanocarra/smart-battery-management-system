@@ -198,16 +198,19 @@ void DMA1_Channel1_IRQHandler(void)
 
   /* USER CODE END DMA1_Channel1_IRQn 1 */
 }
- 
+
 /**
 * @brief This function handles USART3 global interrupt / USART3 wake-up interrupt through EXT line 28.
 */
 void USART3_IRQHandler(void)
 {
+  /* USER CODE BEGIN USART3_IRQn 0 */
+  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
 
   /* USER CODE END USART3_IRQn 0 */
   HAL_UART_IRQHandler(&huart3);
   /* USER CODE BEGIN USART3_IRQn 1 */
+  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
 
   /* USER CODE END USART3_IRQn 1 */
 }

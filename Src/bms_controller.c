@@ -7,6 +7,7 @@
 */
 
 #include "bms.h"
+#include "spi.h"
 
 // Writes the config registers of the LTC6804-2
 void write_config_6804_2(void)
@@ -205,6 +206,7 @@ void SPI_transmit_word(uint16_t cmd, uint8_t *data)
 	return;
 }
 
+
 // Read the cell voltage registers and places the data in an array
 void ADC_read_cell_voltages(Battery *const battery)
 {
@@ -243,9 +245,6 @@ void ADC_read_cell_voltages(Battery *const battery)
 	battery->cells[3].voltage = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
 	//battery->cells[8].voltage = ((uint16_t)SPI_recieve_buffer[5] << 8) | SPI_recieve_buffer[4];
 
-    sprintf(UART_transmit_buffer, "%i %i %i %i \n", battery->cells[0].voltage, battery->cells[1].voltage, battery->cells[2].voltage, battery->cells[3].voltage);
-    UART_transmit_word(); 
-
 	// //Request the Group D cell voltages
 	// SPI_transmit_word(0x800A, data);
 	// //Copy the values from the SPI rx buffer
@@ -258,6 +257,7 @@ void ADC_read_cell_voltages(Battery *const battery)
 // Read the voltage and current of each cell
 void read_voltage_and_current(Battery *const battery){
 	uint8_t data[6] = {0};
+	uint16_t v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12;
 
 	uint16_t command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | ADCVAX;
 
@@ -284,8 +284,4 @@ void read_voltage_and_current(Battery *const battery){
 	battery->current = ((uint16_t)SPI_recieve_buffer[1] << 8) | SPI_recieve_buffer[0];
 
 }
-	
-
-
-
 

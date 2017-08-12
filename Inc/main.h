@@ -40,6 +40,9 @@
 #define __MAIN_H
   /* Includes ------------------------------------------------------------------*/
 #include <stdint.h>
+/* USER CODE BEGIN Includes */
+
+/* USER CODE END Includes */
 
 /* Private define ------------------------------------------------------------*/
 
@@ -63,6 +66,8 @@
 #define GLED2_GPIO_Port GPIOC
 #define RLED1_Pin GPIO_PIN_8
 #define RLED1_GPIO_Port GPIOC
+#define COMS_Pin GPIO_PIN_9
+#define COMS_GPIO_Port GPIOC
 #define SS1_Pin GPIO_PIN_12
 #define SS1_GPIO_Port GPIOA
 #define LED0_Pin GPIO_PIN_10
@@ -78,11 +83,21 @@
 #define SDA_Pin GPIO_PIN_7
 #define SDA_GPIO_Port GPIOB
 
+/* USER CODE BEGIN Private defines */
+
+/* USER CODE END Private defines */
+
 void _Error_Handler(char *, int);
 
 #define Error_Handler() _Error_Handler(__FILE__, __LINE__)
-uint32_t globalTick;
 
+/**
+  * @}
+  */ 
+
+/**
+  * @}
+*/ 
 
 #endif /* __MAIN_H */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

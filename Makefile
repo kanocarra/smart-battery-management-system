@@ -67,7 +67,6 @@ Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c \
 Src/main.c \
 Src/battery_controller.c \
-Src/error_handler.c \
 Src/bms_controller.c \
 Src/led_controller.c \
 Src/log_controller.c \

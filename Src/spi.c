@@ -5,6 +5,8 @@
   *                      of the SPI instances.
   ******************************************************************************
 */
+
+/* Includes ------------------------------------------------------------------*/
 #include "spi.h"
 #include "gpio.h"
 
@@ -41,6 +43,9 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* spiHandle)
   GPIO_InitTypeDef GPIO_InitStruct;
   if(spiHandle->Instance==SPI1)
   {
+  /* USER CODE BEGIN SPI1_MspInit 0 */
+
+  /* USER CODE END SPI1_MspInit 0 */
     /* Peripheral clock enable */
     __HAL_RCC_SPI1_CLK_ENABLE();
   
@@ -56,9 +61,6 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* spiHandle)
     GPIO_InitStruct.Alternate = GPIO_AF5_SPI1;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /* USER CODE BEGIN SPI1_MspInit 1 */
-
-  /* USER CODE END SPI1_MspInit 1 */
   }
 }
 
@@ -79,8 +81,10 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* spiHandle)
     PA7     ------> SPI1_MOSI 
     */
     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_7);
+
   }
-} 
+}
+
 
 uint8_t SPI_transmit(uint8_t data)
 {
@@ -117,6 +121,5 @@ void Slave_deselect(void)
 	HAL_GPIO_WritePin(SS0_GPIO_Port,SS0_Pin,GPIO_PIN_SET);
 	HAL_GPIO_WritePin(SS1_GPIO_Port,SS1_Pin,GPIO_PIN_SET);
 }
-
 
 

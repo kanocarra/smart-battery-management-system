@@ -1,11 +1,11 @@
 #ifndef BMS_H_
 #define BMS_H_
 
-#include "spi.h"
 #include "usart.h"
 #include "PEC15.h"
 #include "gpio.h"
 #include "battery.h"
+#include "spi.h"
 
 
 //LTC6804_2
@@ -29,7 +29,7 @@
 #define CLRSTAT 0b11100010011
 #define PLADC	0b11100010100
 #define DIAGN 	0b11100010101
-
+ 
 //Make #defines for the UV and OV levels
 //Note: 12 bits long
 #define OVERVOLTAGE_ALARM_LEVEL		2625	//4.2V --> Comparison voltage = VOV*16*100uV
