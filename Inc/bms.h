@@ -11,8 +11,11 @@
 //LTC6804_2
 #define LTC6804_2_ADDRESS		0b0000
 #define LTC6804_2_ADDRESS_MODE	0b1
+#define GAIN_SEL_0 6
+#define GAIN_SEL_1 7
 
-#define WRCFG	0b00000000001
+
+#define WRCFG	0b00011000001
 #define RDCFG	0b00000000010
 #define RDCVA	0b00000000100
 #define RDCVB	0b00000000110
@@ -80,6 +83,7 @@ StatusB* read_status_B_6804_2(void);
 void SPI_transmit_word(uint16_t cmd, uint8_t *data);
 void ADC_read_cell_voltages(Battery *const battery);
 void read_voltage_and_current(Battery *const battery);
+void enable_current_meas(void);
 
 
 #endif /* BMS_H_ */
