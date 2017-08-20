@@ -141,8 +141,7 @@ State measure(Battery *const battery){
 
 State estimate_soc(Battery *const battery){
   led_flash(ESTIMATE_SOC);
-  get_soc(battery);
-  //log_data(battery);
+  //get_soc(battery);
 
     // Add 1s delay
   HAL_Delay(1000);

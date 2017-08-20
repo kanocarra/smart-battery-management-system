@@ -15,7 +15,7 @@
 #define GAIN_SEL_1 7
 
 
-#define WRCFG	0b00011000001
+#define WRCFG	0b00000000001
 #define RDCFG	0b00000000010
 #define RDCVA	0b00000000100
 #define RDCVB	0b00000000110
@@ -60,7 +60,7 @@ typedef struct{
 
 //A struct that represents the config register block
 typedef struct {
-    uint8_t GPIO5 : 5, REFON : 1, SWTRD : 1, ADCOPT : 1;
+    uint8_t GPIO5 : 1, REFON : 1, SWTRD : 1, ADCOPT : 1;
 	uint8_t VUVLB;
 	uint8_t VOVLB  :4 ,   VUVUB:4;
 	uint8_t VOVUB;

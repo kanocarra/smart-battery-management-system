@@ -22,7 +22,7 @@ void write_config_6804_2(void)
 	command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | WRCFG;
 
 	//Populate the data
-	data[0] = config_6804_buffer.GPIO5<<3 | config_6804_buffer.REFON<<2 | config_6804_buffer.SWTRD<<1 | config_6804_buffer.ADCOPT;
+	data[0] = 0b11110001;
 	data[1] = config_6804_buffer.VUVLB;
 	data[2] = config_6804_buffer.VOVLB<<4|config_6804_buffer.VUVUB;
 	data[3] = config_6804_buffer.VOVUB;
@@ -277,22 +277,43 @@ void read_voltage_and_current(Battery *const battery){
 	battery->cells[2].voltage = (((uint16_t)SPI_recieve_buffer[1] << 8) & 0xff00) | (SPI_recieve_buffer[0] & 0xff);
 	battery->cells[3].voltage = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
 
+	command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | ADAX;
+
+	SPI_transmit_word(command, NULL);
+
+	HAL_Delay(250);
+
 	command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | RDAUXA;
 	
 	SPI_transmit_word(command, NULL);
+	uint16_t g1 = ((uint16_t)SPI_recieve_buffer[1] << 8) | SPI_recieve_buffer[0];
+	uint16_t g2 = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
+	uint16_t g3 = ((uint16_t)SPI_recieve_buffer[5] << 8) | SPI_recieve_buffer[4];
+
+	command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | RDAUXB;
 	
-	battery->current = ((uint16_t)SPI_recieve_buffer[1] << 8) | SPI_recieve_buffer[0];
-	sprintf(UART_transmit_buffer, "%u %u", SPI_recieve_buffer[1],SPI_recieve_buffer[0] );
+	SPI_transmit_word(command, NULL);
+	uint16_t g4 = ((uint16_t)SPI_recieve_buffer[1] << 8) | SPI_recieve_buffer[0];
+	uint16_t g5 = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
+	uint16_t ref = ((uint16_t)SPI_recieve_buffer[5] << 8) | SPI_recieve_buffer[4];
+
+	sprintf(UART_transmit_buffer, " Register A: %u %u %u\n", g1,g2,g3);
     UART_transmit_word();   
+	sprintf(UART_transmit_buffer, " Register B: %u %u %u\n", g4,g5,ref);
+    UART_transmit_word();  
 
-
+	battery->current = g1 - ref; 
+	
 }
 
 void enable_current_meas(void){
 	uint8_t data[6] = {0};
 
-	uint16_t command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | WRCFG;
+	uint16_t command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | RDCFG;
 	SPI_transmit_word(command, NULL);
+
+	sprintf(UART_transmit_buffer, "%u \n", SPI_recieve_buffer[0]);
+    UART_transmit_word();   
 
 }
 
