@@ -13,6 +13,9 @@
 #define LTC6804_2_ADDRESS_MODE	0b1
 #define GAIN_SEL_0 6
 #define GAIN_SEL_1 7
+#define R_SHUNT 0.001F
+#define GAIN 200.0F
+#define SCALING_FACTOR 10000.0F
 
 
 #define WRCFG	0b00000000001
@@ -60,7 +63,7 @@ typedef struct{
 
 //A struct that represents the config register block
 typedef struct {
-    uint8_t GPIO5 : 1, REFON : 1, SWTRD : 1, ADCOPT : 1;
+    uint8_t REFON : 1, SWTRD : 1, ADCOPT : 1;
 	uint8_t VUVLB;
 	uint8_t VOVLB  :4 ,   VUVUB:4;
 	uint8_t VOVUB;
@@ -84,6 +87,5 @@ void SPI_transmit_word(uint16_t cmd, uint8_t *data);
 void ADC_read_cell_voltages(Battery *const battery);
 void read_voltage_and_current(Battery *const battery);
 void enable_current_meas(void);
-
 
 #endif /* BMS_H_ */

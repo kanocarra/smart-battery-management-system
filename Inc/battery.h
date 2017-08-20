@@ -10,6 +10,20 @@
 #define NUM_CELLS 4
 #define CHARGE 99U
 
+// Normalisation paramters
+#define TIME_MAX 3728.188F
+#define TIME_MIN 0.0F
+#define VOLT_MAX 4.21F
+#define VOLT_MIN 3.07F
+#define CUR_MAX 0.002F
+#define CUR_MIN -7.643F
+#define CAP_MAX 7.769F
+#define CAP_MIN 6.822F
+#define RES_MAX 65.416F
+#define RES_MIN 1.946F
+#define NORM_MAX 1.0F
+#define NORM_MIN -1.0F
+
 // Model for a cell
 typedef struct {
     uint16_t voltage; //in volts
@@ -32,5 +46,6 @@ typedef struct Battery {
 Battery init_battery(void);
 void get_soc(Battery *const battery);
 void init_soc_model(void);
+long double normalise_input(double max, double min, double value);
 
 #endif /* BATTERY_H_ */

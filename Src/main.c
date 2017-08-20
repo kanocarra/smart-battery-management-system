@@ -125,12 +125,6 @@ State start(Battery *const battery){
 State measure(Battery *const battery){
   led_flash(MEASURE);
 
-  StatusA* status_regA = read_status_A_6804_2();
-
-  StatusB* status_regB = read_status_B_6804_2();
-
-  send_status(status_regA, status_regB);
-
   read_voltage_and_current(battery);
 
     // Add 1s delay
@@ -141,7 +135,7 @@ State measure(Battery *const battery){
 
 State estimate_soc(Battery *const battery){
   led_flash(ESTIMATE_SOC);
-  //get_soc(battery);
+  get_soc(battery);
 
     // Add 1s delay
   HAL_Delay(1000);

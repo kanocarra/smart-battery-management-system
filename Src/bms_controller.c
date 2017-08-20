@@ -22,7 +22,7 @@ void write_config_6804_2(void)
 	command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | WRCFG;
 
 	//Populate the data
-	data[0] = 0b11110001;
+	data[0] = 0b11110101;
 	data[1] = config_6804_buffer.VUVLB;
 	data[2] = config_6804_buffer.VOVLB<<4|config_6804_buffer.VUVUB;
 	data[3] = config_6804_buffer.VOVUB;
@@ -302,7 +302,7 @@ void read_voltage_and_current(Battery *const battery){
 	sprintf(UART_transmit_buffer, " Register B: %u %u %u\n", g4,g5,ref);
     UART_transmit_word();  
 
-	battery->current = g1 - ref; 
+	battery->current = (uint16_t)((g1 - ref) / (GAIN * R_SHUNT))/10; 
 	
 }
 

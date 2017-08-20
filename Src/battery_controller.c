@@ -24,7 +24,8 @@ long double linear_node0_weights[3];
 long double linear_node0_bias;
 enum input{TIME_ELAPSED, VOLTAGE, CURRENT, CAPACITY, INTERNAL_RESISTANCE};
 enum nodes{SM1, SM2, SM3};
-char cell_identifiers[NUM_CELLS] = {'1', '2', '6', '7'};
+char cell_identifiers[NUM_CELLS] = {'1', '2', '7', '8'};
+double cell_capacities[NUM_CELLS] = {0,0,0,0};
 
 
 // Create the battery object with number of cells
@@ -57,30 +58,30 @@ void init_soc_model(){
     input_layer = init_layer();
     
     // Node 1
-    sigmoid_node1_weights[TIME_ELAPSED] = 4.878289914735682;
-    sigmoid_node1_weights[VOLTAGE] = 6.353756026857561;
-    sigmoid_node1_weights[CURRENT] = 3.407684855151011;
-    sigmoid_node1_weights[CAPACITY] = -0.06926945731506193;
-    sigmoid_node1_weights[INTERNAL_RESISTANCE] =  -0.010043877987725111;
-    sigmoid_node1_bias =  4.742042871760883;
+    sigmoid_node1_weights[TIME_ELAPSED] = 2.402974608182833;
+    sigmoid_node1_weights[VOLTAGE] =  0.6247989307177287;
+    sigmoid_node1_weights[CURRENT] = 0.5177655392866384;
+    sigmoid_node1_weights[CAPACITY] = -0.41332625064237954;
+    sigmoid_node1_weights[INTERNAL_RESISTANCE] = -0.0026848550716559684;
+    sigmoid_node1_bias =  -2.854300632499299;
     add_neuron(sigmoid_node1_weights, &input_layer, 1, 5, sigmoid_node1_bias);
     
     //Node 2
-    sigmoid_node2_weights[TIME_ELAPSED] = 1.176881690677296;
-    sigmoid_node2_weights[VOLTAGE] =  0.025788514341405753;
-    sigmoid_node2_weights[CURRENT] = -0.9214576810041776;
-    sigmoid_node2_weights[CAPACITY] =  0.5822346570940141;
-    sigmoid_node2_weights[INTERNAL_RESISTANCE] = 0.02865397891804468;
-    sigmoid_node2_bias =   -2.9953645011246555;
+    sigmoid_node2_weights[TIME_ELAPSED] =  1.937406595403493;
+    sigmoid_node2_weights[VOLTAGE] =  -0.7000361379607273;
+    sigmoid_node2_weights[CURRENT] = -0.591633593255045;
+    sigmoid_node2_weights[CAPACITY] =  -0.15555135006119186;
+    sigmoid_node2_weights[INTERNAL_RESISTANCE] = -0.005816391165762171;
+    sigmoid_node2_bias =   -1.0056207683771963;
     add_neuron(sigmoid_node2_weights, &input_layer, 1, 5, sigmoid_node2_bias);
     
     //Node 3
-    sigmoid_node3_weights[TIME_ELAPSED] = 0.2994308683068657;
-    sigmoid_node3_weights[VOLTAGE] = 14.855021773095666;
-    sigmoid_node3_weights[CURRENT] =  0.8361545963317351;
-    sigmoid_node3_weights[CAPACITY] = 0.023966700635398273;
-    sigmoid_node3_weights[INTERNAL_RESISTANCE] = 0.001179240596627643;
-    sigmoid_node3_bias =  -1.2413421333276302;
+    sigmoid_node3_weights[TIME_ELAPSED] = -2.357000962524356;
+    sigmoid_node3_weights[VOLTAGE] = -0.1358046573815341;
+    sigmoid_node3_weights[CURRENT] =  -0.05811834620115263;
+    sigmoid_node3_weights[CAPACITY] = -0.015921542250270704;
+    sigmoid_node3_weights[INTERNAL_RESISTANCE] = 0.006559453499680887;
+    sigmoid_node3_bias =  -2.3009378756283105;
     add_neuron(sigmoid_node3_weights, &input_layer, 1, 5, sigmoid_node3_bias);
 
     layers[0] = &input_layer;
@@ -89,10 +90,10 @@ void init_soc_model(){
     output_layer = init_layer();
     
     // Output Node
-    linear_node0_weights[SM1] =  1.017107093283043;
-    linear_node0_weights[SM2] =   0.7075539003596144;
-    linear_node0_weights[SM3] = 1.0182853576502393;
-    linear_node0_bias =   -1.0325764534548219;
+    linear_node0_weights[SM1] =  -1.2324306598186197;
+    linear_node0_weights[SM2] =    -1.3396042055728592;
+    linear_node0_weights[SM3] = 1.4764981571210392;
+    linear_node0_bias =   0.3642179801774134;
     add_neuron(linear_node0_weights, &output_layer, 0, 5, linear_node0_bias);
 
     layers[1] = &output_layer;
@@ -101,14 +102,35 @@ void init_soc_model(){
 // Pass the inputs through the multiperceptron layer model
 void get_soc(Battery *const battery) {
 
-    // Run the model
-    long double inputs[5] = {-0.871483, -0.009009, -0.98628, 0.903284, -0.922976};
-    long double normalised_soc = compute_result(layers, inputs);
-    long double soc = (((normalised_soc- -1.0) * 100.0) / 2.0);
+    for(int i= 0; i < NUM_CELLS; i++) {
+        
+        // Normalise inputs
+        long double inputs[5] = {0,0,0,0,0};
+        // inputs[TIME_ELAPSED] = normalise_input(TIME_MAX, TIME_MIN, battery->time_elapsed);
+        // inputs[VOLTAGE] = normalise_input(VOLT_MAX, VOLT_MIN, double(battery->cells[i].voltage/10000.0);
+        // inputs[CURRENT] = normalise_input(TIME_MAX, TIME_MIN, double(battery->current/10000.0);
+        // inputs[CAPACITY] = normalise_input(TIME_MAX, TIME_MIN, battery->capacity);
+        // inputs[INTERNAL_RESISTANCE] = normalise_input(TIME_MAX, TIME_MIN, battery->internal_resistance);
+        inputs[TIME_ELAPSED] = normalise_input(TIME_MAX, TIME_MIN, 527.296526);
+        inputs[VOLTAGE] = normalise_input(VOLT_MAX, VOLT_MIN, (double)(40500/10000.0));
+        inputs[CURRENT] = normalise_input(CUR_MAX, CUR_MIN, (double)(-7496.66643/1000.0));
+        inputs[CAPACITY] = normalise_input(CAP_MAX, CAP_MIN, 7.458977654);
+        inputs[INTERNAL_RESISTANCE] = normalise_input(RES_MAX, RES_MIN, 4.009090909);
+       
+       // Run the model        
+        long double normalised_soc = compute_result(layers, inputs);
+        long double soc = (((normalised_soc- -1.0) * 100.0) / 2.0);
 
-    // Update state of charge estimate
-    battery->cells[0].state_of_charge = (uint16_t)(soc * 100.0);
-    battery->cells[1].state_of_charge = (uint16_t)(soc * 100.0);
-    battery->cells[2].state_of_charge = (uint16_t)(soc * 100.0);
-    battery->cells[3].state_of_charge = (uint16_t)(soc * 100.0);
+        // Update state of charge estimate
+        battery->cells[i].state_of_charge = (uint16_t)(soc * 100.0);
+    }
+
+}
+
+// Normalises the input based on WEKA's normalisation of -1 to 1
+long double normalise_input(double max, double min, double value) {
+    long double old_range = (max- min);
+    long double new_range = NORM_MAX - NORM_MIN;
+    long double new_value = (((value - min) * new_range) / old_range) + NORM_MIN;
+    return new_value;
 }
