@@ -17,6 +17,8 @@ void send_packet(Battery const* battery){
     }
     sprintf(UART_transmit_buffer, "i %u \n", battery->current);
     UART_transmit_word();   
+    sprintf(UART_transmit_buffer, "t %u \n", battery->time_elapsed);
+    UART_transmit_word();   
 }
 
 void send_status(StatusA* status_regA, StatusB* status_regB) {

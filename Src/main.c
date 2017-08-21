@@ -99,12 +99,14 @@ int main(void)
 State idle(Battery *const battery){
   HAL_UART_Receive_IT(&huart3, UART_receive_buffer, UART_BUFFER_LENGTH);
   if(UART_receive_buffer[0] == CHARGE){
-       return (State)start;
+       return start;
   }
-  return (State)idle;
+  return idle;
 }
 
 State start(Battery *const battery){
+
+  //start_cycle();
 
   led_flash(START);
 
@@ -119,42 +121,40 @@ State start(Battery *const battery){
     // Add 1s delay
   HAL_Delay(1000);
 
-  return (State)measure(battery);
+  return measure;
 }
 
 State measure(Battery *const battery){
   led_flash(MEASURE);
-
   read_voltage_and_current(battery);
-
+  //get_time_elapsed(battery);
     // Add 1s delay
   HAL_Delay(1000);
 
-  return (State)estimate_soc(battery);
+  return estimate_soc;
 }
 
 State estimate_soc(Battery *const battery){
   led_flash(ESTIMATE_SOC);
   get_soc(battery);
-
     // Add 1s delay
   HAL_Delay(1000);
-  return (State)send_data(battery);
+  return send_data;
 }
 
 State compute_resistance(Battery *const battery){
   led_flash(COMPUTE_R);
-  return (State)compute_capacity;
+  return compute_capacity;
 }
 
 State compute_capacity(Battery *const battery){
   led_flash(COMPUTE_C);
-  return (State)balancing;
+  return balancing;
 }
 
 State balancing(Battery *const battery){
   led_flash(BAL);
-  return (State)send_data;
+  return send_data;
 
 }
 
@@ -163,13 +163,13 @@ State send_data(Battery *const battery){
   send_packet(battery);
   // Add 1s delay
   HAL_Delay(1000);
-  return (State)measure(battery);
+  return measure;
 
 }
 
 State shutdown(Battery *const battery){
   led_flash(SHUTDOWN);
-  return (State)idle;
+  return idle;
 }
 
 /** System Clock Configuration

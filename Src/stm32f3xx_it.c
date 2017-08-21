@@ -67,10 +67,16 @@ void HardFault_Handler(void)
 {
   /* USER CODE BEGIN HardFault_IRQn 0 */
 
+  static char msg[80];
+
+  SCB_Type* scb = SCB;
+  sprintf(msg, "SCB->HFSR = 0x%08x\n", SCB->HFSR);
+  __ASM volatile("BKPT #01");
+
+   while(1);
+
   /* USER CODE END HardFault_IRQn 0 */
-  while (1)
-  {
-  }
+
   /* USER CODE BEGIN HardFault_IRQn 1 */
 
   /* USER CODE END HardFault_IRQn 1 */

@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "stm32f3xx_hal_uart.h": "c",
-        "main.h": "c"
+        "main.h": "c",
+        "core_cm3.h": "c"
     }
 }

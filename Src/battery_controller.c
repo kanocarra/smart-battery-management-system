@@ -7,6 +7,7 @@
 */
 
 #include "battery.h"
+#include "rtc.h"
 
 Layer* layers[N_LAYERS];
 Layer input_layer;
@@ -26,6 +27,7 @@ enum input{TIME_ELAPSED, VOLTAGE, CURRENT, CAPACITY, INTERNAL_RESISTANCE};
 enum nodes{SM1, SM2, SM3};
 char cell_identifiers[NUM_CELLS] = {'1', '2', '7', '8'};
 double cell_capacities[NUM_CELLS] = {0,0,0,0};
+unsigned int start_time = 0;
 
 
 // Create the battery object with number of cells
@@ -134,3 +136,24 @@ long double normalise_input(double max, double min, double value) {
     long double new_value = (((value - min) * new_range) / old_range) + NORM_MIN;
     return new_value;
 }
+
+// void start_cycle(void) {
+//     start_time = get_current_time();
+// }
+
+// uint16_t get_current_time(void) {
+//     if((HAL_RTC_GetTime(&hrtc,&RTCtime,RTC_FORMAT_BIN) == HAL_OK && HAL_RTC_GetDate(&hrtc,&RTCdate,RTC_FORMAT_BIN)) == HAL_OK)
+//     {
+//         uint16_t hours = RTCtime.Hours;
+//         uint16_t minutes =  RTCtime.Minutes;
+//         uint16_t seconds = RTCtime.Seconds;
+//         uint16_t sub_seconds = RTCtime.SubSeconds;
+//         uint16_t total_seconds = (60 * 60 * hours) + (60 * minutes) + seconds;
+//         return total_seconds;
+//     }
+//     return 0;
+// }
+
+// void get_time_elapsed(Battery *const battery) {
+//     battery->time_elapsed = get_current_time() - start_time;
+// }

@@ -47,5 +47,8 @@ Battery init_battery(void);
 void get_soc(Battery *const battery);
 void init_soc_model(void);
 long double normalise_input(double max, double min, double value);
+// void start_cycle(void); 
+// uint16_t get_current_time(void); 
+// void get_time_elapsed(Battery *const battery);
 
 #endif /* BATTERY_H_ */
