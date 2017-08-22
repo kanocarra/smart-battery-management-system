@@ -36,7 +36,7 @@ typedef struct {
 
 // Model for parameters of the battery pack
 typedef struct Battery {
-    double time_elapsed;
+    uint16_t time_elapsed;
     uint16_t current;
     bool is_charging;
     uint16_t state_of_charge;
@@ -47,8 +47,8 @@ Battery init_battery(void);
 void get_soc(Battery *const battery);
 void init_soc_model(void);
 long double normalise_input(double max, double min, double value);
-// void start_cycle(void); 
-// uint16_t get_current_time(void); 
-// void get_time_elapsed(Battery *const battery);
+void start_cycle(void); 
+uint16_t get_current_time(void); 
+void get_time_elapsed(Battery *const battery);
 
 #endif /* BATTERY_H_ */

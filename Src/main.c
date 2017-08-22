@@ -106,7 +106,7 @@ State idle(Battery *const battery){
 
 State start(Battery *const battery){
 
-  //start_cycle();
+  start_cycle();
 
   led_flash(START);
 
@@ -127,7 +127,7 @@ State start(Battery *const battery){
 State measure(Battery *const battery){
   led_flash(MEASURE);
   read_voltage_and_current(battery);
-  //get_time_elapsed(battery);
+  get_time_elapsed(battery);
     // Add 1s delay
   HAL_Delay(1000);
 
