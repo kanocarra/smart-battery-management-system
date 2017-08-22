@@ -155,6 +155,4 @@ uint16_t get_current_time(void) {
 
 void get_time_elapsed(Battery *const battery) {
     battery->time_elapsed = get_current_time() - start_time;
-    sprintf(UART_transmit_buffer, "Current time: %u", get_current_time());
-    UART_transmit_word();   
 }

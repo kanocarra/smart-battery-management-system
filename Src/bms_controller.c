@@ -309,11 +309,5 @@ void read_voltage_and_current(Battery *const battery){
 void enable_current_meas(void){
 	uint8_t data[6] = {0};
 
-	uint16_t command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | RDCFG;
-	SPI_transmit_word(command, NULL);
-
-	sprintf(UART_transmit_buffer, "%u \n", SPI_recieve_buffer[0]);
-    UART_transmit_word();   
-
 }
 
