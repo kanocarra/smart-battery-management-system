@@ -306,8 +306,28 @@ void read_voltage_and_current(Battery *const battery){
 	
 }
 
-void enable_current_meas(void){
-	uint8_t data[6] = {0};
+void discharge_cell(Cell cell) {
+	sprintf(UART_transmit_buffer, " Config Buffer Prev 4 %u \n", SPI_recieve_buffer[4]);
+	UART_transmit_word();
+	config_6804_buffer.DCCLB |= (1 << 7);
+	write_config_6804_2();
+	HAL_Delay(1000);
 
+	uint16_t command = 0;
+	//Format the command
+	command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | RDCFG;
+
+	//Call the spi_write_word function, use a NULL pointer for read only
+	SPI_transmit_word(command, NULL);
+
+	sprintf(UART_transmit_buffer, " Config Buffer 4 %u \n", SPI_recieve_buffer[4]);
+	UART_transmit_word();
+	sprintf(UART_transmit_buffer, " Config Buffer 5 %u\n", SPI_recieve_buffer[4]);
+	UART_transmit_word();
+
+
+	// config_6804_2_buffer.DCCLB &= ~(1 << atoi(cell.cell_number));
+	// config_6804_2_buffer.DCCUB &= ~(1 << (atoi(cell.cell_number) - 8));
+	// write_config_6804_2();
 }
 

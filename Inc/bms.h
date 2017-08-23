@@ -29,7 +29,7 @@
 #define RDSTATA 0b00000010000	//Read Status Register Group A
 #define RDSTATB 0b00000010010	//Read Status Register Group B
 #define ADAX	0b10111100000	//Start GPIOs ADC Conversion and Poll Status (default all GPIOs and 2nd REF) mode 11 (27 Hz)
-#define ADCVAX	0b10111111111	//Start combined cell votlage and GPIO1, GPIO2 conversion and poll status
+#define ADCVAX	0b10111101111	//Start combined cell votlage and GPIO1, GPIO2 conversion and poll status
 #define CLRCELL 0b11100010001
 #define CLRAUX	0b11100010010
 #define CLRSTAT 0b11100010011
@@ -87,5 +87,6 @@ void SPI_transmit_word(uint16_t cmd, uint8_t *data);
 void ADC_read_cell_voltages(Battery *const battery);
 void read_voltage_and_current(Battery *const battery);
 void enable_current_meas(void);
+void discharge_cell(Cell cell); 
 
 #endif /* BMS_H_ */

@@ -116,8 +116,6 @@ State start(Battery *const battery){
   // Set under and over voltage thresholds
   set_UV_OV_threshold();
 
-  enable_current_meas();
-
     // Add 1s delay
   HAL_Delay(1000);
 
@@ -128,6 +126,8 @@ State measure(Battery *const battery){
   led_flash(MEASURE);
   read_voltage_and_current(battery);
   get_time_elapsed(battery);
+
+  discharge_cell(battery->cells[1]);
     // Add 1s delay
   HAL_Delay(1000);
 

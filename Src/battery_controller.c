@@ -26,7 +26,8 @@ long double linear_node0_bias;
 enum input{TIME_ELAPSED, VOLTAGE, CURRENT, CAPACITY, INTERNAL_RESISTANCE};
 enum nodes{SM1, SM2, SM3};
 char cell_identifiers[NUM_CELLS] = {'1', '2', '7', '8'};
-double cell_capacities[NUM_CELLS] = {0,0,0,0};
+double cell_capacities[NUM_CELLS] = {7.60034385873,7.53524542459,7.62927649612,7.51561083845};
+double cell_ir[NUM_CELLS] = {2.11746724891,2.78820960699, 2.99781659389, 2.37096069869 };
 uint16_t start_time;
 
 
@@ -42,8 +43,8 @@ Battery init_battery(void){
 	for(int i = 0; i < NUM_CELLS; i++){
 		Cell cell = {
 			.voltage = 0,
-			.internal_resistance = 0,
-			.capacity = 0,
+			.internal_resistance = cell_ir[i],
+			.capacity = cell_capacities[i],
 			.state_of_charge = 0,
             .cell_number = cell_identifiers[i],
             .temperature = 212
@@ -108,16 +109,11 @@ void get_soc(Battery *const battery) {
         
         // Normalise inputs
         long double inputs[5] = {0,0,0,0,0};
-        // inputs[TIME_ELAPSED] = normalise_input(TIME_MAX, TIME_MIN, battery->time_elapsed);
-        // inputs[VOLTAGE] = normalise_input(VOLT_MAX, VOLT_MIN, double(battery->cells[i].voltage/10000.0);
-        // inputs[CURRENT] = normalise_input(TIME_MAX, TIME_MIN, double(battery->current/10000.0);
-        // inputs[CAPACITY] = normalise_input(TIME_MAX, TIME_MIN, battery->capacity);
-        // inputs[INTERNAL_RESISTANCE] = normalise_input(TIME_MAX, TIME_MIN, battery->internal_resistance);
-        inputs[TIME_ELAPSED] = normalise_input(TIME_MAX, TIME_MIN, 527.296526);
-        inputs[VOLTAGE] = normalise_input(VOLT_MAX, VOLT_MIN, (double)(40500/10000.0));
-        inputs[CURRENT] = normalise_input(CUR_MAX, CUR_MIN, (double)(-7496.66643/1000.0));
-        inputs[CAPACITY] = normalise_input(CAP_MAX, CAP_MIN, 7.458977654);
-        inputs[INTERNAL_RESISTANCE] = normalise_input(RES_MAX, RES_MIN, 4.009090909);
+        inputs[TIME_ELAPSED] = normalise_input(TIME_MAX, TIME_MIN, battery->time_elapsed);
+        inputs[VOLTAGE] = normalise_input(VOLT_MAX, VOLT_MIN, (double)(battery->cells[i].voltage/10000.0));
+        inputs[CURRENT] = normalise_input(CUR_MAX, CUR_MIN, (double)(battery->current/1000.0));
+        inputs[CAPACITY] = normalise_input(CAP_MAX, CAP_MIN, battery->cells[i].capacity);
+        inputs[INTERNAL_RESISTANCE] = normalise_input(RES_MAX, RES_MIN, battery->cells[i].internal_resistance);
        
        // Run the model        
         long double normalised_soc = compute_result(layers, inputs);
@@ -154,5 +150,6 @@ uint16_t get_current_time(void) {
 }
 
 void get_time_elapsed(Battery *const battery) {
-    battery->time_elapsed = get_current_time() - start_time;
+    uint16_t added_time = 300;
+    battery->time_elapsed = get_current_time() - start_time + added_time;
 }
