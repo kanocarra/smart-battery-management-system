@@ -303,31 +303,17 @@ void read_voltage_and_current(Battery *const battery){
 	sprintf(UART_transmit_buffer, " Register B: %u %u %u\n", g4,g5,ref);
     UART_transmit_word();  
 
-	battery->current = (uint16_t)((g1 - ref) / (GAIN * R_SHUNT))/10; 
-	
+	if(battery->is_charging) { 
+		battery->current = (uint16_t)((ref - g1) / (GAIN * R_SHUNT))/10; 
+	} else {
+		battery->current = (uint16_t)((ref - g1) / (GAIN * R_SHUNT))/10; 
+	}
 }
 
 void discharge_cell(Cell cell) {
 	config_6804_buffer.DCCLB = 0;
-	config_6804_buffer.DCCLB |= (1 << 7) | (1<<6) | (1<<2) | (1<<1);
+	config_6804_buffer.DCCLB |= (1<<2);
 	write_config_6804_2();
 	HAL_Delay(1000);
-
-	
-	//Format the command
-	uint16_t command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | RDCFG;
-
-	//Call the spi_write_word function, use a NULL pointer for read only
-	SPI_transmit_word(command, NULL);
-
-	sprintf(UART_transmit_buffer, " Config Buffer 4 %u \n", SPI_recieve_buffer[4]);
-	UART_transmit_word();
-	sprintf(UART_transmit_buffer, " Config Buffer 5 %u\n", SPI_recieve_buffer[5]);
-	UART_transmit_word();
-
-
-	// config_6804_2_buffer.DCCLB &= ~(1 << atoi(cell.cell_number));
-	// config_6804_2_buffer.DCCUB &= ~(1 << (atoi(cell.cell_number) - 8));
-	// write_config_6804_2();
 }
 

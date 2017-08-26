@@ -99,6 +99,10 @@ int main(void)
 State idle(Battery *const battery){
   HAL_UART_Receive_IT(&huart3, UART_receive_buffer, UART_BUFFER_LENGTH);
   if(UART_receive_buffer[0] == CHARGE){
+      battery->is_charging = true;
+       return start;
+  } else if(UART_receive_buffer[0] == DISCHARGE){
+      battery->is_charging = false;
        return start;
   }
   return idle;
@@ -131,7 +135,11 @@ State measure(Battery *const battery){
     // Add 1s delay
   HAL_Delay(1000);
 
-  return estimate_soc;
+  if(battery->is_charging){ 
+    return measure;
+  } else {
+    return estimate_soc;
+  }
 }
 
 State estimate_soc(Battery *const battery){

@@ -9,6 +9,7 @@
 // Number of cells in system
 #define NUM_CELLS 4
 #define CHARGE 99U
+#define DISCHARGE 99U
 
 // Normalisation paramters
 #define TIME_MAX 3728.188F

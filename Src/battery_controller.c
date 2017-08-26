@@ -150,6 +150,6 @@ uint16_t get_current_time(void) {
 }
 
 void get_time_elapsed(Battery *const battery) {
-    uint16_t added_time = 300;
+    uint16_t added_time = 0;
     battery->time_elapsed = get_current_time() - start_time + added_time;
 }
