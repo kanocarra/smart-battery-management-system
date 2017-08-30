@@ -27,8 +27,7 @@ void write_config_6804_2(void)
 	data[2] = config_6804_buffer.VOVLB<<4|config_6804_buffer.VUVUB;
 	data[3] = config_6804_buffer.VOVUB;
 	data[4] = config_6804_buffer.DCCLB;
-
-	data[5] = 4;
+	data[5] = config_6804_buffer.DCCUB;
 
 	//Call the spi_write_word function
 	SPI_transmit_word(command, data);
@@ -304,16 +303,28 @@ void read_voltage_and_current(Battery *const battery){
     UART_transmit_word();  
 
 	if(battery->is_charging) { 
-		battery->current = (uint16_t)((ref - g1) / (GAIN * R_SHUNT))/10; 
+		battery->current = (uint16_t)(((ref - g1) / (GAIN * R_SHUNT))/10.0); 
 	} else {
-		battery->current = (uint16_t)((ref - g1) / (GAIN * R_SHUNT))/10; 
+		battery->current = (uint16_t)(((g1-ref) / (GAIN * R_SHUNT))/10.0); 
 	}
 }
 
 void discharge_cell(Cell cell) {
 	config_6804_buffer.DCCLB = 0;
-	config_6804_buffer.DCCLB |= (1<<2);
+	config_6804_buffer.DCCLB |= (1<<1);
 	write_config_6804_2();
+	read_config_buffer();
 	HAL_Delay(1000);
+}
+
+void read_config_buffer(void){
+	uint16_t command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | RDCFG;
+	SPI_transmit_word(command, NULL);
+	uint8_t cfg4 = SPI_recieve_buffer[4];
+	uint8_t cfg5 = SPI_recieve_buffer[5];
+	sprintf(UART_transmit_buffer, "CFGR4: %u \n", cfg4);
+	UART_transmit_word();
+	sprintf(UART_transmit_buffer, "CFGR5: %u \n", cfg5);
+	UART_transmit_word();
 }
 

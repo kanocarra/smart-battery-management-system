@@ -26,8 +26,8 @@ long double linear_node0_bias;
 enum input{TIME_ELAPSED, VOLTAGE, CURRENT, CAPACITY, INTERNAL_RESISTANCE};
 enum nodes{SM1, SM2, SM3};
 char cell_identifiers[NUM_CELLS] = {'1', '2', '7', '8'};
-double cell_capacities[NUM_CELLS] = {7.60034385873,7.53524542459,7.62927649612,7.51561083845};
-double cell_ir[NUM_CELLS] = {2.11746724891,2.78820960699, 2.99781659389, 2.37096069869 };
+double cell_capacities[NUM_CELLS] = {7.4453201992,7.4390806263,7.4390806263,7.37044532433};
+double cell_ir[NUM_CELLS] = {3.35337690632,3.9165577342, 3.04531590414, 2.41830065359};
 uint16_t start_time;
 
 
@@ -111,7 +111,7 @@ void get_soc(Battery *const battery) {
         long double inputs[5] = {0,0,0,0,0};
         inputs[TIME_ELAPSED] = normalise_input(TIME_MAX, TIME_MIN, battery->time_elapsed);
         inputs[VOLTAGE] = normalise_input(VOLT_MAX, VOLT_MIN, (double)(battery->cells[i].voltage/10000.0));
-        inputs[CURRENT] = normalise_input(CUR_MAX, CUR_MIN, (double)(battery->current/1000.0));
+        inputs[CURRENT] = normalise_input(CUR_MAX, CUR_MIN, ((double)(battery->current/1000.0)) * -1) ;
         inputs[CAPACITY] = normalise_input(CAP_MAX, CAP_MIN, battery->cells[i].capacity);
         inputs[INTERNAL_RESISTANCE] = normalise_input(RES_MAX, RES_MIN, battery->cells[i].internal_resistance);
        

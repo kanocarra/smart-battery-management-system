@@ -34,6 +34,7 @@
 #include "stm32f3xx_hal.h"
 #include "stm32f3xx.h"
 #include "stm32f3xx_it.h"
+#include "stdbool.h"
 
 /* USER CODE BEGIN 0 */
 
@@ -42,6 +43,7 @@
 /* External variables --------------------------------------------------------*/
 extern DMA_HandleTypeDef hdma_adc1;
 extern UART_HandleTypeDef huart3;
+extern bool restart;
 
 /******************************************************************************/
 /*            Cortex-M4 Processor Interruption and Exception Handlers         */ 
@@ -217,7 +219,7 @@ void USART3_IRQHandler(void)
   HAL_UART_IRQHandler(&huart3);
   /* USER CODE BEGIN USART3_IRQn 1 */
   HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
-
+  restart = true;
   /* USER CODE END USART3_IRQn 1 */
 }
 

@@ -51,6 +51,7 @@
 #include "comms.h"
 
 void SystemClock_Config(void);
+bool restart;
 
 int main(void)
 {
@@ -100,11 +101,13 @@ State idle(Battery *const battery){
   HAL_UART_Receive_IT(&huart3, UART_receive_buffer, UART_BUFFER_LENGTH);
   if(UART_receive_buffer[0] == CHARGE){
       battery->is_charging = true;
+      restart = false;
        return start;
   } else if(UART_receive_buffer[0] == DISCHARGE){
       battery->is_charging = false;
+      restart = false;
        return start;
-  }
+  } 
   return idle;
 }
 
@@ -126,23 +129,42 @@ State start(Battery *const battery){
   return measure;
 }
 
+
 State measure(Battery *const battery){
+  if(restart) {
+    if(UART_receive_buffer[0] == CHARGE){
+      battery->is_charging = true;
+  } else if(UART_receive_buffer[0] == DISCHARGE){
+      battery->is_charging = false; 
+  } 
+    restart = false;
+    return start;
+  }
   led_flash(MEASURE);
   read_voltage_and_current(battery);
   get_time_elapsed(battery);
 
-  discharge_cell(battery->cells[1]);
+  //discharge_cell(battery->cells[1]);
     // Add 1s delay
   HAL_Delay(1000);
 
   if(battery->is_charging){ 
-    return measure;
+    return send_data;
   } else {
     return estimate_soc;
   }
 }
 
 State estimate_soc(Battery *const battery){
+  if(restart) {
+    if(UART_receive_buffer[0] == CHARGE){
+      battery->is_charging = true;
+  } else if(UART_receive_buffer[0] == DISCHARGE){
+      battery->is_charging = false; 
+  } 
+    restart = false;
+    return start;
+  }
   led_flash(ESTIMATE_SOC);
   get_soc(battery);
     // Add 1s delay
@@ -167,6 +189,16 @@ State balancing(Battery *const battery){
 }
 
 State send_data(Battery *const battery){
+  if(restart) {
+    if(UART_receive_buffer[0] == CHARGE){
+      battery->is_charging = true;
+  } else if(UART_receive_buffer[0] == DISCHARGE){
+      battery->is_charging = false; 
+  } 
+    restart = false;
+    return start;
+  }
+  
   led_flash(SEND);
   send_packet(battery);
   // Add 1s delay

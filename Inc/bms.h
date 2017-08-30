@@ -88,5 +88,6 @@ void ADC_read_cell_voltages(Battery *const battery);
 void read_voltage_and_current(Battery *const battery);
 void enable_current_meas(void);
 void discharge_cell(Cell cell); 
+void read_config_buffer(void);
 
 #endif /* BMS_H_ */
