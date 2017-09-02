@@ -25,6 +25,13 @@
 #define NORM_MAX 1.0F
 #define NORM_MIN -1.0F
 
+#define DCC1 1
+#define DCC2 2
+#define DCC7 64
+#define DCC8 128
+#define BAL_VOTLAGE_MV 50
+
+
 uint32_t total_seconds;
 
 // Model for a cell
@@ -53,5 +60,6 @@ long double normalise_input(double max, double min, double value);
 void start_cycle(void); 
 uint16_t get_current_time(void); 
 void get_time_elapsed(Battery *const battery);
+uint8_t balance_cells(Battery *const battery);
 
 #endif /* BATTERY_H_ */

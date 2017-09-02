@@ -87,7 +87,7 @@ void SPI_transmit_word(uint16_t cmd, uint8_t *data);
 void ADC_read_cell_voltages(Battery *const battery);
 void read_voltage_and_current(Battery *const battery);
 void enable_current_meas(void);
-void discharge_cell(Cell cell); 
+void discharge_cells(uint8_t balance_reg); 
 void read_config_buffer(void);
 
 #endif /* BMS_H_ */

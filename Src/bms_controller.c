@@ -301,7 +301,6 @@ void read_voltage_and_current(Battery *const battery){
     UART_transmit_word();   
 	sprintf(UART_transmit_buffer, " Register B: %u %u %u\n", g4,g5,ref);
     UART_transmit_word();  
-
 	if(battery->is_charging) { 
 		battery->current = (uint16_t)(((ref - g1) / (GAIN * R_SHUNT))/10.0); 
 	} else {
@@ -309,27 +308,10 @@ void read_voltage_and_current(Battery *const battery){
 	}
 }
 
-void discharge_cell(Cell cell) {
-	config_6804_buffer.DCCLB = 0;
-	switch(cell.cell_number) {
-		case '1':
-			config_6804_buffer.DCCLB = 1;
-			break;
-		case '2':
-			config_6804_buffer.DCCLB = 2;
-			break;
-		case '7':
-			config_6804_buffer.DCCLB = 64;
-			break;
-		case '8':
-			config_6804_buffer.DCCLB = 128;
-			break;
-
-	}
-
+void discharge_cells(uint8_t balance_reg) {
+	config_6804_buffer.DCCLB = balance_reg;
 	write_config_6804_2();
 	read_config_buffer();
-	HAL_Delay(1000);
 }
 
 void read_config_buffer(void){

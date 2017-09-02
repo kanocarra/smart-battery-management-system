@@ -147,14 +147,12 @@ State measure(Battery *const battery){
   led_flash(MEASURE);
   read_voltage_and_current(battery);
   get_time_elapsed(battery);
-
-  discharge_cell(battery->cells[2]);
   
   // Add 1s delay
   HAL_Delay(1000);
 
   if(battery->is_charging){ 
-    return send_data;
+    return balancing;
   } else {
     return estimate_soc;
   }
@@ -189,8 +187,10 @@ State compute_capacity(Battery *const battery){
 
 State balancing(Battery *const battery){
   led_flash(BAL);
+  uint8_t balance_reg = balance_cells(battery);
+  discharge_cells(balance_reg);
+  HAL_Delay(1000);
   return send_data;
-
 }
 
 State send_data(Battery *const battery){

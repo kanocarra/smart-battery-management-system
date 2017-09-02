@@ -156,3 +156,39 @@ void get_time_elapsed(Battery *const battery) {
     uint16_t added_time = 0;
     battery->time_elapsed = total_seconds + added_time;
 }
+
+uint8_t balance_cells(Battery *const battery){ 
+    uint16_t min_voltage = battery->cells[0].voltage;
+    uint16_t voltage_dif = 0;
+    uint8_t balance_reg = 0;
+    
+    for(int i = 1; i< NUM_CELLS; i++) {
+        if (battery->cells[i].voltage < min_voltage) {
+            min_voltage = battery->cells[i].voltage;
+        }
+    }
+    for(int i = 0; i < NUM_CELLS; i++){
+        voltage_dif = battery->cells[i].voltage - min_voltage;
+        // Determines the bit in the register to set in order to discharge the cell
+        // DCC8 || DCC7 || DCC6 || DCC5 || DCC4 || DCC3 || DCC2 || DCC1
+        // Discharges only if it is 5mV off
+        if(voltage_dif > BAL_VOTLAGE_MV) {
+            switch(battery->cells[i].cell_number) {
+                case '1':
+                    balance_reg += DCC1;
+                    break;
+                case '2':
+                    balance_reg += DCC2;
+                    break;
+                case '7':
+                    balance_reg += DCC7;
+                    break;
+                case '8':
+                    balance_reg += DCC8;
+                    break;
+
+            }
+        }
+    }
+    return balance_reg;
+}
