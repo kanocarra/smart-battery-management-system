@@ -1,7 +1,8 @@
 /**
   ******************************************************************************
-  * File Name          : main.h
-  * Description        : This file contains the common defines of the application
+  * File Name          : TIM.c
+  * Description        : This file provides code for the configuration
+  *                      of the TIM instances.
   ******************************************************************************
   ** This notice applies to any and all portions of this file
   * that are not between comment pairs USER CODE BEGIN and
@@ -35,70 +36,97 @@
   *
   ******************************************************************************
   */
-/* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __MAIN_H
-#define __MAIN_H
-  /* Includes ------------------------------------------------------------------*/
-#include <stdint.h>
-#include <stdbool.h>
-/* USER CODE BEGIN Includes */
 
-/* USER CODE END Includes */
+/* Includes ------------------------------------------------------------------*/
+#include "tim.h"
 
-/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN 0 */
 
-#define LED3_Pin GPIO_PIN_13
-#define LED3_GPIO_Port GPIOC
-#define PA0_Pin GPIO_PIN_0
-#define PA0_GPIO_Port GPIOA
-#define PA1_Pin GPIO_PIN_1
-#define PA1_GPIO_Port GPIOA
-#define PA2_Pin GPIO_PIN_2
-#define PA2_GPIO_Port GPIOA
-#define GLED1_Pin GPIO_PIN_5
-#define GLED1_GPIO_Port GPIOC
-#define SS3_Pin GPIO_PIN_2
-#define SS3_GPIO_Port GPIOB
-#define SWTEN_Pin GPIO_PIN_14
-#define SWTEN_GPIO_Port GPIOB
-#define WDT_Pin GPIO_PIN_15
-#define WDT_GPIO_Port GPIOB
-#define GLED2_Pin GPIO_PIN_7
-#define GLED2_GPIO_Port GPIOC
-#define RLED1_Pin GPIO_PIN_8
-#define RLED1_GPIO_Port GPIOC
-#define COMS_Pin GPIO_PIN_9
-#define COMS_GPIO_Port GPIOC
-#define SS1_Pin GPIO_PIN_12
-#define SS1_GPIO_Port GPIOA
-#define LED0_Pin GPIO_PIN_10
-#define LED0_GPIO_Port GPIOC
-#define LED1_Pin GPIO_PIN_11
-#define LED1_GPIO_Port GPIOC
-#define LED2_Pin GPIO_PIN_12
-#define LED2_GPIO_Port GPIOC
-#define RLED2_Pin GPIO_PIN_2
-#define RLED2_GPIO_Port GPIOD
-#define SS0_Pin GPIO_PIN_6
-#define SS0_GPIO_Port GPIOB
-#define SDA_Pin GPIO_PIN_7
-#define SDA_GPIO_Port GPIOB
+/* USER CODE END 0 */
 
-/* USER CODE BEGIN Private defines */
-bool restart;
-/* USER CODE END Private defines */
+TIM_HandleTypeDef htim3;
 
-void _Error_Handler(char *, int);
+/* TIM3 init function */
+void MX_TIM3_Init(void)
+{
+  TIM_ClockConfigTypeDef sClockSourceConfig;
+  TIM_MasterConfigTypeDef sMasterConfig;
 
-#define Error_Handler() _Error_Handler(__FILE__, __LINE__)
+  htim3.Instance = TIM3;
+  htim3.Init.Prescaler = 8000;
+  htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim3.Init.Period = 4488;
+  htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim3, &sClockSourceConfig) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
+}
+
+void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* tim_baseHandle)
+{
+
+  if(tim_baseHandle->Instance==TIM3)
+  {
+  /* USER CODE BEGIN TIM3_MspInit 0 */
+
+  /* USER CODE END TIM3_MspInit 0 */
+    /* Peripheral clock enable */
+    __HAL_RCC_TIM3_CLK_ENABLE();
+
+    /* TIM3 interrupt Init */
+    HAL_NVIC_SetPriority(TIM3_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(TIM3_IRQn);
+  /* USER CODE BEGIN TIM3_MspInit 1 */
+
+  /* USER CODE END TIM3_MspInit 1 */
+  }
+}
+
+void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
+{
+
+  if(tim_baseHandle->Instance==TIM3)
+  {
+  /* USER CODE BEGIN TIM3_MspDeInit 0 */
+
+  /* USER CODE END TIM3_MspDeInit 0 */
+    /* Peripheral clock disable */
+    __HAL_RCC_TIM3_CLK_DISABLE();
+
+    /* TIM3 interrupt Deinit */
+    HAL_NVIC_DisableIRQ(TIM3_IRQn);
+  /* USER CODE BEGIN TIM3_MspDeInit 1 */
+
+  /* USER CODE END TIM3_MspDeInit 1 */
+  }
+} 
+
+/* USER CODE BEGIN 1 */
+
+/* USER CODE END 1 */
 
 /**
   * @}
-  */ 
+  */
 
 /**
   * @}
-*/ 
+  */
 
-#endif /* __MAIN_H */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

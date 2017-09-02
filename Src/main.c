@@ -49,9 +49,9 @@
 #include "log.h"
 #include "bms.h"
 #include "comms.h"
+#include "tim.h"
 
 void SystemClock_Config(void);
-bool restart;
 
 int main(void)
 {
@@ -73,10 +73,12 @@ int main(void)
   MX_RTC_Init();
   MX_SPI1_Init();
   MX_USART3_UART_Init();
+  MX_TIM3_Init();
 
   HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 1); 
   HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
   HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 1);
+  HAL_GPIO_WritePin(GPIOC, LED3_Pin, 1);
   HAL_GPIO_WritePin(GPIOC, COMS_Pin, 1); 
 
   //Initialise the battery
@@ -91,7 +93,7 @@ int main(void)
 
   while (1)
   {
-    currentState = (State)currentState(r_battery);
+   currentState = (State)currentState(r_battery);
   }
 
 }
@@ -100,10 +102,12 @@ int main(void)
 State idle(Battery *const battery){
   HAL_UART_Receive_IT(&huart3, UART_receive_buffer, UART_BUFFER_LENGTH);
   if(UART_receive_buffer[0] == CHARGE){
+    HAL_TIM_Base_Stop_IT(&htim3);
       battery->is_charging = true;
       restart = false;
        return start;
   } else if(UART_receive_buffer[0] == DISCHARGE){
+      HAL_TIM_Base_Stop_IT(&htim3);
       battery->is_charging = false;
       restart = false;
        return start;
@@ -144,8 +148,9 @@ State measure(Battery *const battery){
   read_voltage_and_current(battery);
   get_time_elapsed(battery);
 
-  //discharge_cell(battery->cells[1]);
-    // Add 1s delay
+  discharge_cell(battery->cells[2]);
+  
+  // Add 1s delay
   HAL_Delay(1000);
 
   if(battery->is_charging){ 

@@ -22,7 +22,7 @@ void write_config_6804_2(void)
 	command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | WRCFG;
 
 	//Populate the data
-	data[0] = 0b11110101;
+	data[0] = 0b00110101;
 	data[1] = config_6804_buffer.VUVLB;
 	data[2] = config_6804_buffer.VOVLB<<4|config_6804_buffer.VUVUB;
 	data[3] = config_6804_buffer.VOVUB;
@@ -311,7 +311,22 @@ void read_voltage_and_current(Battery *const battery){
 
 void discharge_cell(Cell cell) {
 	config_6804_buffer.DCCLB = 0;
-	config_6804_buffer.DCCLB |= (1<<1);
+	switch(cell.cell_number) {
+		case '1':
+			config_6804_buffer.DCCLB = 1;
+			break;
+		case '2':
+			config_6804_buffer.DCCLB = 2;
+			break;
+		case '7':
+			config_6804_buffer.DCCLB = 64;
+			break;
+		case '8':
+			config_6804_buffer.DCCLB = 128;
+			break;
+
+	}
+
 	write_config_6804_2();
 	read_config_buffer();
 	HAL_Delay(1000);

@@ -34,16 +34,16 @@
 #include "stm32f3xx_hal.h"
 #include "stm32f3xx.h"
 #include "stm32f3xx_it.h"
-#include "stdbool.h"
 
 /* USER CODE BEGIN 0 */
-
+#include "usart.h"
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
 extern DMA_HandleTypeDef hdma_adc1;
+extern TIM_HandleTypeDef htim3;
 extern UART_HandleTypeDef huart3;
-extern bool restart;
+extern uint32_t total_seconds;
 
 /******************************************************************************/
 /*            Cortex-M4 Processor Interruption and Exception Handlers         */ 
@@ -69,16 +69,10 @@ void HardFault_Handler(void)
 {
   /* USER CODE BEGIN HardFault_IRQn 0 */
 
-  static char msg[80];
-
-  SCB_Type* scb = SCB;
-  sprintf(msg, "SCB->HFSR = 0x%08x\n", SCB->HFSR);
-  __ASM volatile("BKPT #01");
-
-   while(1);
-
   /* USER CODE END HardFault_IRQn 0 */
-
+  while (1)
+  {
+  }
   /* USER CODE BEGIN HardFault_IRQn 1 */
 
   /* USER CODE END HardFault_IRQn 1 */
@@ -208,18 +202,32 @@ void DMA1_Channel1_IRQHandler(void)
 }
 
 /**
+* @brief This function handles TIM3 global interrupt.
+*/
+void TIM3_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM3_IRQn 0 */
+
+  /* USER CODE END TIM3_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim3);
+  total_seconds++;
+
+  /* USER CODE BEGIN TIM3_IRQn 1 */
+
+  /* USER CODE END TIM3_IRQn 1 */
+}
+
+/**
 * @brief This function handles USART3 global interrupt / USART3 wake-up interrupt through EXT line 28.
 */
 void USART3_IRQHandler(void)
 {
-  /* USER CODE BEGIN USART3_IRQn 0 */
-  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
 
   /* USER CODE END USART3_IRQn 0 */
   HAL_UART_IRQHandler(&huart3);
   /* USER CODE BEGIN USART3_IRQn 1 */
-  HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
-  restart = true;
+  
+
   /* USER CODE END USART3_IRQn 1 */
 }
 

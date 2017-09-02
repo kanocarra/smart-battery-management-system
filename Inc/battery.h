@@ -25,6 +25,8 @@
 #define NORM_MAX 1.0F
 #define NORM_MIN -1.0F
 
+uint32_t total_seconds;
+
 // Model for a cell
 typedef struct {
     uint16_t voltage; //in volts

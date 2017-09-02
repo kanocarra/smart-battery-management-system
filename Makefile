@@ -79,6 +79,7 @@ Src/rtc.c \
 Src/spi.c \
 Src/usart.c \
 Src/adc.c \
+Src/tim.c \
 Src/dma.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c \

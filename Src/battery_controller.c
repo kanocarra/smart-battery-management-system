@@ -8,6 +8,7 @@
 
 #include "battery.h"
 #include "rtc.h"
+#include "tim.h"
 
 Layer* layers[N_LAYERS];
 Layer input_layer;
@@ -134,7 +135,8 @@ long double normalise_input(double max, double min, double value) {
 }
 
 void start_cycle(void) {
-    start_time = get_current_time();
+    total_seconds = 0;
+    HAL_TIM_Base_Start_IT(&htim3);
 }
 
 uint16_t get_current_time(void) {
@@ -143,13 +145,14 @@ uint16_t get_current_time(void) {
         uint16_t hours = RTCtime.Hours;
         uint16_t minutes =  RTCtime.Minutes;
         uint16_t seconds = RTCtime.Seconds;
-        uint16_t total_seconds = (60 * 60 * hours) + (60 * minutes) + seconds;
-        return total_seconds;
+        uint16_t subseconds = RTCtime.SubSeconds;
+        uint16_t total = (60 * 60 * hours) + (60 * minutes) + seconds;
+        return total;
     }
     return 0;
 }
 
 void get_time_elapsed(Battery *const battery) {
     uint16_t added_time = 0;
-    battery->time_elapsed = get_current_time() - start_time + added_time;
+    battery->time_elapsed = total_seconds + added_time;
 }
