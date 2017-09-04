@@ -51,6 +51,7 @@ typedef struct Battery {
     bool is_charging;
     uint16_t state_of_charge;
 	Cell cells[NUM_CELLS];
+    uint8_t is_balancing;
 } Battery;
 
 Battery init_battery(void);

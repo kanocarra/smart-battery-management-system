@@ -108,7 +108,8 @@ State idle(Battery *const battery){
        return start;
   } else if(UART_receive_buffer[0] == DISCHARGE){
       HAL_TIM_Base_Stop_IT(&htim3);
-      battery->is_charging = false;
+      battery->is_charging = false;  
+      discharge_led();
       restart = false;
        return start;
   } 

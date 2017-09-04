@@ -10,6 +10,7 @@
 #include "rtc.h"
 #include "tim.h"
 
+
 Layer* layers[N_LAYERS];
 Layer input_layer;
 Layer output_layer;
@@ -27,10 +28,9 @@ long double linear_node0_bias;
 enum input{TIME_ELAPSED, VOLTAGE, CURRENT, CAPACITY, INTERNAL_RESISTANCE};
 enum nodes{SM1, SM2, SM3};
 char cell_identifiers[NUM_CELLS] = {'1', '2', '7', '8'};
-double cell_capacities[NUM_CELLS] = {7.4453201992,7.4390806263,7.4390806263,7.37044532433};
-double cell_ir[NUM_CELLS] = {3.35337690632,3.9165577342, 3.04531590414, 2.41830065359};
+double cell_capacities[NUM_CELLS] = {7.47651806373,7.43284105339,7.46789307815,7.50147635536};
+double cell_ir[NUM_CELLS] = {3.0440087146,2.85555555556, 2.92527233115, 7.48954248366};
 uint16_t start_time;
-
 
 // Create the battery object with number of cells
 Battery init_battery(void){	
@@ -161,6 +161,7 @@ uint8_t balance_cells(Battery *const battery){
     uint16_t min_voltage = battery->cells[0].voltage;
     uint16_t voltage_dif = 0;
     uint8_t balance_reg = 0;
+    uint8_t led_comb = 0;
     
     for(int i = 1; i< NUM_CELLS; i++) {
         if (battery->cells[i].voltage < min_voltage) {
@@ -188,7 +189,16 @@ uint8_t balance_cells(Battery *const battery){
                     break;
 
             }
+            led_comb++;
         }
     }
+    if(balance_reg > 0) {
+        battery->is_balancing = 1;
+    } else {
+        battery->is_balancing = 0;
+    }
+
+    bal_led_flash(led_comb);
+
     return balance_reg;
 }
