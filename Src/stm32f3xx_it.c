@@ -44,6 +44,10 @@ extern DMA_HandleTypeDef hdma_adc1;
 extern TIM_HandleTypeDef htim3;
 extern UART_HandleTypeDef huart3;
 extern uint32_t total_seconds;
+extern bool restart_charge;
+extern bool restart_discharge;
+extern bool tx_data;
+int index = 0;
 
 /******************************************************************************/
 /*            Cortex-M4 Processor Interruption and Exception Handlers         */ 
@@ -226,7 +230,17 @@ void USART3_IRQHandler(void)
   /* USER CODE END USART3_IRQn 0 */
   HAL_UART_IRQHandler(&huart3);
   /* USER CODE BEGIN USART3_IRQn 1 */
+  char rx_data = UART_receive_buffer[index];
   
+  if(rx_data == 'c') {
+    restart_charge = true;
+  } else if(rx_data == 'd' ){
+    restart_discharge = true;
+  } else if (rx_data == 's') {
+    tx_data = true;
+  }
+
+  index++;
 
   /* USER CODE END USART3_IRQn 1 */
 }

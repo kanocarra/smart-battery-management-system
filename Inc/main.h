@@ -85,7 +85,9 @@
 #define SDA_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
-bool restart;
+bool restart_charge;
+bool restart_discharge;
+bool tx_data;
 /* USER CODE END Private defines */
 
 void _Error_Handler(char *, int);

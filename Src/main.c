@@ -100,19 +100,23 @@ int main(void)
  
 
 State idle(Battery *const battery){
-  HAL_UART_Receive_IT(&huart3, UART_receive_buffer, UART_BUFFER_LENGTH);
-  if(UART_receive_buffer[0] == CHARGE){
+  HAL_UART_Receive_IT(&huart3, UART_receive_buffer, RX_BUFFER_LENGTH);
+  
+  if(restart_charge){
     HAL_TIM_Base_Stop_IT(&htim3);
-      battery->is_charging = true;
-      restart = false;
-       return start;
-  } else if(UART_receive_buffer[0] == DISCHARGE){
+    battery->is_charging = true;
+    return start;
+  } else if(restart_discharge){
       HAL_TIM_Base_Stop_IT(&htim3);
       battery->is_charging = false;  
       discharge_led();
-      restart = false;
-       return start;
+      return start;
   } 
+
+  restart_charge = false;
+  restart_discharge = false;
+  tx_data = false;
+
   return idle;
 }
 
@@ -131,20 +135,24 @@ State start(Battery *const battery){
     // Add 1s delay
   HAL_Delay(1000);
 
-  return measure;
+    if(restart_charge) {
+      battery->is_charging = true;
+      restart_charge = false;
+      return start;
+  } else if(restart_discharge){
+      battery->is_charging = false; 
+      restart_discharge = false;
+      return start;
+  } else if (tx_data) {
+      return send_data;
+  } else {
+      return measure;
+  }
 }
 
 
 State measure(Battery *const battery){
-  if(restart) {
-    if(UART_receive_buffer[0] == CHARGE){
-      battery->is_charging = true;
-  } else if(UART_receive_buffer[0] == DISCHARGE){
-      battery->is_charging = false; 
-  } 
-    restart = false;
-    return start;
-  }
+
   led_flash(MEASURE);
   read_voltage_and_current(battery);
   get_time_elapsed(battery);
@@ -152,28 +160,45 @@ State measure(Battery *const battery){
   // Add 1s delay
   HAL_Delay(1000);
 
-  if(battery->is_charging){ 
-    return balancing;
+  if(restart_charge) {
+      battery->is_charging = true;
+      restart_charge = false;
+      return start;
+  } else if(restart_discharge){
+      battery->is_charging = false; 
+      restart_discharge = false;
+      return start;
+  } else if (tx_data) {
+      return send_data;
   } else {
-    return estimate_soc;
+    if(battery->is_charging){ 
+      return balancing;
+    } else {
+      return estimate_soc;
+    }
   }
 }
 
 State estimate_soc(Battery *const battery){
-  if(restart) {
-    if(UART_receive_buffer[0] == CHARGE){
-      battery->is_charging = true;
-  } else if(UART_receive_buffer[0] == DISCHARGE){
-      battery->is_charging = false; 
-  } 
-    restart = false;
-    return start;
-  }
+
   led_flash(ESTIMATE_SOC);
   get_soc(battery);
     // Add 1s delay
   HAL_Delay(1000);
-  return send_data;
+
+  if(restart_charge) {
+      battery->is_charging = true;
+      restart_charge = false;
+      return start;
+  } else if(restart_discharge){
+      battery->is_charging = false; 
+      restart_discharge = false;
+      return start;
+  } else if (tx_data) {
+      return send_data;
+  } else {
+    return measure;
+  }
 }
 
 State compute_resistance(Battery *const battery){
@@ -191,26 +216,37 @@ State balancing(Battery *const battery){
   uint8_t balance_reg = balance_cells(battery);
   discharge_cells(balance_reg);
   HAL_Delay(1000);
-  return send_data;
+  if(restart_charge) {
+      battery->is_charging = true;
+      restart_charge = false;
+      return start;
+  } else if(restart_discharge){
+      battery->is_charging = false; 
+      restart_discharge = false;
+      return start;
+  } else if (tx_data) {
+      return send_data;
+  } else {
+    return measure;
+  }
 }
 
 State send_data(Battery *const battery){
-  if(restart) {
-    if(UART_receive_buffer[0] == CHARGE){
-      battery->is_charging = true;
-  } else if(UART_receive_buffer[0] == DISCHARGE){
-      battery->is_charging = false; 
-  } 
-    restart = false;
-    return start;
-  }
-  
   led_flash(SEND);
   send_packet(battery);
-  // Add 1s delay
-  HAL_Delay(1000);
-  return measure;
-
+  tx_data = false;
+  HAL_UART_Receive_IT(&huart3, UART_receive_buffer, RX_BUFFER_LENGTH);
+  if(restart_charge) {
+      battery->is_charging = true;
+      restart_charge = false;
+      return start;
+  } else if(restart_discharge){
+      battery->is_charging = false; 
+      restart_discharge = false;
+      return start;
+  } else {
+    return measure;
+  }
 }
 
 State shutdown(Battery *const battery){

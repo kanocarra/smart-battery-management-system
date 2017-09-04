@@ -10,6 +10,7 @@
 #define NUM_CELLS 4
 #define CHARGE 99U
 #define DISCHARGE 100U
+#define COMMS 's'
 
 // Normalisation paramters
 #define TIME_MAX 3728.188F

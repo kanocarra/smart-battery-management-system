@@ -297,10 +297,10 @@ void read_voltage_and_current(Battery *const battery){
 	uint16_t g5 = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
 	uint16_t ref = ((uint16_t)SPI_recieve_buffer[5] << 8) | SPI_recieve_buffer[4];
 
-	sprintf(UART_transmit_buffer, " Register A: %u %u %u\n", g1,g2,g3);
-    UART_transmit_word();   
-	sprintf(UART_transmit_buffer, " Register B: %u %u %u\n", g4,g5,ref);
-    UART_transmit_word();  
+	// sprintf(UART_transmit_buffer, " Register A: %u %u %u\n", g1,g2,g3);
+    // UART_transmit_word();   
+	// sprintf(UART_transmit_buffer, " Register B: %u %u %u\n", g4,g5,ref);
+    // UART_transmit_word();  
 	if(battery->is_charging) { 
 		battery->current = (uint16_t)(((ref - g1) / (GAIN * R_SHUNT))/10.0); 
 	} else {
@@ -311,7 +311,7 @@ void read_voltage_and_current(Battery *const battery){
 void discharge_cells(uint8_t balance_reg) {
 	config_6804_buffer.DCCLB = balance_reg;
 	write_config_6804_2();
-	read_config_buffer();
+	//read_config_buffer();
 }
 
 void read_config_buffer(void){

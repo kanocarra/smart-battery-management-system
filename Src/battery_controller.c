@@ -135,6 +135,7 @@ long double normalise_input(double max, double min, double value) {
 }
 
 void start_cycle(void) {
+    HAL_TIM_Base_Stop_IT(&htim3);
     total_seconds = 0;
     HAL_TIM_Base_Start_IT(&htim3);
 }
