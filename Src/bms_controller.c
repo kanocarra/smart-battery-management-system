@@ -22,7 +22,7 @@ void write_config_6804_2(void)
 	command = LTC6804_2_ADDRESS_MODE<<15 | LTC6804_2_ADDRESS<<11 | WRCFG;
 
 	//Populate the data
-	data[0] = 0b00110101;
+	data[0] = 0b11111101;
 	data[1] = config_6804_buffer.VUVLB;
 	data[2] = config_6804_buffer.VOVLB<<4|config_6804_buffer.VUVUB;
 	data[3] = config_6804_buffer.VOVUB;
@@ -297,10 +297,10 @@ void read_voltage_and_current(Battery *const battery){
 	uint16_t g5 = ((uint16_t)SPI_recieve_buffer[3] << 8) | SPI_recieve_buffer[2];
 	uint16_t ref = ((uint16_t)SPI_recieve_buffer[5] << 8) | SPI_recieve_buffer[4];
 
-	// sprintf(UART_transmit_buffer, " Register A: %u %u %u\n", g1,g2,g3);
-    // UART_transmit_word();   
-	// sprintf(UART_transmit_buffer, " Register B: %u %u %u\n", g4,g5,ref);
-    // UART_transmit_word();  
+	sprintf(UART_transmit_buffer, " Register A: %u %u %u\n", g1,g2,g3);
+    UART_transmit_word();   
+	sprintf(UART_transmit_buffer, " Register B: %u %u %u\n", g4,g5,ref);
+    UART_transmit_word();  
 	if(battery->is_charging) { 
 		battery->current = (uint16_t)(((ref - g1) / (GAIN * R_SHUNT))/10.0); 
 	} else {
@@ -311,7 +311,7 @@ void read_voltage_and_current(Battery *const battery){
 void discharge_cells(uint8_t balance_reg) {
 	config_6804_buffer.DCCLB = balance_reg;
 	write_config_6804_2();
-	//read_config_buffer();
+	read_config_buffer();
 }
 
 void read_config_buffer(void){
