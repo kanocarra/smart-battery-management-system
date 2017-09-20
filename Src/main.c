@@ -78,6 +78,9 @@ int main(void)
   HAL_GPIO_WritePin(GPIOC, GLED1_Pin, 1); 
   HAL_GPIO_WritePin(GPIOC, GLED2_Pin, 1); 
   HAL_GPIO_WritePin(GPIOC, RLED1_Pin, 1);
+  HAL_GPIO_WritePin(GPIOC, PA0_Pin, 1);
+  HAL_GPIO_WritePin(GPIOC, PA1_Pin, 1);
+  HAL_GPIO_WritePin(GPIOC, PA2_Pin, 1);
   HAL_GPIO_WritePin(GPIOC, LED3_Pin, 1);
   HAL_GPIO_WritePin(GPIOC, COMS_Pin, 1); 
 
@@ -259,7 +262,7 @@ State shutdown(Battery *const battery){
 void SystemClock_Config(void)
 {
 
-  RCC_OscInitTypeDef RCC_OscInitStruct;
+   RCC_OscInitTypeDef RCC_OscInitStruct;
   RCC_ClkInitTypeDef RCC_ClkInitStruct;
   RCC_PeriphCLKInitTypeDef PeriphClkInit;
 

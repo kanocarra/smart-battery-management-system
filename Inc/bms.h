@@ -9,9 +9,9 @@
 
 
 //LTC6804_2
-#define LTC6804_2_ADDRESS		0b0000
+#define LTC6804_2_ADDRESS 0b0000
 #define LTC6804_2_ADDRESS_MODE	0b1
-#define GAIN_SEL_0 6
+#define GAIN_SEL_0 6   
 #define GAIN_SEL_1 7
 #define R_SHUNT 0.001F
 #define GAIN 200.0F
