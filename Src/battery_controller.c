@@ -28,8 +28,8 @@ long double linear_node0_bias;
 enum input{TIME_ELAPSED, VOLTAGE, CURRENT, CAPACITY, INTERNAL_RESISTANCE};
 enum nodes{SM1, SM2, SM3};
 char cell_identifiers[NUM_CELLS] = {'1', '2', '7', '8'};
-double cell_capacities[NUM_CELLS] = {7.53524542459,7.4390806263,7.62927649612,7.47651806373};
-double cell_ir[NUM_CELLS] = {2.78820960699,3.9165577342, 2.99781659389, 3.0440087146};
+double cell_capacities[NUM_CELLS] = {7.4390806263,7.47651806373,7.43284105339,7.46789307815};
+double cell_ir[NUM_CELLS] = {3.9165577342,3.0440087146, 2.85555555556, 2.92527233115};
 uint16_t start_time;
 
 // Create the battery object with number of cells
@@ -198,4 +198,9 @@ uint8_t balance_cells(Battery *const battery){
     bal_led_flash(led_comb);
 
     return balance_reg;
+}
+
+void turn_off_balancing(Battery *const battery){
+    battery->is_balancing = 0;
+    discharge_cells(0);
 }

@@ -135,6 +135,8 @@ State start(Battery *const battery){
   // Set under and over voltage thresholds
   set_UV_OV_threshold();
 
+  turn_off_balancing(battery);
+
     // Add 1s delay
   HAL_Delay(1000);
 

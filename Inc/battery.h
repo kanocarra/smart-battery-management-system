@@ -63,5 +63,6 @@ void start_cycle(void);
 uint16_t get_current_time(void); 
 void get_time_elapsed(Battery *const battery);
 uint8_t balance_cells(Battery *const battery);
+void turn_off_balancing(Battery *const battery);
 
 #endif /* BATTERY_H_ */
